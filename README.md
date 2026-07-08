@@ -19,3 +19,14 @@ For example, to add stories to crash whose id is [de9b2a79a715688f...](https://c
       - url: https://chi.streetsblog.org/2026/06/09/the-bike-ride-and-die-in-in-memory-of-fallen-complete-streets-planner-riley-oneil-was-a-life-affirming-event
         title: The bike ride and “die-in” in memory of fallen Complete Streets Planner Riley O’Neil was a life-affirming event
     ```
+
+
+## Dev stuff
+
+The scripts expect a `db.sqlite` symlink to the crashstop database, which should have a table named `crashes_serving`
+
+Run [scripts/validate_stories.py](scripts/validate_stories.py) to ensure format correctness.
+
+Run [scripts/lint_stories.py](scripts/lint_stories.py) to format the `stories/**/*.yaml` files into a predictable style and arrangement.
+
+Run [scripts/wrangle_stories.py](scripts/wrangle_stories.py) to compile all the `stories/**/*.yaml` files into a single CSV file: [stories.csv](stories.csv)
