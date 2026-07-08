@@ -12,6 +12,38 @@ e7c4eebfc29632ce176917f7dbe59b06483c7f604d014976db358b8ed9d39df2700961d2697d3b03
       date: '2026-04-08T04:10:35+00:00'
       description: Southwest Siders rode bikes to the crash site Monday, and there will be a rally for justice there on Wednesday.
 
+4a9adced669243b8b530521e846af4e473780acb06f5f746411e74bbadb71679e594f30f7c3c7acfbe6c50208af6287a7bc5a95c9383a5cbb3073ea59e83d310:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-12 21:00
+    31 S ASHLAND AVE west loop
+    1 fatalities, 0 injured
+    PEDESTRIAN: NOT APPLICABLE
+
+c84a69dfc0bc01647f5de07a7f2b18461baff0b569d9f975059b893e1d6714a73eee4c1b895731a2179bb0df590baf6a893e619ffd9d4c825a2a23460b40237d:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-15 19:15
+    3920 N LINCOLN AVE north center
+    1 fatalities, 1 injured
+    VEHICLE-TO-VEHICLE: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+
+6d136d4c1a55173956e5f688a690f6716de3fe7caab21529a8c895eb37ce2ff15604bef8fa888121237ed468e23f091e211e0be77c3aa4f714a9f1f1c9283018:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-18 23:50
+    4405 S PULASKI RD archer heights
+    1 fatalities, 1 injured
+    VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
+
+e55032755aa506df7f1eb61bba646b458d1d3c2ee3f728b674d0c0226d5022191816be4775010fa89b657d849ee470c89c50d0f5f8544ad4275be71c160d3fd6:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-19 21:24
+    3198 N CENTRAL AVE belmont cragin
+    1 fatalities, 0 injured
+    PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+
 e694d84d7e8c64f77dab3f5672be263c673390cc178d7714d24f8b603f43076849c589afdc8aba25098607876e12e0b91d53e16a32b060275ffebdbb73f4e7d1:
   stories:
     - url: https://chicago.suntimes.com/crime/2026/04/20/pedestrian-killed-semi-truck-chicago-lawn
@@ -19,3 +51,27 @@ e694d84d7e8c64f77dab3f5672be263c673390cc178d7714d24f8b603f43076849c589afdc8aba25
       site: chicago.suntimes.com
       date: '2026-04-21T15:28:00Z'
       description: Autumn P. Perez, 29, was standing near the street in the 6300 block of South Western Avenue when she was struck Monday night. Perez was pronounced dead at the scene.
+
+faa4e9b3aec828d7034fd5dc859b28a715e8acd8aed14bc75b6c7809d0c0a9a15034005be4a56ef45dba9eac54b239fdde72b837b103bf36bcd02e832dfd453c:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-21 08:00
+    4050 N CENTRAL AVE portage park
+    1 fatalities, 0 injured
+    PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+
+0ecf32f6b467b36ab2cba5e8360dc66f5649ef7a4d408974ae3d07aead297c246b0954256149ac11072e12012d7919d4e002b8433d0f2d4b913adef4086b94cb:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-22 13:26
+    1498 N CALIFORNIA AVE humboldt park
+    1 fatalities, 0 injured
+    PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+
+0ecf6cde90f4b077a5893d293c940199b34033555544e998a72e3479cecf923799594a21d0c2b471ecdea2e62ca22ea18967899458b349f5a86c81849a0bfbda:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2026-04-24 16:15
+    3340 S DR MARTIN LUTHER KING JR DR douglas
+    1 fatalities, 1 injured
+    OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
