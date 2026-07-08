@@ -19,7 +19,7 @@ Records AS (
                 WHEN '12' THEN 'December'
                 END
             || ' '
-            || STRFTIME('%d, %Y', crash_date) || ' chicago ' || address || ' '
+            || STRFTIME('%d %Y', crash_date) || ' chicago ' || address || ' '
             || REPLACE(neighborhood_id, '-', ' ')
             AS query
         , crash_date

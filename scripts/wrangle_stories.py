@@ -2,11 +2,12 @@
 """Compile every stories/<year>/<year-month>.yaml file into a single CSV.
 
 Each story file is a mapping of crash_record_id -> {notes: ..., stories: [...]}.
-Crashes with a missing or empty `stories` key contribute no rows.
 Walks all story files and writes one row per story entry to
 stories/compiled-stories.csv, with the owning crash_record_id in the first
 column followed by the story fields (url, title, site, date, description, plus
-any extra keys that appear).
+any extra keys that appear) and the crash-level `notes` as the last column.
+A crash with notes but no stories contributes a single row with only the
+crash_record_id and notes filled in; a crash with neither contributes no rows.
 
 Usage: python3 compile_stories.py
 """
@@ -67,6 +68,11 @@ def main():
                     f"skip {rel}: {crash_id} `stories` is not a list", file=sys.stderr
                 )
                 continue
+            notes = crash.get("notes")
+            if not stories:
+                if notes:  # notes-only crash: one row so the notes still surface
+                    rows.append({"crash_record_id": crash_id, "notes": notes})
+                continue
             for story in stories:
                 if not isinstance(story, dict):
                     print(
@@ -74,21 +80,28 @@ def main():
                         file=sys.stderr,
                     )
                     continue
-                row = {"crash_record_id": crash_id}
+                row = {"crash_record_id": crash_id, "notes": notes}
                 for k, v in story.items():
+                    if k == "notes":  # crash-level notes owns this column
+                        continue
                     row[k] = v
                     if k not in PREFERRED and k not in extra_keys:
                         extra_keys.append(k)
                 rows.append(row)
 
-    columns = ["crash_record_id"] + PREFERRED + extra_keys
+    columns = ["crash_record_id"] + PREFERRED + extra_keys + ["notes"]
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(columns)
         for row in rows:
             writer.writerow([to_cell(row.get(c)) for c in columns])
 
-    print(f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories from {len(paths)} files")
+    notes_only = sum(1 for r in rows if not r.get("url"))
+    print(
+        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} rows "
+        f"({len(rows) - notes_only} stories, {notes_only} notes-only) "
+        f"from {len(paths)} files"
+    )
     return 0
 
 

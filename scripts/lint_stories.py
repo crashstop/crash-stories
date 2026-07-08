@@ -189,7 +189,10 @@ def render_file(data, con, cache):
         cd = crash_date(con, crash_id, cache)
         return (cd is None, cd or "", crash_id)
 
-    blocks = [render_crash(crash_id, data[crash_id]) for crash_id in sorted(data, key=crash_key)]
+    blocks = [
+        render_crash(crash_id, data[crash_id])
+        for crash_id in sorted(data, key=crash_key)
+    ]
     return "\n\n".join(blocks) + "\n"
 
 
