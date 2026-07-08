@@ -21,6 +21,12 @@
     2106 E 83RD ST south chicago
     1 fatalities, 0 injured
     PEDESTRIAN: DISREGARDING STOP SIGN
+  stories:
+    - url: https://abc7chicago.com/post/1k-reward-offered-south-chicago-hit-run-crash-killed-raven-myers-83rd-street-cook-county-crime-stoppers/18867622/
+      title: $1K reward offered in South Chicago hit-and-run crash that killed 32-year-old woman
+      site: abc7chicago.com
+      date: '2026-04-10T20:19:00Z'
+      description: A reward is being offered for information in a fatal hit-and-run crash in South Chicago last month.
 
 3e0785978d02e55af2b935f922c0116d57ff46e66d02776262b9476aa594a17b5f6b69b9a5c53d1bfdb70dbac42a133344d4ece3f609df9082c4ec33b52aac7f:
   stories:
@@ -37,6 +43,18 @@
     7670 S EXCHANGE AVE south shore
     1 fatalities, 1 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://blockclubchicago.org/2026/03/30/hyde-park-student-was-killed-in-1-of-83-hit-and-runs-on-south-shores-main-roads-this-year/
+      title: Teen On Scooter Was Killed In 1 Of 83 Hit-And-Runs On South Shore's Main Roads This Year
+      site: blockclubchicago.org
+      date: '2026-03-30T13:00:00+00:00'
+      description: Police have been notified about 248 crashes along the neighborhood's main roads since Jan. 1, according to city data. That means one out of every three drivers who crashed fled the scene.
+
+    - url: https://abc7chicago.com/post/cook-county-crime-stoppers-offers-1k-reward-information-violet-harris-killed-south-shore-chicago-hit-run/18938066/
+      title: $1K reward offered for information on South Shore hit-and-run driver who killed teen girl on scooter
+      site: abc7chicago.com
+      date: '2026-04-22T03:31:26Z'
+      description: Violet Harris, 15, died after being hit by a car near East 77th Street and South Exchange Avenue in the South Shore neighborhood on March 21.
 
 d304cbf33bd655d78e453feece2895e738d7aeb2e3ffbfa7353b968035c127be19d8672682ce09e7ad45bc6fd9ec4576ad543c3fe6d2b592c4ba9c5a7e8bc55e:
   private_notes: |-

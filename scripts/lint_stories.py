@@ -19,9 +19,13 @@ For each file it rewrites:
 
 Content is otherwise preserved. Idempotent: running twice yields the same output.
 
-Usage: python3 formatter.py
+By default only files modified since stories.csv was last written are scanned
+(all files when stories.csv doesn't exist); pass --all to scan every file.
+
+Usage: python3 lint_stories.py [--all]
 """
 
+import argparse
 import sqlite3
 import sys
 from datetime import date, datetime, timezone
@@ -33,6 +37,15 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
 DB = ROOT / "db.sqlite"
 STORIES = ROOT / "stories"
+CSV = ROOT / "stories.csv"
+
+
+def modified_since_csv(paths):
+    """Paths modified after stories.csv; all of them when stories.csv is absent."""
+    if not CSV.exists():
+        return paths
+    cutoff = CSV.stat().st_mtime
+    return [p for p in paths if p.stat().st_mtime > cutoff]
 
 KEY_ORDER = ["url", "title", "site", "date", "description"]
 
@@ -201,7 +214,7 @@ def render_file(data, con, cache):
     return "\n\n".join(blocks) + "\n"
 
 
-def main():
+def main(changed_only=True):
     if not DB.exists():
         print(f"error: database not found at {DB}", file=sys.stderr)
         return 2
@@ -212,6 +225,17 @@ def main():
             f"no story files found under {STORIES.relative_to(ROOT)}/", file=sys.stderr
         )
         return 1
+
+    if changed_only:
+        all_count = len(paths)
+        paths = modified_since_csv(paths)
+        if len(paths) < all_count:
+            print(
+                f"scanning {len(paths)} of {all_count} story files modified since "
+                f"{CSV.name} (pass --all to scan every file)"
+            )
+        if not paths:
+            return 0
 
     con = sqlite3.connect(DB)
     cache = {}
@@ -252,4 +276,11 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument(
+        "--all",
+        dest="changed_only",
+        action="store_false",
+        help="scan every story file, not just those modified since stories.csv",
+    )
+    sys.exit(main(**vars(parser.parse_args())))

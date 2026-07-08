@@ -12,6 +12,17 @@ e7c4eebfc29632ce176917f7dbe59b06483c7f604d014976db358b8ed9d39df2700961d2697d3b03
       date: '2026-04-08T04:10:35+00:00'
       description: Southwest Siders rode bikes to the crash site Monday, and there will be a rally for justice there on Wednesday.
 
+350cbff9c3d756eca0fa97b756d5fb3613f72deff40c38b8e3ec5ec590fd02f3bb814accdfff4465549804a21f334d16e274e945b2241ffb4e3f6ae580d150c9:
+  private_notes: |
+    5 injured or incapciated
+    crash April 12 2026 chicago 3800 W WASHINGTON BLVD garfield park
+  stories:
+    - url: https://www.fox32chicago.com/news/cpd-crash-garfield-park-4-12
+      title: 2 Chicago police officers, 3 others hurt in West Side crash, CPD says
+      site: fox32chicago.com
+      date: null
+      description: Multiple people, including two Chicago police officers, were injured in a crash involving a CPD squad car on the city’s West Side.
+
 4a9adced669243b8b530521e846af4e473780acb06f5f746411e74bbadb71679e594f30f7c3c7acfbe6c50208af6287a7bc5a95c9383a5cbb3073ea59e83d310:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
@@ -28,6 +39,20 @@ c84a69dfc0bc01647f5de07a7f2b18461baff0b569d9f975059b893e1d6714a73eee4c1b895731a2
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
 
+6b2ae95191562747db01d5106c54928e1be49521f34f1525bc524d8546e1ade059441cedd364477680b2111f9d9191f6951c47b70944fe3dfab309c6fff61820:
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-today-car-crashes-city-news-cafe-cicero-avenue-irving-park-road-nw-side-impacting-cta-sb-54/18898010/
+      title: 4 arrested after stolen car crashes into cafe amid police chase, CPD says
+      site: abc7chicago.com
+      date: '2026-04-16T12:29:00Z'
+      description: Security video shows the moment a car careened into City News Cafe on Chicago's Northwest Side Thursday morning.
+
+    - url: https://blockclubchicago.org/2026/04/16/city-news-cafe-closed-after-driver-fleeing-police-crashes-into-building-owner-says/
+      title: City News Cafe Back Open After Driver Fleeing Police Crashes Into Building, Owner Says
+      site: blockclubchicago.org
+      date: '2026-04-16T15:13:47+00:00'
+      description: Owner Joe Angelastri said the crash took place Thursday morning before the newsstand had opened for the day.
+
 6d136d4c1a55173956e5f688a690f6716de3fe7caab21529a8c895eb37ce2ff15604bef8fa888121237ed468e23f091e211e0be77c3aa4f714a9f1f1c9283018:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
@@ -43,6 +68,12 @@ e55032755aa506df7f1eb61bba646b458d1d3c2ee3f728b674d0c0226d5022191816be4775010fa8
     3198 N CENTRAL AVE belmont cragin
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://abc7chicago.com/post/woman-65-killed-nw-side-hit-run-central-avenue-chicago-police-say/18924900/
+      title: '65-year-old woman killed in Belmont Cragin hit-and-run crash ID''d: officials'
+      site: abc7chicago.com
+      date: '2026-04-20T09:29:00Z'
+      description: Minerva Martinez, 65, of Chicago, was killed in a hit-and-run crash in the Belmont Cragin neighborhood Sunday night, Chicago police said.
 
 e694d84d7e8c64f77dab3f5672be263c673390cc178d7714d24f8b603f43076849c589afdc8aba25098607876e12e0b91d53e16a32b060275ffebdbb73f4e7d1:
   stories:

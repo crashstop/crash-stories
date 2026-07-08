@@ -15,6 +15,18 @@ fcac5affb38f8babef19dad24549b87e37a5198fbbaac3882a4316b01fa276c8f346946b2f331d4a
       description: |
         Seven people suffered minor injuries in a two-car crash late Saturday night in Hermosa on the city’s Northwest Side, according to police. All were taken to Stroger Hospital and listed in good condition.
 
+71ea43187ed3b1874615bee70e49be58799be043dbed15afff77afee5f45358b14e3b04c4ecbae16e30f402e55cecf7fc568aa8908a82d1d09f2eba85dab7cd4:
+  notes: City data still lists victim as severly injured but news reports say she died 2 weeks after her injuries.
+  private_notes: |
+    2026-05-11, Kedzie Avenue and Franklin Boulevard
+    flag:tk:fatality-not-recorded
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/lisa-barber-dies-humboldt-park-hit-and-run/
+      title: Woman dies two weeks after hit-and-run crash in Humboldt Park
+      site: cbsnews.com
+      date: 2026-05-25T11:36:17-0500
+      description: Lisa Barber, 45, was critically injured by a hit-and-run driver in the Humboldt Park neighborhood earlier this month has died.
+
 fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23510e8275f0ebdae389c822be6190fc01ef500f7f3fb4e710:
   stories:
     - url: https://abc7chicago.com/post/chicago-crime-today-man-killed-hit-run-crash-68th-pulaski-west-lawn-police-searching-orange-honda/19092362/

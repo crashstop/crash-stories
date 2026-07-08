@@ -46,6 +46,13 @@ bfb8e6ba240c9e10664c935cd46a1664bb2e19b257bad29b0719b03f5f98ef75ca4d3117debfcd9c
     1 fatalities, 2 injured
     PEDESTRIAN: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
 
+4a2e9b6741877e95522f2c05dac37aaea7dcac46a5fd5286d1f036b5ae79f20ccc5f259a1292316ea701519373c0bcc5e74e6d5f6d3de46c34497a6fd13e47d3:
+  notes: |
+    City records still list the 83-year-old victim as severely injured, but news reports
+    say he died of his injuries.
+  private_notes: |
+    flag:tk:fatality-not-recorded
+
 951539184b3fce4aa6f22a67251799a4cc80db2fc3529e7a61df0e2191200bd401dc370b823d991412edf6cb52363cd82496b6f3d7a2fa773bda6b57bb475e0d:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
