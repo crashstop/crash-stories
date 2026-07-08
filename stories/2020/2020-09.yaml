@@ -1,5 +1,109 @@
+4306e3c1bc00061bf4a70ccd3aa7ef66a473364f59cd7e19ac9600016428bda67c41cc1e856b555aa7b101225f7d338915b61839b4ab39c2fc1980ceaec32dd1:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-02 12:27
+    8001 S HALSTED ST auburn gresham
+    1 fatalities, 4 injured
+    VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+
+2e8398d17546f234093325234a604fefb045ffbd8c0e0fb0f75f9c89f98dcfcd5db7bfa802d34c7ac9e43f827976376de56824a86d837db2a66702ba93c30453:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-02 23:29
+    5200 N LAKE SHORE DR NB edgewater
+    1 fatalities, 0 injured
+    PEDESTRIAN: NOT APPLICABLE
+
+128c86c260f73f4a5f75e647d8fe9b121632129022687e735659de7713445c76dc9c90e318480b5bccc3ff0ca1eb3e51992b12d94c5582557a333cac877a554a:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-03 12:05
+    6200 S PAULINA ST englewood
+    1 fatalities, 0 injured
+    OTHER: PHYSICAL CONDITION OF DRIVER
+
+eec843eaef00eb96417335b63aba48e6286676b0c1c7db37dfdb6a63fd04999331763b9fd8fdf8a8f1c5faa3d6284d7d533ad2a8de42c7010a070afb2e7a9c3f:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-03 14:20
+    1034 W 31ST ST bridgeport
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: PHYSICAL CONDITION OF DRIVER
+
+17d46252cac4fa039030d60e14ebef5e654ae07f15cba1b809b4bd132daa7346f79b994e2a7bd986f058f97b50c6233595698c0fbba2f46df9d3f4267e4077bc:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-06 03:20
+    1000 N LAKE SHORE DR NB gold coast
+    2 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
+da1fb877794a3e3737920606a370b0f43a009e0f96f26dceeaac148e09add25086549f19e16958db11e604ac0a567c5959312d951d418dd375395de8466df70d:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-06 04:27
+    3000 S LAKE SHORE DR SB douglas
+    2 fatalities, 4 injured
+    VEHICLE-TO-VEHICLE: IMPROPER LANE USAGE
+
+63d3c09f90067fe135600c9b691d36e238aca127011f2b50b53ee156a0a95c01dac457f19a2c5ef8f0fc3533ff9bd98acf5550e0ef93cc76caa7de1c38d49f46:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-06 23:20
+    3358 W 114TH ST mount greenwood
+    1 fatalities, 0 injured
+    PEDESTRIAN: UNABLE TO DETERMINE
+
 3f0b4ebf2e25724c3f20696ad84cad664e2fc533f7622e0933ced4b40ba472baf350bea93565c25d4a38809e5cb7df342c67e35f6570ad8e601a31bca5596e50:
   stories:
     - url: https://chi.streetsblog.org/2020/09/09/chicagos-spike-in-cycling-fatalities-continues-with-first-e-divvy-death-on-near-west-side
       title: Chicago’s spike in cycling fatalities continues with first e-Divvy death on Near West Side
       site: chi.streetsblog.org
+
+a3389d427cd02326a95091489848d5f3ff9ac329779913c4f64bde9822dac176ac8f2ce899064af9c7f30bd558a3f3420e04998661dc6d847c35f8698f2e5a03:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-11 22:35
+    299 S LARAMIE AVE austin
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+
+68fefb168752ae05c29a09cea7bcd78c5d6a8d38075f756339e8bdb8158d5540d8a7056c36958c8c5221dd3d48a6498751b4f1134ecc7da461a1eea9a138cfdd:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-12 14:04
+    6302 S WESTERN AVE chicago lawn
+    1 fatalities, 0 injured
+    OTHER: NOT APPLICABLE
+
+0ce7c9fdec29b532060378128ec1381927def79095b078a649d293b612b3dc5c95dad4cdd69713c6433e322f5f76a7c809f27fc734a82f730225cf4dbc3472f5:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-16 02:14
+    6259 S HARLEM AVE clearing
+    1 fatalities, 0 injured
+    OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
+
+f571523963c689e0a3a2a04f30b8a8f7d6cfc7ba5b8b78dce3d53d4d9642edde4b49c18c7b81f7b44d28a1cc09b0e5507ed53f7bd42d157e747ca1a2728b9b59:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-18 07:35
+    1402 E 95TH ST burnside
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
+00efcdaef57f1af7f97849cfd5a321950a32c0594934213962c989385e1146c64a37f750d271c0bb2301a3cd500f57ad7f247541385ca1b1149c4ec394b664a0:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-20 05:24
+    930 W GARFIELD BLVD new city
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
+d7ab4e5278984dbb10635b5889c401ba6b250ddce99592f8bc4d755e2d230d6767bb6e4d70a4ccfcd0d81ccdf3c465563f111cf7de732b4bd4ee71b7e9323752:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2020-09-23 13:34
+    7801 S STATE ST grand crossing
+    1 fatalities, 0 injured
+    OTHER: NOT APPLICABLE

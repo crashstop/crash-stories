@@ -1,3 +1,11 @@
+e2d0e1a664bf01b52f42710f919f379c8895f9296f6cf973f4ba703d90d9c731405b8cd3e30df41f34bce377913923cdb2fab129546d641e1ce71c3e13713f67:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-05 03:47
+    1101 S CICERO AVE austin
+    1 fatalities, 1 injured
+    VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
+
 a276a6213c6c4ec0e70eb0d540511513b934e31203259b4fbd38a4682dbb3441a16e5a0adcedcee2d78278efd3b6e76b005c01d1eec078a2f74d30332c6feb5c:
   stories:
     - url: https://chi.streetsblog.org/2018/09/06/2-cyclists-critically-injured-in-2-days-highlights-need-for-more-dooring-awareness
@@ -7,3 +15,51 @@ a276a6213c6c4ec0e70eb0d540511513b934e31203259b4fbd38a4682dbb3441a16e5a0adcedcee2
     - url: https://chicago.suntimes.com/2018/9/9/18382496/bicyclist-dies-after-crash-with-open-car-door-in-arlington-heights
       title: Bicyclist dies after crash with open car door in Arlington Heights
       site: chicago.suntimes.com
+
+3a1cd17d08a16193d3849051b453d07e7d26521787beff2c8348ea840db3efd17e97447e17a52eb3bdf59812be6a8b4b842e8c5d0dab0415bb3fea61d7b0d5e3:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-06 10:05
+    1168 S CICERO AVE austin
+    1 fatalities, 3 injured
+    VEHICLE-TO-VEHICLE: NOT APPLICABLE
+
+a919081dea2113ec6681e71cb58d29b6ad21779da8a162718fef37c1802af91581173ff3007bb6c3b6eee912fe4552e9f3e6ea5c9f05f1aed3af33e41f9ff487:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-16 13:50
+    8301 S TRIPP AVE ashburn
+    1 fatalities, 0 injured
+    PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+
+239bb56a45c59854eb58e9ca154c19669fc9aa2fbbb1e6db05d63d94605b9e9f9877ef971370b1cb84d62d5f0693b2bb23ae4328a1d4792800d714c42951b75c:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-23 17:20
+    3301 W DEVON AVE north park
+    1 fatalities, 0 injured
+    CYCLIST: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+
+150d66556f56608c39d71c33db7129635557f66ae8e77c4bb59412befabfd3f1de5523d8de68605ddcb3854519b0a77f9d4831558ff00114255a6720fb12da79:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-27 01:22
+    3656 S WENTWORTH AVE armour square
+    1 fatalities, 2 injured
+    OTHER: UNABLE TO DETERMINE
+
+f6cfd8b818c03fca0c5e4ac6f0d72c17019422384b18f17d63742bcf664c764abaeccb55f6ac923a755c9ee2892783dcf76519e9f072b72bf1294a6c6eed50d7:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-29 21:35
+    2801 N HARLEM AVE montclare
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+
+f7e1ab1c647d5b597c579116a7914cfcd32b7df9a78afbecab4893d4b2c94cb789b0edf754a92dd89386f009495057b4f7de5f31d5d716db8f433ffb44a748a5:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2018-09-30 23:59
+    520 S MICHIGAN AVE the loop
+    3 fatalities, 4 injured
+    OTHER: DISTRACTION - FROM INSIDE VEHICLE

@@ -1,5 +1,77 @@
+2aa5affaace288a18b6346bf52d53340bb4bd5e28d82bc0c0f7b8b5a3c98ea8b5ee38bbce7a6dbbcaa0bf959fe76c0228772cd5361a4524caa5e4f4d842906a9:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-02 21:30
+    4010 W FIFTH AVE garfield park
+    1 fatalities, 0 injured
+    PEDESTRIAN: FAILING TO REDUCE SPEED TO AVOID CRASH
+
+40953fa6bb241058604b28d54865f50ed8ab3eea0dc1744efe91d604204dbfc4c378a97d63a70afece776277bd458563df907ee0217408707d6a90e0378d6d75:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-05 18:34
+    7900 S RACINE AVE auburn gresham
+    1 fatalities, 6 injured
+    VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+
+029ac443cce29cdbe3572e08ac5dc8a77b12029625c95da3b425a6b500ff9ea5367364c08e4e332b0733ed79c82262046caf961fb09e25d091486edeb0ee8deb:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-06 22:05
+    9745 S HALSTED ST washington heights
+    1 fatalities, 0 injured
+    PEDESTRIAN: NOT APPLICABLE
+
+107010ac6b854067d410fee06ed42dbc7c2790fccf88c0f36ecb137436c5c52187b6801b2aa46ab274509546894dcc09163cf37089aeaf7823761cb6b0cf87f6:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-09 15:50
+    5595 S ARCHER AVE garfield ridge
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+
+4093998a0b9850eb00ab53210011b2948ed0be4cafc0cee1657211b0d477b74262c8859b645acfc9e130903ab9e87670f00b92d512881dc6d2b19bafad24a615:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-11 06:20
+    9899 S AVENUE L east side
+    1 fatalities, 0 injured
+    CYCLIST: UNABLE TO DETERMINE
+
+476e6c9b2935378de9a2ffe93cbade719a144492a3999ef4fb7ef2c3d1d63fc18440e4c0418c0214ac1f1dfffcc29e31a8e7e1ddda5d0a0ea98873062682799a:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-12 20:49
+    1514 N PULASKI RD humboldt park
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
 f587687869863fd69783e7d82269ec9a242616a8692da7d8019430349bebaff7ea3634461390268c166af40e6d0e76bfc0f9e16c8ebb6dfdde44054bf42a9d8f:
   stories:
     - url: https://cwbchicago.com/2022/08/chicago-police-20-minute-response-driver-killed-wounded-jeffery-pub.html
       title: Chicago police took more than 20 minutes to arrive after driver killed 3, wounded 2 outside Jeffery Pub
       site: cwbchicago.com
+
+af7ce17246a9844be7d60640f088923460f85110a31d3ab0892a0108dad738458a0c0b02cf5b6a25a45003373a02a5fb0db2796d17a45e98f5bb0260af8b9e82:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-27 15:35
+    400 W 26TH ST armour square
+    1 fatalities, 0 injured
+    CYCLIST: DISREGARDING STOP SIGN
+
+282a5bd3c9d31d997a00d2822d68367b4d695422632bfba07b2a755206ce4e9c6cb09b8cb3a3ba34ff69d03144a8bd148ba14f74ce08028fd73adc37628d8238:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-28 01:35
+    6459 S CICERO AVE clearing
+    1 fatalities, 1 injured
+    VEHICLE-TO-VEHICLE: IMPROPER OVERTAKING/PASSING
+
+1a2671f4b7d6b0004a28bd267b25106adccad31f6f2ce3ba0fa4c2c2ecd62b670d100688cb5081b8cf30ac0215f379e23bda7264d80a60956fd3c1b61fbb4a1f:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-08-29 07:45
+    1201 N CICERO AVE austin
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY

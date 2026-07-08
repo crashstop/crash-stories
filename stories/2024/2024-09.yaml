@@ -1,3 +1,51 @@
+629782bd188d303784bedda81407bffa8bb5c8137a8652d9aec8e659815557641952a66500cce1b5e6d76c72f350502a5d391f2175c12f0312382e4b4b81713b:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-01 04:18
+    7855 S WESTERN AVE ashburn
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
+
+82e08967ade7b8f7b9e105952ed7f9bec173e2fe1ebb97e0f31da4c6229d0d3c65a12180ae3ae8c5e7f18d35cc23f819335f49ef3a82e1e05160e1c8e3dc9ba9:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-07 03:25
+    6635 N CALDWELL AVE sauganash forest glen
+    1 fatalities, 0 injured
+    OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
+
+069965e2c2c58e623d550c0fdd04c62fc2a50e542767aca11c0ef94865f78b457b8ee4252454774528f38f867780b6bac2de769b10085f913ea6d2fbf9403026:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-11 04:56
+    8622 S COMMERCIAL AVE south chicago
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
+716ff9158a3daf1e70749a35308c437b0ef5eb054c20213023b38afc501472eeddd0da951f3e26a191c5fe0076a0240f9086debaefbe04e3853e46f41198cc66:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-14 02:13
+    158 W ROOSEVELT RD the loop
+    1 fatalities, 4 injured
+    VEHICLE-TO-VEHICLE: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+
+b7be7917cfd41c4a827cd0fdd34e338a582776032d83d8bb1e2d954efdb40713319ebbe79d844a384e3cc2c8a310a25e0939b0413152fc385699400bffba86e6:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-14 15:46
+    4651 W MADISON ST austin
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+
+4f3c3c985aab8f434c13bd0247fcb440e57aa6e39c90bbfa900f6e596a4ceed00f669986dbd6621b4fd31f0a3d16ef9133889ebf5ee48a3d3226b228d1c7dd3d:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-15 00:49
+    600 W 79TH ST grand crossing
+    1 fatalities, 2 injured
+    OTHER: UNABLE TO DETERMINE
+
 86cec44189ccb02083f29193374134234747e95daf8ec57c0841c1c9393e6b64f523d08c6774f57edefd4a1d2de046de79a545d1acc0e6a32c95c58b6a3a9a53:
   stories:
     - url: https://wgntv.com/news/chicago-news/man-dies-after-crashing-into-parked-cars-on-northwest-side/
@@ -5,3 +53,35 @@
       site: wgntv.com
       description: |
         A man was killed after crashing into parked vehicles on the city’s Northwest Side. Police said a 45-year-old man was traveling eastbound in a two-door sedan and came to a stop after striking three parked cars.
+
+f91ed79bd830cf2cf167c807952d6c9853d61931ab1f98e1c674a78e8f40ed87c1725b1ad3069acfdc46901b41a4566a957bd5a1db6e2a306adbfad4af97bc94:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-21 03:18
+    3900 S CICERO AVE garfield ridge
+    1 fatalities, 0 injured
+    CYCLIST: UNABLE TO DETERMINE
+
+55025b6135a76bfce6d6f56859ae69fd05fd2edd5df58a6ec61a0733718eea73ae4db9775be1d5f46eb344959010fbe11e3c75985dfb1881bb5392bdee072304:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-23 22:57
+    4642 W MAYPOLE AVE austin
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
+12f31db6d6cb3ab2390b77a1ce1593e5f418a0d27ba24bba9c4a6a91eea618c5a12f7336fd936de828f5e8731e9311a5ea9c74aae1b3aafa8f423a594a9760eb:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-29 05:43
+    1158 E 95TH ST burnside
+    1 fatalities, 2 injured
+    VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+
+79328fa185cfd849a2b5db0879809d7d348e872632f683a9af9d54bc37ffa1d6115005e982d493c09953f3b413caf90ddfd9f12056fc99ab2bb6932e3cfbeb63:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2024-09-29 11:14
+    2332 W DEVON AVE west ridge
+    1 fatalities, 0 injured
+    PEDESTRIAN: UNABLE TO DETERMINE
