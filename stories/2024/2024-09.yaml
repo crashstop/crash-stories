@@ -1,6 +1,7 @@
 86cec44189ccb02083f29193374134234747e95daf8ec57c0841c1c9393e6b64f523d08c6774f57edefd4a1d2de046de79a545d1acc0e6a32c95c58b6a3a9a53:
-  - url: https://wgntv.com/news/chicago-news/man-dies-after-crashing-into-parked-cars-on-northwest-side/
-    title: Man dies after crashing into parked cars on Northwest Side
-    site: wgntv.com
-    description: |
-      A man was killed after crashing into parked vehicles on the city’s Northwest Side. Police said a 45-year-old man was traveling eastbound in a two-door sedan and came to a stop after striking three parked cars.
+  stories:
+    - url: https://wgntv.com/news/chicago-news/man-dies-after-crashing-into-parked-cars-on-northwest-side/
+      title: Man dies after crashing into parked cars on Northwest Side
+      site: wgntv.com
+      description: |
+        A man was killed after crashing into parked vehicles on the city’s Northwest Side. Police said a 45-year-old man was traveling eastbound in a two-door sedan and came to a stop after striking three parked cars.

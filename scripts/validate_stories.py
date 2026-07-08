@@ -2,7 +2,10 @@
 """Validate the per-month story files under stories/<year>/<year-month>.yaml.
 
 For every YAML file it checks:
-  - the file is valid YAML shaped as {crash_record_id: [story, ...]}
+  - the file is valid YAML shaped as {crash_record_id: crash entry}, where a
+    crash entry is a mapping with a `notes` string and/or a `stories` list
+  - each crash entry has at least a `notes` or a `stories` key (either or
+    both may be empty; `stories` may be missing entirely if `notes` exists)
   - each crash_record_id exists in db.sqlite (crashes_serving)
   - each crash_record_id sits in the file for its crash month, i.e. the crash's
     crash_date year-month matches the file's <year-month>.yaml name
@@ -54,14 +57,14 @@ def validate_file(path, con, cache):
             None,
             None,
             [
-                f"top level must be a mapping of crash_record_id -> stories, got {type(data).__name__}"
+                f"top level must be a mapping of crash_record_id -> crash entry, got {type(data).__name__}"
             ],
         )
 
     crash_count = len(data)
     story_count = 0
 
-    for crash_id, stories in data.items():
+    for crash_id, crash in data.items():
         cdate = crash_date(con, crash_id, cache)
         if cdate is None:
             errors.append(f"{crash_id}: crash_record_id not found in db")
@@ -70,9 +73,27 @@ def validate_file(path, con, cache):
                 f"{crash_id}: crash_date {cdate} belongs in {cdate[:7]}.yaml, not {file_month}.yaml"
             )
 
+        if not isinstance(crash, dict):
+            errors.append(
+                f"{crash_id}: value must be a mapping with a `notes` and/or `stories` key, got {type(crash).__name__}"
+            )
+            continue
+
+        if "notes" not in crash and "stories" not in crash:
+            errors.append(f"{crash_id}: must have a `notes` or a `stories` key")
+
+        notes = crash.get("notes")
+        if "notes" in crash and notes is not None and not isinstance(notes, str):
+            errors.append(
+                f"{crash_id}: `notes` must be a string, got {type(notes).__name__}"
+            )
+
+        stories = crash.get("stories")
+        if stories is None:  # missing or empty key: nothing more to check
+            continue
         if not isinstance(stories, list):
             errors.append(
-                f"{crash_id}: value must be a list of stories, got {type(stories).__name__}"
+                f"{crash_id}: `stories` must be a list, got {type(stories).__name__}"
             )
             continue
 

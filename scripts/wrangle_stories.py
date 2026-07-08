@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Compile every stories/<year>/<year-month>.yaml file into a single CSV.
 
+Each story file is a mapping of crash_record_id -> {notes: ..., stories: [...]}.
+Crashes with a missing or empty `stories` key contribute no rows.
 Walks all story files and writes one row per story entry to
 stories/compiled-stories.csv, with the owning crash_record_id in the first
 column followed by the story fields (url, title, site, date, description, plus
@@ -55,9 +57,15 @@ def main():
             print(f"skip {rel}: unexpected structure", file=sys.stderr)
             continue
 
-        for crash_id, stories in data.items():
+        for crash_id, crash in data.items():
+            if not isinstance(crash, dict):
+                print(f"skip {rel}: {crash_id} value is not a mapping", file=sys.stderr)
+                continue
+            stories = crash.get("stories") or []
             if not isinstance(stories, list):
-                print(f"skip {rel}: {crash_id} value is not a list", file=sys.stderr)
+                print(
+                    f"skip {rel}: {crash_id} `stories` is not a list", file=sys.stderr
+                )
                 continue
             for story in stories:
                 if not isinstance(story, dict):

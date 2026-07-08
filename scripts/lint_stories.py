@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """Normalize the formatting of every stories/<year>/<year-month>.yaml file.
 
+Each file is a mapping of crash_record_id -> crash entry, where a crash entry
+holds an optional `notes` string and/or an optional `stories` list.
 For each file it rewrites:
   - crash records ordered chronologically by their crash_date (from db.sqlite)
+  - crash-level keys in a fixed order: notes, stories (a missing key stays
+    missing; any other keys are preserved and kept after these)
   - within each crash, stories ordered chronologically by their `date`, with
     dateless stories last and date ties broken by url alphabetically
   - story-entry keys in a fixed order: url, title, site, date, description
@@ -118,7 +122,7 @@ def order_story(story):
 
 
 def render_story(story):
-    """Dump one story mapping and indent it as a '  - ...' block sequence item."""
+    """Dump one story mapping and indent it as a '    - ...' block sequence item."""
     dumped = yaml.dump(
         order_story(story),
         Dumper=BlockDumper,
@@ -128,13 +132,54 @@ def render_story(story):
         width=4096,
     ).rstrip("\n")
     lines = dumped.split("\n")
-    out = ["  - " + lines[0]]
-    out += ["    " + line for line in lines[1:]]  # uniform +4 keeps block scalars valid
+    out = ["    - " + lines[0]]
+    # uniform +6 keeps block scalars valid; empty lines stay empty (no trailing ws)
+    out += ["      " + line if line else "" for line in lines[1:]]
     return "\n".join(out)
 
 
+def _dump_indented(mapping):
+    """Dump a mapping and indent it two spaces, as crash-entry key lines."""
+    dumped = yaml.dump(
+        mapping,
+        Dumper=BlockDumper,
+        sort_keys=False,
+        allow_unicode=True,
+        default_flow_style=False,
+        width=4096,
+    ).rstrip("\n")
+    return ["  " + line if line else "" for line in dumped.split("\n")]
+
+
+def render_crash(crash_id, crash):
+    """Render one crash_id -> {notes: ..., stories: [...], ...} entry as a text block."""
+    if not crash:
+        return f"{crash_id}: {{}}"
+
+    lines = [f"{crash_id}:"]
+    if "notes" in crash:
+        lines += _dump_indented({"notes": crash["notes"]})
+
+    if "stories" in crash:
+        stories = crash["stories"] or []
+        if not stories:
+            lines.append("  stories: []")
+        else:
+            lines.append("  stories:")
+            lines.append(
+                "\n\n".join(
+                    render_story(s) for s in sorted(stories, key=story_sort_key)
+                )
+            )
+
+    extras = {k: v for k, v in crash.items() if k not in ("notes", "stories")}
+    if extras:
+        lines += _dump_indented(extras)
+    return "\n".join(lines)
+
+
 def render_file(data, con, cache):
-    """Build the formatted text for one file's {crash_id: [stories]} mapping.
+    """Build the formatted text for one file's {crash_id: {stories: [...]}} mapping.
 
     Crashes are ordered by crash_date (unknown crashes last); stories within a
     crash are ordered by story_sort_key.
@@ -144,14 +189,7 @@ def render_file(data, con, cache):
         cd = crash_date(con, crash_id, cache)
         return (cd is None, cd or "", crash_id)
 
-    blocks = []
-    for crash_id in sorted(data, key=crash_key):
-        stories = data[crash_id]
-        if not stories:
-            blocks.append(f"{crash_id}: []")
-            continue
-        body = "\n\n".join(render_story(s) for s in sorted(stories, key=story_sort_key))
-        blocks.append(f"{crash_id}:\n{body}")
+    blocks = [render_crash(crash_id, data[crash_id]) for crash_id in sorted(data, key=crash_key)]
     return "\n\n".join(blocks) + "\n"
 
 
@@ -183,7 +221,9 @@ def main():
                 continue
 
             if not isinstance(data, dict) or not all(
-                isinstance(v, list) and all(isinstance(s, dict) for s in v)
+                isinstance(v, dict)
+                and isinstance(v.get("stories") or [], list)
+                and all(isinstance(s, dict) for s in v.get("stories") or [])
                 for v in data.values()
             ):
                 print(f"skip {rel}: unexpected structure", file=sys.stderr)
