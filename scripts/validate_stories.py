@@ -3,9 +3,10 @@
 
 For every YAML file it checks:
   - the file is valid YAML shaped as {crash_record_id: crash entry}, where a
-    crash entry is a mapping with a `notes` string and/or a `stories` list
-  - each crash entry has at least a `notes` or a `stories` key (either or
-    both may be empty; `stories` may be missing entirely if `notes` exists)
+    crash entry is a mapping with `notes` and/or `private_notes` strings
+    and/or a `stories` list
+  - each crash entry has at least one of the keys `notes`, `private_notes`,
+    `stories` (any of them may be empty; the others may be missing entirely)
   - each crash_record_id exists in db.sqlite (crashes_serving)
   - each crash_record_id sits in the file for its crash month, i.e. the crash's
     crash_date year-month matches the file's <year-month>.yaml name
@@ -42,29 +43,27 @@ def crash_date(con, crash_id, cache):
 
 
 def validate_file(path, con, cache):
-    """Return (crash_count, story_count, note_count, [error strings]) for one YAML file."""
+    """Return ({count name: count}, [error strings]) for one YAML file.
+
+    The counts dict has keys: crashes, stories, notes, private_notes. It is
+    None when the file couldn't be read as a top-level mapping at all.
+    """
     errors = []
     file_month = path.stem  # '<year-month>' from <year-month>.yaml, e.g. '2026-05'
     try:
         data = yaml.safe_load(path.read_text())
     except yaml.YAMLError as exc:
-        return None, None, None, [f"invalid YAML: {exc}"]
+        return None, [f"invalid YAML: {exc}"]
 
+    counts = {"crashes": 0, "stories": 0, "notes": 0, "private_notes": 0}
     if data is None:
-        return 0, 0, 0, ["file is empty"]
+        return counts, ["file is empty"]
     if not isinstance(data, dict):
-        return (
-            None,
-            None,
-            None,
-            [
-                f"top level must be a mapping of crash_record_id -> crash entry, got {type(data).__name__}"
-            ],
-        )
+        return None, [
+            f"top level must be a mapping of crash_record_id -> crash entry, got {type(data).__name__}"
+        ]
 
-    crash_count = len(data)
-    story_count = 0
-    note_count = 0
+    counts["crashes"] = len(data)
 
     for crash_id, crash in data.items():
         cdate = crash_date(con, crash_id, cache)
@@ -77,20 +76,23 @@ def validate_file(path, con, cache):
 
         if not isinstance(crash, dict):
             errors.append(
-                f"{crash_id}: value must be a mapping with a `notes` and/or `stories` key, got {type(crash).__name__}"
+                f"{crash_id}: value must be a mapping with a `notes`, `private_notes`, and/or `stories` key, got {type(crash).__name__}"
             )
             continue
 
-        if "notes" not in crash and "stories" not in crash:
-            errors.append(f"{crash_id}: must have a `notes` or a `stories` key")
-
-        notes = crash.get("notes")
-        if "notes" in crash and notes is not None and not isinstance(notes, str):
+        if not any(k in crash for k in ("notes", "private_notes", "stories")):
             errors.append(
-                f"{crash_id}: `notes` must be a string, got {type(notes).__name__}"
+                f"{crash_id}: must have a `notes`, `private_notes`, or `stories` key"
             )
-        if isinstance(notes, str) and notes.strip():
-            note_count += 1
+
+        for key in ("notes", "private_notes"):
+            value = crash.get(key)
+            if key in crash and value is not None and not isinstance(value, str):
+                errors.append(
+                    f"{crash_id}: `{key}` must be a string, got {type(value).__name__}"
+                )
+            if isinstance(value, str) and value.strip():
+                counts[key] += 1
 
         stories = crash.get("stories")
         if stories is None:  # missing or empty key: nothing more to check
@@ -103,7 +105,7 @@ def validate_file(path, con, cache):
 
         seen_urls = {}
         for i, story in enumerate(stories, start=1):
-            story_count += 1
+            counts["stories"] += 1
             if not isinstance(story, dict):
                 errors.append(
                     f"{crash_id}: story #{i} must be a mapping, got {type(story).__name__}"
@@ -125,7 +127,7 @@ def validate_file(path, con, cache):
             else:
                 seen_urls[url] = i
 
-    return crash_count, story_count, note_count, errors
+    return counts, errors
 
 
 def main():
@@ -142,35 +144,38 @@ def main():
 
     con = sqlite3.connect(DB)
     cache = {}
-    total_crashes = total_stories = total_notes = total_errors = 0
+    totals = {"crashes": 0, "stories": 0, "notes": 0, "private_notes": 0}
+    total_errors = 0
 
     try:
         for path in paths:
-            crash_count, story_count, note_count, errors = validate_file(
-                path, con, cache
-            )
-            line = (
-                f"{path.relative_to(ROOT)}:"
-                f"  crashes: {crash_count if crash_count is not None else '?'}"
-                f"    stories: {story_count if story_count is not None else '?'}"
-            )
-            if note_count:
-                line += f"    notes: {note_count}"
+            counts, errors = validate_file(path, con, cache)
+            if counts is None:
+                line = f"{path.relative_to(ROOT)}:  crashes: ?    stories: ?"
+            else:
+                line = (
+                    f"{path.relative_to(ROOT)}:"
+                    f"  crashes: {counts['crashes']}"
+                    f"    stories: {counts['stories']}"
+                )
+                for key in ("notes", "private_notes"):  # only shown when present
+                    if counts[key]:
+                        line += f"    {key}: {counts[key]}"
+                for key in totals:
+                    totals[key] += counts[key]
             print(line)
             if errors:
                 print("  errors:")
                 for err in errors:
                     print(f"    - {err}")
 
-            total_crashes += crash_count or 0
-            total_stories += story_count or 0
-            total_notes += note_count or 0
             total_errors += len(errors)
     finally:
         con.close()
 
     print(
-        f"summary: {len(paths)} files, {total_crashes} crashes, {total_stories} stories, {total_notes} notes, {total_errors} errors"
+        f"summary: {len(paths)} files, {totals['crashes']} crashes, {totals['stories']} stories, "
+        f"{totals['notes']} notes, {totals['private_notes']} private_notes, {total_errors} errors"
     )
     return 1 if total_errors else 0
 

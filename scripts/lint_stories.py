@@ -2,11 +2,13 @@
 """Normalize the formatting of every stories/<year>/<year-month>.yaml file.
 
 Each file is a mapping of crash_record_id -> crash entry, where a crash entry
-holds an optional `notes` string and/or an optional `stories` list.
+holds optional `notes` and `private_notes` strings and/or an optional
+`stories` list.
 For each file it rewrites:
   - crash records ordered chronologically by their crash_date (from db.sqlite)
-  - crash-level keys in a fixed order: notes, stories (a missing key stays
-    missing; any other keys are preserved and kept after these)
+  - crash-level keys in a fixed order: notes, private_notes, stories (a
+    missing key stays missing; any other keys are preserved and kept after
+    these)
   - within each crash, stories ordered chronologically by their `date`, with
     dateless stories last and date ties broken by url alphabetically
   - story-entry keys in a fixed order: url, title, site, date, description
@@ -152,13 +154,14 @@ def _dump_indented(mapping):
 
 
 def render_crash(crash_id, crash):
-    """Render one crash_id -> {notes: ..., stories: [...], ...} entry as a text block."""
+    """Render one crash_id -> {notes, private_notes, stories, ...} entry as a text block."""
     if not crash:
         return f"{crash_id}: {{}}"
 
     lines = [f"{crash_id}:"]
-    if "notes" in crash:
-        lines += _dump_indented({"notes": crash["notes"]})
+    for key in ("notes", "private_notes"):
+        if key in crash:
+            lines += _dump_indented({key: crash[key]})
 
     if "stories" in crash:
         stories = crash["stories"] or []
@@ -172,7 +175,9 @@ def render_crash(crash_id, crash):
                 )
             )
 
-    extras = {k: v for k, v in crash.items() if k not in ("notes", "stories")}
+    extras = {
+        k: v for k, v in crash.items() if k not in ("notes", "private_notes", "stories")
+    }
     if extras:
         lines += _dump_indented(extras)
     return "\n".join(lines)

@@ -29,7 +29,16 @@ de9b2a79a715688fa212ea74fda5c0c96044924cfc9987adab7c5edddd5df1eba5414796a7e4bdde
       description: Chicago police said the woman was on a motorcycle and was traveling westbound on Irving Park Road when she lost control and struck a guardrail.
 
 c2e1fe6187ce921e49290073406836745455e1be6d746aa8294c91f0c21a0b48be7ce973a29f55985cb919c32c267300478de8acc357f36a340a6aeb3076c745:
-  notes: |
-    IN PROGRESS
+  private_notes: |2
 
     The only story I've found so far is this [Facebook post](https://www.facebook.com/SubX.News/posts/40-year-old-man-was-killed-saturday-evening-following-a-motorcycle-crash-on-the-/1858029008927329/) which refers to a data record found in the [Cook County Medical Examiner's archive](https://datacatalog.cookcountyil.gov/Health-Human-Services/Medical-Examiner-Case-Archive/cjeq-bs86/data_preview)
+
+e779371d62eb4a97efd48d9b968d4f09e7b248e20fbabd995543b2d586e2d4f0130f58c5b0e1480a203b151b218352d426123b72bc61f7f91bfa3ea514cdb812:
+  stories:
+    - url: https://chi.streetsblog.org/2026/06/26/a-crash-injured-a-bike-rider-in-north-center-witnesses-including-a-47th-ward-staffer-indicate-suv-driver-should-have-been-cited-for-an-illegal-turn-but-wasnt
+      title: |
+        A crash injured a bike rider in North Center. Witnesses – including a 47th Ward staffer – indicate SUV driver should have been cited for an illegal turn, but wasn’t.
+      site: chi.streetsblog.org
+      date: 2026-06-26
+      description: |
+        A deep dive by Streetsblog Chicago into the major discrepancies between the official police report and witness statements of a crash that left a cyclist with facial injuries and the driver uncited.

@@ -9,6 +9,9 @@ Walks all story files and writes:
   - notes.csv: one row per crash-level `notes` entry, with columns
     crash_record_id, crash_yearmonth (the file's YYYY-MM stem), and content
 
+The crash-level `private_notes` field is deliberately not compiled into
+either CSV.
+
 Usage: python3 wrangle_stories.py
 """
 

@@ -22,7 +22,12 @@ For example, to add stories to crash whose id is [de9b2a79a715688f...](https://c
     ```
 
 
-Crash record entries can have a `notes:STRING` key/value pair: they must have at least`notes` or `stories`. Many crash records don't have easily findable stories, so `notes` is a nice play to mark that record has been investigated and needs followup.
+Crash record entries can optionally have key/value pairs for `notes:STRING` and `private_notes:STRING`
+Every entry must have at least one of these keys: `notes`, `private_notes`, `stories`
+
+Many crash records don't have easily findable stories, so `private_notes` is a nice play to mark that record has been investigated and needs followup.
+
+(NOT YET IMPLEMENTED) `notes` should be a place to manually annotate a crash record with unstructured (Markdown) text for public consumption.
 
 ## Dev stuff
 
