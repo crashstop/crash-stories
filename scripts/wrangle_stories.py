@@ -37,6 +37,23 @@ def to_cell(value):
     return str(value)
 
 
+def count_records(path):
+    """Number of data rows in an existing CSV (header excluded), or None if absent."""
+    if not path.exists():
+        return None
+    with open(path, newline="", encoding="utf-8") as f:
+        return max(0, sum(1 for _ in csv.reader(f)) - 1)
+
+
+def change_note(before, after):
+    """Describe how a record count changed from a previous run."""
+    if before is None:
+        return "new file"
+    if before == after:
+        return f"unchanged from previous {before}"
+    return f"was {before}, {after - before:+d}"
+
+
 def main():
     paths = sorted(STORIES.rglob("*.yaml"))
     if not paths:
@@ -95,6 +112,9 @@ def main():
                         extra_keys.append(k)
                 rows.append(row)
 
+    prior_stories = count_records(OUT)
+    prior_notes = count_records(NOTES_OUT)
+
     columns = ["crash_record_id"] + PREFERRED + extra_keys
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
@@ -108,9 +128,13 @@ def main():
         for row in notes_rows:
             writer.writerow([to_cell(row[c]) for c in NOTES_COLUMNS])
 
-    print(f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories from {len(paths)} files")
     print(
-        f"wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files"
+        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories from {len(paths)} files "
+        f"({change_note(prior_stories, len(rows))})"
+    )
+    print(
+        f"wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files "
+        f"({change_note(prior_notes, len(notes_rows))})"
     )
     return 0
 
