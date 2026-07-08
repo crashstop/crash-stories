@@ -32,4 +32,4 @@ Run [scripts/validate_stories.py](scripts/validate_stories.py) to ensure format 
 
 Run [scripts/lint_stories.py](scripts/lint_stories.py) to format the `stories/**/*.yaml` files into a predictable style and arrangement.
 
-Run [scripts/wrangle_stories.py](scripts/wrangle_stories.py) to compile all the `stories/**/*.yaml` files into a single CSV file: [stories.csv](stories.csv)
+Run [scripts/wrangle_stories.py](scripts/wrangle_stories.py) to compile all the `stories/**/*.yaml` files into two CSV files: [stories.csv](stories.csv) (one row per story) and [notes.csv](notes.csv) (one row per crash-level `notes` entry: `crash_record_id`, `crash_yearmonth`, `content`)

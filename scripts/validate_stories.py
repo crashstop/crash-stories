@@ -42,18 +42,19 @@ def crash_date(con, crash_id, cache):
 
 
 def validate_file(path, con, cache):
-    """Return (crash_count, story_count, [error strings]) for one YAML file."""
+    """Return (crash_count, story_count, note_count, [error strings]) for one YAML file."""
     errors = []
     file_month = path.stem  # '<year-month>' from <year-month>.yaml, e.g. '2026-05'
     try:
         data = yaml.safe_load(path.read_text())
     except yaml.YAMLError as exc:
-        return None, None, [f"invalid YAML: {exc}"]
+        return None, None, None, [f"invalid YAML: {exc}"]
 
     if data is None:
-        return 0, 0, ["file is empty"]
+        return 0, 0, 0, ["file is empty"]
     if not isinstance(data, dict):
         return (
+            None,
             None,
             None,
             [
@@ -63,6 +64,7 @@ def validate_file(path, con, cache):
 
     crash_count = len(data)
     story_count = 0
+    note_count = 0
 
     for crash_id, crash in data.items():
         cdate = crash_date(con, crash_id, cache)
@@ -87,6 +89,8 @@ def validate_file(path, con, cache):
             errors.append(
                 f"{crash_id}: `notes` must be a string, got {type(notes).__name__}"
             )
+        if isinstance(notes, str) and notes.strip():
+            note_count += 1
 
         stories = crash.get("stories")
         if stories is None:  # missing or empty key: nothing more to check
@@ -121,7 +125,7 @@ def validate_file(path, con, cache):
             else:
                 seen_urls[url] = i
 
-    return crash_count, story_count, errors
+    return crash_count, story_count, note_count, errors
 
 
 def main():
@@ -138,30 +142,35 @@ def main():
 
     con = sqlite3.connect(DB)
     cache = {}
-    total_crashes = total_stories = total_errors = 0
+    total_crashes = total_stories = total_notes = total_errors = 0
 
     try:
         for path in paths:
-            crash_count, story_count, errors = validate_file(path, con, cache)
-            print(path.relative_to(ROOT))
-            print(f"- crashes: {crash_count if crash_count is not None else '?'}")
-            print(f"- stories: {story_count if story_count is not None else '?'}")
+            crash_count, story_count, note_count, errors = validate_file(
+                path, con, cache
+            )
+            line = (
+                f"{path.relative_to(ROOT)}:"
+                f"  crashes: {crash_count if crash_count is not None else '?'}"
+                f"    stories: {story_count if story_count is not None else '?'}"
+            )
+            if note_count:
+                line += f"    notes: {note_count}"
+            print(line)
             if errors:
-                print("- errors:")
+                print("  errors:")
                 for err in errors:
                     print(f"    - {err}")
-            else:
-                print("- errors: none")
-            print()
 
             total_crashes += crash_count or 0
             total_stories += story_count or 0
+            total_notes += note_count or 0
             total_errors += len(errors)
     finally:
         con.close()
 
     print(
-        f"summary: {len(paths)} files, {total_crashes} crashes, {total_stories} stories, {total_errors} errors"
+        f"summary: {len(paths)} files, {total_crashes} crashes, {total_stories} stories, {total_notes} notes, {total_errors} errors"
     )
     return 1 if total_errors else 0
 

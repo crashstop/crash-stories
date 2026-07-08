@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Compile every stories/<year>/<year-month>.yaml file into a single CSV.
+"""Compile every stories/<year>/<year-month>.yaml file into two CSVs.
 
 Each story file is a mapping of crash_record_id -> {notes: ..., stories: [...]}.
-Walks all story files and writes one row per story entry to
-stories/compiled-stories.csv, with the owning crash_record_id in the first
-column followed by the story fields (url, title, site, date, description, plus
-any extra keys that appear) and the crash-level `notes` as the last column.
-A crash with notes but no stories contributes a single row with only the
-crash_record_id and notes filled in; a crash with neither contributes no rows.
+Walks all story files and writes:
+  - stories.csv: one row per story entry, with the owning crash_record_id in
+    the first column followed by the story fields (url, title, site, date,
+    description, plus any extra keys that appear)
+  - notes.csv: one row per crash-level `notes` entry, with columns
+    crash_record_id, crash_yearmonth (the file's YYYY-MM stem), and content
 
-Usage: python3 compile_stories.py
+Usage: python3 wrangle_stories.py
 """
 
 import csv
@@ -22,6 +22,8 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
 STORIES = ROOT / "stories"
 OUT = ROOT / "stories.csv"
+NOTES_OUT = ROOT / "notes.csv"
+NOTES_COLUMNS = ["crash_record_id", "crash_yearmonth", "content"]
 
 PREFERRED = ["url", "title", "site", "date", "description"]
 
@@ -44,6 +46,7 @@ def main():
         return 1
 
     rows = []
+    notes_rows = []
     extra_keys = []  # any story keys beyond PREFERRED, in first-seen order
     for path in paths:
         rel = path.relative_to(ROOT)
@@ -62,16 +65,21 @@ def main():
             if not isinstance(crash, dict):
                 print(f"skip {rel}: {crash_id} value is not a mapping", file=sys.stderr)
                 continue
+            notes = crash.get("notes")
+            if isinstance(notes, str) and notes.strip():
+                notes_rows.append(
+                    {
+                        "crash_record_id": crash_id,
+                        "crash_yearmonth": path.stem,
+                        "content": notes,
+                    }
+                )
+
             stories = crash.get("stories") or []
             if not isinstance(stories, list):
                 print(
                     f"skip {rel}: {crash_id} `stories` is not a list", file=sys.stderr
                 )
-                continue
-            notes = crash.get("notes")
-            if not stories:
-                if notes:  # notes-only crash: one row so the notes still surface
-                    rows.append({"crash_record_id": crash_id, "notes": notes})
                 continue
             for story in stories:
                 if not isinstance(story, dict):
@@ -80,27 +88,29 @@ def main():
                         file=sys.stderr,
                     )
                     continue
-                row = {"crash_record_id": crash_id, "notes": notes}
+                row = {"crash_record_id": crash_id}
                 for k, v in story.items():
-                    if k == "notes":  # crash-level notes owns this column
-                        continue
                     row[k] = v
                     if k not in PREFERRED and k not in extra_keys:
                         extra_keys.append(k)
                 rows.append(row)
 
-    columns = ["crash_record_id"] + PREFERRED + extra_keys + ["notes"]
+    columns = ["crash_record_id"] + PREFERRED + extra_keys
     with open(OUT, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(columns)
         for row in rows:
             writer.writerow([to_cell(row.get(c)) for c in columns])
 
-    notes_only = sum(1 for r in rows if not r.get("url"))
+    with open(NOTES_OUT, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(NOTES_COLUMNS)
+        for row in notes_rows:
+            writer.writerow([to_cell(row[c]) for c in NOTES_COLUMNS])
+
+    print(f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories from {len(paths)} files")
     print(
-        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} rows "
-        f"({len(rows) - notes_only} stories, {notes_only} notes-only) "
-        f"from {len(paths)} files"
+        f"wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files"
     )
     return 0
 
