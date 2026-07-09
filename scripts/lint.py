@@ -28,7 +28,7 @@ By default only files modified since stories.csv was last written are checked
 
 Prints a per-file report to stdout and exits non-zero if any errors are found.
 
-Usage: python3 validate_stories.py [--all]
+Usage: python3 lint.py [--all]
 """
 
 import argparse
@@ -250,6 +250,7 @@ def main(changed_only=True):
                 f"{CSV.name} (pass --all to check every file)"
             )
         if not paths:
+            print("lint DONE")
             return 0
 
     con = sqlite3.connect(DB)
@@ -286,6 +287,7 @@ def main(changed_only=True):
         f"summary: {len(paths)} files, {totals['crashes']} crashes, {totals['stories']} stories, "
         f"{totals['notes']} notes, {totals['private_notes']} private_notes, {total_errors} errors"
     )
+    print("lint DONE")
     return 1 if total_errors else 0
 
 

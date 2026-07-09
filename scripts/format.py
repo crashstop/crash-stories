@@ -4,8 +4,13 @@
 Each file is a mapping of crash_record_id -> crash entry, where a crash entry
 holds optional `notes` and `private_notes` strings and/or an optional
 `stories` list.
+
+Only self-contained formatting happens here — nothing that needs db.sqlite or
+any other external source. Crash records keep their original file order and
+missing `site` values stay missing; chronological reordering by crash_date (a
+db lookup) and site derivation from the url's domain are reconcile.py's job.
+
 For each file it rewrites:
-  - crash records ordered chronologically by their crash_date (from db.sqlite)
   - crash-level keys in a fixed order: notes, private_notes, stories (a
     missing key stays missing; any other keys are preserved and kept after
     these)
@@ -13,7 +18,6 @@ For each file it rewrites:
     dateless stories last and date ties broken by url alphabetically
   - story-entry keys in a fixed order: url, title, site, date, description
     (any other keys are preserved and kept after these)
-  - a `site` derived from the url's domain wherever one is missing/empty
   - a blank line between consecutive story entries within a crash
   - a blank line between crashes
   - an optional top-level `__GENERAL__` list (month-wide stories not tied to
@@ -30,20 +34,17 @@ By default only files modified since stories.csv was last written are scanned
 Pass --dry to report what would be reformatted (output prefixed with '(dry)')
 without touching any file.
 
-Usage: python3 lint_stories.py [--all] [--dry]
+Usage: python3 format.py [--all] [--dry]
 """
 
 import argparse
-import sqlite3
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
 
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
-DB = ROOT / "db.sqlite"
 STORIES = ROOT / "stories"
 CSV = ROOT / "stories.csv"
 
@@ -71,25 +72,6 @@ def _represent_str(dumper, data):
 
 
 BlockDumper.add_representer(str, _represent_str)
-
-
-def derive_site(url):
-    """Domain of the url with a leading 'www.' stripped, or None if unusable."""
-    netloc = urlparse(url).netloc.strip()
-    if netloc.startswith("www."):
-        netloc = netloc[4:]
-    return netloc or None
-
-
-def crash_date(con, crash_id, cache):
-    """Return the crash's 'YYYY-MM-DD HH:MM' crash_date string, or None."""
-    if crash_id not in cache:
-        row = con.execute(
-            "SELECT crash_date FROM crashes_serving WHERE crash_record_id = ? LIMIT 1",
-            (crash_id,),
-        ).fetchone()
-        cache[crash_id] = row[0] if row and row[0] else None
-    return cache[crash_id]
 
 
 def _to_naive_utc(value):
@@ -132,17 +114,9 @@ def story_sort_key(story):
 
 
 def order_story(story):
-    """Return the story dict with keys in KEY_ORDER and a derived site if missing."""
-    result = dict(story)
-
-    url = result.get("url")
-    if not result.get("site") and isinstance(url, str) and url.strip():
-        site = derive_site(url.strip())
-        if site:
-            result["site"] = site
-
-    ordered = {k: result[k] for k in KEY_ORDER if k in result}
-    for k, v in result.items():  # keep any unexpected keys, after the known ones
+    """Return the story dict with keys in KEY_ORDER."""
+    ordered = {k: story[k] for k in KEY_ORDER if k in story}
+    for k, v in story.items():  # keep any unexpected keys, after the known ones
         ordered.setdefault(k, v)
     return ordered
 
@@ -236,25 +210,21 @@ def render_comments(comments):
     return "\n".join(lines)
 
 
-def render_file(data, con, cache):
+def render_file(data):
     """Build the formatted text for one file's {crash_id: {stories: [...]}} mapping.
 
-    Crashes are ordered by crash_date (unknown crashes last); stories within a
-    crash are ordered by story_sort_key. A __GENERAL__ list goes first, a
-    __COMMENTS__ list last.
+    Crashes render in the mapping's iteration order (reconcile.py passes a
+    chronologically reordered mapping); stories within a crash are ordered by
+    story_sort_key. A __GENERAL__ list goes first, a __COMMENTS__ list last,
+    regardless of where they sit in the mapping.
     """
-
-    def crash_key(crash_id):
-        cd = crash_date(con, crash_id, cache)
-        return (cd is None, cd or "", crash_id)
-
-    crashes = {k: v for k, v in data.items() if k not in (COMMENTS_KEY, GENERAL_KEY)}
     blocks = []
     if GENERAL_KEY in data:
         blocks.append(render_general(data[GENERAL_KEY] or []))
     blocks += [
-        render_crash(crash_id, crashes[crash_id])
-        for crash_id in sorted(crashes, key=crash_key)
+        render_crash(crash_id, crash)
+        for crash_id, crash in data.items()
+        if crash_id not in (COMMENTS_KEY, GENERAL_KEY)
     ]
     if COMMENTS_KEY in data:
         blocks.append(render_comments(data[COMMENTS_KEY] or []))
@@ -293,10 +263,6 @@ def valid_structure(data):
 
 def main(changed_only=True, dry=False):
     tag = "(dry) " if dry else ""
-    if not DB.exists():
-        print(f"error: database not found at {DB}", file=sys.stderr)
-        return 2
-
     paths = sorted(STORIES.rglob("*.yaml"))
     if not paths:
         print(
@@ -313,39 +279,35 @@ def main(changed_only=True, dry=False):
                 f"{CSV.name} (pass --all to scan every file)"
             )
         if not paths:
+            print(f"{tag}format DONE: 0 file(s) scanned, 0 reformatted")
             return 0
 
-    con = sqlite3.connect(DB)
-    cache = {}
     changed = 0
-    try:
-        for path in paths:
-            rel = path.relative_to(ROOT)
-            try:
-                data = yaml.safe_load(path.read_text())
-            except yaml.YAMLError as exc:
-                print(
-                    f"skip {rel}: invalid YAML ({exc.__class__.__name__})",
-                    file=sys.stderr,
-                )
-                continue
+    for path in paths:
+        rel = path.relative_to(ROOT)
+        try:
+            data = yaml.safe_load(path.read_text())
+        except yaml.YAMLError as exc:
+            print(
+                f"skip {rel}: invalid YAML ({exc.__class__.__name__})",
+                file=sys.stderr,
+            )
+            continue
 
-            if not valid_structure(data):
-                print(f"skip {rel}: unexpected structure", file=sys.stderr)
-                continue
+        if not valid_structure(data):
+            print(f"skip {rel}: unexpected structure", file=sys.stderr)
+            continue
 
-            new_text = render_file(data, con, cache)
-            if new_text != path.read_text():
-                if not dry:
-                    path.write_text(new_text)
-                print(f"{tag}formatted {rel}")
-                changed += 1
-            else:
-                print(f"{tag}unchanged {rel}")
-    finally:
-        con.close()
+        new_text = render_file(data)
+        if new_text != path.read_text():
+            if not dry:
+                path.write_text(new_text)
+            print(f"{tag}formatted {rel}")
+            changed += 1
+        else:
+            print(f"{tag}unchanged {rel}")
 
-    print(f"{tag}done: {changed} file(s) reformatted, {len(paths)} scanned")
+    print(f"{tag}format DONE: {len(paths)} file(s) scanned, {changed} reformatted")
     return 0
 
 

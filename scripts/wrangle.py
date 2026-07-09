@@ -20,7 +20,7 @@ is compiled into stories.csv with a blank crash_record_id.
 Pass --dry to report what would be written (output prefixed with '(dry)')
 without touching either CSV.
 
-Usage: python3 wrangle_stories.py [--dry]
+Usage: python3 wrangle.py [--dry]
 """
 
 import argparse
@@ -177,6 +177,7 @@ def main(dry=False):
         f"{tag}wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files "
         f"({change_note(prior_notes, len(notes_rows))})"
     )
+    print("wrangle DONE")
     return 0
 
 

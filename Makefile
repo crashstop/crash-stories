@@ -1,12 +1,16 @@
-.PHONY: all validate lint wrangle
+.PHONY: all format lint wrangle
 
-all: validate lint wrangle
+all: format lint wrangle
 
-validate:
-	python3 scripts/validate_stories.py
+format:
+	python3 scripts/format.py
 
 lint:
-	python3 scripts/lint_stories.py
+	python3 scripts/lint.py
 
 wrangle:
-	python3 scripts/wrangle_stories.py
+	python3 scripts/wrangle.py
+
+
+reconcile:
+	python3 scripts/reconcile.py
