@@ -31,17 +31,20 @@ import argparse
 import csv
 import sys
 from datetime import date, datetime
-from pathlib import Path
 
-import yaml
+from common import (
+    COMMENTS_KEY,
+    GENERAL_KEY,
+    ROOT,
+    STORIES_CSV,
+    iter_stories,
+    load_story_file,
+    story_paths,
+)
 
-ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
-STORIES = ROOT / "stories"
-OUT = ROOT / "stories.csv"
+OUT = STORIES_CSV
 NOTES_OUT = ROOT / "notes.csv"
 NOTES_COLUMNS = ["crash_record_id", "crash_yearmonth", "content"]
-COMMENTS_KEY = "__COMMENTS__"
-GENERAL_KEY = "__GENERAL__"
 
 PREFERRED = ["date", "url", "title", "site", "description"]
 
@@ -74,72 +77,36 @@ def change_note(before, after):
 
 def main(dry=False):
     tag = "(dry) " if dry else ""
-    paths = sorted(STORIES.rglob("*.yaml"))
-    if not paths:
-        print(
-            f"no story files found under {STORIES.relative_to(ROOT)}/", file=sys.stderr
-        )
-        return 1
+    paths = story_paths(changed_only=False)
 
     rows = []
     notes_rows = []
     extra_keys = []  # any story keys beyond PREFERRED, in first-seen order
     for path in paths:
-        rel = path.relative_to(ROOT)
-        try:
-            data = yaml.safe_load(path.read_text())
-        except yaml.YAMLError as exc:
-            print(
-                f"skip {rel}: invalid YAML ({exc.__class__.__name__})", file=sys.stderr
-            )
-            continue
-        if not isinstance(data, dict):
-            print(f"skip {rel}: unexpected structure", file=sys.stderr)
+        data = load_story_file(path)
+        if data is None:
             continue
 
         for crash_id, crash in data.items():
-            if crash_id == COMMENTS_KEY:  # documenter notes, not a crash record
+            if crash_id in (COMMENTS_KEY, GENERAL_KEY):
                 continue
-            if crash_id == GENERAL_KEY:  # month-wide stories with no crash record
-                out_id = ""
-                stories = crash or []
-            else:
-                out_id = crash_id
-                if not isinstance(crash, dict):
-                    print(
-                        f"skip {rel}: {crash_id} value is not a mapping",
-                        file=sys.stderr,
-                    )
-                    continue
-                notes = crash.get("notes")
-                if isinstance(notes, str) and notes.strip():
-                    notes_rows.append(
-                        {
-                            "crash_record_id": crash_id,
-                            "crash_yearmonth": path.stem,
-                            "content": notes,
-                        }
-                    )
-
-                stories = crash.get("stories") or []
-            if not isinstance(stories, list):
-                print(
-                    f"skip {rel}: {crash_id} `stories` is not a list", file=sys.stderr
+            notes = crash.get("notes")
+            if isinstance(notes, str) and notes.strip():
+                notes_rows.append(
+                    {
+                        "crash_record_id": crash_id,
+                        "crash_yearmonth": path.stem,
+                        "content": notes,
+                    }
                 )
-                continue
-            for story in stories:
-                if not isinstance(story, dict):
-                    print(
-                        f"skip {rel}: {crash_id} has a non-mapping story entry",
-                        file=sys.stderr,
-                    )
-                    continue
-                row = {"crash_record_id": out_id}
-                for k, v in story.items():
-                    row[k] = v
-                    if k not in PREFERRED and k not in extra_keys:
-                        extra_keys.append(k)
-                rows.append(row)
+
+        for crash_id, story in iter_stories(data):
+            row = {"crash_record_id": crash_id}
+            for k, v in story.items():
+                row[k] = v
+                if k not in PREFERRED and k not in extra_keys:
+                    extra_keys.append(k)
+            rows.append(row)
 
     # to_cell renders dates/datetimes as ISO strings, so mixed date types
     # still compare chronologically (and match the written cell values)
@@ -152,7 +119,10 @@ def main(dry=False):
 
     pair_counts = {}  # (crash_record_id, url) -> occurrences, across all files
     for row in rows:
-        pair = (row["crash_record_id"], to_cell(row.get("url")))
+        url = row.get("url")
+        if not (isinstance(url, str) and url.strip()):
+            continue  # url-less stories are lint's problem; nothing to key on
+        pair = (row["crash_record_id"], url)
         pair_counts[pair] = pair_counts.get(pair, 0) + 1
     for crash_id, url in sorted(p for p, n in pair_counts.items() if n > 1):
         print(f"WARNING: Duplicate crash id + url: {crash_id}: {url}", file=sys.stderr)

@@ -36,35 +36,10 @@ import re
 import sqlite3
 import sys
 from datetime import date, datetime
-from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
-DB = ROOT / "db.sqlite"
-STORIES = ROOT / "stories"
-CSV = ROOT / "stories.csv"
-COMMENTS_KEY = "__COMMENTS__"
-GENERAL_KEY = "__GENERAL__"
-
-
-def modified_since_csv(paths):
-    """Paths modified after stories.csv; all of them when stories.csv is absent."""
-    if not CSV.exists():
-        return paths
-    cutoff = CSV.stat().st_mtime
-    return [p for p in paths if p.stat().st_mtime > cutoff]
-
-
-def crash_date(con, crash_id, cache):
-    """Return the crash's 'YYYY-MM-DD HH:MM' crash_date, or None if not in db."""
-    if crash_id not in cache:
-        row = con.execute(
-            "SELECT crash_date FROM crashes_serving WHERE crash_record_id = ? LIMIT 1",
-            (crash_id,),
-        ).fetchone()
-        cache[crash_id] = row[0] if row and row[0] else None
-    return cache[crash_id]
+from common import COMMENTS_KEY, DB, GENERAL_KEY, ROOT, crash_date, story_paths
 
 
 def valid_story_date(value):
@@ -234,24 +209,10 @@ def main(changed_only=True):
         print(f"error: database not found at {DB}", file=sys.stderr)
         return 2
 
-    paths = sorted(STORIES.rglob("*.yaml"))
+    paths = story_paths(changed_only, verb="check", verbing="checking")
     if not paths:
-        print(
-            f"no story files found under {STORIES.relative_to(ROOT)}/", file=sys.stderr
-        )
-        return 1
-
-    if changed_only:
-        all_count = len(paths)
-        paths = modified_since_csv(paths)
-        if len(paths) < all_count:
-            print(
-                f"checking {len(paths)} of {all_count} story files modified since "
-                f"{CSV.name} (pass --all to check every file)"
-            )
-        if not paths:
-            print("lint DONE")
-            return 0
+        print("lint DONE")
+        return 0
 
     con = sqlite3.connect(DB)
     cache = {}

@@ -2,7 +2,7 @@ fcac5affb38f8babef19dad24549b87e37a5198fbbaac3882a4316b01fa276c8f346946b2f331d4a
   stories:
     - url: https://www.fox32chicago.com/news/driver-dies-high-speed-crash-chicago-light-pole
       title: Driver dies in high-speed crash into Chicago light pole
-      site: fox32chicago.com
+      site: FOX 32 Chicago
       date: 2026-05-08
       description: A man was killed after speeding his car into a light pole Thursday night in the Lawndale neighborhood.
 
@@ -10,7 +10,7 @@ fcac5affb38f8babef19dad24549b87e37a5198fbbaac3882a4316b01fa276c8f346946b2f331d4a
   stories:
     - url: https://wgntv.com/news/chicago-news/7-people-suffer-minor-injuries-in-two-car-crash-in-hermosa-late-saturday-night-according-to-chicago-police/
       title: 7 people suffer minor injuries in two-car crash in Hermosa late Saturday night, according to Chicago police
-      site: wgntv.com
+      site: WGN-TV
       date: 2026-05-10
       description: |
         Seven people suffered minor injuries in a two-car crash late Saturday night in Hermosa on the city’s Northwest Side, according to police. All were taken to Stroger Hospital and listed in good condition.
@@ -23,7 +23,7 @@ fcac5affb38f8babef19dad24549b87e37a5198fbbaac3882a4316b01fa276c8f346946b2f331d4a
   stories:
     - url: https://www.cbsnews.com/chicago/news/lisa-barber-dies-humboldt-park-hit-and-run/
       title: Woman dies two weeks after hit-and-run crash in Humboldt Park
-      site: cbsnews.com
+      site: CBS News
       date: 2026-05-25T11:36:17-0500
       description: Lisa Barber, 45, was critically injured by a hit-and-run driver in the Humboldt Park neighborhood earlier this month has died.
 
@@ -31,7 +31,7 @@ fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23
   stories:
     - url: https://abc7chicago.com/post/chicago-crime-today-man-killed-hit-run-crash-68th-pulaski-west-lawn-police-searching-orange-honda/19092362/
       title: Father of 4 killed in hit-and-run while changing tire in West Lawn, family says
-      site: abc7chicago.com
+      site: ABC 7 Chicago
       date: '2026-05-13T09:42:00Z'
       description: The victim's nephew witnessed the deadly crash while helping the father of four change a tire in Chicago.
 
@@ -39,13 +39,13 @@ fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23
   stories:
     - url: https://abc7chicago.com/post/bicyclist-critically-injured-marquette-park-hit-run-crash-south-kedzie-avenue-chicago-police/19106519/
       title: 'Bicyclist critically injured in SW Side hit-and-run crash: CPD'
-      site: abc7chicago.com
+      site: ABC 7 Chicago
       date: '2026-05-15T15:59:00Z'
       description: A man riding a bicycle was critically injured in a hit-and-run crash on Chicago's Southwest Side Friday morning, Chicago police said.
 
     - url: https://chi.streetsblog.org/2026/05/18/hit-and-run-drivers-fatally-struck-two-people-and-critically-injured-a-third-on-chicago-streets-last-week
       title: Hit-and-run drivers fatally struck two people, and critically injured two others, on Chicago streets last week
-      site: chi.streetsblog.org
+      site: Chicago Streetsblog
       date: '2026-05-19T02:41:02+00:00'
       description: In one of the cases, a semi driver struck and critically injured a bike rider, 37, and left the scene, only a block away from from where another hit-and-run driver killed delivery cyclist Damian Gomez, 18, on April 5.
 
@@ -57,14 +57,14 @@ fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23
   stories:
     - url: https://chi.streetsblog.org/2026/05/26/driver-who-fatally-struck-woman-62-near-belmont-kilbourn-cited-for-failure-to-yield
       title: Driver who fatally struck Illeana Crisanto, 62, near Belmont/Kilbourn, cited for failure to yield
-      site: chi.streetsblog.org
+      site: Chicago Streetsblog
       date: '2026-05-26T21:34:20+00:00'
       description: |
         A 35-year-old female Nissan driver struck and killed Illeana Crisanto, 62, on Saturday evening near Belmont and Kilbourn Avenues on the Northwest Side.
 
     - url: https://blockclubchicago.org/2026/06/03/woman-killed-at-busy-nw-side-intersection-where-planned-traffic-light-was-never-installed/
       title: Woman Killed At Busy NW Side Intersection Where Planned Traffic Light Was Never Installed
-      site: blockclubchicago.org
+      site: Block Club Chicago
       date: '2026-06-03T13:00:00+00:00'
       description: A driver struck Illeana Crisanto, a 62-year-old mother of three from Skokie, as she walked near Belmont and Kilbourn avenues, where the city has planned to put in a traffic light for years — but hasn't.
 
@@ -76,7 +76,7 @@ fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23
   stories:
     - url: https://abc7chicago.com/post/chicago-crash-64-year-old-woman-killed-hit-run-grand-crossing-cpd-mclaren-car-seen-scene/19161201/
       title: Woman killed in hit-and-run crash in Grand Crossing, Chicago police say
-      site: abc7chicago.com
+      site: ABC 7 Chicago
       date: '2026-05-24T11:10:00Z'
       description: A woman died in a hit-and-run crash in the Grand Crossing neighborhood on Sunday, Chicago police said.
 

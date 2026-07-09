@@ -40,26 +40,18 @@ Usage: python3 format.py [--all] [--dry]
 import argparse
 import sys
 from datetime import date, datetime, timezone
-from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
-STORIES = ROOT / "stories"
-CSV = ROOT / "stories.csv"
-
-
-def modified_since_csv(paths):
-    """Paths modified after stories.csv; all of them when stories.csv is absent."""
-    if not CSV.exists():
-        return paths
-    cutoff = CSV.stat().st_mtime
-    return [p for p in paths if p.stat().st_mtime > cutoff]
-
+from common import (
+    COMMENTS_KEY,
+    GENERAL_KEY,
+    load_story_file,
+    rewrite_file,
+    story_paths,
+)
 
 KEY_ORDER = ["url", "title", "site", "date", "description"]
-COMMENTS_KEY = "__COMMENTS__"
-GENERAL_KEY = "__GENERAL__"
 
 
 class BlockDumper(yaml.SafeDumper):
@@ -231,81 +223,16 @@ def render_file(data):
     return "\n\n".join(blocks) + "\n"
 
 
-def valid_structure(data):
-    """True when data is {crash_id: mapping} plus optional __COMMENTS__ (string
-    list) and __GENERAL__ (story-mapping list) keys."""
-    if not isinstance(data, dict):
-        return False
-    for key, value in data.items():
-        if key == COMMENTS_KEY:
-            comments = value or []
-            if not isinstance(comments, list) or not all(
-                isinstance(c, str) for c in comments
-            ):
-                return False
-            continue
-        if key == GENERAL_KEY:
-            general = value or []
-            if not isinstance(general, list) or not all(
-                isinstance(s, dict) for s in general
-            ):
-                return False
-            continue
-        if not isinstance(value, dict):
-            return False
-        stories = value.get("stories") or []
-        if not isinstance(stories, list) or not all(
-            isinstance(s, dict) for s in stories
-        ):
-            return False
-    return True
-
-
 def main(changed_only=True, dry=False):
     tag = "(dry) " if dry else ""
-    paths = sorted(STORIES.rglob("*.yaml"))
-    if not paths:
-        print(
-            f"no story files found under {STORIES.relative_to(ROOT)}/", file=sys.stderr
-        )
-        return 1
-
-    if changed_only:
-        all_count = len(paths)
-        paths = modified_since_csv(paths)
-        if len(paths) < all_count:
-            print(
-                f"{tag}scanning {len(paths)} of {all_count} story files modified since "
-                f"{CSV.name} (pass --all to scan every file)"
-            )
-        if not paths:
-            print(f"{tag}format DONE: 0 file(s) scanned, 0 reformatted")
-            return 0
+    paths = story_paths(changed_only, tag=tag)
 
     changed = 0
     for path in paths:
-        rel = path.relative_to(ROOT)
-        try:
-            data = yaml.safe_load(path.read_text())
-        except yaml.YAMLError as exc:
-            print(
-                f"skip {rel}: invalid YAML ({exc.__class__.__name__})",
-                file=sys.stderr,
-            )
+        data = load_story_file(path)
+        if data is None:
             continue
-
-        if not valid_structure(data):
-            print(f"skip {rel}: unexpected structure", file=sys.stderr)
-            continue
-
-        new_text = render_file(data)
-        if new_text != path.read_text():
-            if not dry:
-                path.write_text(new_text)
-            print(f"{tag}formatted {rel}")
-            changed += 1
-        else:
-            print(f"{tag}unchanged {rel}")
+        changed += rewrite_file(path, render_file(data), "formatted", dry, tag)
 
     print(f"{tag}format DONE: {len(paths)} file(s) scanned, {changed} reformatted")
     return 0

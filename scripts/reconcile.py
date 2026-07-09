@@ -27,31 +27,20 @@ import sqlite3
 import sys
 from urllib.parse import urlparse
 
-import yaml
-
-from format import (
+from common import (
     COMMENTS_KEY,
+    DB,
     GENERAL_KEY,
     ROOT,
-    STORIES,
-    modified_since_csv,
-    render_file,
-    valid_structure,
+    crash_date,
+    iter_stories,
+    load_story_file,
+    rewrite_file,
+    story_paths,
 )
+from format import render_file
 
-DB = ROOT / "db.sqlite"
 LOOKUP_CSV = ROOT / "reference" / "domain-lookup.csv"
-
-
-def crash_date(con, crash_id, cache):
-    """Return the crash's 'YYYY-MM-DD HH:MM' crash_date string, or None."""
-    if crash_id not in cache:
-        row = con.execute(
-            "SELECT crash_date FROM crashes_serving WHERE crash_record_id = ? LIMIT 1",
-            (crash_id,),
-        ).fetchone()
-        cache[crash_id] = row[0] if row and row[0] else None
-    return cache[crash_id]
 
 
 def derive_site(url):
@@ -96,16 +85,12 @@ def fill_sites(data, lookup):
     Uses the url's domain, swapped for its display name from
     reference/domain-lookup.csv when the domain has a row there.
     """
-    for key, value in data.items():
-        if key == COMMENTS_KEY:
-            continue
-        stories = value or [] if key == GENERAL_KEY else value.get("stories") or []
-        for story in stories:
-            url = story.get("url")
-            if not story.get("site") and isinstance(url, str) and url.strip():
-                site = derive_site(url.strip())
-                if site:
-                    story["site"] = lookup.get(normalize_domain(site), site)
+    for _, story in iter_stories(data):
+        url = story.get("url")
+        if not story.get("site") and isinstance(url, str) and url.strip():
+            site = derive_site(url.strip())
+            if site:
+                story["site"] = lookup.get(normalize_domain(site), site)
 
 
 def reorder_crashes(data, con, cache):
@@ -133,23 +118,7 @@ def main(changed_only=True, dry=False):
         print(f"error: database not found at {DB}", file=sys.stderr)
         return 2
 
-    paths = sorted(STORIES.rglob("*.yaml"))
-    if not paths:
-        print(
-            f"no story files found under {STORIES.relative_to(ROOT)}/", file=sys.stderr
-        )
-        return 1
-
-    if changed_only:
-        all_count = len(paths)
-        paths = modified_since_csv(paths)
-        if len(paths) < all_count:
-            print(
-                f"{tag}scanning {len(paths)} of {all_count} story files modified since "
-                f"stories.csv (pass --all to scan every file)"
-            )
-        if not paths:
-            return 0
+    paths = story_paths(changed_only, tag=tag)
 
     lookup = load_lookup()
     con = sqlite3.connect(DB)
@@ -157,33 +126,16 @@ def main(changed_only=True, dry=False):
     changed = 0
     try:
         for path in paths:
-            rel = path.relative_to(ROOT)
-            try:
-                data = yaml.safe_load(path.read_text())
-            except yaml.YAMLError as exc:
-                print(
-                    f"skip {rel}: invalid YAML ({exc.__class__.__name__})",
-                    file=sys.stderr,
-                )
+            data = load_story_file(path)
+            if data is None:
                 continue
-
-            if not valid_structure(data):
-                print(f"skip {rel}: unexpected structure", file=sys.stderr)
-                continue
-
             fill_sites(data, lookup)
             new_text = render_file(reorder_crashes(data, con, cache))
-            if new_text != path.read_text():
-                if not dry:
-                    path.write_text(new_text)
-                print(f"{tag}reconciled {rel}")
-                changed += 1
-            else:
-                print(f"{tag}unchanged {rel}")
+            changed += rewrite_file(path, new_text, "reconciled", dry, tag)
     finally:
         con.close()
 
-    print(f"{tag}reconcile DONE: {len(paths)} file(s)  scanned, {changed} reconciled")
+    print(f"{tag}reconcile DONE: {len(paths)} file(s) scanned, {changed} reconciled")
     return 0
 
 
