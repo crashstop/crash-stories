@@ -50,14 +50,29 @@ fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23
       description: In one of the cases, a semi driver struck and critically injured a bike rider, 37, and left the scene, only a block away from from where another hit-and-run driver killed delivery cyclist Damian Gomez, 18, on April 5.
 
 9960ec6815f79327772030df7f06633701153ce854d3afb1cf6bd638639f2e75529e8b5318c572d380a73a943a6ca5557a0e3232342049890993c80f73338bed:
+  private_notes: |
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2026-05-23 17:15
+    4502 W BELMONT AVE irving park
   stories:
-    - url: https://abc7chicago.com/post/chicago-pedestrian-crash-62-year-old-woman-hit-killed-vehicle-west-belmont-avenue-irving-park-police-say/19159255/
-      title: 62-year-old woman hit, killed by vehicle in Irving Park, Chicago police say
-      site: abc7chicago.com
-      date: '2026-05-24T03:08:24Z'
-      description: A pedestrian, a 62-year-old woman, was hit and killed by a vehicle Saturday evening on the city's Northwest Side, Chicago police said.
+    - url: https://chi.streetsblog.org/2026/05/26/driver-who-fatally-struck-woman-62-near-belmont-kilbourn-cited-for-failure-to-yield
+      title: Driver who fatally struck Illeana Crisanto, 62, near Belmont/Kilbourn, cited for failure to yield
+      site: chi.streetsblog.org
+      date: '2026-05-26T21:34:20+00:00'
+      description: |
+        A 35-year-old female Nissan driver struck and killed Illeana Crisanto, 62, on Saturday evening near Belmont and Kilbourn Avenues on the Northwest Side.
+
+    - url: https://blockclubchicago.org/2026/06/03/woman-killed-at-busy-nw-side-intersection-where-planned-traffic-light-was-never-installed/
+      title: Woman Killed At Busy NW Side Intersection Where Planned Traffic Light Was Never Installed
+      site: blockclubchicago.org
+      date: '2026-06-03T13:00:00+00:00'
+      description: A driver struck Illeana Crisanto, a 62-year-old mother of three from Skokie, as she walked near Belmont and Kilbourn avenues, where the city has planned to put in a traffic light for years — but hasn't.
 
 6cb21c37655a4626419583522bbf9384af3ab59c45a729bc0ccb76c6a287d3f37dfe0fb3b749dd42f54d9227bb4a3f416135569a99465371300f6ddf98563599:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2026-05-24 01:58
+    6900 S STONY ISLAND AVE south shore
   stories:
     - url: https://abc7chicago.com/post/chicago-crash-64-year-old-woman-killed-hit-run-grand-crossing-cpd-mclaren-car-seen-scene/19161201/
       title: Woman killed in hit-and-run crash in Grand Crossing, Chicago police say

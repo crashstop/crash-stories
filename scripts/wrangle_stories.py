@@ -131,8 +131,10 @@ def main():
         for row in notes_rows:
             writer.writerow([to_cell(row[c]) for c in NOTES_COLUMNS])
 
+    crashes_with_stories = {row["crash_record_id"] for row in rows}
     print(
-        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories from {len(paths)} files "
+        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories across "
+        f"{len(crashes_with_stories)} crash records from {len(paths)} files "
         f"({change_note(prior_stories, len(rows))})"
     )
     print(
