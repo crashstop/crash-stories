@@ -5,12 +5,17 @@ Each story file is a mapping of crash_record_id -> {notes: ..., stories: [...]}.
 Walks all story files and writes:
   - stories.csv: one row per story entry, with the owning crash_record_id in
     the first column followed by the story fields (url, title, site, date,
-    description, plus any extra keys that appear)
+    description, plus any extra keys that appear), ordered by date,
+    crash_record_id, site, title
   - notes.csv: one row per crash-level `notes` entry, with columns
-    crash_record_id, crash_yearmonth (the file's YYYY-MM stem), and content
+    crash_record_id, crash_yearmonth (the file's YYYY-MM stem), and content,
+    ordered by crash_yearmonth, crash_record_id
 
 The crash-level `private_notes` field is deliberately not compiled into
-either CSV.
+either CSV. A top-level `__COMMENTS__` key (a list of free-text documenter
+notes about incidents with no crash_record_id) is ignored entirely. A
+top-level `__GENERAL__` key (month-wide stories not tied to any crash record)
+is compiled into stories.csv with a blank crash_record_id.
 
 Usage: python3 wrangle_stories.py
 """
@@ -27,6 +32,8 @@ STORIES = ROOT / "stories"
 OUT = ROOT / "stories.csv"
 NOTES_OUT = ROOT / "notes.csv"
 NOTES_COLUMNS = ["crash_record_id", "crash_yearmonth", "content"]
+COMMENTS_KEY = "__COMMENTS__"
+GENERAL_KEY = "__GENERAL__"
 
 PREFERRED = ["url", "title", "site", "date", "description"]
 
@@ -82,20 +89,30 @@ def main():
             continue
 
         for crash_id, crash in data.items():
-            if not isinstance(crash, dict):
-                print(f"skip {rel}: {crash_id} value is not a mapping", file=sys.stderr)
+            if crash_id == COMMENTS_KEY:  # documenter notes, not a crash record
                 continue
-            notes = crash.get("notes")
-            if isinstance(notes, str) and notes.strip():
-                notes_rows.append(
-                    {
-                        "crash_record_id": crash_id,
-                        "crash_yearmonth": path.stem,
-                        "content": notes,
-                    }
-                )
+            if crash_id == GENERAL_KEY:  # month-wide stories with no crash record
+                out_id = ""
+                stories = crash or []
+            else:
+                out_id = crash_id
+                if not isinstance(crash, dict):
+                    print(
+                        f"skip {rel}: {crash_id} value is not a mapping",
+                        file=sys.stderr,
+                    )
+                    continue
+                notes = crash.get("notes")
+                if isinstance(notes, str) and notes.strip():
+                    notes_rows.append(
+                        {
+                            "crash_record_id": crash_id,
+                            "crash_yearmonth": path.stem,
+                            "content": notes,
+                        }
+                    )
 
-            stories = crash.get("stories") or []
+                stories = crash.get("stories") or []
             if not isinstance(stories, list):
                 print(
                     f"skip {rel}: {crash_id} `stories` is not a list", file=sys.stderr
@@ -108,12 +125,21 @@ def main():
                         file=sys.stderr,
                     )
                     continue
-                row = {"crash_record_id": crash_id}
+                row = {"crash_record_id": out_id}
                 for k, v in story.items():
                     row[k] = v
                     if k not in PREFERRED and k not in extra_keys:
                         extra_keys.append(k)
                 rows.append(row)
+
+    # to_cell renders dates/datetimes as ISO strings, so mixed date types
+    # still compare chronologically (and match the written cell values)
+    rows.sort(
+        key=lambda r: tuple(
+            to_cell(r.get(c)) for c in ("date", "crash_record_id", "site", "title")
+        )
+    )
+    notes_rows.sort(key=lambda r: (r["crash_yearmonth"], r["crash_record_id"]))
 
     prior_stories = count_records(OUT)
     prior_notes = count_records(NOTES_OUT)
@@ -131,10 +157,14 @@ def main():
         for row in notes_rows:
             writer.writerow([to_cell(row[c]) for c in NOTES_COLUMNS])
 
-    crashes_with_stories = {row["crash_record_id"] for row in rows}
+    # __GENERAL__ rows carry a blank id, so they never count as a crash record
+    crashes_with_stories = {
+        row["crash_record_id"] for row in rows if row["crash_record_id"]
+    }
+    general_count = sum(1 for row in rows if not row["crash_record_id"])
     print(
-        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories across "
-        f"{len(crashes_with_stories)} crash records from {len(paths)} files "
+        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories ({general_count} general) "
+        f"across {len(crashes_with_stories)} crash records from {len(paths)} files "
         f"({change_note(prior_stories, len(rows))})"
     )
     print(

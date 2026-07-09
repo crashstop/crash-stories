@@ -16,6 +16,12 @@ For each file it rewrites:
   - a `site` derived from the url's domain wherever one is missing/empty
   - a blank line between consecutive story entries within a crash
   - a blank line between crashes
+  - an optional top-level `__GENERAL__` list (month-wide stories not tied to
+    any crash record, same schema as crash `stories` entries) moved to the top
+    of the file, its stories ordered and key-ordered like crash stories
+  - an optional top-level `__COMMENTS__` list (free-text documenter notes
+    about incidents with no crash_record_id) moved to the bottom of the file,
+    its entries kept in their original order
 
 Content is otherwise preserved. Idempotent: running twice yields the same output.
 
@@ -47,7 +53,10 @@ def modified_since_csv(paths):
     cutoff = CSV.stat().st_mtime
     return [p for p in paths if p.stat().st_mtime > cutoff]
 
+
 KEY_ORDER = ["url", "title", "site", "date", "description"]
+COMMENTS_KEY = "__COMMENTS__"
+GENERAL_KEY = "__GENERAL__"
 
 
 class BlockDumper(yaml.SafeDumper):
@@ -136,8 +145,8 @@ def order_story(story):
     return ordered
 
 
-def render_story(story):
-    """Dump one story mapping and indent it as a '    - ...' block sequence item."""
+def render_story(story, indent="    "):
+    """Dump one story mapping and indent it as a '<indent>- ...' block sequence item."""
     dumped = yaml.dump(
         order_story(story),
         Dumper=BlockDumper,
@@ -147,9 +156,9 @@ def render_story(story):
         width=4096,
     ).rstrip("\n")
     lines = dumped.split("\n")
-    out = ["    - " + lines[0]]
-    # uniform +6 keeps block scalars valid; empty lines stay empty (no trailing ws)
-    out += ["      " + line if line else "" for line in lines[1:]]
+    out = [indent + "- " + lines[0]]
+    # uniform +2 keeps block scalars valid; empty lines stay empty (no trailing ws)
+    out += [indent + "  " + line if line else "" for line in lines[1:]]
     return "\n".join(out)
 
 
@@ -196,22 +205,88 @@ def render_crash(crash_id, crash):
     return "\n".join(lines)
 
 
+def render_general(stories):
+    """Render the top-level __GENERAL__ story list, ordered like crash stories."""
+    if not stories:
+        return f"{GENERAL_KEY}: []"
+    body = "\n\n".join(
+        render_story(s, indent="  ") for s in sorted(stories, key=story_sort_key)
+    )
+    return f"{GENERAL_KEY}:\n{body}"
+
+
+def render_comments(comments):
+    """Render the top-level __COMMENTS__ string list, entries in original order."""
+    if not comments:
+        return f"{COMMENTS_KEY}: []"
+    lines = [f"{COMMENTS_KEY}:"]
+    for comment in comments:
+        dumped = yaml.dump(
+            [comment],
+            Dumper=BlockDumper,
+            allow_unicode=True,
+            default_flow_style=False,
+            width=4096,
+        ).rstrip("\n")
+        item = dumped.split("\n")
+        lines.append("  " + item[0])
+        lines += ["  " + line if line else "" for line in item[1:]]
+    return "\n".join(lines)
+
+
 def render_file(data, con, cache):
     """Build the formatted text for one file's {crash_id: {stories: [...]}} mapping.
 
     Crashes are ordered by crash_date (unknown crashes last); stories within a
-    crash are ordered by story_sort_key.
+    crash are ordered by story_sort_key. A __GENERAL__ list goes first, a
+    __COMMENTS__ list last.
     """
 
     def crash_key(crash_id):
         cd = crash_date(con, crash_id, cache)
         return (cd is None, cd or "", crash_id)
 
-    blocks = [
-        render_crash(crash_id, data[crash_id])
-        for crash_id in sorted(data, key=crash_key)
+    crashes = {k: v for k, v in data.items() if k not in (COMMENTS_KEY, GENERAL_KEY)}
+    blocks = []
+    if GENERAL_KEY in data:
+        blocks.append(render_general(data[GENERAL_KEY] or []))
+    blocks += [
+        render_crash(crash_id, crashes[crash_id])
+        for crash_id in sorted(crashes, key=crash_key)
     ]
+    if COMMENTS_KEY in data:
+        blocks.append(render_comments(data[COMMENTS_KEY] or []))
     return "\n\n".join(blocks) + "\n"
+
+
+def valid_structure(data):
+    """True when data is {crash_id: mapping} plus optional __COMMENTS__ (string
+    list) and __GENERAL__ (story-mapping list) keys."""
+    if not isinstance(data, dict):
+        return False
+    for key, value in data.items():
+        if key == COMMENTS_KEY:
+            comments = value or []
+            if not isinstance(comments, list) or not all(
+                isinstance(c, str) for c in comments
+            ):
+                return False
+            continue
+        if key == GENERAL_KEY:
+            general = value or []
+            if not isinstance(general, list) or not all(
+                isinstance(s, dict) for s in general
+            ):
+                return False
+            continue
+        if not isinstance(value, dict):
+            return False
+        stories = value.get("stories") or []
+        if not isinstance(stories, list) or not all(
+            isinstance(s, dict) for s in stories
+        ):
+            return False
+    return True
 
 
 def main(changed_only=True):
@@ -252,12 +327,7 @@ def main(changed_only=True):
                 )
                 continue
 
-            if not isinstance(data, dict) or not all(
-                isinstance(v, dict)
-                and isinstance(v.get("stories") or [], list)
-                and all(isinstance(s, dict) for s in v.get("stories") or [])
-                for v in data.values()
-            ):
+            if not valid_structure(data):
                 print(f"skip {rel}: unexpected structure", file=sys.stderr)
                 continue
 

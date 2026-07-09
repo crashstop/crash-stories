@@ -10,10 +10,18 @@ For every YAML file it checks:
   - each crash_record_id exists in db.sqlite (crashes_serving)
   - each crash_record_id sits in the file for its crash month, i.e. the crash's
     crash_date year-month matches the file's <year-month>.yaml name
-  - each story entry has at least a title and a url
+  - each story entry has at least a title, a url, and a date (at minimum
+    YYYY-MM-DD; optionally a full ISO timestamp)
   - no story url is duplicated within a single crash_record_id
     (the same url appearing under *different* crashes is fine — a story may
     cover more than one crash)
+  - an optional top-level `__COMMENTS__` key (free-text documenter notes about
+    incidents with no crash_record_id) is a list of strings; it is not treated
+    as a crash entry
+  - an optional top-level `__GENERAL__` key (month-wide stories not tied to
+    any crash record) is a list of story entries validated like crash
+    `stories`, and each story's date falls within the file's month (a
+    2026-04-21 story belongs in 2026/2026-04.yaml)
 
 By default only files modified since stories.csv was last written are checked
 (all files when stories.csv doesn't exist); pass --all to check every file.
@@ -24,8 +32,10 @@ Usage: python3 validate_stories.py [--all]
 """
 
 import argparse
+import re
 import sqlite3
 import sys
+from datetime import date, datetime
 from pathlib import Path
 
 import yaml
@@ -34,6 +44,8 @@ ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in s
 DB = ROOT / "db.sqlite"
 STORIES = ROOT / "stories"
 CSV = ROOT / "stories.csv"
+COMMENTS_KEY = "__COMMENTS__"
+GENERAL_KEY = "__GENERAL__"
 
 
 def modified_since_csv(paths):
@@ -53,6 +65,81 @@ def crash_date(con, crash_id, cache):
         ).fetchone()
         cache[crash_id] = row[0] if row and row[0] else None
     return cache[crash_id]
+
+
+def valid_story_date(value):
+    """True when value is a date/datetime, or an ISO string starting YYYY-MM-DD.
+
+    Unquoted YAML dates/timestamps arrive already parsed as date/datetime;
+    quoted ones arrive as strings and must be full ISO with at least the
+    YYYY-MM-DD date part (compact/partial forms like 20260115 are rejected).
+    """
+    if isinstance(value, (date, datetime)):
+        return True
+    if not isinstance(value, str):
+        return False
+    s = value.strip()
+    if not re.match(r"^\d{4}-\d{2}-\d{2}", s):
+        return False
+    if s.endswith("Z"):  # pre-3.11 fromisoformat can't parse a trailing Z
+        s = s[:-1] + "+00:00"
+    try:
+        datetime.fromisoformat(s)
+    except ValueError:
+        return False
+    return True
+
+
+def story_yearmonth(value):
+    """'YYYY-MM' of a story date that already passed valid_story_date."""
+    if isinstance(value, (date, datetime)):
+        return f"{value.year:04d}-{value.month:02d}"
+    return value.strip()[:7]
+
+
+def validate_story_list(label, stories, counts, errors, file_month=None):
+    """Check one list of story entries, prefixing errors with label.
+
+    Shared by crash `stories` lists and the top-level __GENERAL__ list. When
+    file_month ('YYYY-MM') is given, each story's date must fall within that
+    month — only the __GENERAL__ list gets this check; crash stories may be
+    published in any month.
+    """
+    scope = "this crash" if file_month is None else "this list"
+    seen_urls = {}
+    for i, story in enumerate(stories, start=1):
+        counts["stories"] += 1
+        if not isinstance(story, dict):
+            errors.append(
+                f"{label}: story #{i} must be a mapping, got {type(story).__name__}"
+            )
+            continue
+
+        title = story.get("title")
+        url = story.get("url")
+        sdate = story.get("date")
+        if not (isinstance(title, str) and title.strip()):
+            errors.append(f"{label}: missing title: {url}")
+        if sdate is None or (isinstance(sdate, str) and not sdate.strip()):
+            errors.append(f"{label}: missing date: {url}")
+        elif not valid_story_date(sdate):
+            errors.append(
+                f"{label}: date must be YYYY-MM-DD or a full ISO timestamp, got {sdate!r}: {url}"
+            )
+        elif file_month and story_yearmonth(sdate) != file_month:
+            errors.append(
+                f"{label}: date {sdate} belongs in {story_yearmonth(sdate)}.yaml, not {file_month}.yaml: {url}"
+            )
+        if not (isinstance(url, str) and url.strip()):
+            errors.append(f"{label}: missing url: {url}")
+            continue
+
+        if url in seen_urls:
+            errors.append(
+                f"{label}: duplicate url within {scope} (stories #{seen_urls[url]} and #{i}): {url}"
+            )
+        else:
+            seen_urls[url] = i
 
 
 def validate_file(path, con, cache):
@@ -76,9 +163,30 @@ def validate_file(path, con, cache):
             f"top level must be a mapping of crash_record_id -> crash entry, got {type(data).__name__}"
         ]
 
-    counts["crashes"] = len(data)
+    if COMMENTS_KEY in data:
+        comments = data[COMMENTS_KEY] or []
+        if not isinstance(comments, list) or not all(
+            isinstance(c, str) for c in comments
+        ):
+            errors.append(f"`{COMMENTS_KEY}` must be a list of strings")
+
+    if GENERAL_KEY in data:
+        general = data[GENERAL_KEY] or []
+        if not isinstance(general, list):
+            errors.append(
+                f"`{GENERAL_KEY}` must be a list of story entries, got {type(general).__name__}"
+            )
+        else:
+            validate_story_list(
+                GENERAL_KEY, general, counts, errors, file_month=file_month
+            )
+
+    special_keys = sum(k in data for k in (COMMENTS_KEY, GENERAL_KEY))
+    counts["crashes"] = len(data) - special_keys
 
     for crash_id, crash in data.items():
+        if crash_id in (COMMENTS_KEY, GENERAL_KEY):
+            continue
         cdate = crash_date(con, crash_id, cache)
         if cdate is None:
             errors.append(f"{crash_id}: crash_record_id not found in db")
@@ -116,29 +224,7 @@ def validate_file(path, con, cache):
             )
             continue
 
-        seen_urls = {}
-        for i, story in enumerate(stories, start=1):
-            counts["stories"] += 1
-            if not isinstance(story, dict):
-                errors.append(
-                    f"{crash_id}: story #{i} must be a mapping, got {type(story).__name__}"
-                )
-                continue
-
-            title = story.get("title")
-            url = story.get("url")
-            if not (isinstance(title, str) and title.strip()):
-                errors.append(f"{crash_id}: story #{i} missing title")
-            if not (isinstance(url, str) and url.strip()):
-                errors.append(f"{crash_id}: story #{i} missing url")
-                continue
-
-            if url in seen_urls:
-                errors.append(
-                    f"{crash_id}: duplicate url within this crash (stories #{seen_urls[url]} and #{i}): {url}"
-                )
-            else:
-                seen_urls[url] = i
+        validate_story_list(crash_id, stories, counts, errors)
 
     return counts, errors
 
@@ -189,9 +275,8 @@ def main(changed_only=True):
                     totals[key] += counts[key]
             print(line)
             if errors:
-                print("  errors:")
                 for err in errors:
-                    print(f"    - {err}")
+                    print(f"- error: {err}")
 
             total_errors += len(errors)
     finally:
