@@ -1,18 +1,33 @@
 1ea4805c2279aeea988bc12657e677b798ea61c1921569762ecd979d570aff7cdaa5f16a546a3dcb36393328cd5f9c06d4a9277e3d3317b323cd2195de2b635d:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    Only record of this fatality is in a CPD Monthly Summary
     2026-01-01 02:07
     4990 S WESTERN BLVD gage park
     1 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: IMPROPER LANE USAGE
+  stories:
+    - url: https://www.chicago.gov/content/dam/city/sites/complete-streets/pdfs/MonthlySummary/2026/Fatal%20Traffic%20Crash%20Monthly%20Summary_January%202026.pdf
+      title: CDOT January 2026 Traffic Fatalities Report
+      site: Chicago Department of Transportation
+      date: 2026-02-17
+      description: |
+        This provisional CDOT January 2026 report is the only reference I've found so far to this Jan. 1 2026 crash on 4990 S. Western Blvd. The "Crash Circumstance" is described as:
+        UNIT 1, DRIVING RECKLESSLY, SIDESWIPED UNIT 2 AND STRUCK A POLE. UNIT 1 DRIVER DIED.
 
 174986f13ba2267e8b40721ff679d2f113400f3952a13ad6d342342ef7acfcfe02592ac7d9f39d44adfd5f1b6eabbfa6a34a40dd3cb346a230568ad4b4f768a2:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    hit-and-run where driver fled and left passenger to die
+
     2026-01-01 05:01
     3434 E 95TH ST east side
     1 fatalities, 0 injured
     OTHER: NOT APPLICABLE
+  stories:
+    - url: https://www.nbcchicago.com/news/local/passenger-dies-after-suv-strikes-pole-in-east-side-neighborhood-driver-sought/3870219/
+      title: Passenger dies after SUV strikes pole in East Side neighborhood, driver sought
+      site: nbcchicago.com
+      date: '2026-01-01T18:04:49-06:00'
+      description: Chicago police were searching for the driver who fled after crashing into a pole, killing the passenger, authorities stated.
 
 1c69315c4e2ab0f9877a5540cb9b91be8a3257132a109a361d31373be9f41d4a423e4686752c8c7e92e60954abfbdbda153e26f42fee8a6c6d655b31857f3b2b:
   private_notes: |-

@@ -104,12 +104,17 @@ b34fea0e94b3b22c6fef1ed86f7a24987beca4eb4dfc2bb5877ea0425dd1d5d77dc789b911a4b79c
 
 a6d8677889dbd2502e0165828295f4cbbe1c064f8a6dc3a16298317757bfa0060be875453213ee86c0bc70a1207ea8b571b430702aa81e57a6a442aef2c04e39:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2024-05-25 22:50
     6400 S COTTAGE GROVE AVE woodlawn
     2 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
   stories:
+    - url: https://abc7chicago.com/post/woman-killed-3-injured-multi-vehicle-crash-woodlawn/14873254/
+      title: Woman killed, 3 injured in multi-vehicle crash in Woodlawn, Chicago police say
+      site: abc7chicago.com
+      date: '2024-05-26T10:50:00Z'
+      description: Two of the drivers were on their way to report a first crash when the deadly crash happened on Saturday.
+
     - url: https://chicago.suntimes.com/crime/2025/08/07/markell-reeves-woodlawn-south-shore-fatal-crash-damica-nickerson
       title: Man charged in deadly 2024 Woodlawn crash
       site: Chicago Sun-Times

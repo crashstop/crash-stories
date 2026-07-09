@@ -1,18 +1,28 @@
 7399070ef5527d8c686eaea4558bda445ed606880271bd7cb8b89588817ab4714bf8969a3962715b45e3eba25b9ad085791ea0f58b09bcffde1e2dc3ba3a77bd:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-02-08 04:17
     2303 S BLUE ISLAND AVE lower west side
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-today-man-killed-involving-cta-bus-heart-blue-island-avenue-police-say/18566386/
+      title: Driver killed in crash involving CTA bus in Heart of Chicago, police say
+      site: abc7chicago.com
+      date: '2026-02-08T14:10:00Z'
+      description: The CTA bus was at a red light when it was rear-ended by a SUV, whose 32-year-old driver was taken to Stroger Hospital, where he died, police said.
 
 5e2198f3af8e2d53aed58cf5ed9a6dd1cff67bfd13f99f25c5ea49606c1a997dc7dfe4fcd917f40bf0732e5f9ce41347ba3fb8ef7c91d2ea37c4e3408d3678de:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-02-15 02:17
     434 S JEFFERSON ST west loop
     2 fatalities, 0 injured
     OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-today-2-killed-fiery-west-loop-jefferson-street-van-buren-police-say/18603515/
+      title: 2 killed in fiery West Loop crash, Chicago police say
+      site: abc7chicago.com
+      date: '2026-02-15T11:47:00Z'
+      description: Police found a car on fire after it crashed into a support column of the I-290 Eisenhower Expressway. Two people were found dead in the wreckage
 
 d1cfe6d1fb375613eec81eb4034d4bfb8932f261c890d703f92d24625d28e585e5a66da049c72c0acbe01cd21ddc7da688cf40a48bb89e668c52371439b71169:
   private_notes: |-

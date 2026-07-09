@@ -1,3 +1,16 @@
+772423f72c3df7bbcd1162ad43df93b5feb220fa8d390e98310c446b08991fbb890c4adab9858f798c836e3a6298a4022a9f0560200581a0147c5491301ecedd:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2026-03-01 03:21
+    2355 W ADDISON ST north center
+    0 fatalities 3 incaps 6 injured
+  stories:
+    - url: https://chicago.suntimes.com/transportation/2026/03/01/several-injured-multi-car-crash-north-center
+      title: Several people injured in multi-car crash in North Center
+      site: chicago.suntimes.com
+      date: '2026-03-01T16:25:54.804Z'
+      description: Three people were in critical condition early Sunday morning after the driver of a black Honda sedan was speeding east on Addison Street and ran a red light, according to Chicago police. The car then struck two other vehicles near the intersection of Western Avenue and Addison Street.
+
 9fdde50fa1994886407e0a080b850ee59473904170450c2e547103eead31de55e10eaa2a8ca2a54e43268127a57ff153d29a60da51161afeae0483e1aa031a88:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
@@ -5,7 +18,6 @@
     4000 W FOSTER AVE north park
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
-  stories: []
 
 5cff390f772dc0d6d19f36711c9d83f6cfde5e4fc1de86c6c17831e77076fd61eb234a52427a7e9e018428e1a318fc7ace38546df22ef1e4fa675c00c95ff6bf:
   private_notes: |-
@@ -39,7 +51,6 @@
 
 53d7880f7bf3b50216dcacd302fbfb51bda9a69cfc4aebeac25b28c230826830d4f83ae13f125a6d564e2433d27d4e3870234d068fbbf45d3b8f0ce6cd2fe53e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-03-21 20:30
     7670 S EXCHANGE AVE south shore
     1 fatalities, 1 injured
@@ -59,14 +70,21 @@
 
 d304cbf33bd655d78e453feece2895e738d7aeb2e3ffbfa7353b968035c127be19d8672682ce09e7ad45bc6fd9ec4576ad543c3fe6d2b592c4ba9c5a7e8bc55e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-03-21 22:40
     7500 S SOUTH CHICAGO AVE grand crossing
     1 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/1-driver-killed-1-critically-injured-crash-chicago-grand-crossing/
+      title: 1 driver killed, 1 critically injured in crash in Chicago's Grand Crossing neighborhood
+      site: cbsnews.com
+      date: 2026-03-22T09:19:59-0500
+      description: A SUV was traveling southeast on South Chicago Avenue when its driver ran a red light and hit a sedan that was headed east on 75th Street, police said. The SUV's driver was taken to U of Chicago Medical Center where he died
 
 452329b835ba3e072ec2580eeace276623c5548c53011c728742f42f09823a78c13204953289bfd6e9c26cf182e380fa5052caac2d99b788773296daf6dd16d0:
   private_notes: |-
+    Not found on Google
+
     This entry is just a stub, pre-filled with basic info from the crash data:
     2026-03-26 11:57
     4701 S WOODLAWN AVE kenwood
