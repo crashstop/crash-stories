@@ -48,9 +48,25 @@
 
 f587687869863fd69783e7d82269ec9a242616a8692da7d8019430349bebaff7ea3634461390268c166af40e6d0e76bfc0f9e16c8ebb6dfdde44054bf42a9d8f:
   stories:
+    - url: https://wgntv.com/news/chicagocrime/appears-to-be-intentional-3-men-killed-in-hit-and-run-outside-of-jeffrey-pub-idd/
+      title: |
+        ‘Appears to be intentional’: 3 men killed in hit-and-run outside of Jeffrey Pub ID’d
+      site: wgntv.com
+      date: 2022-08-16
+      description: |
+        Witnesses told police there was a fight outside of The Jeffery Pub, a popular LGBTQ bar located in the 7000 block of South Jeffery Boulevard, when the sedan plowed through the group.
+
     - url: https://cwbchicago.com/2022/08/chicago-police-20-minute-response-driver-killed-wounded-jeffery-pub.html
       title: Chicago police took more than 20 minutes to arrive after driver killed 3, wounded 2 outside Jeffery Pub
       site: cwbchicago.com
+      date: '2022-08-16T06:55:45+00:00'
+      description: Chicago police needed more than 20 minutes to arrive after a driver killed 3 men and injured another in an apparently intentional attack outside Jeffrey Pub.
+
+    - url: https://blockclubchicago.org/2022/08/23/man-charged-with-murder-in-jeffery-pub-hit-and-run-that-killed-3-people/
+      title: 'Man Charged With Murder In Jeffery Pub Hit-And-Run That Killed 3: ‘This Was An Execution By Vehicle,’ Prosecutors Say'
+      site: blockclubchicago.org
+      date: '2022-08-23T17:20:00+00:00'
+      description: SOUTH SHORE — A South Side man was driving nearly 60 mph when he slammed into a group of men, killing three and injuring a fourth, and drove off last
 
 af7ce17246a9844be7d60640f088923460f85110a31d3ab0892a0108dad738458a0c0b02cf5b6a25a45003373a02a5fb0db2796d17a45e98f5bb0260af8b9e82:
   private_notes: |-

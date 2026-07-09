@@ -17,9 +17,13 @@ notes about incidents with no crash_record_id) is ignored entirely. A
 top-level `__GENERAL__` key (month-wide stories not tied to any crash record)
 is compiled into stories.csv with a blank crash_record_id.
 
-Usage: python3 wrangle_stories.py
+Pass --dry to report what would be written (output prefixed with '(dry)')
+without touching either CSV.
+
+Usage: python3 wrangle_stories.py [--dry]
 """
 
+import argparse
 import csv
 import sys
 from datetime import date, datetime
@@ -64,7 +68,8 @@ def change_note(before, after):
     return f"was {before}, {after - before:+d}"
 
 
-def main():
+def main(dry=False):
+    tag = "(dry) " if dry else ""
     paths = sorted(STORIES.rglob("*.yaml"))
     if not paths:
         print(
@@ -144,18 +149,19 @@ def main():
     prior_stories = count_records(OUT)
     prior_notes = count_records(NOTES_OUT)
 
-    columns = ["crash_record_id"] + PREFERRED + extra_keys
-    with open(OUT, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(columns)
-        for row in rows:
-            writer.writerow([to_cell(row.get(c)) for c in columns])
+    if not dry:
+        columns = ["crash_record_id"] + PREFERRED + extra_keys
+        with open(OUT, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(columns)
+            for row in rows:
+                writer.writerow([to_cell(row.get(c)) for c in columns])
 
-    with open(NOTES_OUT, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(NOTES_COLUMNS)
-        for row in notes_rows:
-            writer.writerow([to_cell(row[c]) for c in NOTES_COLUMNS])
+        with open(NOTES_OUT, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(NOTES_COLUMNS)
+            for row in notes_rows:
+                writer.writerow([to_cell(row[c]) for c in NOTES_COLUMNS])
 
     # __GENERAL__ rows carry a blank id, so they never count as a crash record
     crashes_with_stories = {
@@ -163,16 +169,22 @@ def main():
     }
     general_count = sum(1 for row in rows if not row["crash_record_id"])
     print(
-        f"wrote {OUT.relative_to(ROOT)}: {len(rows)} stories ({general_count} general) "
+        f"{tag}wrote {OUT.relative_to(ROOT)}: {len(rows)} stories ({general_count} general) "
         f"across {len(crashes_with_stories)} crash records from {len(paths)} files "
         f"({change_note(prior_stories, len(rows))})"
     )
     print(
-        f"wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files "
+        f"{tag}wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files "
         f"({change_note(prior_notes, len(notes_rows))})"
     )
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument(
+        "--dry",
+        action="store_true",
+        help="report what would be written without touching either CSV",
+    )
+    sys.exit(main(**vars(parser.parse_args())))

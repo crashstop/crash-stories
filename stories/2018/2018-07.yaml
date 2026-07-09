@@ -87,10 +87,17 @@ e0526bb658ed8549876eb699ff036a7c4bb4c6dd9ba88173c06d9a3a03d2196e5496631cb04cb661
     OTHER: UNABLE TO DETERMINE
 
 c3c4ae80c78444c591da8f818a04d28b73036afcda0cc2e982c115093983906f3d1ef3ffdb4f37dc1bb91553f26dcc4971a40a32c2abccaa09754583291319f9:
+  private_notes: |-
+    basicinfo: CYCLIST PEDALCYCLIST
+    2018-07-28 18:48
+    7223 S STONY ISLAND AVE south shore
+    1 fatalities 0 incaps 0 injured
   stories:
     - url: https://chi.streetsblog.org/2018/07/31/cyclist-killed-on-stony-island-where-alderman-hairston-blocked-protected-lanes
       title: Cyclist Killed on Stony Island, Where Aldermen Have Blocked Protected Lanes
       site: chi.streetsblog.org
+      date: '2018-07-31T16:48:25+00:00'
+      description: The driver who opened their door in cyclist Luster Jackson's path was not cited.
 
 92e6a72c394bade6718dde2e8bbffa5beed1cc0dd6cf221973b5277f8e74686c489ba7705bfd3f0ef3a6b3e80ef954e27df842d80c65f8d134b9441948a93796:
   private_notes: |-

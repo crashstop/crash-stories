@@ -27,8 +27,10 @@ Content is otherwise preserved. Idempotent: running twice yields the same output
 
 By default only files modified since stories.csv was last written are scanned
 (all files when stories.csv doesn't exist); pass --all to scan every file.
+Pass --dry to report what would be reformatted (output prefixed with '(dry)')
+without touching any file.
 
-Usage: python3 lint_stories.py [--all]
+Usage: python3 lint_stories.py [--all] [--dry]
 """
 
 import argparse
@@ -289,7 +291,8 @@ def valid_structure(data):
     return True
 
 
-def main(changed_only=True):
+def main(changed_only=True, dry=False):
+    tag = "(dry) " if dry else ""
     if not DB.exists():
         print(f"error: database not found at {DB}", file=sys.stderr)
         return 2
@@ -306,7 +309,7 @@ def main(changed_only=True):
         paths = modified_since_csv(paths)
         if len(paths) < all_count:
             print(
-                f"scanning {len(paths)} of {all_count} story files modified since "
+                f"{tag}scanning {len(paths)} of {all_count} story files modified since "
                 f"{CSV.name} (pass --all to scan every file)"
             )
         if not paths:
@@ -333,15 +336,16 @@ def main(changed_only=True):
 
             new_text = render_file(data, con, cache)
             if new_text != path.read_text():
-                path.write_text(new_text)
-                print(f"formatted {rel}")
+                if not dry:
+                    path.write_text(new_text)
+                print(f"{tag}formatted {rel}")
                 changed += 1
             else:
-                print(f"unchanged {rel}")
+                print(f"{tag}unchanged {rel}")
     finally:
         con.close()
 
-    print(f"done: {changed} file(s) reformatted, {len(paths)} scanned")
+    print(f"{tag}done: {changed} file(s) reformatted, {len(paths)} scanned")
     return 0
 
 
@@ -352,5 +356,10 @@ if __name__ == "__main__":
         dest="changed_only",
         action="store_false",
         help="scan every story file, not just those modified since stories.csv",
+    )
+    parser.add_argument(
+        "--dry",
+        action="store_true",
+        help="report what would be reformatted without writing any file",
     )
     sys.exit(main(**vars(parser.parse_args())))
