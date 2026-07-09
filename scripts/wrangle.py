@@ -4,7 +4,7 @@
 Each story file is a mapping of crash_record_id -> {notes: ..., stories: [...]}.
 Walks all story files and writes:
   - stories.csv: one row per story entry, with the owning crash_record_id in
-    the first column followed by the story fields (url, title, site, date,
+    the first column followed by the story fields (date, url, title, site,
     description, plus any extra keys that appear), ordered by date,
     crash_record_id, site, title
   - notes.csv: one row per crash-level `notes` entry, with columns
@@ -16,6 +16,10 @@ either CSV. A top-level `__COMMENTS__` key (a list of free-text documenter
 notes about incidents with no crash_record_id) is ignored entirely. A
 top-level `__GENERAL__` key (month-wide stories not tied to any crash record)
 is compiled into stories.csv with a blank crash_record_id.
+
+Every (crash_record_id, url) pair — blank crash_record_id included — must be
+unique across all files; each duplicated pair gets a warning on stderr:
+WARNING: Duplicate crash id + url: [crash_record_id]: [url]
 
 Pass --dry to report what would be written (output prefixed with '(dry)')
 without touching either CSV.
@@ -39,7 +43,7 @@ NOTES_COLUMNS = ["crash_record_id", "crash_yearmonth", "content"]
 COMMENTS_KEY = "__COMMENTS__"
 GENERAL_KEY = "__GENERAL__"
 
-PREFERRED = ["url", "title", "site", "date", "description"]
+PREFERRED = ["date", "url", "title", "site", "description"]
 
 
 def to_cell(value):
@@ -145,6 +149,13 @@ def main(dry=False):
         )
     )
     notes_rows.sort(key=lambda r: (r["crash_yearmonth"], r["crash_record_id"]))
+
+    pair_counts = {}  # (crash_record_id, url) -> occurrences, across all files
+    for row in rows:
+        pair = (row["crash_record_id"], to_cell(row.get("url")))
+        pair_counts[pair] = pair_counts.get(pair, 0) + 1
+    for crash_id, url in sorted(p for p, n in pair_counts.items() if n > 1):
+        print(f"WARNING: Duplicate crash id + url: {crash_id}: {url}", file=sys.stderr)
 
     prior_stories = count_records(OUT)
     prior_notes = count_records(NOTES_OUT)
