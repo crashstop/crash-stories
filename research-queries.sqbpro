@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/dan/LOCALSTAGE/chicagocrashes/server-chicagocrashes/data/db.sqlite" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="browser pragmas structure query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="30521"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="ElementaryGeometries" custom_title="0" dock_id="1" table="4,20:mainElementaryGeometries"/><dock_state state="000000ff00000000fd00000001000000020000034e000002ecfc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000034e0000011500ffffff000003020000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="ElementaryGeometries" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths/><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">-- simple query to
+WITH
+Records AS (
+    SELECT
+        crash_record_id
+        , 'crash '
+            || CASE STRFTIME('%m', crash_date)
+                WHEN '01' THEN 'January'
+                WHEN '02' THEN 'February'
+                WHEN '03' THEN 'March'
+                WHEN '04' THEN 'April'
+                WHEN '05' THEN 'May'
+                WHEN '06' THEN 'June'
+                WHEN '07' THEN 'July'
+                WHEN '08' THEN 'August'
+                WHEN '09' THEN 'September'
+                WHEN '10' THEN 'October'
+                WHEN '11' THEN 'November'
+                WHEN '12' THEN 'December'
+                END
+            || ' '
+            || STRFTIME('%d %Y', crash_date) || ' chicago ' || address || ' '
+            || REPLACE(neighborhood_id, '-', ' ')
+            AS query
+        , crash_date
+        , injuries_total
+        , CASE
+            WHEN fatal_pedestrian_tally &gt; 0  THEN 'fatal pedestrian'
+            WHEN fatal_cyclist_tally    &gt; 0  THEN 'fatal cyclist'
+            WHEN fatal_tally            &gt; 0  THEN 'fatal'
+            WHEN incap_pedestrian_tally &gt; 0  THEN 'incap pedestrian'
+            WHEN incap_cyclist_tally    &gt; 0  THEN 'incap cyclist'
+            WHEN incap_tally            &gt; 3  THEN 'incap mass'
+            WHEN incap_tally            &gt; 0  THEN 'incap'
+            WHEN injuries_total         &gt; 4  THEN 'injury mass'
+          END AS severe_cat
+        , neighborhood_id
+        , address
+        , category
+        , crash_type
+
+    FROM
+        crashes_serving
+    ORDER BY
+        crash_date DESC
+)
+
+SELECT
+    *
+FROM
+    Records
+WHERE
+    1 = 1
+    AND severe_cat IS NOT NULL
+    AND crash_date BETWEEN '2026-05-01' AND '2026-07-01'
+    -- AND SUBSTR(crash_date,1, 10) = '2024-09-18'
+</sql><sql name="SQL 2">SELECT 
+        'basicinfo: ' || category || ' ' || crash_type || char(10)     
+            || STRFTIME('%Y-%m-%d %H:%M', crash_date) 
+			|| char(10) || address || ' '
+            || REPLACE(neighborhood_id, '-', ' ')
+			|| char(10) || fatal_tally || ' fatalities '
+				|| incap_tally         || ' incaps '
+				|| injured_tally       || ' injured'
+            AS basicinfo
+		, *
+
+FROM 
+	crashes_serving 
+WHERE 
+	SUBSTR(crash_date, 1, 10) = '2026-05-23'
+-- address like '5%' AND address like '%S WESTERN%'	
+ORDER BY crash_date desc</sql><sql name="SQL 3">SELECT 
+        'basicinfo: ' || category || ' ' || crash_type || char(10)     
+            || STRFTIME('%Y-%m-%d %H:%M', crash_date) 
+			|| char(10) || address || ' '
+            || REPLACE(neighborhood_id, '-', ' ')
+			|| char(10) || fatal_tally || ' fatalities '
+				|| incap_tally         || ' incaps '
+				|| injured_tally       || ' injured'
+            AS basicinfo
+	, * 
+FROM 
+	crashes_serving 
+WHERE 
+	crash_record_id = 
+	'c3c4ae80c78444c591da8f818a04d28b73036afcda0cc2e982c115093983906f3d1ef3ffdb4f37dc1bb91553f26dcc4971a40a32c2abccaa09754583291319f9'
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
