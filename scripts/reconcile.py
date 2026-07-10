@@ -16,13 +16,16 @@ comes out formatted.
 By default only files modified since stories.csv was last written are scanned
 (all files when stories.csv doesn't exist); pass --all to scan every file.
 Pass --dry to report what would be reordered (output prefixed with '(dry)')
-without touching any file.
+without touching any file. Pass --force-domain-lookup to also re-run the
+domain-lookup swap on entries whose existing `site` still looks like a raw
+domain (ends in a dot + 2-3 word characters, e.g. 'blockclubchicago.org').
 
-Usage: python3 reconcile.py [--all] [--dry]
+Usage: python3 reconcile.py [--all] [--dry] [--force-domain-lookup]
 """
 
 import argparse
 import csv
+import re
 import sqlite3
 import sys
 from urllib.parse import urlparse
@@ -41,6 +44,9 @@ from common import (
 from format import render_file
 
 LOOKUP_CSV = ROOT / "reference" / "domain-lookup.csv"
+
+# A `site` that still looks like a raw domain rather than a display name
+RAW_DOMAIN_RE = re.compile(r"\.\w{2,3}$")
 
 
 def derive_site(url):
@@ -79,18 +85,29 @@ def load_lookup():
     return lookup
 
 
-def fill_sites(data, lookup):
+def fill_sites(data, lookup, force_domain_lookup=False):
     """Derive a missing/empty `site` from each story's url, in place.
 
     Uses the url's domain, swapped for its display name from
     reference/domain-lookup.csv when the domain has a row there.
+
+    With force_domain_lookup, entries whose existing `site` still looks like
+    a raw domain (RAW_DOMAIN_RE) get the lookup swap applied to that value.
     """
     for _, story in iter_stories(data):
         url = story.get("url")
-        if not story.get("site") and isinstance(url, str) and url.strip():
+        existing = story.get("site")
+        if not existing and isinstance(url, str) and url.strip():
             site = derive_site(url.strip())
             if site:
                 story["site"] = lookup.get(normalize_domain(site), site)
+        elif (
+            force_domain_lookup
+            and isinstance(existing, str)
+            and RAW_DOMAIN_RE.search(existing.strip())
+        ):
+            site = existing.strip()
+            story["site"] = lookup.get(normalize_domain(site), site)
 
 
 def reorder_crashes(data, con, cache):
@@ -112,7 +129,7 @@ def reorder_crashes(data, con, cache):
     return ordered
 
 
-def main(changed_only=True, dry=False):
+def main(changed_only=True, dry=False, force_domain_lookup=False):
     tag = "(dry) " if dry else ""
     if not DB.exists():
         print(f"error: database not found at {DB}", file=sys.stderr)
@@ -129,7 +146,7 @@ def main(changed_only=True, dry=False):
             data = load_story_file(path)
             if data is None:
                 continue
-            fill_sites(data, lookup)
+            fill_sites(data, lookup, force_domain_lookup)
             new_text = render_file(reorder_crashes(data, con, cache))
             changed += rewrite_file(path, new_text, "reconciled", dry, tag)
     finally:
@@ -151,5 +168,11 @@ if __name__ == "__main__":
         "--dry",
         action="store_true",
         help="report what would be reordered without writing any file",
+    )
+    parser.add_argument(
+        "--force-domain-lookup",
+        action="store_true",
+        help="also re-run the domain lookup on entries whose existing `site` "
+        "still looks like a raw domain (matches r'\\.\\w{2,3}$')",
     )
     sys.exit(main(**vars(parser.parse_args())))
