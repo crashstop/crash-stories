@@ -1,10 +1,22 @@
 cb07b39f39e9b6e2eebde579308432678981682661521af0a6a917d797d0364fbc8c0921e101bfb8031f873e0562dd48a1789f4cf3745c4f1ec9b9cebd164406:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    tk-note: fatal crash involving CTA bus as unit #1
     2025-12-03 07:55
     6953 S SOUTH SHORE DR south shore
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-woman-struck-killed-cta-bus-south-shore-identified-tracy-frasure/18253954/
+      title: Woman struck, killed by CTA bus in South Shore identified
+      site: abc7chicago.com
+      date: '2025-12-05T15:43:00Z'
+      description: Authorities identified the woman struck and killed by a CTA bus in the South Shore neighborhood as Tracy Frasure.
+
+    - url: https://www.dlperkinsandsons.com/obituary/Tracy-Frasure
+      title: Tracy Marie Frasure Obituary
+      site: dlperkinsandsons.com
+      date: 2025-12-17
+      description: February 1, 1983 — December 5, 2025
 
 fb1c8eefaf9fae418325a6461b1bf13943794f8aa63ae9e1b9642f1e7e2886dfe529d6198fabf83d803f51dadf2230b6dd0615a2395f0deaa9160985989427a8:
   private_notes: |-
@@ -56,11 +68,16 @@ f5d30ba3dbcc2cab892e319d7ea93b641ad32714a9f8e846634555f0624520ac284ffed1422f56cb
 
 536579685bc1b545e0507834cf7a7eecbfe263505ca3823842a67f9e726f6301003f4c1f8e9928195c14d5023fc4ea474992a529e52d960d7a71073b20e5ac8e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-12-21 01:15
     11710 S MARSHFIELD AVE morgan park
     2 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/driver-sought-fatal-double-hit-and-run-morgan-park/
+      title: Chicago police searching for driver in double fatal hit-and-run in Morgan Park
+      site: cbsnews.com
+      date: 2025-12-22T16:31:59-0600
+      description: Chicago police Police found the jeep involved in the crash abandoned, with no sign of the driver.
 
 52280f410679ba233d55f2c47052a7d3ce55e89e3665fc96149a7a492ad5289d42a02ff067820496cbad9b80c8fe083bfac6c60e5116a0ed565e83cf2f910ff8:
   private_notes: |-
@@ -69,3 +86,23 @@ f5d30ba3dbcc2cab892e319d7ea93b641ad32714a9f8e846634555f0624520ac284ffed1422f56cb
     4659 W BELMONT AVE belmont cragin
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+
+195d6f4a651d75108d3a4b5bf3da11a3b3d3da0575694c995c251dfe6436a43e0b9f059a6dbd9e23dc00d3251af6171c7e8b13d50722f234a5212e3ab237c445:
+  private_notes: |
+    tk-note: Fatality still listed as incap injured
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2025-12-17 01:39
+    3962 W FIFTH AVE garfield park
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crime-samantha-bragg-dies-hit-run-west-side-daughter-speaks-cook-crimestoppers-offers-1k-reward/18370122/
+      title: Woman dies after hit-and-run on West Side, daughter speaks out as $1K reward offered
+      site: abc7chicago.com
+      date: '2026-01-08T02:54:00Z'
+      description: Samantha Bragg died after she was critically injured in a hit-and-run crash on the city's West Side last month. Her daughter spoke to ABC7 as a reward is now being offered for information.
+
+    - url: https://obits.postandcourier.com/obituaries/batesville/name/samantha-bragg-obituary?pid=210910009
+      title: Samantha Bragg Obituary
+      site: obits.postandcourier.com
+      date: 2026-02-18
+      description: May 31, 1981 – December 22, 2025

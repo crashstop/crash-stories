@@ -63,22 +63,39 @@
 
 a10660ff4be36aae2d114714dccfb0469bdd4999476e36845c4fb23ddac8f90a115200ba3ca7d2b1e08fe802824c2f685c7e83dab19e9191433799b1ec4f829c:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-01-18 02:21
     2500 S LAKE SHORE DR SB near south side
     1 fatalities, 4 injured
     OTHER: DISTRACTION - FROM OUTSIDE VEHICLE
+  stories:
+    - url: https://blockclubchicago.org/2026/01/18/3-killed-7-injured-in-separate-car-crashes-in-chicago-area-sunday-police-say/
+      title: 3 Killed, 7 Injured In Separate Car Crashes In Chicago Area Sunday, Police Say
+      site: blockclubchicago.org
+      date: '2026-01-20'
+      description: |
+        A car struck a pole before colliding with the median near the 2500 block of South DuSable Lake Shore Drive; a female passenger was critically injured and was taken to University of Chicago Hospital, where she was pronounced dead, police said.
 
 8c02253e32c4882aaae0e078de28efb0e26262c58b848af6297ba0e5dfa961d57b826c5a5fd3ce621b4906ba02af4fede6adafe8730cfb8c3225627082814426:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-01-18 05:22
     34 E MARQUETTE RD grand crossing
     2 fatalities, 4 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://blockclubchicago.org/2026/01/18/3-killed-7-injured-in-separate-car-crashes-in-chicago-area-sunday-police-say/
+      title: 3 Killed, 7 Injured In Separate Car Crashes In Chicago Area Sunday, Police Say
+      site: blockclubchicago.org
+      date: '2026-01-20'
+      description: An 18-year-old man driving a Jeep Cherokee was heading westbound on East Marquette Road when he lost control, Chicago police said. The Jeep struck multiple homes, and the driver suffered “fatal” injuries and was taken to University of Chicago Hospital, where he was pronounced dead, police said in a news alert.
 
 1539af048d38ea6df82acabccd6d2cf867acf2891d41e5e8066b26c93867c5a522c16ef3d79f19ea9799883537df245837c5ba9c48ed3b252d2309ef37ebb990:
   private_notes: |-
+    Only reference to Roman Havelka, 63, is a Jan 24 crash at same location
+    and mentioned in medical examiner report and january 2026 report
+    Should make this a blog post?
+
+    https://www.chicago.gov/content/dam/city/sites/complete-streets/pdfs/MonthlySummary/2026/Fatal%20Traffic%20Crash%20Monthly%20Summary_January%202026.pdf
+
     This entry is just a stub, pre-filled with basic info from the crash data:
     2026-01-29 20:20
     8600 W IRVING PARK RD o hare

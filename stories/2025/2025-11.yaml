@@ -48,11 +48,22 @@ f80efd4dc47bf9391ca149c8416338ff680dbbd936631a3e159a4bbe5d828041ef554d5b51da82f3
 
 439319fd449a0cb8b6af68f711c6355157e7fd1a877afcb97105ed36ba72a9dd32a0af7945f0cf5c9becb46029d19f5e3ffd4fa9208a9654e39dc00fc7445371:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-11-17 16:48
     11700 S MARSHFIELD AVE morgan park
     1 fatalities, 0 injured
     PEDESTRIAN: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://chi.streetsblog.org/2025/11/23/cpd-hit-and-run-van-driver-fatally-struck-man-45-near-shopping-plaza-morgan-park
+      title: 'CPD: Hit-and-run van driver fatally struck man, 45, near Morgan Park shopping plaza'
+      site: chi.streetsblog.org
+      date: '2025-11-24T03:49:49+00:00'
+      description: According to police, a motorist was driving a van and struck the victim on Marshfield Avenue near 117th and continued south.
+
+    - url: https://abc7chicago.com/post/pedestrian-killed-morgan-park-chicago-hit-run-crash-shopping-plaza-117th-marshfield-police-department/18212167/
+      title: Chicago police release image of van suspected deadly hit-and-run in Morgan Park
+      site: abc7chicago.com
+      date: '2025-11-26T11:17:55Z'
+      description: Police said the driver had a disagreement with the victim and when the victim went back to his car, the driver pulled forward and hit them. Police said it is believed the van was immediately brought to a shop for repair.
 
 ce2e5710f96b87bde581858799a6d6e1be55fad36bc7617823386ade2c92c2872d51a8e193b52d9f169b7f5cd0bd038fc02284568e18900de6d80846f6e9b7d3:
   private_notes: |-
