@@ -31,6 +31,8 @@
 
 1c69315c4e2ab0f9877a5540cb9b91be8a3257132a109a361d31373be9f41d4a423e4686752c8c7e92e60954abfbdbda153e26f42fee8a6c6d655b31857f3b2b:
   private_notes: |-
+    Could not find on Google
+
     This entry is just a stub, pre-filled with basic info from the crash data:
     2026-01-01 11:26
     629 N PULASKI RD humboldt park
@@ -39,6 +41,8 @@
 
 09d56c2af1a3fd2043bd10afcce40d18e25281d2021c9268e46036df559cf8e1a7eff70c5b5ee9192363e424c373879c4ff3b497de9d50bb6d56759be1e019e0:
   private_notes: |-
+    Could not find on Google
+
     This entry is just a stub, pre-filled with basic info from the crash data:
     2026-01-07 02:29
     1938 E 92ND ST calumet heights
@@ -47,19 +51,31 @@
 
 95fb1aab7817c4afc287934348ca67a3bed7cae850566dc45465c07fdea1ce4f5b36334822bcdbed339bdf148a9926f24a5bc1f82328bd8c0ca29b01c947c37c:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    Only reference is Chicago Streetsblog
+    basicinfo: PEDESTRIAN PEDESTRIAN
     2026-01-07 08:44
     9498 S LAFAYETTE AVE roseland
-    1 fatalities, 0 injured
-    PEDESTRIAN: UNABLE TO DETERMINE
+    1 fatalities 0 incaps 0 total injured
+  stories:
+    - url: https://chi.streetsblog.org/2026/03/17/tragically-records-show-drivers-have-fatally-struck-three-more-pedestrians-and-a-bike-rider-on-chicago-streets-this-year-this-year
+      title: Tragically, records show drivers have fatally struck three more pedestrians and a bike rider on Chicago streets this year this year
+      site: Chicago Streetsblog
+      date: '2026-03-18T01:12:42+00:00'
+      description: |
+        Streetsblog Chicago cites a police report of a SUV driver striking and killing a 64-year-old man crossing Lafayette Avenue. The driver was not cited
 
 326b4e02c8c59d7a6d346c1431a7704686e31566904c25cc10582a5aabe1fd49bbd818abde9fb52113d4d2d8059e80f3e519b8a93df92b739ee2ddecb417a46f:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-01-07 10:40
     9206 S STONY ISLAND AVE calumet heights
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/driver-killed-crash-chicago-calumet-heights-neighborhood/
+      title: Driver killed in crash in Chicago's Calumet Heights neighborhood
+      site: CBS News
+      date: 2026-01-07T16:19:40-0600
+      description: A driver was killed Wednesday morning in a crash on busy Stony Island Avenue in Chicago's Calumet Heights neighborhood.
 
 a10660ff4be36aae2d114714dccfb0469bdd4999476e36845c4fb23ddac8f90a115200ba3ca7d2b1e08fe802824c2f685c7e83dab19e9191433799b1ec4f829c:
   private_notes: |-

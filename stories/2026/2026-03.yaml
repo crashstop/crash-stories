@@ -13,11 +13,16 @@
 
 9fdde50fa1994886407e0a080b850ee59473904170450c2e547103eead31de55e10eaa2a8ca2a54e43268127a57ff153d29a60da51161afeae0483e1aa031a88:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2026-03-03 18:12
     4000 W FOSTER AVE north park
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-pedestrian-hit-killed-suv-foster-northwest-side-cpd-says/18674062/
+      title: 'Pedestrian hit, killed by SUV on Northwest Side: Chicago police'
+      site: ABC 7 Chicago
+      date: '2026-03-04T03:52:55Z'
+      description: A pedestrian was killed Tuesday night, after a car hit her on Chicago's Northwest Side, Chicago police said.
 
 5cff390f772dc0d6d19f36711c9d83f6cfde5e4fc1de86c6c17831e77076fd61eb234a52427a7e9e018428e1a318fc7ace38546df22ef1e4fa675c00c95ff6bf:
   private_notes: |-
