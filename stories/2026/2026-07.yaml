@@ -18,3 +18,17 @@ __GENERAL__:
       site: ABC 7 Chicago
       date: '2026-07-09T11:11:09Z'
       description: A man was seriously hurt in a hit and run on DuSable Lake Shore Drive Wednesday night, Chicago police said.
+
+352c9b1db777aed91e2211bea832491ed114020dc38a28f5c30250fd1e77df7da389c9df4084514088fce9cecaedabde218e7e799e7d8017d55a1ae1cf42ed83:
+  private_notes: |
+    Hit-and-run where the injured was reportedly at fault but the other driver fled the scene.
+    basicinfo: VEHICLE-TO-VEHICLE TURNING
+    2026-07-08 00:00
+    3600 N PULASKI RD irving park
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://abc7chicago.com/post/motorcycle-driver-critically-injured-nw-side-hit-run-pulaski-road-chicago-police-say/19468737/
+      title: Motorcycle driver critically injured in NW Side hit-and-run, Chicago police say
+      site: abc7chicago.com
+      date: '2026-07-08T10:57:35Z'
+      description: A motorcyclist ran a red-light and struck a black sedan, which fled the scene, police said. The motorcyclist was in critical condition and was issued with 4 citations.

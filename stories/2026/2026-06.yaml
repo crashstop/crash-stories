@@ -107,3 +107,16 @@ e779371d62eb4a97efd48d9b968d4f09e7b248e20fbabd995543b2d586e2d4f0130f58c5b0e1480a
       site: Chicago Sun-Times
       date: '2026-06-29T17:59:00Z'
       description: The uninjured driver is in custody after the crash late Sunday at 47th and State streets, police said. A 25-year-old man and a 22-year-old woman were killed.
+
+3c82bb6666913da5ca0bc179c6988634309c687ccf8ef7c691007161b9f1dbbf05a862af99fa4993587d116a38a62b6ef034eabe6caba94545acab8dec1e5e8d:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE TURNING
+    2026-06-19 19:12
+    100 S HAMLIN BLVD garfield park
+    0 fatalities 0 incaps 7 injured
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-3-children-among-7-injured-car-south-hamlin-boulevard-west-monroe-street-garfield-park-cfd-says/19335151/
+      title: 3 children among 7 injured in car crash in Garfield Park, Chicago fire officials say
+      site: abc7chicago.com
+      date: '2026-06-20T02:11:00Z'
+      description: Three children were among 7 people injured in a car crash Friday evening on the city's West Side. The crash appeared to involve a vehicle crashing into a pole.
