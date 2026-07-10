@@ -6,19 +6,6 @@ __GENERAL__:
     description: |
       People for Bikes ranked Chicago in last place, tied with El Paso, TX, out of 73 American cities with at least 300,000 people.
 
-7aca0486ee215a76d88ecb5476d83613dec035137eb214a4bf6057176c561c287ab7735d14940f0692f7245cec62452068f639d06ccc5f97cd7bfb3712c87b9c:
-  private_notes: |
-    basicinfo: PEDESTRIAN PEDESTRIAN
-    2026-07-08 23:40
-    100 S LAKE SHORE DR NB grant park
-    0 fatalities 1 incaps 1 injured
-  stories:
-    - url: https://abc7chicago.com/post/pedestrian-struck-critically-injured-dusable-lake-shore-drive-downtown/19474520/
-      title: Pedestrian struck, critically injured on DuSable Lake Shore Drive downtown
-      site: ABC 7 Chicago
-      date: '2026-07-09T11:11:09Z'
-      description: A man was seriously hurt in a hit and run on DuSable Lake Shore Drive Wednesday night, Chicago police said.
-
 352c9b1db777aed91e2211bea832491ed114020dc38a28f5c30250fd1e77df7da389c9df4084514088fce9cecaedabde218e7e799e7d8017d55a1ae1cf42ed83:
   private_notes: |
     Hit-and-run where the injured was reportedly at fault but the other driver fled the scene.
@@ -32,3 +19,16 @@ __GENERAL__:
       site: abc7chicago.com
       date: '2026-07-08T10:57:35Z'
       description: A motorcyclist ran a red-light and struck a black sedan, which fled the scene, police said. The motorcyclist was in critical condition and was issued with 4 citations.
+
+7aca0486ee215a76d88ecb5476d83613dec035137eb214a4bf6057176c561c287ab7735d14940f0692f7245cec62452068f639d06ccc5f97cd7bfb3712c87b9c:
+  private_notes: |
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2026-07-08 23:40
+    100 S LAKE SHORE DR NB grant park
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://abc7chicago.com/post/pedestrian-struck-critically-injured-dusable-lake-shore-drive-downtown/19474520/
+      title: Pedestrian struck, critically injured on DuSable Lake Shore Drive downtown
+      site: ABC 7 Chicago
+      date: '2026-07-09T11:11:09Z'
+      description: A man was seriously hurt in a hit and run on DuSable Lake Shore Drive Wednesday night, Chicago police said.
