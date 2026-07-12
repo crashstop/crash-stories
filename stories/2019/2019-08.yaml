@@ -96,8 +96,25 @@ d7911f9e5de7581e5a60a0ba1cb80c7a04cbfc8f994d34390452ff5c8a836e6bdd0a5a1e2a13ea47
 
 55f8ec896a9f860fccdabd1a48478f1ecf90bdae2bfef3203fdfba2b2f562824ff20a6c9ca95ab8cde2c7d8098ed597486d94d96f41486088a964e946764f486:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-08-31 15:41
     4741 W FULLERTON AVE belmont cragin
     1 fatalities, 8 injured
     PEDESTRIAN: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://abc7chicago.com/post/1-dead-after-car-crashes-into-restaurant-on-northwest-side/5505384/
+      title: 1 dead after car crashes into restaurant on Northwest Side
+      site: ABC 7 Chicago
+      date: '2019-09-01T03:59:00Z'
+      description: An 81-year-old woman is dead after a car crashed into a restaurant Saturday, striking five people on Chicago's Northwest Side, police said.
+
+    - url: https://chicago.suntimes.com/2019/8/31/20842635/1-killed-4-wounded-vehicle-crash-fullerton
+      title: Man released without charges after NW Side crash kills 1, injures 4 others
+      site: Chicago Sun-Times
+      date: '2019-09-04T05:37:13Z'
+      description: The people were waiting for a bus when a 34-year-old man lost control of his vehicle and crashed into the building, police said.
+
+    - url: https://www.kaminskifamilyfuneralhomes.com/obituaries/Myrna-M-Logan?obId=15977020
+      title: Obituary information for Myrna M. Logan
+      site: kaminskifamilyfuneralhomes.com
+      date: 2020-07-01
+      description: ''

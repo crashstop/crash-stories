@@ -16,8 +16,14 @@ b4e3f0dc9f0773c3495ca500b891216f6f81adba373c8d710e79854680b983de83be8fba4cdb04f2
 
 2b29eb37454c4b31ab1e7ae35e5e888e2b13cb425f57536afee6408c82c880094419cec0359ee68f0adfd70254982c7cb3b64a9124d62024622164de1968edaf:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-02-09 19:53
     12033 S HALSTED ST west pullman
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://wgntv.com/news/chicago-news/man-dies-in-car-crash-in-west-pullman-neighborhood-police-say-vehicle-split-in-half/
+      title: Man dies in car crash in West Pullman neighborhood, police say; vehicle split in half
+      site: WGN-TV
+      date: 2025-02-10
+      description: |
+        According to Chicago police, the man was driving north in a white SUV in the 12000 block of South Halsted Street just before 8 p.m. when he hit a tree and two unoccupied parked vehicles before being ejected from his vehicle.

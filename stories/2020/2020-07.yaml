@@ -153,6 +153,16 @@ d63d81bca36db34daecdfd5278c5c512d95fef91a2bef1e15b4c19fe902858819ab5f8c148daa7d9
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
 
+7e520fd36e9272d267c398ca90d8a2616f9902f10952ba7526cfbe5f8ec2f81ff709b50acd6f3b672108eb0114ce85d28016926664dd01396a699c2c7eb0c347:
+  private_notes: |
+    just a stub:
+    no info on google
+    only accident to severly injure a cyclist and a pedestrian
+    basicinfo: hit-and-run CYCLIST PEDALCYCLIST
+    2020-07-28 18:08
+    2099 N CLYBOURN AVE lincoln park
+    0 fatalities 2 incaps 2 total injured
+
 1ac5e5fd66f2dbd29745e27769f6b0205847300c8d80cd53f89e368ae60263885d320aa4d95d9e0d7acc5b1f35235f8e5f5186b663787e03c68a8fab5ff19329:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

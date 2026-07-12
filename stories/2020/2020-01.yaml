@@ -1,10 +1,21 @@
 fd513d10e664f2def020f1cacfc56e902758d2e0bd744632f5af5a3ab191d6fe6533fb01fce230e56a92334da73ab29e971624c21cfdee79f065785846cfe85f:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-01-01 23:18
     1448 W 112TH PL morgan park
     3 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: IMPROPER OVERTAKING/PASSING
+  stories:
+    - url: https://chicago.suntimes.com/2020/1/2/21046248/ruby-cassandra-carrie-johnson-dead-4-critically-injured-toddler-morgan-park-vehicle-crash
+      title: 'Morgan Park crash: 3 dead, 4 injured including toddler on West 112th Place'
+      site: Chicago Sun-Times
+      date: '2020-01-02T07:08:12Z'
+      description: A toddler that was in a car seat was taken to Comer Children’s Hospital, where she was stabilized, police said.
+
+    - url: https://www.nbcchicago.com/news/local/3-dead-at-least-4-injured-in-morgan-park-crash-police/2195393/
+      title: '3 Dead, at Least 4 Injured in Morgan Park Crash: Police'
+      site: nbcchicago.com
+      date: '2020-01-02T06:22:10-06:00'
+      description: Three people were killed and four others injured, including a 3-year-old girl, in a vehicle crash Wednesday in Morgan Park on the South Side.
 
 5b852d3ef2f080636e5cad61a45d8c1ef14c1b3a6ae74f06bc4067d971d22c0cbb5a6842b0740bedbb074d85bfbc45ab0a7f526078c8e97bef3b7567813657a7:
   private_notes: |-

@@ -39,11 +39,26 @@ f32d0671ce8c1b872953b0855f8892aaede72b59ce563fa169fde52a78414648a07d6931ee48ca94
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
 
 a3acf9c83361b3b687a0c48af8084e52f2aa02048d790504cfccba7b6273e615ee795302f5179d75aefb829216bce7bc71f209e5aa5a6ab09955c7d09e6e0fe0:
+  notes: |
+    Streetsblog says the police report describes the driver as "DISTRACTED", but this is not currently in the data, suggesting that the data has since been revised.
   stories:
     - url: https://chicago.suntimes.com/transportation/2025/05/27/first-bicyclist-death-michigan-yader-castaneda
       title: Driver says he did not see cyclist in fatal Loop crash — Chicago's first bicyclist death of 2025
       site: Chicago Sun-Times
       date: 2025-05-27
+
+    - url: https://chi.streetsblog.org/2025/05/28/cpd-driver-distraction-speed-played-a-role-in-death-of-divvy-rider-yader-castaneda-18-deadly-vehicle-design-may-have-also-been-a-factor
+      title: 'CPD: Driver distraction, speed played a role in death of Divvy rider Yader Castaneda, 18. Deadly vehicle design may have also been a factor.'
+      site: Chicago Streetsblog
+      date: '2025-05-29T04:07:27+00:00'
+      description: |
+        Chicago saw its first bike fatality of 2025 on Memorial Day, when a Hummer driver fatally struck Yader Castaneda, 18, while he was riding an electric Divvy bike-share cycle in the Loop.
+
+    - url: https://www.dieterlememorialhome.com/obituaries/Yader-Yak-Castaneda?obId=42633410
+      title: Obituary information for Yader "Yak" Castaneda
+      site: dieterlememorialhome.com
+      date: 2025-06-02
+      description: January 19, 2007  -  May 26, 2025
 
 0647d895a9a62cd9d0b467a50cb5ead09091bdc0f1958d8d01d9812ac0f0030c3d5b652228366963d197e2129262ac213a42a311fedd05480fbb740920989eef:
   private_notes: |-

@@ -20,19 +20,29 @@ cb07b39f39e9b6e2eebde579308432678981682661521af0a6a917d797d0364fbc8c0921e101bfb8
 
 fb1c8eefaf9fae418325a6461b1bf13943794f8aa63ae9e1b9642f1e7e2886dfe529d6198fabf83d803f51dadf2230b6dd0615a2395f0deaa9160985989427a8:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-12-11 23:50
     6302 S COAST GUARD DR jackson park
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/fiery-crash-near-63rd-street-beach/
+      title: 1 dead after fiery crash near 63rd Street beach
+      site: CBS News
+      date: 2025-12-12T06:41:34-0600
+      description: A man is dead after a fiery crash near 63rd Street beach on Thursday night.
 
 8add0a27eb329840afed53f6bb070219abca77cf1858afd1ff6e178e18d2d286ed76317494e7cb7bd556e02947ec422455a011443f19171a3972b5ae20ddb987:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-12-12 05:50
     6855 N SHERIDAN RD rogers park
     1 fatalities, 0 injured
     PEDESTRIAN: NOT APPLICABLE
+  stories:
+    - url: https://abc7chicago.com/post/pedestrian-struck-killed-suv-sheridan-road-rogers-park-chicago-police-say/18279324/
+      title: Pedestrian struck, killed by SUV in Rogers Park, Chicago police say
+      site: ABC 7 Chicago
+      date: '2025-12-12T14:03:00Z'
+      description: A pedestrian was fatally struck by an SUV on the North Side Friday morning, Chicago police said.
 
 b578106d0a0c1510e1827bb5cfc047dff910c26410125065fd70ede4d5569f2dc34cf02d53e9e180ac342ca2f782b08b220ff950e99557568db085c2498da47a:
   private_notes: |-

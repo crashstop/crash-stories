@@ -40,11 +40,16 @@ c70cb93a520a2f3bdd621566069de5b08bb37a72f3fcc99e26fc569ca06bf48eba3e94bce4292fc5
 
 0060ea6cb27e466462cd49a455a80389db460cd2da308bbffa032a8c60aa31932e068ae0268573fee7ade698463f63bdd731c3f5aa111a2721c835bd4a7cd522:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-03-19 23:09
     614 W MARQUETTE RD englewood
     1 fatalities, 3 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/2021/3/20/22341505/kawantis-robinson-5-year-old-boy-fatally-struck-walking-englewood-police
+      title: 5-year-old boy struck and killed by driver while walking with family in Englewood
+      site: Chicago Sun-Times
+      date: '2021-03-20T06:22:52.145Z'
+      description: The driver was traveling in the 600 block of West Marquette when he struck 5-year-old boy walking on the sidewalk, police said.
 
 215e1f81d55b885a30a3ad9cad8e89f651706c1a782604136fd256e1acd1263ad0919eef082a04979e3743a358e355487b4e8d46c9eb2b44fe18d2a9a358627a:
   private_notes: |-

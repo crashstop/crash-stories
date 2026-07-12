@@ -79,6 +79,14 @@ ae0dbdcf957eb4fa4ac304b4de2787d6626409c697f40ed77a60588fb822adfc5b9f027a59463504
     OTHER: NOT APPLICABLE
 
 d3c723f453b3319348065ff841f12ce994b136b1e8bcbeef2a4b9657e7e1adb28e4f4015c9efe8970adefa494a84b168e5c4469ac2ae47b48a2b1946d786a082:
+  notes: |
+    Police records still list the victim as suffering an "incapacitating injury" but news stories report that he died.
+  private_notes: |
+    tk-note:fatality-not-yet-upgraded
+    basicinfo: CYCLIST PEDALCYCLIST
+    2022-02-28 16:40
+    699 S LAKE SHORE DR NB the loop
+    0 fatalities 1 incaps 1 total injured
   stories:
     - url: https://chi.streetsblog.org/2022/03/03/cisco-engineer-gerardo-marciales-41-fatally-struck-while-crossing-dlsd-on-a-divvy-bike
       title: BMW driver fatally struck Gerardo Marciales, 41, as he crossed DLSD on a Divvy bike
@@ -86,11 +94,23 @@ d3c723f453b3319348065ff841f12ce994b136b1e8bcbeef2a4b9657e7e1adb28e4f4015c9efe897
       date: '2022-03-04T00:38:19+00:00'
       description: Police say the motorist "instead of turning left according to the traffic signal, continued north," but he wasn't cited.
 
+    - url: https://blockclubchicago.org/2022/04/29/ghost-bike-put-up-downtown-to-honor-gerardo-marciales-but-officials-say-itll-likely-get-cut-down-soon/
+      title: Ghost Bike Put Up Downtown To Honor Gerardo Marciales — But Officials Say It'll Likely Get Tossed Soon
+      site: Block Club Chicago
+      date: '2022-04-29T14:41:22+00:00'
+      description: The family of Gerardo Marciales honored his life with a ghost bike and vigil Thursday Downtown, where a driver hit and killed the bicyclist.
+
     - url: https://chi.streetsblog.org/2023/01/12/a-reckless-driver-killed-divvy-rider-gerardo-marciales-another-one-destroyed-his-ghost-bike
       title: A reckless driver killed Divvy rider Gerardo Marciales. Another one destroyed his ghost bike.
       site: Chicago Streetsblog
       date: '2023-01-12T23:28:56+00:00'
       description: Less than a year after his death, another reckless motorist on the drive crashed into the light pole Marciales' ghost bike memorial was chained to, demolishing the shrine.
+
+    - url: https://www.cbsnews.com/chicago/news/city-accidentally-removed-ghost-bike-man-hit-killed-cycling-chicago/
+      title: City accidentally removed ghost bike installed for man hit, killed while cycling in Chicago
+      site: CBS News
+      date: 2024-06-22T23:03:57-0500
+      description: The city claims workers did not recognize a memorial.
 
 429a8a89db2a311c50102a00f97016f72a9021a144550ebbaa8814c4f61cf79bbbf96302ebf45a1d9a7913f3eef0c03bcd0b6ff0bcbbbf918dc706795fde43df:
   private_notes: |-
