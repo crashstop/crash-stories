@@ -6,6 +6,19 @@ __GENERAL__:
     description: |
       People for Bikes ranked Chicago in last place, tied with El Paso, TX, out of 73 American cities with at least 300,000 people.
 
+7305961b2b09b5761453a9ee5c35f3ba62c2a64f9a5ec4ed44b1835cb8edf400fe4615dd9ed189860b758d286d3360f7f8dfc243d522e3466c5032c072ddb503:
+  private_notes: |
+    basicinfo: hit-and-run CYCLIST PEDALCYCLIST
+    2026-07-02 18:13
+    3201 W ARMITAGE AVE logan square
+    0 fatalities 0 incaps 1 total injured
+  stories:
+    - url: https://blockclubchicago.org/2026/07/09/logan-square-cyclist-wants-driver-who-hit-him-found-as-he-recovers-from-injuries/
+      title: Logan Square Cyclist Wants Driver Who Hit Him Found As He Recovers From Injuries
+      site: Block Club Chicago
+      date: '2026-07-09T13:00:00+00:00'
+      description: Friends are raising money to help Connor Brogan, who was biking eastbound on Armitage last week when he was hit by a green Jeep pickup that fled the scene, police said.
+
 352c9b1db777aed91e2211bea832491ed114020dc38a28f5c30250fd1e77df7da389c9df4084514088fce9cecaedabde218e7e799e7d8017d55a1ae1cf42ed83:
   private_notes: |
     Hit-and-run where the injured was reportedly at fault but the other driver fled the scene.
@@ -22,13 +35,27 @@ __GENERAL__:
 
 7aca0486ee215a76d88ecb5476d83613dec035137eb214a4bf6057176c561c287ab7735d14940f0692f7245cec62452068f639d06ccc5f97cd7bfb3712c87b9c:
   private_notes: |
-    basicinfo: PEDESTRIAN PEDESTRIAN
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
     2026-07-08 23:40
     100 S LAKE SHORE DR NB grant park
-    0 fatalities 1 incaps 1 injured
+    0 fatalities 1 incaps 1 total injured
   stories:
     - url: https://abc7chicago.com/post/pedestrian-struck-critically-injured-dusable-lake-shore-drive-downtown/19474520/
       title: Pedestrian struck, critically injured on DuSable Lake Shore Drive downtown
       site: ABC 7 Chicago
       date: '2026-07-09T11:11:09Z'
       description: A man was seriously hurt in a hit and run on DuSable Lake Shore Drive Wednesday night, Chicago police said.
+
+2339a875aa845a5b0d007e94c448d87b4b36066dd287fbb5cf0d53bec4c9f445b7cd1ff8afbb82baccf054416484fd9265f0a4c44377f86998d457bd2ab63280:
+  private_notes: |
+    tk-note:motorcyclist
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2026-07-10 23:20
+    6801 S DAMEN AVE englewood
+    1 fatalities 1 incaps 1 total injured
+  stories:
+    - url: https://abc7chicago.com/post/child-woman-critically-injured-car-motorcycle-crash-6700-block-south-damen-avenue-west-englewood-chicago-police/19485304/
+      title: 'Motorcycle crash leaves woman dead, 9-year-old girl critically injured in West Englewood: police'
+      site: ABC 7 Chicago
+      date: '2026-07-11T10:24:00Z'
+      description: Two men were heading southbound on Damen Avenue in a black SUV when they collided with the motorcycle, which was traveling eastbound. The motorcyclist, a 36-year-old woman, and her passenger, a 9-year-old girl, suffered critical injuries. The woman was taken to the University of Chicago Medical Center, where she was later pronounced dead.
