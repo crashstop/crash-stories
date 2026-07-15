@@ -27,19 +27,35 @@ c074e022db974449fdf3338c516227454051042dcccd847aea62f8e63166cc062cf49c21a619e5bf
 
 1244e9f0fd430c661a04b352ca49e3f25924c432f3a6c9bc21eb89feb5ab6f08758b5e1444dfee11a4f6855b47ed709536ddf31e4cab2f32ce97bce97562c513:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-03-14 15:11
     6501 W HIGGINS AVE norwood park
     1 fatalities, 2 injured
     PEDESTRIAN: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://blockclubchicago.org/2025/03/18/loved-ones-mourn-union-ridge-special-education-assistant-killed-by-motorcyclist/
+      title: Loved Ones Mourn Union Ridge Special Education Assistant Killed By Motorcyclist
+      site: Block Club Chicago
+      date: '2025-03-18T13:09:00+00:00'
+      description: People are remembering Camryn Green, 26, as selfless and smart. Friends are planning a private celebration in her memory.
 
 ae8dca8762c225d280006a4ac5abf5cb5cdaa6ce2f1b2d6e10dde9704e863c97f8a43dec7eef1eb37866875069fbd9043ca0ff197a944aebb2b496de5ade20d1:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-03-17 23:12
     5236 W 63RD ST clearing
     1 fatalities, 5 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/pedestrian-killed-3-car-crash-63rd-street-midway-airport-chicago-police-say/16042552/
+      title: Pedestrian killed in 3-car crash near Midway Airport identified by officials
+      site: ABC 7 Chicago
+      date: '2025-03-18T09:38:00Z'
+      description: A pedestrian was killed in a three-vehicle crash near Midway Airport Monday night, Chicago police said.
+
+    - url: https://chi.streetsblog.org/2025/03/19/two-pedestrians-were-fatally-struck-in-chicago-in-past-week-camryn-green-26-in-norwood-park-and-jamie-cerney-38-near-midway
+      title: 'Two special education workers were fatally struck in Chicago in past week: Camryn Green, 26, in Norwood Park and Jamie Cerney, 38, near Midway'
+      site: Chicago Streetsblog
+      date: '2025-03-19T22:23:31+00:00'
+      description: According to the narrative, the driver of the white Infiniti (Unit 1 in the above image), a 19-year-old man, was traveling west in the outside lane when he tried to merge into the inside lane, striking the westbound black Infiniti (Unit 2). The the driver of the white Infiniti then “swerved and jumped the sidewalk,” striking Jamie Cerney, crashing through the wall of the hangar, and hitting an electric generator.
 
 d69d3702794e0b829a28f67bc8b40bbd5a337b802015d89bf96862b679ccce14a86f1aa94f410f2e0c09c72d0c686dbf10099610fe082e0889192a58d783123b:
   private_notes: |-
