@@ -1,37 +1,66 @@
 ab251339055f7135b754e586539c15ff367f91e4d2b63bd49a390b6c3350cea92227287fa8798f79d567811fbcad3d7167f2a7d2063a2732ddcc98a97c4c844a:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-10-01 17:18
     6201 N TALMAN AVE west ridge
     1 fatalities, 0 injured
     PEDESTRIAN: VISION OBSCURED (SIGNS, TREE LIMBS, BUILDINGS, ETC.)
+  stories:
+    - url: https://chicago.suntimes.com/crime/2025/10/01/child-hit-van-west-ridge
+      title: 4-year-old girl dies after being hit by van in West Ridge
+      site: Chicago Sun-Times
+      date: '2025-10-02T11:51:55.196Z'
+      description: Juslene Akeza was crossing the street North Talman Avenue when a 72-year-old driver going north hit her, police said. The driver was cited for failure to reduce speed to avoid an accident and failure to enact due care to avoid a pedestrian, police said
 
 4313d90cf8e7b21433798d173f17233965dcda49ff65cd91b9f3b5671feadbb50ca4830e6f02653d2dd8b2b688d70780cf49da099872ff08d7dfd3801fc049ed:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    tk-note: carjacking
     2025-10-14 23:26
     2803 W VAN BUREN ST garfield park
     1 fatalities, 0 injured
     OTHER: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crime-man-found-dead-inside-suv-crash-east-garfield-park-police-say-vehicle-reported-stolen-brighton/18012089/
+      title: Man killed in crash minutes after SUV reported stolen in carjacking on West Side, police say
+      site: ABC 7 Chicago
+      date: '2025-10-15T15:10:00Z'
+      description: Chicago police said a vehicle was stolen in a carjacking minutes before a deadly crash on Tuesday.
 
 62fc8379c6107168df4423dbd2021a7894966cf20ca55614ad58295477dff7430fc353ec9f707a1a006362886909f21cec8ec31d1a26a15d82b863107b7a8fa6:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-10-17 21:30
     7500 S VINCENNES AVE grand crossing
     2 fatalities, 3 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://abc7chicago.com/post/chicago-police-investigating-serious-car-crash-west-75th-street-south-vincennes-avenue-greater-grand-crossing/18031634/
+      title: '2 killed, 15-year-old girl among 3 injured in Greater Grand Crossing crash: police'
+      site: ABC 7 Chicago
+      date: '2025-10-18T11:13:00Z'
+      description: A 37-year-old woman was driving a grey Buick sedan westbound when she tried to turn southbound and failed to yield at the intersection, police said. The Buick then struck a black Dodge vehicle, which was traveling eastbound. An unoccupied, parked grey Mercedes sedan was also hit as a result of the crash.
 
 c119e39c7ba3eb1ec95da2d2e6729e82c0e833955ade5900e3fece86875701741ff71a6333289fff642c54033a6d34e7ed837fbb1cc5faef3d3c528b2d1e95a6:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-10-19 02:13
     6639 S ASHLAND AVE englewood
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crime-woman-killed-hit-run-crash-ashland-avenue-66th-street-west-englewood-police-say-sunday/18037579/
+      title: Woman killed in hit-and-run crash in West Englewood, Chicago police say
+      site: ABC 7 Chicago
+      date: '2025-10-19T10:56:00Z'
+      description: A woman was killed in hit-and-run crash in West Englewood on Sunday, Chicago police said.
+
+    - url: https://chi.streetsblog.org/2025/10/21/speeding-hit-and-run-sedan-driver-killed-female-pedestrian-sunday-in-16th-ward-where-ald-coleman-has-opposed-lowering-the-speed-limit
+      title: Speeding hit-and-run sedan driver killed female pedestrian Sunday in 16th Ward, where Ald. Coleman has opposed lowering the speed limit
+      site: Chicago Streetsblog
+      date: '2025-10-21T18:27:16+00:00'
+      description: Police said the driver of a grey Nissan Maxima had been speeding north on Ashland when they struck the the female adult victim, and then fled the scene.
 
 076cd60cbe0e215312721cf4b094f3f8cf592b56f9724eee7271f39bf49d7a77d004ba2cefbe3643c7fa7b28d98e1b9251e700113dc2b34cd2536cc9012da44f:
   private_notes: |-
+    Could not find on google
+
     This entry is just a stub, pre-filled with basic info from the crash data:
     2025-10-21 13:25
     6498 S WELLS ST englewood
@@ -40,6 +69,9 @@ c119e39c7ba3eb1ec95da2d2e6729e82c0e833955ade5900e3fece86875701741ff71a6333289fff
 
 e2c42cfdf3aadd382c6519e6fcb14cd2214f7d28f69de5e2c8e6a7c2c52a803e83366927884b301263a2f5890ffdefcb7e0e1be75ec2545c0a9111c612fe8508:
   private_notes: |-
+    Could not find on google, other than streetsblog roundup:
+    https://chi.streetsblog.org/2026/01/08/tragically-two-more-cdot-records-of-2025-pedestrian-deaths-on-chicago-surface-streets-bring-the-total-number-of-fatalities-to-28
+
     This entry is just a stub, pre-filled with basic info from the crash data:
     2025-10-23 12:15
     6122 N MILWAUKEE AVE norwood park
@@ -48,8 +80,13 @@ e2c42cfdf3aadd382c6519e6fcb14cd2214f7d28f69de5e2c8e6a7c2c52a803e83366927884b3012
 
 17426f3649036d76bf4b0d79508db5e424dfd4463ed7548b02e79ba8fe99b1bcc2ca5b6a4067a936a1827c7e6f18cae9eb0e39a6072cb9a36add4e73be3a2cbc:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-10-26 23:09
     3200 S LAKE SHORE DR SB douglas
     1 fatalities, 2 injured
     OTHER: EQUIPMENT - VEHICLE CONDITION
+  stories:
+    - url: https://abc7chicago.com/post/1-killed-3-hospitalized-dusable-lake-shore-drive-rollover-crash-south-side-chicago-police-say/18076089/
+      title: 1 killed, 3 hospitalized in DuSable Lake Shore Drive rollover crash on South Side, police say
+      site: ABC 7 Chicago
+      date: '2025-10-27T09:24:00Z'
+      description: A 36-year-old woman has died after the vehicle she was driving hit the median and flipped on DuSable Lake Shore Drive in Bronzeville Sunday night, Chicago police said.
