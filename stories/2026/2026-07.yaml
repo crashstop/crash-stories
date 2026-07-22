@@ -6,6 +6,18 @@ __GENERAL__:
     description: |
       People for Bikes ranked Chicago in last place, tied with El Paso, TX, out of 73 American cities with at least 300,000 people.
 
+  - url: https://blockclubchicago.org/2026/07/16/after-4-deaths-at-norwood-park-metra-crossing-safety-improvements-underway/
+    title: After 4 Deaths At Norwood Park Metra Crossing, Safety Improvements Underway
+    site: blockclubchicago.org
+    date: '2026-07-16T12:50:00+00:00'
+    description: Work on a four-quadrant gate system that closed the crossing to drivers began last week. Since 2010, there have been 12 collisions at the crossing.
+
+  - url: https://chi.streetsblog.org/2026/07/21/tragically-motorists-have-struck-and-killed-at-least-three-more-pedestrians-on-chicago-streets-in-2026
+    title: Tragically, motorists have struck and killed at least three more pedestrians on Chicago streets in 2026
+    site: chi.streetsblog.org
+    date: '2026-07-21T23:44:03+00:00'
+    description: Streetsblog roundup of the fatal crashes involving vulnerable road users this year so far
+
 7305961b2b09b5761453a9ee5c35f3ba62c2a64f9a5ec4ed44b1835cb8edf400fe4615dd9ed189860b758d286d3360f7f8dfc243d522e3466c5032c072ddb503:
   private_notes: |
     basicinfo: hit-and-run CYCLIST PEDALCYCLIST
