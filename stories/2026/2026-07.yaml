@@ -31,6 +31,13 @@ __GENERAL__:
     date: '2026-07-23T04:57:52+00:00'
     description: An op-ed from Chris Ridgeway, co-chair of the Chicago Bike PAC, arguing that the emphasis on the "Dutch Reach" is a distraction from systemic changes needed to make Chicago truly safe for cyclists.
 
+  - url: https://chi.streetsblog.org/2026/07/23/bike-lanes-should-always-use-protection-but-officials-say-they-usually-shouldnt-go-both-ways
+    title: Bike lanes should always use protection. But officials say they usually shouldn't go both ways.
+    site: Chicago Streetsblog
+    date: '2026-07-24T03:33:47+00:00'
+    description: |
+      Streetsblog editor John Greenfield asks the CDOT why two-way protected lanes aren’t more common in the Windy City.
+
 7305961b2b09b5761453a9ee5c35f3ba62c2a64f9a5ec4ed44b1835cb8edf400fe4615dd9ed189860b758d286d3360f7f8dfc243d522e3466c5032c072ddb503:
   private_notes: |
     basicinfo: hit-and-run CYCLIST PEDALCYCLIST
