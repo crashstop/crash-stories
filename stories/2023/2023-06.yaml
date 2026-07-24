@@ -32,11 +32,23 @@ ded2510694642a9a3c82fb8e735e2552b84b97be8acb5913612414b7402d2b7c25961ca14fb28911
 
 99af4edfdedc0c0a9f9992a25f344ec6be5cdbebb13fb111c9ccdd597e91996d7bd657c20d75984bd34fc0a52f0f34d64843a69b1706ef868cb0d5997512f32e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:police crash but vehicles aren't recorded as being police
     2023-06-16 17:42
     3803 W ROOSEVELT RD north lawndale
     1 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/city-council-finance-committee-settlement-angel-eduardo-alvarez-montesinos-police-chase-crash/
+      title: City lawyers recommend $22 million settlement for family of man killed in crash during Chicago police chase
+      site: CBS News
+      date: 2026-01-13T10:04:35-0600
+      description: Aldermen will vote this week on a proposed $22 million settlement with the family of a man who was killed in a 2023 car crash as Chicago police were chasing another driver in a stolen vehicle.
+
+    - url: https://www.salvilaw.com/press-release/chicago-police-crash-settlement-22m/
+      title: City of Chicago to pay $22 million to family of man killed in 2023 Homan Square crash involving CPD
+      site: Salvi, Schostok & Pritchard P.C.
+      date: '2026-03-09T13:23:31+00:00'
+      description: The Chicago City County Council approved a $22 million settlement Wednesday for the family of a 25-year-old man who was killed in a West Side crash stemming from an “unnecessary and extremely dangerous” vehicle pursuit involving the Chicago Police Department.
 
 602c811abb634c4bcaec03483f20c362ca0ebaca8c296292fbe9d87f7037d7fce1303bdaf094cf5424672a74adb4bd40f1b2be893d771c0d4614f134eedbc7b7:
   private_notes: |-

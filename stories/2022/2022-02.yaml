@@ -82,7 +82,7 @@ d3c723f453b3319348065ff841f12ce994b136b1e8bcbeef2a4b9657e7e1adb28e4f4015c9efe897
   notes: |
     Police records still list the victim as suffering an "incapacitating injury" but news stories report that he died.
   private_notes: |
-    tk-note:fatality-not-yet-upgraded
+    flag:tk:fatality-not-yet-upgraded
     basicinfo: CYCLIST PEDALCYCLIST
     2022-02-28 16:40
     699 S LAKE SHORE DR NB the loop

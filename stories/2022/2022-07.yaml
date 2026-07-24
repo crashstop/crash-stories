@@ -56,11 +56,22 @@ cc685380042b72b06a5943229785d0b4bb5332cf9e3890c75de0b8d0d7ec9a838801df96a3568b90
 
 ffbdb32c73eaeb6bdcf30b66f5cb4523072b30943b81e50f6e58c2ff950f2d69e3cfb945b21f63d03846d2b5a571bfcc230faf486cd885d9f4ed85834f932344:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2022-07-11 20:48
     4900 S DREXEL BLVD kenwood
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DISREGARDING STOP SIGN
+  stories:
+    - url: https://www.hpherald.com/evening_digest/remembering-writer-teacher-and-activist-hannah-hayes/article_db6867e0-06d8-11ed-886b-bf4d44a12da1.html
+      title: Remembering writer, teacher and activist Hannah Hayes
+      site: Hyde Park Herald
+      date: '2022-07-18T15:33:00-05:00'
+      description: Hannah (Anne) Hayes, daughter of the South Side, writer, teacher, activist, beloved Hyde Parker, sibling, wife and mother was killed by a hit-and-run driver in Hyde Park, Monday evening, July
+
+    - url: https://abc7chicago.com/post/bronzeville-hit-and-run-hannah-hayes-killed-suspects/12059764/
+      title: Bronzeville hit-and-run victim ID'd as journalist, activist Hannah Hayes; suspects still at large
+      site: ABC 7 Chicago
+      date: '2022-07-19T01:10:00Z'
+      description: Hannah Hayes was a fierce advocate for public education and worked for decades to make Chicago a better place for everyone, especially young people, her husband recalls.
 
 31881cfc3d0a9b4a172ab170210891adc9b7263c639beaf16b05fde86e207092de9b33006c7e6608b324fad1994fe574ef3b40d666faf3d3e8d6629bf8d03993:
   private_notes: "This entry is just a stub, pre-filled with basic info from the crash data:\n2022-07-14 21:35\n4331 N MANNHEIM RD \n1 fatalities, 6 injured\nVEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS"

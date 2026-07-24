@@ -40,11 +40,28 @@ c1711eaa9078e952b0c1db05732c4dbc4d2b7cf2b03f3965ddc1642ac57ede45227efacf65518710
 
 b98062f9bec2ece1ac05057d82542528440716bfbb9562243e01aefd0e1ef54b76570285b890bfd6ddb2343c360c2f3152f324b0b8a083417d7052e330955622:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2022-06-16 09:58
     3351 W 16TH ST north lawndale
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/north-lawndale-hit-and-run-crash-chicago-police-west-16th-street-cpd/11968522/
+      title: '''He didn''t get to live his life'': Car recovered, balloon release held for boy killed in hit-and-run'
+      site: ABC 7 Chicago
+      date: '2022-06-17T10:03:00Z'
+      description: The family of an 11-year-old boy demanding answers after he was killed in a hit-and-run on the city's North Lawndale neighborhood Thursday.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-3-months-after-hit-and-run-that-killed-11-year-old-his-family-calls-for-justice/2942460/
+      title: 'Left for Dead: 3 Months After Hit-and-Run That Killed 11-Year-Old, His Family Calls for Justice'
+      site: nbcchicago.com
+      date: '2022-09-16T20:04:44-05:00'
+      description: Friday marked exactly three months since 11-year-old Ja’lon James was killed in a hit-and-run crash that remains unsolved. His family is calling for justice, saying Chicago police have plenty of evidence and it shouldn’t take this long to see an arrest.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-nbc-5-sues-for-records-on-hit-and-run-that-killed-11-year-old/3119684/
+      title: 'Left for Dead: NBC 5 Sues for Records on Hit-and-Run That Killed 11-Year-Old'
+      site: nbcchicago.com
+      date: '2023-04-14T20:41:27-05:00'
+      description: Ten months after the hit-and-run crash that killed 11-year-old Ja’lon James, his family says Chicago police have not given them any updates on the investigation into his death – and NBC 5 Investigates is now suing to obtain public records on the case.
 
 b3389d0f1d23cce4fb6858627d38d9d9bae0421181620a29efb6fd506ea47c6fb431b748eeb7f4d18e0cb37ab4cf6dcd361a1cfb3c8af628bd41912f52a39ec2:
   private_notes: |-

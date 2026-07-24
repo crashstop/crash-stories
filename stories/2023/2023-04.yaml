@@ -30,6 +30,20 @@ a03e07a09f2cb2ea7756cc81a866358d4652f9b1867dcc1b891231885c7e7fcf5044a5bdbbf11011
     1 fatalities, 0 injured
     PEDESTRIAN: DISTRACTION - FROM INSIDE VEHICLE
 
+9449ea84d9a53d30b2b1315a3bb9984a372e3cc4dc1a866d578dcf063e5a8345a856b8d9c5b989ab2c357cf894d34fbb052ef583ddc3db24f340203f48883586:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2023-04-16 15:04
+    4400 W WASHINGTON BLVD garfield park
+    0 fatalities 4 incaps 7 injured
+  stories:
+    - url: https://abc7chicago.com/post/stolen-car-crash-cristian-uvidia-west-garfield-park/14461105/
+      title: Teen facing reckless homicide charge in West Garfield Park stolen car crash that killed 6-month-old
+      site: ABC 7 Chicago
+      date: '2024-02-23T17:34:00Z'
+      description: A 16-year-old boy has been charged with reckless homicide in connection with a West Side crash that killed a 6-month-old boy last April, police said.
+
 0409d52d207676438325cc8ae350fb42eb5a7e48c819869348dd68e4fa3663ff298f67c65f56960da737c4b37c7a6ee4faae227fd389b0466549e558e340d0da:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

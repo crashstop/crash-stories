@@ -62,6 +62,26 @@ ab852cbe7e81041987bb59188d1a732a55e1a10e33c004da49eb97f2dac9cfc323306257304c559f
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
 
+8ef511d6a0e7afaee3a030e553cce9c9a2f1d35c1495086050ccba30c255464441cfce67ac6f7b0f00d9b1e75c6537b5e9c338e65d6e68fd3eba2de7799445a7:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: hit-and-run CYCLIST PEDALCYCLIST
+    2024-08-24 20:28
+    3595 W WASHINGTON BLVD garfield park
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://chi.streetsblog.org/2024/09/06/john-ward-55-fatally-struck-by-a-hit-and-run-driver-in-garfield-park-was-the-first-person-to-die-from-a-bike-crash-in-chicago-this-year
+      title: John Ward, 55, fatally struck by a hit-and-run driver in Garfield Park, was the first person to die from a bike crash in Chicago this year
+      site: Chicago Streetsblog
+      date: '2024-09-06T23:08:55+00:00'
+      description: A car driver fatally struck John Ward, 55, on a bicycle Saturday, August 24, in the Garfield Park green space, and fled the scene. He died of his injuries on Thursday, September 5, the Cook County Medical Examiner’s Office stated.
+
+    - url: https://patch.com/illinois/chicago/police-search-hit-run-driver-who-fatally-struck-man-bike
+      title: Police Search For Hit-And-Run Driver Who Fatally Struck Cyclist In Garfield Park
+      site: patch.com
+      date: '2024-09-09T19:04:23Z'
+      description: A 55-year-old Chicago man died nearly two weeks after a collision with a hit-and-run driver on West Washington Boulevard, police said.
+
 3a3cf057924a96174529f651e67e68f37dd17919ecda500957331e232b7a41c75c17bad28d7006ae2a52fc4ca2cfa025d8e841487bedc1619b5d9cad63033f77:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

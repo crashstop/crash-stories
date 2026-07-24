@@ -43,7 +43,7 @@ d53b1af0e780aef45e047a48e7e97ac0d1aa9b2403ba2c6fa4b2c72183fc21a611339636d57de93e
   notes: |
     The police record appears to incorrectly report the 68-year-old driver as being killed in the crash.
   private_notes: |-
-    tk-note: appears to have classified injury as a fatality
+    flag:tk: appears to have classified injury as a fatality
     2025-09-16 20:33
     4600 N LAKE SHORE DR SB uptown
     2 fatalities, 0 injured
@@ -102,7 +102,7 @@ b476c9bc04573f8fd51c89f22b34f34c97523058487162416b7eaaed852abca9d79801bfc723a2eb
 
 44a26c774727d01f94144d43c6a2dd855883bb13b7858fa886e9eadb1226aacbc880476d7e708071149918f0d6c329ed035c3610ab07389571d6b010838d6bc8:
   private_notes: |
-    tk-note: hitting a police car
+    flag:tk: hitting a police car
     basicinfo: VEHICLE-TO-VEHICLE HEAD ON
     2025-09-28 01:20
     806 E 76TH ST grand crossing

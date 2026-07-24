@@ -72,11 +72,16 @@ bc92e4b1fb4ebf6078163cf7c916a2585384d5d102eec56f41d67aff0a49abc10237d9220739e380
 
 84385e0f2184f8d165eaa1b54c877db79856bdf547a0dccf7be33558a331dcc7cc563902b63c648ba595e0d833562c305944e18b1c591d0db96ae2e4a9c37ce0:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-09-17 02:05
     1313 W KINZIE ST west loop
     1 fatalities, 1 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://chi.streetsblog.org/2023/09/18/cpd-driver-caused-death-of-aurea-gutierrez-31-in-the-west-loop-early-sunday-morning-fled-the-scene
+      title: 'CPD: Driver caused death of Aurea Gutierrez, 31, in the West Loop early Sunday morning, fled the scene'
+      site: Chicago Streetsblog
+      date: '2023-09-18T20:34:15+00:00'
+      description: While CPD's Community Alert described this as a pedestrian fatality, the crash report says Aurea Gutierrez was on the roof of the SUV before the driver hit a chain link fence.
 
 9d9fedc3ecb0d674bbe68e00880922d4430ffb83711567b22d2c1838ea7a80ea8248a6ef4de93caafcd5a6954b9e07183ae148bcec8799ff1f3376a7de8fefc9:
   private_notes: |-

@@ -1,10 +1,21 @@
 7152488a2739d0b96f7adbf36f6f0bb098c7b7a27a71a03a14df8bd89dde1b59a8b2d4eeef9c3e2472d867e379b1cc184bc1c933a0623259c2330e069014144a:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2024-10-01 01:58
     3500 S ASHLAND AVE mckinley park
     1 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://chicago.suntimes.com/crime/2024/10/01/driver-killed-2-hurt-mckinley-park-crash
+      title: Police chase sparks deadly crash in McKinley Park, witness feels 'very lucky' to be alive
+      site: Chicago Sun-Times
+      date: '2024-10-01T18:30:17.671Z'
+      description: About 2 a.m. Tuesday, officers began pursuing two gunmen who got into a black Lexus ES that sped north from the 5500 block of South Pulaski Road before running a red light and colliding with an SUV and a building in the 3500 block of South Ashland Avenue, Chicago police said.
+
+    - url: https://www.fox32chicago.com/news/chicago-man-charged-2024-crash-killed-18-year-old-police
+      title: 'Chicago man charged in 2024 crash that killed 18-year-old: police'
+      site: FOX 32 Chicago
+      date: 2026-04-29
+      description: A Chicago man has been charged after the 2024 crash that killed an 18-year-old teen, according to Chicago police.
 
 dfa2efadb2e9f55e9b8fa86784dd57b17e816b4fb876961743b10daa98c1ce984136bfd381bead93b7369a715cf9769cb37aba0ca3eec610a90a2c0468e281a7:
   private_notes: |-

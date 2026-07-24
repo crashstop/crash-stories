@@ -27,7 +27,7 @@ __GENERAL__:
 
   - url: https://chi.streetsblog.org/2026/07/22/the-dutch-reach-is-not-the-answer
     title: The "Dutch Reach" is not the answer to Chicago's bike safety problems
-    site: chi.streetsblog.org
+    site: Chicago Streetsblog
     date: '2026-07-23T04:57:52+00:00'
     description: An op-ed from Chris Ridgeway, co-chair of the Chicago Bike PAC, arguing that the emphasis on the "Dutch Reach" is a distraction from systemic changes needed to make Chicago truly safe for cyclists.
 
@@ -73,7 +73,7 @@ __GENERAL__:
 
 2339a875aa845a5b0d007e94c448d87b4b36066dd287fbb5cf0d53bec4c9f445b7cd1ff8afbb82baccf054416484fd9265f0a4c44377f86998d457bd2ab63280:
   private_notes: |
-    tk-note:motorcyclist
+    flag:tk:motorcyclist
     basicinfo: VEHICLE-TO-VEHICLE ANGLE
     2026-07-10 23:20
     6801 S DAMEN AVE englewood

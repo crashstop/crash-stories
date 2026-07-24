@@ -120,8 +120,13 @@ a623241ec43b66156dbd0b7d96f59b52e867feccd943bd9a2225f1d4be27dd806985a0d3d377b645
 
 6fcb19a7543e5f1bd6b5d0f3d10debe3a28209da55cb46a7b005458909ee9ba7a58ced1cc3d6225904f26f30c5b1f978de3f22ffec1c5d694ec3f33a2b9464ff:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-10-30 20:46
     3050 S LAKE SHORE DR SB douglas
     2 fatalities, 6 injured
     VEHICLE-TO-VEHICLE: IMPROPER LANE USAGE
+  stories:
+    - url: https://chicago.suntimes.com/crime/2023/11/1/23942538/victims-dusable-lake-shore-drive-crash-remembered-as-bright-young-man-and-ray-of-sunshine
+      title: Victims of deadly DuSable Lake Shore Drive crash remembered as ‘bright young man’ and ‘ray of sunshine’
+      site: Chicago Sun-Times
+      date: '2023-11-01T22:32:16.033Z'
+      description: Jalean Ewing-Gibbs and Jaida Rosado Colon, both 24, were killed Monday night. Their two 21-year-old friends were injured.

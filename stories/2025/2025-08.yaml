@@ -1,26 +1,48 @@
 37dfa3130c2dfec7f0479b2dd1c370e84a1d272f360ebd0e09a8de00378994907509e5ac4af04b05c929f858b5aac4e6a977d0561ea5566a56acbd27f6c38340:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-08-03 00:16
     7458 S HALSTED ST auburn gresham
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: IMPROPER OVERTAKING/PASSING
+  stories:
+    - url: https://www.fox32chicago.com/news/motorcycle-deadly-hit-and-run
+      title: 'Chicago crash: Motorcyclist, 54, killed in hit-and-run on South Side, police say'
+      site: FOX 32 Chicago
+      date: 2026-08-03
+      description: A 54-year-old motorcyclist was killed in a hit-and-run crash on the city’s South Side around midnight on Sunday.
 
 301fb5921109fa3cebdc9c3994081f22070a161c7bae29492c93460585902d9ad955f574172596ad95c46d1058100984b9ca891f63eae5f138ab9300bc7bc8d3:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-08-03 04:08
     399 W 76TH ST grand crossing
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/driver-sought-hit-and-run-crash-pedestrian-dead-auburn-park/
+      title: Driver sought in hit-and-run crash that left pedestrian dead in Auburn Park neighborhood
+      site: CBS News
+      date: 2025-08-16T17:17:24-0500
+      description: Police said the hit-and-run driver struck and killed a 31-year-old pedestrian in Auburn Park during the early morning of Aug. 3.
+
+    - url: https://www.chicagopolice.org/wp-content/uploads/15-Aug-25-Community-Alert-Major-Accidents-6th-District-UPDATE-Fatal-Hit-Run-_300-block-of-W.-76th-St.-JJ359901.pdf
+      title: 'Chicago Police Alert #608-25-014 asking the public for info on hit-and-run in the Greater Grand Crossing neighborhood'
+      site: chicagopolice.org
+      date: 2026-08-15
+      description: |
+        Offending vehicle description: Dark colored SUV, unknown make/model and unknown plate
 
 280fd4f315cd9f709de7563ef25748b9eb3336985d6df4f33fa4b4e894f256700c18715ea96ebba450efe9cd2893be5e9f61e5cfa7673a52e2d0e0b95d4795b3:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-08-06 19:30
     1498 W ESTES AVE rogers park
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/chicago-hit-run-crash-kills-pedestrian-west-estes-avenue-rogers-park-cpd/17473560/
+      title: Man hit, killed in Rogers Park; Chicago police searching for SUV involved
+      site: ABC 7 Chicago
+      date: '2025-08-08T17:48:43Z'
+      description: An SUV hit and killed a pedestrian before driving away Wednesday night on Chicago's North Side, Chicago police said Friday in a crime alert.
 
 47915f77841d3fde79825c27d6d1661805edf6a39d57d3071594c7e10643557ef24c3c106ec5224e69a40312add9c6a4fa8437f6601412b8f5bbaa5de54c360a:
   private_notes: |-
@@ -32,11 +54,16 @@
 
 8e4208398f39f1c287e1c0cdbcea94b43d1782e7843eddf3ff29c9a3ef84ade2707c621dfa8cd3342560095a45b48c85c3f943bc83397b366508973530b4dc38:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-08-09 03:23
     5454 S KEDZIE AVE gage park
     1 fatalities, 0 injured
     PEDESTRIAN: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://www.nbcchicago.com/news/local/photos-released-of-vehicle-in-deadly-gage-park-hit-and-run/3807599/
+      title: Photos released of vehicle in deadly Gage Park hit-and-run
+      site: nbcchicago.com
+      date: '2025-08-10T19:02:37-05:00'
+      description: Authorities on Sunday released images of a vehicle wanted in connection with a deadly hit-and-run in Chicago's Gage Park neighborhood that killed 22-year-old Jermaine Martin.
 
 cc663cb034427f1850f78f8b61dad26d81eb9c611463ed5743f8f365bc1e03b71bacc3645007a816d6cf9868098d1caf8e8cb54b978cd8b99f9af13102a35292:
   private_notes: |-
@@ -47,4 +74,8 @@ cc663cb034427f1850f78f8b61dad26d81eb9c611463ed5743f8f365bc1e03b71bacc3645007a816
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
 
 20bfaeb02f55b55bbbf60834bdcce8a3c227392c20447e1dbf7b56f3467b342ff4d36b631aee01f60f2051be31cc2295124aa1d36a2ba86fa94ff970b57d3942:
-  private_notes: "This entry is just a stub, pre-filled with basic info from the crash data:\n2025-08-16 12:41\n1 W PARKING LOT D ST \n1 fatalities, 0 injured\nOTHER: PHYSICAL CONDITION OF DRIVER"
+  private_notes: |
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2025-08-16 12:41\n1 W PARKING LOT D ST
+    1 fatalities, 0 injured
+    OTHER: PHYSICAL CONDITION OF DRIVER

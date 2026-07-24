@@ -44,6 +44,32 @@ a919081dea2113ec6681e71cb58d29b6ad21779da8a162718fef37c1802af91581173ff3007bb6c3
     1 fatalities, 0 injured
     CYCLIST: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
 
+ac68658a1894e2e37e5f7e5445b798d3767aa3e8035713d036b590e3216221135cd81f2ba1fc437496c76e09b1f9c7dcf6a0e0bc0e76da0363d2f9d514869356:
+  private_notes: |
+    flag:tk:homicide/death after the crash
+    basicinfo: hit-and-run CYCLIST PEDALCYCLIST
+    2018-09-25 01:26
+    7601 S EBERHART AVE grand crossing
+    0 fatalities 0 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2018/09/25/community-activist-shot-dead-after-chasing-driver-who-hit-cyclist/
+      title: 'Community Activist Shot Dead After Chasing Driver Who Hit Cyclist: ''He Died As A Hero'''
+      site: Block Club Chicago
+      date: '2018-09-25T20:05:52+00:00'
+      description: 39-year-old Alberto Bocanegra was shot to death after chasing a hit-and-run driver early Tuesday. He was a well-known Brighton Park community activist and former aldermanic. The gunman was driving a blue SUV, police said.
+
+    - url: https://www.cbsnews.com/chicago/news/alberto-bocanegra-murder/
+      title: Friends Remember Man Murdered After Stepping In To Help Cyclist
+      site: CBS News
+      date: 2018-09-25T17:08:05-0500
+      description: Police are searching tonight for the gunman who fatally shot a man who stood up for a bicyclist who was hit by a driver last night in the Greater Grand Crossing neighborhood.
+
+    - url: https://www.chicagotribune.com/2018/09/27/loved-ones-remember-man-who-died-a-hero-after-trying-to-stop-hit-and-run-driver/
+      title: Loved ones remember man who ‘died a hero’ after trying to stop hit-and-run driver
+      site: Chicago Tribune
+      date: '2018-09-27T07:04:00+00:00'
+      description: Sergio Bocanegra wrapped his arm tightly around Alberto Bocanegra’s shoulders as the father and son leaned their heads together, overwhelmed by grief for a few silent moments outside the Cook County medical examiner’s…
+
 150d66556f56608c39d71c33db7129635557f66ae8e77c4bb59412befabfd3f1de5523d8de68605ddcb3854519b0a77f9d4831558ff00114255a6720fb12da79:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
