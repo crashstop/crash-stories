@@ -8,15 +8,28 @@ __GENERAL__:
 
   - url: https://blockclubchicago.org/2026/07/16/after-4-deaths-at-norwood-park-metra-crossing-safety-improvements-underway/
     title: After 4 Deaths At Norwood Park Metra Crossing, Safety Improvements Underway
-    site: blockclubchicago.org
+    site: Block Club Chicago
     date: '2026-07-16T12:50:00+00:00'
     description: Work on a four-quadrant gate system that closed the crossing to drivers began last week. Since 2010, there have been 12 collisions at the crossing.
 
+  - url: https://chi.streetsblog.org/2026/07/17/the-bike-crash-deaths-of-transportation-planners-riley-oneil-and-louisa-gag-should-be-a-turning-point-for-safe-streets
+    title: The crash deaths of transportation planners Riley O'Neil and Louisa Gag should be a turning point for Safe Streets
+    site: Chicago Streetsblog
+    date: '2026-07-18T00:33:28+00:00'
+    description: |
+      The last two months have been heartbreaking for sustainable transportation professionals and advocates in Chicago and Boston, where two hauntingly similar bike crashes took the lives of well-loved Complete Streets planners Riley O’Neil and Louisa Gag. But there’s reason to be hopeful that these tragedies will spur new political support for Vision Zero efforts in these cities
+
   - url: https://chi.streetsblog.org/2026/07/21/tragically-motorists-have-struck-and-killed-at-least-three-more-pedestrians-on-chicago-streets-in-2026
     title: Tragically, motorists have struck and killed at least three more pedestrians on Chicago streets in 2026
-    site: chi.streetsblog.org
+    site: Chicago Streetsblog
     date: '2026-07-21T23:44:03+00:00'
     description: Streetsblog roundup of the fatal crashes involving vulnerable road users this year so far
+
+  - url: https://chi.streetsblog.org/2026/07/22/the-dutch-reach-is-not-the-answer
+    title: The "Dutch Reach" is not the answer to Chicago's bike safety problems
+    site: chi.streetsblog.org
+    date: '2026-07-23T04:57:52+00:00'
+    description: An op-ed from Chris Ridgeway, co-chair of the Chicago Bike PAC, arguing that the emphasis on the "Dutch Reach" is a distraction from systemic changes needed to make Chicago truly safe for cyclists.
 
 7305961b2b09b5761453a9ee5c35f3ba62c2a64f9a5ec4ed44b1835cb8edf400fe4615dd9ed189860b758d286d3360f7f8dfc243d522e3466c5032c072ddb503:
   private_notes: |
@@ -74,6 +87,7 @@ __GENERAL__:
 
     - url: https://wgntv.com/news/chicagocrime/police-search-for-driver-involved-in-far-south-side-hit-and-run-that-left-2-injured/
       title: Police search for driver involved in Far South Side hit-and-run that left 2 injured
+      site: WGN-TV
       date: 2026-07-17
       description: |
         On Friday, police shared photos of the Acura sedan, which officers believe may be an ILX model. Police said the vehicle, which has front-end damage and a missing front bumper, has an Illinois license plate with the tag number FM92327.

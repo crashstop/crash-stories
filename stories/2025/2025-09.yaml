@@ -1,21 +1,38 @@
 ed6375764d678e5f46e72e233466ed7f5df210ff88d2c951454d968b2f46022e2bc8b1b7b62b5f7b480c4550450d0bab34d24f46bc884f9065301de7a1b8ad0e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-09-11 04:55
     540 N MICHIGAN AVE magnificent mile
     1 fatalities, 5 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://www.nbcchicago.com/news/local/louis-vuitton-store-smash-and-grab-leads-to-major-michigan-ave-crash-innocent-bystander-killed/3822798/
+      title: Louis Vuitton store smash-and-grab leads to major Mag Mile rollover crash, innocent bystander killed
+      site: nbcchicago.com
+      date: '2025-09-11T12:12:36-05:00'
+      description: The crash stemmed from a smash-and-grab at the Louis Vuitton store in the Gold Coast, with at least nine suspects fleeing the scene in different getaway cars.
+
+    - url: https://blockclubchicago.org/2025/09/14/murder-charges-filed-after-smash-and-grab-at-mag-miles-louis-vuitton-store-ends-in-deadly-car-crash/
+      title: Murder Charges Filed After Smash-And-Grab At Mag Mile's Louis Vuitton Store Ends In Deadly Car Crash
+      site: Block Club Chicago
+      date: '2025-09-14T18:20:51+00:00'
+      description: Mark Arceta, 40, was killed while on his way to work after burglars fleeing the Michigan Avenue store hit his car, authorities said.
 
 a2e6bd83921b7b1d8ded973866ab88eb3ba55596b9ca580e54637436aaa89f2b0cb447ccf4374a3db77d2ad3243a88572a3ba4bf4237aebb0db8dfd173f1200e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-09-12 13:55
     901 S SACRAMENTO BLVD garfield park
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/leon-jordan-dies-car-crash-south-sacramento-boulevard-west-arthington-street-lawndale-chicago-police-department-says/17807859/
+      title: Man dies in Lawndale crash, police say
+      site: ABC 7 Chicago
+      date: '2025-09-13T11:40:03Z'
+      description: Leon Jordan died in a West Side crash on Friday afternoon, Chicago police said. Police said a 42-year-old woman was driving a Chevrolet sedan southbound on Sacramento Boulevard when she hit Jordan's Nissan SUV.
 
 d53b1af0e780aef45e047a48e7e97ac0d1aa9b2403ba2c6fa4b2c72183fc21a611339636d57de93eb5fda300fe6b6e588459662e5ae5ceafbf904a979070b093:
   private_notes: |-
+    Could not find on Google
     This entry is just a stub, pre-filled with basic info from the crash data:
     2025-09-15 19:54
     8211 S COTTAGE GROVE AVE chatham
@@ -23,25 +40,69 @@ d53b1af0e780aef45e047a48e7e97ac0d1aa9b2403ba2c6fa4b2c72183fc21a611339636d57de93e
     PEDESTRIAN: UNDER THE INFLUENCE OF ALCOHOL/DRUGS (USE WHEN ARREST IS EFFECTED)
 
 1951779d1cd17563f473987714b764e7a3edd0b605af209c4b3c1929162ec2405e000cd40566aa89904fa4d8a09abe91d194c618c7387ce788c9cbc0b4f91180:
+  notes: |
+    The police record appears to incorrectly report the 68-year-old driver as being killed in the crash.
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    tk-note: appears to have classified injury as a fatality
     2025-09-16 20:33
     4600 N LAKE SHORE DR SB uptown
     2 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/crime/2025/09/17/man-killed-in-crash-on-dusable-lake-shore-drive-on-north-side
+      title: Man killed in crash on DuSable Lake Shore Drive on North Side
+      site: Chicago Sun-Times
+      date: '2025-09-17T11:14:28.428Z'
+      description: The driver of a gray SUV, a 53-year-old man, was taken to the Illinois Masonic Medical Center where he was pronounced dead, police said. Police said he was driving northbound when he then drove into oncoming traffic, hitting a black SUV, whose driver was also taken to Illinois Masonic and was in good condition.
 
 0c39e2b2a59e4619dcb37d04300e3748a478079df5b58d380fba8397854e194e30dcbdc50868421377b56c309c4fb4e68f8388a137df4fd99921def4f27e611f:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-09-18 07:37
     4849 W WALTON ST austin
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://chi.streetsblog.org/2025/09/22/a-driver-struck-and-killed-anakin-perez-9-in-the-street-in-front-of-his-chicago-school-how-do-we-make-sure-that-never-happens-again
+      title: A driver struck and killed Anakin Perez, 9, in the street in front of his Chicago school. How do we make sure that never happens again?
+      site: Chicago Streetsblog
+      date: '2025-09-22T22:13:31+00:00'
+      description: In the aftermath of Anakin Perez’s traffic death last week, writer Molly Brown visited the street in front of McNair Elementary, where he spent his final moments alive. When you’re standing on Walton St next to McNair, it’s hard to believe a pedestrian could be killed here. It’s a one-way residential street with a single traffic lane and parked cars along both sides.
+
+    - url: https://blockclubchicago.org/2025/10/29/family-of-west-side-boy-9-killed-by-driver-outside-his-school-demand-criminal-charges-in-case/
+      title: Family Of West Side Boy, 9, Killed By Driver Outside His School Demand Criminal Charges In Case
+      site: Block Club Chicago
+      date: '2025-10-29T12:45:00+00:00'
+      description: A driver fatally struck fourth-grader Anakin Perez while he crossed the street in front of his Austin school. The driver, who initially fled the scene, was only given a traffic citation.
+
+    - url: https://www.fox32chicago.com/news/family-chicago-boy-killed-car-want-justice-driver-dui-history-faces-no-charges
+      title: Family of Chicago boy killed by car wants justice, driver with DUI history faces no charges
+      site: FOX 32 Chicago
+      date: 2025-12-22
+      description: Fox Chicago’s investigation into the driver’s history revealed more than half a dozen past traffic violations, including driving on an expired license, failing to yield, ignoring stop signs, driving uninsured, and failing to appear in court. Most concerning was an active DUI case involving reckless driving, improper lane changes, and an open container of alcohol in the vehicle.
 
 b476c9bc04573f8fd51c89f22b34f34c97523058487162416b7eaaed852abca9d79801bfc723a2eb10a8ec81b11463646f07062915d20abd3d2e955df374ecb6:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-09-20 01:55
     2631 W WARREN BLVD united center
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://abc7chicago.com/post/driver-custody-deadly-car-crash-2600-block-west-warren-boulevard-side-chicago-police-department/17854354/
+      title: Driver in custody after deadly crash on Near West Side, police say
+      site: ABC 7 Chicago
+      date: '2025-09-20T11:42:00Z'
+      description: A 42-year-old man driving a black Dodge SUV rear-ended a Grey Hyundai sedan, which was stopped at a traffic signal, police said. Police said the sedan's driver, a 30-year-old man, was taken to Mount Sinai Hospital, where he was pronounced dead. The SUV's driver was taken into custody, and charges are pending, police said.
+
+44a26c774727d01f94144d43c6a2dd855883bb13b7858fa886e9eadb1226aacbc880476d7e708071149918f0d6c329ed035c3610ab07389571d6b010838d6bc8:
+  private_notes: |
+    tk-note: hitting a police car
+    basicinfo: VEHICLE-TO-VEHICLE HEAD ON
+    2025-09-28 01:20
+    806 E 76TH ST grand crossing
+    0 fatalities 0 incaps 2 injured
+  stories:
+    - url: https://abc7chicago.com/post/driver-crashes-parked-chicago-police-squad-car-76th-street-cottage-grove-avenue-south-side-sunday/17898077/
+      title: Driver crashes into parked Chicago police squad car on South Side
+      site: ABC 7 Chicago
+      date: '2025-09-28T13:03:30Z'
+      description: An officer was unharmed after the driver of a Jeep allegedly crashed into a parked CPD squad car on the South Side

@@ -48,11 +48,18 @@ e9dd9e957bd99f84cf584bc4f98158b8d9d21d6b3ec1fe1141ee76b8a4c88936ed3854efcf08b6a3
 
 09aa8d6e2906482df6717671a532324d3667b00920b363a65face81089921576c5175803211ef1fc902662b7cb7df5e7268ab8491eb4fb4444a888fac30c888a:
   stories:
+    - url: https://abc7chicago.com/post/chicago-crash-today-breaking-news-87th-and-cottage-grove/12486693/
+      title: '2 dead, 16 injured after stolen car causes wrong-way multi-vehicle crash at high-rate of speed: CPD'
+      site: ABC 7 Chicago
+      date: '2022-11-23T23:27:00Z'
+      description: Seven vehicles were involved in the crash at 87th and Cottage Grove after a stolen vehicle caused a chain-reaction crash while driving the wrong way at a high rate of speed, police say.
+
     - url: https://www.chicagotribune.com/2022/11/23/2-killed-10-hospitalized-after-a-speeding-stolen-car-crashes-into-7-other-vehicles-on-the-south-side-authorities-say/
       title: 2 killed, 10 hospitalized after a speeding, stolen car crashes into 7 other vehicles on the South Side, authorities say
       site: Chicago Tribune
       date: '2022-11-23T23:41:10+00:00'
-      description: "Two people were killed and 10 were transported to hospitals after a stolen, speeding Dodge Charger struck seven other vehicles in a horrific Wednesday night crash on Chicago’s South Side, authorities said.\r\nThe crash happened at 5…"
+      description: |
+        Two people were killed and 10 were transported to hospitals after a stolen, speeding Dodge Charger struck seven other vehicles in a horrific Wednesday night crash on Chicago’s South Side, authorities said.
 
 c7295a58784b3847adb73440158ee46d5a6a9e02bd748f4246b6264ae019b1ed78e5a3e626de2b9b65e97bc2d50c9a9b689b189b25818bf34ce63673504a1d61:
   private_notes: |-
