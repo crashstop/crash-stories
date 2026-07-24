@@ -8,7 +8,7 @@
     - url: https://www.fox32chicago.com/news/motorcycle-deadly-hit-and-run
       title: 'Chicago crash: Motorcyclist, 54, killed in hit-and-run on South Side, police say'
       site: FOX 32 Chicago
-      date: 2026-08-03
+      date: 2025-08-03
       description: A 54-year-old motorcyclist was killed in a hit-and-run crash on the city’s South Side around midnight on Sunday.
 
 301fb5921109fa3cebdc9c3994081f22070a161c7bae29492c93460585902d9ad955f574172596ad95c46d1058100984b9ca891f63eae5f138ab9300bc7bc8d3:
@@ -18,18 +18,18 @@
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
   stories:
+    - url: https://www.chicagopolice.org/wp-content/uploads/15-Aug-25-Community-Alert-Major-Accidents-6th-District-UPDATE-Fatal-Hit-Run-_300-block-of-W.-76th-St.-JJ359901.pdf
+      title: 'Chicago Police Alert #608-25-014 asking the public for info on hit-and-run in the Greater Grand Crossing neighborhood'
+      site: chicagopolice.org
+      date: 2025-08-15
+      description: |
+        Offending vehicle description: Dark colored SUV, unknown make/model and unknown plate
+
     - url: https://www.cbsnews.com/chicago/news/driver-sought-hit-and-run-crash-pedestrian-dead-auburn-park/
       title: Driver sought in hit-and-run crash that left pedestrian dead in Auburn Park neighborhood
       site: CBS News
       date: 2025-08-16T17:17:24-0500
       description: Police said the hit-and-run driver struck and killed a 31-year-old pedestrian in Auburn Park during the early morning of Aug. 3.
-
-    - url: https://www.chicagopolice.org/wp-content/uploads/15-Aug-25-Community-Alert-Major-Accidents-6th-District-UPDATE-Fatal-Hit-Run-_300-block-of-W.-76th-St.-JJ359901.pdf
-      title: 'Chicago Police Alert #608-25-014 asking the public for info on hit-and-run in the Greater Grand Crossing neighborhood'
-      site: chicagopolice.org
-      date: 2026-08-15
-      description: |
-        Offending vehicle description: Dark colored SUV, unknown make/model and unknown plate
 
 280fd4f315cd9f709de7563ef25748b9eb3336985d6df4f33fa4b4e894f256700c18715ea96ebba450efe9cd2893be5e9f61e5cfa7673a52e2d0e0b95d4795b3:
   private_notes: |-
