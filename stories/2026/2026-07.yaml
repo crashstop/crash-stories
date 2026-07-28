@@ -109,6 +109,24 @@ __GENERAL__:
   stories:
     - url: https://www.nbcchicago.com/news/local/4-nw-suburban-teens-killed-after-car-speeds-off-bridge-crashes-into-train-in-chicago/3966442/
       title: 4 NW suburban teens killed after car speeds off bridge, crashes into train in Chicago
-      site: nbcchicago.com
+      site: NBC 5 Chicago
       date: '2026-07-27T09:52:28-05:00'
       description: The incident stemmed form a police pursuit, with the driver of the car veering off a bridge and then crashing into the boxcar of a freight train. The four teens killed were all from the northwest suburbs, including Woodstock, Crystal Lake and Palatine.
+  private_info: |
+    basicinfo: OTHER FIXED OBJECT
+    2026-07-26 02:16
+    6901 S CICERO AVE west lawn
+    4 fatalities 0 incaps 0 injured
+
+7124acd2d5163a826bdda12e9244e87e4e7a45f751a650c9711b75d49555106b9b2900b195e25da6120a7b862154c01fe3573d5d50757458653149879f1251b8:
+  stories:
+    - url: https://chicago.suntimes.com/news/2026/07/27/pedestrian-killed-in-gage-park-crash
+      title: Pedestrian killed in Gage Park crash
+      site: Chicago Sun-Times
+      date: '2026-07-27T15:49:17.663Z'
+      description: An SUV southbound on South Western Avenue struck and killed a 63-year-old man late Sunday, police said.
+  private_info: |
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2026-07-26 22:47
+    5100 S WESTERN AVE gage park
+    1 fatalities 0 incaps 1 injured
