@@ -82,11 +82,22 @@ b578106d0a0c1510e1827bb5cfc047dff910c26410125065fd70ede4d5569f2dc34cf02d53e9e180
 
 de91f23340c0b101651bdb4ddcf5f7721590cda347808ace1f4f40744ce3278b59154ddcac964c7c5d048b929884fde68c88da971744688264b755b07c949f83:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2025-12-19 11:40
     750 N DEARBORN ST rush division
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: PHYSICAL CONDITION OF DRIVER
+  stories:
+    - url: https://chi.streetsblog.org/2025/12/21/cpd-porsche-driver-dropped-off-dog-to-wanda-mejia-34-in-river-north-and-then-fatally-struck-her
+      title: 'CPD: Porsche driver dropped off dog to Wanda Mejia, 34, in River North, and then fatally struck Mejia'
+      site: Chicago Streetsblog
+      date: '2025-12-22T01:55:31+00:00'
+      description: Tragically, on Friday morning, after a driver dropped off a dog to Wanda Mejia, 35, in the River North neighborhood, the motorist accelerated and struck her as Mejia walked away, causing fatal injuries.
+
+    - url: https://www.lakeviewfuneralhome.com/obituaries/Wanda-Paola-Mejia-Quintero?obId=46795127
+      title: Obituary information for Wanda Paola Mejia Quintero
+      site: lakeviewfuneralhome.com
+      date: 2025-12-27
+      description: December 21, 1990  -  December 19, 2025
 
 f5d30ba3dbcc2cab892e319d7ea93b641ad32714a9f8e846634555f0624520ac284ffed1422f56cbe941a135a407ee1f55cfa43493b64b2fac6e04a1e09b5416:
   private_notes: |-

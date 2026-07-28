@@ -19,6 +19,12 @@ __GENERAL__:
     description: |
       The last two months have been heartbreaking for sustainable transportation professionals and advocates in Chicago and Boston, where two hauntingly similar bike crashes took the lives of well-loved Complete Streets planners Riley O’Neil and Louisa Gag. But there’s reason to be hopeful that these tragedies will spur new political support for Vision Zero efforts in these cities
 
+  - url: https://www.chicagotribune.com/2026/07/19/bike-lane-ticketing-fines-delivery-companies/
+    title: Chicago bike lane ticketing program records big fines against delivery companies
+    site: Chicago Tribune
+    date: '2026-07-19T10:00:31+00:00'
+    description: A bike lane ticketing program meant to make busy downtown streets safer for cyclists and pedestrians has found package delivery giants among its most consistent scofflaws.
+
   - url: https://chi.streetsblog.org/2026/07/21/tragically-motorists-have-struck-and-killed-at-least-three-more-pedestrians-on-chicago-streets-in-2026
     title: Tragically, motorists have struck and killed at least three more pedestrians on Chicago streets in 2026
     site: Chicago Streetsblog
@@ -98,3 +104,11 @@ __GENERAL__:
       date: 2026-07-17
       description: |
         On Friday, police shared photos of the Acura sedan, which officers believe may be an ILX model. Police said the vehicle, which has front-end damage and a missing front bumper, has an Illinois license plate with the tag number FM92327.
+
+65e1773f9f62b48ef6c4217cbb6bfa290fc568a9e2d7be5d9c4b45b6afbf43aa0c18b18b8ffa7d95315c230beed21818637d234df438f0801dc6bf5b1ffacd5a:
+  stories:
+    - url: https://www.nbcchicago.com/news/local/4-nw-suburban-teens-killed-after-car-speeds-off-bridge-crashes-into-train-in-chicago/3966442/
+      title: 4 NW suburban teens killed after car speeds off bridge, crashes into train in Chicago
+      site: nbcchicago.com
+      date: '2026-07-27T09:52:28-05:00'
+      description: The incident stemmed form a police pursuit, with the driver of the car veering off a bridge and then crashing into the boxcar of a freight train. The four teens killed were all from the northwest suburbs, including Woodstock, Crystal Lake and Palatine.
