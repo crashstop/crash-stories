@@ -105,6 +105,19 @@ __GENERAL__:
       description: |
         On Friday, police shared photos of the Acura sedan, which officers believe may be an ILX model. Police said the vehicle, which has front-end damage and a missing front bumper, has an Illinois license plate with the tag number FM92327.
 
+bb0df05fbedbb24ac65a350806e3d4cd78bf6715a52bf2c82c5fe88df88e2c3650246ad7855d3f17e1a323bebc0d57095c92fdbd54b5a762186ca8cae7843616:
+  private_notes: |
+    basicinfo: OTHER FIXED OBJECT
+    2026-07-25 19:11
+    2155 N LAKE SHORE DR NB lincoln park
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://abc7chicago.com/post/lake-shore-drive-crash-today-1-killed-motorcycle-2200-block-north-dusable-gold-coast-chicago/19577216/
+      title: Motorcyclist killed in Lincoln Park crash, police say
+      site: ABC 7 Chicago
+      date: '2026-07-26T02:25:00Z'
+      description: A motorcyclist was killed in a crash on the city's North Side on Saturday evening, Chicago police said.
+
 65e1773f9f62b48ef6c4217cbb6bfa290fc568a9e2d7be5d9c4b45b6afbf43aa0c18b18b8ffa7d95315c230beed21818637d234df438f0801dc6bf5b1ffacd5a:
   stories:
     - url: https://www.nbcchicago.com/news/local/4-nw-suburban-teens-killed-after-car-speeds-off-bridge-crashes-into-train-in-chicago/3966442/
