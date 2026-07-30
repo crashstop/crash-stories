@@ -62,6 +62,19 @@ fa25c83483619a2001bca369d2c0300f41d0c52d3e6f72aaa60e5e2f85e8b7ab733b3b6687fabc23
       date: '2026-05-19T02:41:02+00:00'
       description: In one of the cases, a semi driver struck and critically injured a bike rider, 37, and left the scene, only a block away from from where another hit-and-run driver killed delivery cyclist Damian Gomez, 18, on April 5.
 
+bbf1102d5b849a312413b079de18fa8ee926315bb352010cd58279d009cda67fb6777e62bb35c8bbd191eeb7f43c5eb312b220ef61280b53d27eb1d7fba144b6:
+  private_notes: |
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2026-05-18 00:11
+    1501 S LAKE SHORE DR NB museum campus
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2026/07/29/drivers-have-run-over-flipped-off-and-cursed-out-chicagos-traffic-aides-for-doing-their-jobs/
+      title: Drivers Have Run Over, Flipped Off And Cursed Out Chicago’s Traffic Aides For Doing Their Jobs
+      site: Block Club Chicago
+      date: '2026-07-29T13:12:00+00:00'
+      description: On May 18, a supervising traffic control aide with over 20 years of experience was struck by a driver near Soldier Field.
+
 9960ec6815f79327772030df7f06633701153ce854d3afb1cf6bd638639f2e75529e8b5318c572d380a73a943a6ca5557a0e3232342049890993c80f73338bed:
   private_notes: |
     basicinfo: PEDESTRIAN PEDESTRIAN

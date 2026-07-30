@@ -6,7 +6,10 @@ For every YAML file it checks:
     crash entry is a mapping with `notes` and/or `private_notes` strings
     and/or a `stories` list
   - each crash entry has at least one of the keys `notes`, `private_notes`,
-    `stories` (any of them may be empty; the others may be missing entirely)
+    `stories` (any of them may be empty; the others may be missing entirely),
+    and no keys outside that set (catches typos like `private_info`)
+  - each story entry has no keys outside `title`, `url`, `date`, `site`,
+    `description`
   - each crash_record_id exists in db.sqlite (crashes_serving)
   - each crash_record_id sits in the file for its crash month, i.e. the crash's
     crash_date year-month matches the file's <year-month>.yaml name
@@ -40,6 +43,9 @@ from datetime import date, datetime
 import yaml
 
 from common import COMMENTS_KEY, DB, GENERAL_KEY, ROOT, crash_date, story_paths
+
+CRASH_KEYS = ("notes", "private_notes", "stories")
+STORY_KEYS = ("title", "url", "date", "site", "description")
 
 
 def valid_story_date(value):
@@ -89,6 +95,13 @@ def validate_story_list(label, stories, counts, errors, file_month=None):
                 f"{label}: story #{i} must be a mapping, got {type(story).__name__}"
             )
             continue
+
+        unexpected = [k for k in story if k not in STORY_KEYS]
+        if unexpected:
+            errors.append(
+                f"{label}: story #{i} has unexpected key(s) {', '.join(map(repr, unexpected))} "
+                f"(expected only: {', '.join(STORY_KEYS)})"
+            )
 
         title = story.get("title")
         url = story.get("url")
@@ -176,9 +189,16 @@ def validate_file(path, con, cache):
             )
             continue
 
-        if not any(k in crash for k in ("notes", "private_notes", "stories")):
+        if not any(k in crash for k in CRASH_KEYS):
             errors.append(
                 f"{crash_id}: must have a `notes`, `private_notes`, or `stories` key"
+            )
+
+        unexpected = [k for k in crash if k not in CRASH_KEYS]
+        if unexpected:
+            errors.append(
+                f"{crash_id}: unexpected key(s) {', '.join(map(repr, unexpected))} "
+                f"(expected only: {', '.join(CRASH_KEYS)})"
             )
 
         for key in ("notes", "private_notes"):

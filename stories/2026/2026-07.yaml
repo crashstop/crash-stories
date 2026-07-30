@@ -119,27 +119,43 @@ bb0df05fbedbb24ac65a350806e3d4cd78bf6715a52bf2c82c5fe88df88e2c3650246ad7855d3f17
       description: A motorcyclist was killed in a crash on the city's North Side on Saturday evening, Chicago police said.
 
 65e1773f9f62b48ef6c4217cbb6bfa290fc568a9e2d7be5d9c4b45b6afbf43aa0c18b18b8ffa7d95315c230beed21818637d234df438f0801dc6bf5b1ffacd5a:
+  private_notes: |
+    basicinfo: OTHER FIXED OBJECT
+    2026-07-26 02:16
+    6901 S CICERO AVE west lawn
+    4 fatalities 0 incaps 0 injured
   stories:
     - url: https://www.nbcchicago.com/news/local/4-nw-suburban-teens-killed-after-car-speeds-off-bridge-crashes-into-train-in-chicago/3966442/
       title: 4 NW suburban teens killed after car speeds off bridge, crashes into train in Chicago
       site: NBC 5 Chicago
       date: '2026-07-27T09:52:28-05:00'
       description: The incident stemmed form a police pursuit, with the driver of the car veering off a bridge and then crashing into the boxcar of a freight train. The four teens killed were all from the northwest suburbs, including Woodstock, Crystal Lake and Palatine.
-  private_info: |
-    basicinfo: OTHER FIXED OBJECT
-    2026-07-26 02:16
-    6901 S CICERO AVE west lawn
-    4 fatalities 0 incaps 0 injured
 
 7124acd2d5163a826bdda12e9244e87e4e7a45f751a650c9711b75d49555106b9b2900b195e25da6120a7b862154c01fe3573d5d50757458653149879f1251b8:
+  private_notes: |
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2026-07-26 22:47
+    5100 S WESTERN AVE gage park
+    1 fatalities 0 incaps 1 injured
   stories:
     - url: https://chicago.suntimes.com/news/2026/07/27/pedestrian-killed-in-gage-park-crash
       title: Pedestrian killed in Gage Park crash
       site: Chicago Sun-Times
       date: '2026-07-27T15:49:17.663Z'
       description: An SUV southbound on South Western Avenue struck and killed a 63-year-old man late Sunday, police said.
-  private_info: |
-    basicinfo: PEDESTRIAN PEDESTRIAN
-    2026-07-26 22:47
-    5100 S WESTERN AVE gage park
-    1 fatalities 0 incaps 1 injured
+
+cb8edcf8038abb09bea655475629ffb2ea644d0342a362f684446daf848a4f5b3e1faa562399952743664972ec58b38eb4b4bf1a83d6f0ba5e0eecc4d63bb4a9:
+  private_notes: |
+    flag:tk:wrong-person-marked-as-fatal
+    Data says passenger died and driver survived, news story suggests the opposite
+
+    basicinfo: VEHICLE-TO-VEHICLE TURNING
+    2026-07-28 20:59
+    4824 W DIVERSEY AVE belmont cragin
+    1 fatalities 1 incaps 2 injured
+  stories:
+    - url: https://www.fox32chicago.com/news/chicago-police-atv-driver-critical-condition-crash-suv
+      title: ATV driver dies after crash with SUV on Chicago's Northwest Side
+      site: FOX 32 Chicago
+      date: 2026-07-29
+      description: A 22-year-old ATV driver has died after a crash with an SUV Tuesday night in Chicago's Belmont Cragin neighborhood. Here's what police say.
