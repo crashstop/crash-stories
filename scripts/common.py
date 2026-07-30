@@ -8,6 +8,7 @@ per-file plumbing (load, compare-and-rewrite, story iteration, db lookup).
 """
 
 import sys
+from collections.abc import Hashable
 from pathlib import Path
 
 import yaml
@@ -19,6 +20,33 @@ STORIES_CSV = ROOT / "stories.csv"
 
 COMMENTS_KEY = "__COMMENTS__"
 GENERAL_KEY = "__GENERAL__"
+
+
+class _DupKeyLoader(yaml.SafeLoader):
+    """SafeLoader that raises on duplicate mapping keys (at any nesting level)
+    instead of silently keeping only the last value, as plain safe_load does.
+    A duplicated crash_record_id would otherwise drop an entire entry."""
+
+    def construct_mapping(self, node, deep=False):
+        seen = {}
+        for key_node, _ in node.value:
+            key = self.construct_object(key_node, deep=deep)
+            if isinstance(key, Hashable):
+                line = key_node.start_mark.line + 1
+                if key in seen:
+                    raise yaml.constructor.ConstructorError(
+                        None,
+                        None,
+                        f"duplicate key {key!r} (lines {seen[key]} and {line})",
+                        key_node.start_mark,
+                    )
+                seen[key] = line
+        return super().construct_mapping(node, deep)
+
+
+def yaml_load(text):
+    """yaml.safe_load, but errors on duplicate mapping keys."""
+    return yaml.load(text, Loader=_DupKeyLoader)
 
 
 def modified_since_csv(paths):
@@ -87,7 +115,7 @@ def load_story_file(path):
     invalid YAML or fails valid_structure."""
     rel = path.relative_to(ROOT)
     try:
-        data = yaml.safe_load(path.read_text())
+        data = yaml_load(path.read_text())
     except yaml.YAMLError as exc:
         print(f"skip {rel}: invalid YAML ({exc.__class__.__name__})", file=sys.stderr)
         return None

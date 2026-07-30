@@ -5,6 +5,8 @@ For every YAML file it checks:
   - the file is valid YAML shaped as {crash_record_id: crash entry}, where a
     crash entry is a mapping with `notes` and/or `private_notes` strings
     and/or a `stories` list
+  - no mapping has duplicate keys, at any level (a duplicated top-level
+    crash_record_id would otherwise silently drop all but the last entry)
   - each crash entry has at least one of the keys `notes`, `private_notes`,
     `stories` (any of them may be empty; the others may be missing entirely),
     and no keys outside that set (catches typos like `private_info`)
@@ -42,7 +44,15 @@ from datetime import date, datetime
 
 import yaml
 
-from common import COMMENTS_KEY, DB, GENERAL_KEY, ROOT, crash_date, story_paths
+from common import (
+    COMMENTS_KEY,
+    DB,
+    GENERAL_KEY,
+    ROOT,
+    crash_date,
+    story_paths,
+    yaml_load,
+)
 
 CRASH_KEYS = ("notes", "private_notes", "stories")
 STORY_KEYS = ("title", "url", "date", "site", "description")
@@ -139,7 +149,7 @@ def validate_file(path, con, cache):
     errors = []
     file_month = path.stem  # '<year-month>' from <year-month>.yaml, e.g. '2026-05'
     try:
-        data = yaml.safe_load(path.read_text())
+        data = yaml_load(path.read_text())
     except yaml.YAMLError as exc:
         return None, [f"invalid YAML: {exc}"]
 

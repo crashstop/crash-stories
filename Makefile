@@ -1,6 +1,6 @@
 .PHONY: all format lint wrangle
 
-all: format lint wrangle
+all: lint format wrangle
 
 format:
 	python3 scripts/format.py

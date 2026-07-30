@@ -22,11 +22,15 @@ from pathlib import Path
 
 import yaml
 
-ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in _oldstuff/)
+ROOT = (
+    Path(__file__).resolve().parent.parent
+)  # repo root (this file lives in _oldstuff/)
 DB = ROOT / "db.sqlite"
 STORIES = ROOT / "stories"
 
-STUB_NOTICE = "This entry is just a stub, pre-filled with basic info from the crash data:\n"
+STUB_NOTICE = (
+    "This entry is just a stub, pre-filled with basic info from the crash data:\n"
+)
 
 # IFNULL on neighborhood_id only: it's the one concatenated column that is ever
 # NULL (10 fatal crashes as of 2026-07), and a bare NULL would null out the

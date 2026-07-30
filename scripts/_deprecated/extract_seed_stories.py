@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Split seeds-stories.yaml into per-month files under stories/<year>/<year-month>.yaml.
+"""Split seeds-stories.yaml into per-month files under stories/<year>/<year-month>.yaml.
 Usage: python3 split_stories.py
 
 NOTE: After the repo creation, this script and seeds-stories.yaml are deprecated.
@@ -9,6 +9,7 @@ Contributions are to be made to the Github repo yaml files
 For each crash_record_id in the seed file, look up its crash_date in db.sqlite, then
 route that crash's story entries into the file for the crash's year and month.
 """
+
 import sqlite3
 import sys
 from pathlib import Path
@@ -41,8 +42,10 @@ class StoryDumper(yaml.SafeDumper):
             if self.prepared_anchor is None:
                 self.prepared_anchor = self.prepare_anchor(self.event.anchor)
             length += len(self.prepared_anchor)
-        if isinstance(self.event, (ScalarEvent, CollectionStartEvent)) \
-                and self.event.tag is not None:
+        if (
+            isinstance(self.event, (ScalarEvent, CollectionStartEvent))
+            and self.event.tag is not None
+        ):
             if self.prepared_tag is None:
                 self.prepared_tag = self.prepare_tag(self.event.tag)
             length += len(self.prepared_tag)
@@ -50,10 +53,16 @@ class StoryDumper(yaml.SafeDumper):
             if self.analysis is None:
                 self.analysis = self.analyze_scalar(self.event.value)
             length += len(self.analysis.scalar)
-        return (length < 1024 and (isinstance(self.event, AliasEvent)
-            or (isinstance(self.event, ScalarEvent)
-                    and not self.analysis.empty and not self.analysis.multiline)
-            or self.check_empty_sequence() or self.check_empty_mapping()))
+        return length < 1024 and (
+            isinstance(self.event, AliasEvent)
+            or (
+                isinstance(self.event, ScalarEvent)
+                and not self.analysis.empty
+                and not self.analysis.multiline
+            )
+            or self.check_empty_sequence()
+            or self.check_empty_mapping()
+        )
 
 
 def _represent_str(dumper, data):
@@ -120,7 +129,9 @@ def main():
             )
         )
         story_count = sum(len(v) for v in crashes.values())
-        print(f"wrote {path.relative_to(ROOT)}  ({len(crashes)} crashes, {story_count} stories)")
+        print(
+            f"wrote {path.relative_to(ROOT)}  ({len(crashes)} crashes, {story_count} stories)"
+        )
         files += 1
 
     total_stories = sum(len(v) for v in seed.values())
