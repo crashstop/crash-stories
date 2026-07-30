@@ -46,7 +46,26 @@
       date: '2026-04-10T20:19:00Z'
       description: A reward is being offered for information in a fatal hit-and-run crash in South Chicago last month.
 
+5f3d1897d387f6deff1a4c0d8a712c0d63e2cfe8996808235c5b865431092abb9fecec0cacdb999f179ae5cbe6db09475e39d2a3881b6ebb8d5b5c0b2a748284:
+  private_notes: |
+    flag:tk:fatality-not-recorded
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2026-03-13 12:06
+    3960 W 26TH ST little village
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://chi.streetsblog.org/2026/05/05/tragically-there-have-been-at-least-five-more-fatal-crashes-involving-vulnerable-road-users-on-chicago-streets
+      title: Tragically, drivers have struck and killed at least five more vulnerable road users on Chicago streets in recent weeks
+      site: Chicago Streetsblog
+      date: '2026-05-05T05:53:15+00:00'
+      description: The Chicago Department of Transportation recently released its Fatal Monthly Crash Summary for March. It states that the left-turning driver of a large vehicle struck a pedestrian in a crosswalk on Friday, March 13, at around 12:06 p.m. at 3960 W. 26th St. in Little Village. According to Police News Affairs, the motorist was not cited.
+
 3e0785978d02e55af2b935f922c0116d57ff46e66d02776262b9476aa594a17b5f6b69b9a5c53d1bfdb70dbac42a133344d4ece3f609df9082c4ec33b52aac7f:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE SIDESWIPE SAME DIRECTION
+    2026-03-13 17:30
+    1234 W 115TH ST morgan park
+    0 fatalities 0 incaps 6 injured
   stories:
     - url: https://abc7chicago.com/post/2-kids-3-others-hurt-tow-truck-cta-bus-crash-1200-block-west-115th-street-pullman-chicago-police-fire-officials/18712106/
       title: '2 children among 5 injured in serious crash involving CTA bus, tow truck in West Pullman: officials'

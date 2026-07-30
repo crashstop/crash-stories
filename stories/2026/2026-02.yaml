@@ -54,12 +54,18 @@ d1cfe6d1fb375613eec81eb4034d4bfb8932f261c890d703f92d24625d28e585e5a66da049c72c0a
 
 55d44213140c57d958dcf25c868ff4cc1313899227a4a272c8444575c05b6f4abd225d2faf113119288fc84f330e0a27e202e70869c2efdb44b55bb2b8ea1721:
   private_notes: |-
-    Not found on Google
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    Not found on Google; only reference is Streetsblog roundup
     2026-02-16 19:30
     11900 S HALSTED ST west pullman
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://chi.streetsblog.org/2026/07/21/tragically-motorists-have-struck-and-killed-at-least-three-more-pedestrians-on-chicago-streets-in-2026
+      title: Tragically, motorists have struck and killed at least three more pedestrians on Chicago streets in 2026
+      site: Chicago Streetsblog
+      date: '2026-07-21T23:44:03+00:00'
+      description: |
+        According to Police News Affairs, on Monday, February 16, at around 7:30 p.m., officers went to Ingalls Hospital in response to a crash in the 11900 block of South Halsted Street in West Pullman.
 
 18fd5b99059d2d118027be95c5d18b0757aab58466bb45eccbe78d55984c4eca92c9b7871a3b05e53224506e1400d6e733f6f48ace7383cb3d38160f6ca28ecf:
   private_notes: |-
