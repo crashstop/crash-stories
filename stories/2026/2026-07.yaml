@@ -96,6 +96,20 @@ __GENERAL__:
       date: '2026-07-09T11:11:09Z'
       description: A man was seriously hurt in a hit and run on DuSable Lake Shore Drive Wednesday night, Chicago police said.
 
+9dd096d63507ef487989ffee146cc8e283b0d5c3e7c43bd45d37deb4c32f9f3237c564a9904b0741ffa807a18ea9e242e7019d5e6e329cc8ed4ecee2e8c01583:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE REAR END
+    2026-07-10 09:15
+    2755 E 130TH ST hegewisch
+    2 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://abc7chicago.com/post/jawaan-chick-another-person-killed-semi-car-crash-2700-block-east-130th-street-hegewisch-chicago-police/19485533/
+      title: Officials ID 1 of 2 people killed in crash involving semi on Far South Side
+      site: ABC 7 Chicago
+      date: '2026-07-11T11:48:00Z'
+      description: |
+        The Cook County Medical Examiner's Office identified one of the victims as 33-year-old Jawaan Chick. The other victim's name was not immediately released.
+
 2339a875aa845a5b0d007e94c448d87b4b36066dd287fbb5cf0d53bec4c9f445b7cd1ff8afbb82baccf054416484fd9265f0a4c44377f86998d457bd2ab63280:
   private_notes: |
     flag:tk:motorcyclist
