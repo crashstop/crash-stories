@@ -22,7 +22,14 @@ COMMENTS_KEY = "__COMMENTS__"
 GENERAL_KEY = "__GENERAL__"
 
 
-class _DupKeyLoader(yaml.SafeLoader):
+# libyaml-backed loader when PyYAML was built with it (several times faster on
+# the story files); the pure-Python SafeLoader otherwise. Both pair the same
+# SafeConstructor with their parser, so the construct_mapping override below
+# behaves identically either way.
+_BaseLoader = getattr(yaml, "CSafeLoader", yaml.SafeLoader)
+
+
+class _DupKeyLoader(_BaseLoader):
     """SafeLoader that raises on duplicate mapping keys (at any nesting level)
     instead of silently keeping only the last value, as plain safe_load does.
     A duplicated crash_record_id would otherwise drop an entire entry."""
