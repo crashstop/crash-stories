@@ -1,0 +1,41 @@
+__GENERAL__:
+  - url: https://abc7chicago.com/post/west-town-chicago-car-crash-vehicle-remains-lodged-townhome-collision-mallory-john-baquero-say/19622147/
+    title: '''A car is in our house'': Vehicle remains lodged in couple''s West Town townhome after crash'
+    site: ABC 7 Chicago
+    date: '2026-08-04T04:16:00Z'
+    description: The couple was told that the car cannot be removed until there's an inspection by the Buildings Department.
+
+41f44cf73e0dda26a633055a35afa1eaca5b96ec4648a85aa248dffc54f8e8ff4f09cb96ad5e80ba10be151ef85f2ac9a820ce5761c232169726bb42c8f5f89d:
+  private_notes: |
+    flag:tk:police-involved
+    basicinfo: VEHICLE-TO-VEHICLE TURNING
+    2026-08-02 21:33
+    159 E 63RD ST grand crossing
+    0 fatalities 2 incaps 6 injured
+  stories:
+    - url: https://chicago.suntimes.com/crime/2026/08/03/3-year-old-girl-3-cops-among-5-hurt-in-washington-park-crash
+      title: 3-year-old girl, 3 cops among 5 hurt in South Side car crash
+      site: Chicago Sun-Times
+      date: '2026-08-03T11:09:28.866Z'
+      description: The girl suffered a broken leg, and a 41-year-old passenger suffered a broken neck Sunday night after their sedan was hit by an unmarked police car, Chicago police said. Three officers were taken to the hospital with minor injuries.
+
+0a1ec1ff1ed60ac34da4ee2e1e5a1b126cc1caad3553ca5c677f5a0940be51ddfcfcbf452e330ab839ef037809c0293c63728585fb0ebebbb481d15087ce65d9:
+  private_notes: |
+    flag:tk:scooter-classified-as-cyclist
+    basicinfo: CYCLIST PEDALCYCLIST
+    2026-08-03 15:37
+    4025 N WESTERN AVE north center
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://www.fox32chicago.com/news/chicago-student-killed-e-scooter-crash-remembered-his-kindness-big-dreams
+      title: Chicago student killed in e-scooter crash remembered for his kindness and big dreams
+      site: FOX 32 Chicago
+      date: 2026-08-05
+      description: |
+        16-year-old Alex Blacio, a Lake View High School senior, died after a crash involving a Lime e-scooter and a semi-truck in Chicago's North Center neighborhood.
+
+    - url: https://www.chicagotribune.com/2026/08/06/north-center-teen-electronic-scooter-death/
+      title: 'Teen’s death in North Center highlights danger of electronic scooters: ‘They don’t make it very safe for them’'
+      site: Chicago Tribune
+      date: '2026-08-06T10:00:57+00:00'
+      description: Alex Blacio is at least the third teenager to die this year in a crash while riding an electric scooter in Chicago.
