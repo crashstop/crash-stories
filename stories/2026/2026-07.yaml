@@ -185,3 +185,24 @@ cb8edcf8038abb09bea655475629ffb2ea644d0342a362f684446daf848a4f5b3e1faa5623999527
       site: FOX 32 Chicago
       date: 2026-07-29
       description: A 22-year-old ATV driver has died after a crash with an SUV Tuesday night in Chicago's Belmont Cragin neighborhood. Here's what police say.
+
+e4c6df2fb91c6c131675c6cb9957a6a868f72fc0106c0d2ecca737fc874d33af19cf9ada69ef67495a0f07ba0ed4815e59e72f303baf1a7c2bf93d6398255981:
+  private_notes: |
+    flag:tk:fatality-not-recorded
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2026-07-29 11:41
+    2500 S HAMLIN AVE little village
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2026/08/04/little-village-neighbors-want-justice-for-mother-of-4-killed-in-hit-and-run/
+      title: Little Village Neighbors Want Justice For Mother Of 4 Killed In Hit-And-Run
+      site: Block Club Chicago
+      date: '2026-08-04T13:00:49+00:00'
+      description: Neighbors held a block party and fundraiser in memory of Belesda Toledo, 47, who was killed last week while crossing the intersection of Hamlin and 25th Street.
+
+    - url: https://chi.streetsblog.org/2026/08/05/after-a-hit-and-run-truck-driver-fatally-struck-belesda-toledo-47-in-little-village-residents-hope-to-find-her-killer
+      title: After a hit-and-run truck driver fatally struck Belesda Toledo, 47, in Little Village, residents hope to find her killer
+      site: Chicago Streetsblog
+      date: '2026-08-05T23:36:45+00:00'
+      description: |
+        Tragically, on Wednesday, July 29, at around 11:41 a.m., a hit-and-run truck driver struck and killed Belesda Toledo, 47, at 25th Street and Hamlin Avenue in Little Village. The motorist is still at large.
