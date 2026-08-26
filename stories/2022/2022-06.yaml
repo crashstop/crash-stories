@@ -1,0 +1,105 @@
+47f8a1921302ed8a7f3cded68c997191268ece2313db6ef221ee04d4c324c67fdfefab463c6cfe4a4adc3bb572fe8ed6366dd60206dba03cff50d3d86b5a921b:
+  private_notes: |
+    flag:tk:fatality-not-upgraded
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2022-06-02 17:40
+    2206 W EASTWOOD AVE lincoln square
+    0 fatalities 1 incaps 1 injured
+
+7d36451ce496c0222b7bd4a4a15ab8061fb33c14301756e3a8c4658e7690e00a0c64f39bf5409bc89f37df1732fdd6c04db2c17ba4d21faf146312d60195dc84:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-06-03 04:09
+    9318 S VINCENNES AVE washington heights
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE
+
+c1711eaa9078e952b0c1db05732c4dbc4d2b7cf2b03f3965ddc1642ac57ede45227efacf655187109f27a0c0c1fa3471913d26e00781d9b1bc0c3b753a58e189:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-06-09 08:18
+    1101 W LELAND AVE uptown
+    1 fatalities, 1 injured
+    OTHER: UNABLE TO DETERMINE
+
+660f8877faaf133d39ef890d2f5650da4ccbb796433817cd8c80cc7b30a2b1afbb905ba2dceafc34813af595e37c68e7eafb6b7cc6e1bdebb6ad008f1083947e:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-06-10 19:56
+    875 N MICHIGAN AVE magnificent mile
+    1 fatalities, 3 injured
+    OTHER: PHYSICAL CONDITION OF DRIVER
+
+9a748e7143c19ac674af29a115de37ca05170ec95f00ae60ebfe61aa8b3cb2908ce394b4d2ebee5c216c015022383be69789fc1c88944cd254fd795627b3f7ce:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-06-10 22:10
+    500 W 18TH ST lower west side
+    1 fatalities, 0 injured
+    OTHER: NOT APPLICABLE
+
+0a6387060e7a1e08a0279d80eea6fd0fe6f1afbcc62e941146cb92d4140c5eee22db42652e8786f50efb71fcdd0232ba1ff2ce595b59fd00136540ad1fb06ce4:
+  private_notes: |-
+    2022-06-12 15:15
+    2059 W IRVING PARK RD north center
+    1 fatalities, 1 injured
+    PEDESTRIAN: DISTRACTION - FROM OUTSIDE VEHICLE
+  stories:
+    - url: https://blockclubchicago.org/2022/06/13/longtime-north-side-ward-volunteer-killed-after-driver-hits-him-in-north-center/
+      title: Longtime North Side Volunteer Killed After Driver Hits Him In A North Center Crosswalk
+      site: Block Club Chicago
+      date: '2022-06-13T19:10:00+00:00'
+      description: LINCOLN SQUARE — A Lincoln Square man who regularly volunteered for Ald. Matt Martin's 47th Ward office and organized to help neighbors during the
+
+    - url: https://chi.streetsblog.org/2022/06/14/distracted-driver-killed-peter-paquette-75-hours-after-nearby-safe-streets-rally
+      title: Distracted driver killed Peter Paquette, 75, hours after nearby safe streets rally
+      site: Chicago Streetsblog
+      date: '2022-06-14T11:20:00+00:00'
+      description: A mile south of the starting point for that the Walk + Roll for Safe Streets demonstration, the site where Rafi Cardenas, 3, was killed earlier this month, yet another person was lost to traffic violence.
+
+    - url: https://www.chicagotribune.com/obituaries/peter-j-paquette-chicago-il/
+      title: Peter Paquette Obituary - Chicago, IL
+      site: Chicago Tribune
+      date: '2022-06-17T05:05:00+00:00'
+      description: Peter J Paquette, loving husband, father, grandfather, uncle, brother and friend passed away unexpectedly on Sunday, June 12, 2022 at the age of 75. He is survived by his wife JoAnn Paquette; his children Mary Margaret (Mark) Mullen and…
+
+b98062f9bec2ece1ac05057d82542528440716bfbb9562243e01aefd0e1ef54b76570285b890bfd6ddb2343c360c2f3152f324b0b8a083417d7052e330955622:
+  private_notes: |-
+    2022-06-16 09:58
+    3351 W 16TH ST north lawndale
+    1 fatalities, 0 injured
+    PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/north-lawndale-hit-and-run-crash-chicago-police-west-16th-street-cpd/11968522/
+      title: '''He didn''t get to live his life'': Car recovered, balloon release held for boy killed in hit-and-run'
+      site: ABC 7 Chicago
+      date: '2022-06-17T10:03:00Z'
+      description: The family of an 11-year-old boy demanding answers after he was killed in a hit-and-run on the city's North Lawndale neighborhood Thursday.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-3-months-after-hit-and-run-that-killed-11-year-old-his-family-calls-for-justice/2942460/
+      title: 'Left for Dead: 3 Months After Hit-and-Run That Killed 11-Year-Old, His Family Calls for Justice'
+      site: NBC 5 Chicago
+      date: '2022-09-16T20:04:44-05:00'
+      description: Friday marked exactly three months since 11-year-old Ja’lon James was killed in a hit-and-run crash that remains unsolved. His family is calling for justice, saying Chicago police have plenty of evidence and it shouldn’t take this long to see an arrest.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-nbc-5-sues-for-records-on-hit-and-run-that-killed-11-year-old/3119684/
+      title: 'Left for Dead: NBC 5 Sues for Records on Hit-and-Run That Killed 11-Year-Old'
+      site: NBC 5 Chicago
+      date: '2023-04-14T20:41:27-05:00'
+      description: Ten months after the hit-and-run crash that killed 11-year-old Ja’lon James, his family says Chicago police have not given them any updates on the investigation into his death – and NBC 5 Investigates is now suing to obtain public records on the case.
+
+b3389d0f1d23cce4fb6858627d38d9d9bae0421181620a29efb6fd506ea47c6fb431b748eeb7f4d18e0cb37ab4cf6dcd361a1cfb3c8af628bd41912f52a39ec2:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-06-17 23:47
+    520 S WESTERN AVE little italy uic
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: EVASIVE ACTION DUE TO ANIMAL, OBJECT, NONMOTORIST
+
+a5b585d35abe257eb2ea8301806bff12c90938e3d86febdeefeda64ff14dfdf1e232ec1185f71d1333f90087d18804352f3288ce93fb4a7219b0e16e09e78ddd:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2022-06-18 22:50
+    405 W 87TH ST roseland
+    1 fatalities, 0 injured
+    OTHER: UNABLE TO DETERMINE

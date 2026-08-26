@@ -1,0 +1,69 @@
+f7790877f822f795ae709266c14cc3a6bea43aaaf7fa1528713205bf3b9e81408406988b2b349cc44843835a47365a77f10654eb5e0f12110150db1e1b8f8201:
+  private_notes: |-
+    could not find news story other than this law firm summary:
+    https://www.romakerlaw.com/chicago-il-man-dead-passenger-hurt-in-collision-on-n-central-ave/
+    2025-06-05 22:42
+    1147 N CENTRAL AVE austin
+    1 fatalities, 1 injured
+    OTHER: UNABLE TO DETERMINE
+
+431ba0f5adcfb8e67874f490737833ee74cb09c842ed6deb71cc0106a4cf2cec349c42319fb3b8ddcf357c8929f5813d5be1093ddd3d9d09fdfbb7c04135bd20:
+  private_notes: |-
+    could not find on google
+    2025-06-14 02:30
+    13227 S TORRENCE AVE hegewisch
+    1 fatalities, 1 injured
+    VEHICLE-TO-VEHICLE: IMPROPER TURNING/NO SIGNAL
+
+cbf13a0bf23c0263e5b1853ce43350213ff38b0d46ea9b765eab5b626660402fb897102aec124e1c351b402a65449f31d0a29b9e79601f3586ce6999db6d3c6f:
+  private_notes: |-
+    2025-06-21 03:32
+    3655 N LAKE SHORE DR NB lake view
+    1 fatalities, 0 injured
+    PEDESTRIAN: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://www.martenson.com/obituaries/brendan-siddall
+      title: Brendan David Siddall Obituary June 21, 2025
+      site: martenson.com
+      date: 2025-06-23
+      description: February 12, 1999 — June 21, 2025
+
+    - url: https://abc7chicago.com/post/misericordia-home-residents-mourn-employee-brendan-siddall-killed-lakeview-hit-run-3600-north-dusable-lake-shore-drive/16829943/
+      title: Misericordia residents 'devastated' after 26-year-old employee killed in Lakeview hit-and-run
+      site: ABC 7 Chicago
+      date: '2025-06-23T22:33:11Z'
+      description: Brendan Siddall, in addition to working overnights with the residents at Misericordia, was a member of the Chicago Gay Men's Chorus.
+
+    - url: https://chi.streetsblog.org/2025/06/23/hit-and-run-driver-fatally-struck-gay-mens-chorus-of-chicago-member-brendan-siddall-near-waveland-dlsd-in-lakeview
+      title: Hit-and-run driver fatally struck Chicago Gay Men's Chorus member Brendan Siddall, 26, near Waveland/DLSD in Lakeview
+      site: Chicago Streetsblog
+      date: '2025-06-24T03:34:39+00:00'
+      description: A hit-and-run car driver struck and killed social service worker, musician, and actor Brendan Siddall, 26, early Saturday morning on North DuSable Lake Shore Drive near Waveland Avenue in Lakeview. Siddell was a member of the Chicago Gay Men's Chorus.
+
+    - url: https://blockclubchicago.org/2025/06/24/lgbtq-community-grieves-after-fatal-hit-and-run-of-chicago-chorus-performer-in-lakeview/
+      title: LGBTQ+ Community Grieves After Fatal Hit-And-Run Of Chicago Chorus Performer In Lakeview
+      site: Block Club Chicago
+      date: '2025-06-24T13:32:00+00:00'
+      description: Brendan ​​Siddall, 26, a leader with the Chicago Gay Men's Chorus, died after being hit by a car Saturday while walking across DuSable Lake Shore Drive, police said.
+
+eeae44567c6fc35c9c22af4ee122ea46a51bbebd4291fb08ca3ca9edbc2e64518f5356724e158066c7406a50f41a25dad25bf4751b341257448b86ae2209cabd:
+  private_notes: |-
+    flag:tk:extra-fataility-recorded
+    2025-06-22 03:04
+    11200 S STONY ISLAND AVE south deering
+    4 fatalities, 2 injured
+    VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/news/2025/06/22/three-dead-one-injured-vehicle-crash
+      title: Three dead, one injured in head-on crash on South Side
+      site: Chicago Sun-Times
+      date: '2025-06-22T14:47:39.184Z'
+      description: Three people were killed and another person hurt in a head-on collision early Sunday on the Far South Side.
+
+2db198e361e84cf4fdccfd9a99a665f227c670161c2cce6f742b58e3283dcd059c509224811f8e6398b3001276e9a36459559c16b2743a6a3c4dcd6a80d16c02:
+  private_notes: |-
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2025-06-27 23:42
+    9035 S HALSTED ST auburn gresham
+    1 fatalities, 0 injured
+    VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH

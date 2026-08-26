@@ -1,0 +1,146 @@
+__GENERAL__:
+  - url: https://abc7chicago.com/post/west-town-chicago-car-crash-vehicle-remains-lodged-townhome-collision-mallory-john-baquero-say/19622147/
+    title: '''A car is in our house'': Vehicle remains lodged in couple''s West Town townhome after crash'
+    site: ABC 7 Chicago
+    date: '2026-08-04T04:16:00Z'
+    description: The couple was told that the car cannot be removed until there's an inspection by the Buildings Department.
+
+  - url: https://www.chicagopolice.org/news/cpd-community-alert-11th-district-seeking-to-identify-hit-run/
+    title: Community Alert – Major Accidents, 11th District – Hit & Run (JK381191)
+    site: Chicago Police Department
+    date: 2026-08-25
+    description: |
+      This alert gives notice of a hit & run traffic crash with serious personal injury in the West Garfield Park neighborhood, 3800 block of W. Van Buren St. on August 20, 2026 at 11:53 p.m. A pedestrian was struck by an unknown vehicle that was traveling the wrong way on W. Van Buren St. from S. Hamlin Blvd. (City data does not appear to list this crash in its records)
+
+  - url: https://www.cbsnews.com/chicago/news/lake-michigan-death-belmont-harbor-lakeview/
+    title: Man dies after being pulled out of Lake Michigan at Belmont Harbor in Chicago
+    site: CBS News
+    date: 2026-08-26T11:51:22-0500
+    description: A man died after he was pulled out of Lake Michigan on Wednesday morning in the Lakeview neighborhood on the North Side of Chicago. (City data does not yet have this crash in its records)
+
+41f44cf73e0dda26a633055a35afa1eaca5b96ec4648a85aa248dffc54f8e8ff4f09cb96ad5e80ba10be151ef85f2ac9a820ce5761c232169726bb42c8f5f89d:
+  private_notes: |
+    flag:tk:police-involved
+    basicinfo: VEHICLE-TO-VEHICLE TURNING
+    2026-08-02 21:33
+    159 E 63RD ST grand crossing
+    0 fatalities 2 incaps 6 injured
+  stories:
+    - url: https://chicago.suntimes.com/crime/2026/08/03/3-year-old-girl-3-cops-among-5-hurt-in-washington-park-crash
+      title: 3-year-old girl, 3 cops among 5 hurt in South Side car crash
+      site: Chicago Sun-Times
+      date: '2026-08-03T11:09:28.866Z'
+      description: The girl suffered a broken leg, and a 41-year-old passenger suffered a broken neck Sunday night after their sedan was hit by an unmarked police car, Chicago police said. Three officers were taken to the hospital with minor injuries.
+
+0a1ec1ff1ed60ac34da4ee2e1e5a1b126cc1caad3553ca5c677f5a0940be51ddfcfcbf452e330ab839ef037809c0293c63728585fb0ebebbb481d15087ce65d9:
+  private_notes: |
+    flag:tk:scooter-classified-as-cyclist
+    basicinfo: CYCLIST PEDALCYCLIST
+    2026-08-03 15:37
+    4025 N WESTERN AVE north center
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://www.fox32chicago.com/news/chicago-student-killed-e-scooter-crash-remembered-his-kindness-big-dreams
+      title: Chicago student killed in e-scooter crash remembered for his kindness and big dreams
+      site: FOX 32 Chicago
+      date: 2026-08-05
+      description: |
+        16-year-old Alex Blacio, a Lake View High School senior, died after a crash involving a Lime e-scooter and a semi-truck in Chicago's North Center neighborhood.
+
+    - url: https://www.chicagotribune.com/2026/08/06/north-center-teen-electronic-scooter-death/
+      title: 'Teen’s death in North Center highlights danger of electronic scooters: ‘They don’t make it very safe for them’'
+      site: Chicago Tribune
+      date: '2026-08-06T10:00:57+00:00'
+      description: Alex Blacio is at least the third teenager to die this year in a crash while riding an electric scooter in Chicago.
+
+31c541de8af9c0d0af6b7a00b4583a963b2c481c652c0a10005966124afffbf0fc0d1187c1cbe434ecbb1bc5584282fb8775e0a929f71c702587f7f67818a59d:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE SIDESWIPE SAME DIRECTION
+    2026-08-07 10:20
+    7611 S WESTERN AVE ashburn
+    1 fatalities 0 incaps 0 injured
+
+6e37d88b7715fe52f97d9f869209071d5b70927beae1c7d8c1f3092de4b5955e56b886be9e05047836e5346b4fc76c8bf7f761d405c0ad30ed6e6a7775cbc631:
+  private_notes: |
+    basicinfo: hit-and-run VEHICLE-TO-VEHICLE REAR END
+    2026-08-08 21:20
+    1466 W IRVING PARK RD lake view
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://www.hickeyfuneral.com/obituaries/Sarah-Milcarek?obId=49211149
+      title: Obituary information for Sarah Milcarek
+      site: hickeyfuneral.com
+      date: 2026-08-09
+      description: |
+        Sarah was a devoted animal lover, especially to her beloved cat, Penny Lane. She found joy in music, all things Disney and Star Wars, and her collection of stuffed animals. She also loved reading and savoring a good cup of coffee. Sarah will be remembered for her quick wit, kind spirit, and the unique joy she brought to those around her.
+
+    - url: https://chi.streetsblog.org/2026/08/10/hit-and-run-drive-who-killed-sarah-milcarek-25-on-5-lane-irving-park-road-arrested-after-causing-multi-vehicle-crash-fleeing-another-motorist-and-striking-tree
+      title: Hit-and-run driver who killed Sarah Milcarek, 25, on Irving Park Road, arrested after causing multi-vehicle crash, fleeing another motorist, and striking tree
+      site: Chicago Streetsblog
+      date: '2026-08-10T21:56:41+00:00'
+      description: The collision took place seven blocks east of where a 47th Ward volunteer was fatally struck in 2022, when led to the Illinois Department of Transportation ceasing to obstruct pedestrian safety improvements in that location.
+
+    - url: https://abc7chicago.com/post/judge-orders-electronic-monitoring-miroslaw-ciszek-man-charged-lakeview-hit-run-crash-killed-sarah-milcarek-25/19669635/
+      title: Judge orders electronic monitoring for man charged in fatal Lakeview hit-and-run crash
+      site: ABC 7 Chicago
+      date: '2026-08-12T22:01:00Z'
+      description: A man charged in a deadly weekend hit-and-run crash in Lakeview was placed on electronic monitoring instead of being detained while awaiting trial, a decision Cook County prosecutors say jeopardizes public safety.
+
+1da26e0415ae170ac07ec308f5f4fe01a8eb273ef37f618d041a19d42a2a8bfc8ed9edad0c495e3b0380905d83474327b5798fe5dac4b4892a142e261b2546ed:
+  private_notes: |
+    basicinfo: OTHER PARKED MOTOR VEHICLE
+    2026-08-11 21:56
+    2714 W AUGUSTA BLVD humboldt park
+    1 fatalities 0 incaps 0 injured
+
+828167a9925186e29f0cf7e11493db853002c6781c3dc68615561031f4bf7ed1518b2b17174e2bc0e82c0c59b1652ab67da0f3f887ae68ee8153e1220fb2e3ad:
+  private_notes: |
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2026-08-16 02:55
+    957 W 95TH ST washington heights
+    1 fatalities 0 incaps 0 injured
+
+f4376640028e5bf2f1d2b383fcd42c52657cadb08178f209abc2b29ea55cc817fc00f2f5e26592e9c99e1fb2a38243a448b42f36672f7ddad18b8b2eff3a2d49:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2026-08-19 03:14
+    11900 S STATE ST west pullman
+    0 fatalities 0 incaps 2 injured
+  stories:
+    - url: https://abc7chicago.com/post/chicago-police-squad-car-involved-south-side-crash/19701863/
+      title: 3 injured, including 2 Chicago police officers, in South Side crash
+      site: ABC 7 Chicago
+      date: '2026-08-19T10:14:00Z'
+      description: Three people were injured, including two Chicago police officers, in a crash in the West Pullman neighborhood Wednesday morning, Chicago police said.
+
+7cc2d03b472b47a69e0900ffa00321ed35c4fdb06b127f9245d32b57c7a724e54a4823000d0775ce9644d8158470f678486ad006d1a92531dafba6caf7788e71:
+  private_notes: |
+    basicinfo: OTHER FIXED OBJECT
+    2026-08-19 07:37
+    801 E 75TH ST grand crossing
+    0 fatalities 4 incaps 5 injured
+  stories:
+    - url: https://www.fox32chicago.com/news/chicago-crash-car-hits-pole
+      title: 'Chicago crash: 5 taken by ambulance after car hits pole'
+      site: FOX 32 Chicago
+      date: 2026-08-19
+      description: Five people were injured in a crash, three seriously, on Chicago’s South Side this morning. Here’s what we know.
+
+bdaf62178e5a7c862e91487a7e21eb40112dd5630d23021cf99b998648606656be17211cda7ba44b19aca382896a50fc4e6d03098d09f5c5b291f8a1c1788ca0:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE REAR END
+    2026-08-19 23:00
+    428 S LAKE SHORE DR SB grant park
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://abc7chicago.com/post/woman-driving-motorcycle-killed-downtown-chicago-crash-dusable-lake-shore-drive/19707190/
+      title: Woman riding motorcycle killed in DuSable Lake Shore Drive crash downtown, Chicago police say
+      site: ABC 7 Chicago
+      date: '2026-08-20T09:41:00Z'
+      description: Friends and fellow riders gathered to honor 49-year-old Mehnoosh Hatam, who was killed in a fiery crash while riding a motorcycle on DuSable Lake Shore Drive. She was a leader in Chicago's motorcycling community.
+
+    - url: https://www.nbcchicago.com/news/local/driver-charged-with-dui-after-motorcyclist-struck-and-killed-on-dusable-lake-shore-drive/3978916/
+      title: Driver charged with DUI after motorcyclist struck and killed on DuSable Lake Shore Drive
+      site: NBC 5 Chicago
+      date: '2026-08-22T13:42:23-05:00'
+      description: Miracle Hall, 25, of Chicago, was charged with felony aggravated DUI/accident/death, misdemeanor driving under the influence of alcohol BAC 0.08 and various traffic citations after allegedly striking and killing a motorcycle rider on DuSable Lake Shore Drive late Wednesday, Chicago police said.
