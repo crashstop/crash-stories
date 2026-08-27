@@ -72,11 +72,23 @@ aba4a4bb9d3188b87085a952ea6395038149dec7f20abd8491b169963f0d0a44ac795570e5b8fe9f
 
 2009ef2207056e88905ea7de28d26cd0bcd2c96b30afbc105ea56156398454b5fe99a356e702f13bc19ad873b6369c9353d6432dc6f0cec4939ac4ce373aa0e3:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-05-28 22:59
     1201 S INDEPENDENCE BLVD north lawndale
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://wgntv.com/news/chicagocrime/north-lawndale-family-seeks-justice-for-woman-killed-in-hit-and-run/
+      title: North Lawndale family seeks justice for woman killed in hit-and-run
+      site: WGN-TV
+      date: 2023-05-30
+      description: |
+        A North Lawndale family is asking for the public’s help to track down the driver responsible for a deadly hit-and-run on the city’s West Side.
+
+    - url: https://abc7chicago.com/post/chicago-hit-and-run-crash-lawndale-independence-boulevard-cpd/13323893/
+      title: 'Woman killed in Lawndale hit-and-run crash while crossing street ID''d: Chicago police, Cook County'
+      site: ABC 7 Chicago
+      date: '2023-05-31T15:30:00Z'
+      description: 49-year-old Angela R. Mcknight died after an SUV hit her while she crossed the street Sunday night in Chicago's Lawndale neighborhood, and kept going, Chicago police said.
 
 82092ab685a13c48a985d9b325ab0bcece2bf9cab2f94c44e78d755ae197784169e9fe01c4cc1c9eba42797b0fb903757f3c0c53bb58376e81e77acbe76cb170:
   private_notes: |-

@@ -93,11 +93,22 @@ bc92e4b1fb4ebf6078163cf7c916a2585384d5d102eec56f41d67aff0a49abc10237d9220739e380
 
 234e03df16bc373b41b77e98320c7e282e29057f4fd6860ce049eb07a903df98d30a91f5799cffad44ab3f97809c4576860fd443139ca73f4f5389392218fbcd:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-09-18 07:26
     2759 W PETERSON AVE west ridge
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://chi.streetsblog.org/2023/09/19/whos-to-blame-for-the-killing-of-a-man-on-the-sidewalk-after-two-drivers-crashed-in-west-ridge
+      title: Who's to blame for the killing of a man on the sidewalk after two drivers crashed in West Ridge?
+      site: Chicago Streetsblog
+      date: '2023-09-19T20:36:59+00:00'
+      description: The police statement and crash report provide different accounts of which driver should have yielded, but a 6-lane street layout may have also played a role in the tragedy.
+
+    - url: https://cwbchicago.com/2026/01/driver-gets-probation-for-crash-that-killed-pedestrian-in-west-rogers-park.html
+      title: Driver gets probation for crash that killed pedestrian in West Rogers Park
+      site: CWBChicago
+      date: '2026-01-23T15:36:13+00:00'
+      description: A Lincolnwood man who killed pedestrian Michael Valentin in a West Rogers Park crash two years ago will serve no jail time after pleading guilty to reckless homicide by motor vehicle, according to court records.
 
 bf9f51a51baf9735c0062589f5c4977f76bd9d815abb85561fa725af248ae585e44453d576db95e9b41332a8b4f1f982313ede4819a9c845b3b33f7f3f544a18:
   private_notes: |-
