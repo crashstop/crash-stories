@@ -1,10 +1,21 @@
 732c5382b60d246150fc82df080de1436501b3ea4b1460a3e5961a310caed4afc24c188fe4f880a9f1195e12d0c1c342c4228ea920fbd51a0d290dde1553cdbd:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-01-02 01:41
     7232 S DAMEN AVE englewood
     1 fatalities, 1 injured
     PEDESTRIAN: IMPROPER LANE USAGE
+  stories:
+    - url: https://abc7chicago.com/post/englewood-chicago-news-police-car-crash/12642840/
+      title: '''He just started life'': Young father hit, killed by driver who tried to flee in West Englewood'
+      site: ABC 7 Chicago
+      date: '2023-01-02T23:53:00Z'
+      description: Police said the driver is in custody and charges are pending.
+
+    - url: https://chi.streetsblog.org/2023/01/03/roy-lee-21-struck-by-hit-and-run-driver-in-englewood-was-1st-chicago-ped-fatality-of-2023
+      title: Roy Lee, 21, struck by hit-and-run driver in Englewood, was 1st Chicago ped fatality of 2023
+      site: Chicago Streetsblog
+      date: '2023-01-03T23:59:41+00:00'
+      description: Just two days into 2023, Chicago already saw its first pedestrian death of the year.
 
 433b0408d2e87e239a59a7f3e1335ea00585a1bc9344ac74c3d73db57d53edb553783a826fcfc421959211f8527a9034004ff6e836dde68d7c4aa484dd9db31f:
   private_notes: |-
@@ -78,11 +89,16 @@ f9897733e295f68784ea13620fbd8af5b6fd56b9c24ef291875e68390d9d6a98320708275e521810
 
 beadad9673dbf007401406859f57284e10598144a121e085c3da3cd6e3612eb6b28604027c437e260d438d34fcab1a58070141946a6407e48eac2b7b3f7a8aae:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-01-20 22:10
     1900 N ASHLAND AVE bucktown
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DRIVING SKILLS/KNOWLEDGE/EXPERIENCE
+  stories:
+    - url: https://chicago.suntimes.com/2023/1/21/23565055/fatal-crash-bucktown-chicago-ashland
+      title: Driver killed, passenger injured after car swerves, hits pillar, car in Bucktown
+      site: Chicago Sun-Times
+      date: '2023-01-21T15:43:28.213Z'
+      description: Joshua Herrera, 26, swerved to avoid a car, then hit a pillar and another car in traffic in the 1900 block of North Ashland Avenue.
 
 6897d2a89621bb6e18e997e17f6f44765760601cb40c583ee7e28c316555d7b41f1f478249ff1a332af8f96a86791937f94f0da88b3d687b31fc1a58f2595945:
   private_notes: |-

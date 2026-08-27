@@ -39,11 +39,22 @@ __GENERAL__:
 
 8932fe8d347da5d68403404cdc48f4d548cb0fd519a13a105883a450a7de6d709adefec0f2cd5a4b94b69e6569265a44de90d09322edacb5935a936dd5114753:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2022-09-12 21:24
     449 E 79TH ST chatham
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://chi.streetsblog.org/2022/09/13/hit-and-run-suv-driver-fatally-struck-eric-ray-59-in-chatham
+      title: Hit-and-run SUV driver fatally struck Eric Ray, 59, in Chatham
+      site: Chicago Streetsblog
+      date: '2022-09-14T00:07:24+00:00'
+      description: Ray was the 23rd pedestrian killed on Chicago streets so far this year.
+
+    - url: https://www.cbsnews.com/chicago/news/cpd-search-for-vehicle-wanted-in-deadly-hit-and-run-in-chatham/
+      title: CPD search for vehicle wanted in deadly hit-and-run in Chatham
+      site: CBS News
+      date: 2022-09-15T06:53:00-0500
+      description: Police said the vehicle fled the scene westbound on 79th Street and then turned northbound onto Martin Luther King Drive.
 
 de904c76433281f499a86113dc1c4b7a62ec2248c508b5348ab336536563d51a5c84715ea36cbb63807a1f8ff99c256c304e29e82209724c4c00cc98c57f9c42:
   private_notes: |-
