@@ -1,4 +1,9 @@
 e7c4eebfc29632ce176917f7dbe59b06483c7f604d014976db358b8ed9d39df2700961d2697d3b03d9dc80a1db3f7668bf525a605df89e85e188ffe8567a3f21:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2026-04-05 01:08
+    6300 S KEDZIE AVE chicago lawn
+    1 fatalities 1 incaps 1 injured
   stories:
     - url: https://chicago.suntimes.com/crime/2026/04/06/death-of-very-loved-teen-killed-in-chicago-lawn-hit-and-run-marks-second-bicycle-fatality-of-year
       title: Death of 'very loved' teen in Chicago Lawn hit-and-run marks second bicycle fatality of year
@@ -99,11 +104,23 @@ e55032755aa506df7f1eb61bba646b458d1d3c2ee3f728b674d0c0226d5022191816be4775010fa8
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
   stories:
+    - url: https://www.chicagolandcremationoptions.com/obituary/minerva-martinez
+      title: Minerva Martinez Obituary Apr 19, 2026
+      site: chicagolandcremationoptions.com
+      date: 2026-04-20
+      description: She is lovingly remembered by her son, Victor Ocampo; her daughter, Lisette Perez; and her cherished granddaughters, Mia Perez and Emily Perez. She will be deeply missed by her family, friends, and all who knew her.
+
     - url: https://abc7chicago.com/post/woman-65-killed-nw-side-hit-run-central-avenue-chicago-police-say/18924900/
       title: '65-year-old woman killed in Belmont Cragin hit-and-run crash ID''d: officials'
       site: ABC 7 Chicago
       date: '2026-04-20T09:29:00Z'
       description: Minerva Martinez, 65, of Chicago, was killed in a hit-and-run crash in the Belmont Cragin neighborhood Sunday night, Chicago police said.
+
+    - url: https://www.youtube.com/watch?v=WAq1UiFpBcY
+      title: 'De Guerrero a Chicago: La épica vida de Minerva Martínez y su trágica muerte en Belmont Cragin'
+      site: UNIVISION Chicago
+      date: 2026-04-23
+      description: Minerva Martínez, una mujer de 65 años, perdió la vida trágicamente tras ser arrollada por un vehículo mientras caminaba en el vecindario de Belmont Cragin. ...
 
 e694d84d7e8c64f77dab3f5672be263c673390cc178d7714d24f8b603f43076849c589afdc8aba25098607876e12e0b91d53e16a32b060275ffebdbb73f4e7d1:
   stories:

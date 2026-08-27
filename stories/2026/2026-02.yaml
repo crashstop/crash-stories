@@ -102,3 +102,16 @@ fe31f011c191a9068d5a7e44cc8d473e3b03e1df6f230b856b5acbb4ad5a0907eed64dab30e61b3c
     125 N HAMLIN BLVD garfield park
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+
+fc721344b663c9a8aba547f1c457275abbb97d462c0e6fca742ec341c111b111e55cbc776d5d5ae4a8652c8956146b67bbff183a699caa29ac0e27bdb3789e59:
+  private_notes: |
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2026-02-25 07:41
+    3944 W 68TH ST west lawn
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-maria-gonzalez-charged-hit-run-injured-teen-west-68th-street-marquette-park-cpd-says/18654014/
+      title: 'Chicago woman charged in SW Side hit-and-run crash that critically injured teen: police'
+      site: ABC 7 Chicago
+      date: '2026-02-26T17:44:00Z'
+      description: A 37-year-old woman has been charged after allegedly crashing into a teen on a scooter Wednesday on the city's Southwest Side and leaving the scene, Chicago police said Thursday.

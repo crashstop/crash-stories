@@ -93,6 +93,19 @@ aee57de225c5a4e069c0fb0ecb0517c0d22b5ec30c343ad9c982cc17f8b209c92bf5fd8b2dc22dd6
     1 fatalities, 0 injured
     OTHER: PHYSICAL CONDITION OF DRIVER
 
+3cd5638ca652cbd204faad6e1ba93f335f0a2fc455a0bb2e98be3c4f27d758a0791b82fed27fa5863fa12bcb185fd1b1fd97986520d3d97c6e9ec841f9d277c2:
+  private_notes: |
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2021-08-15 21:22
+    1200 W VAN BUREN ST west loop
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2021/08/17/west-loop-community-leader-badly-hurt-in-hit-and-run-at-dangerous-intersection-this-is-absolutely-devastating/
+      title: 'West Loop Community Leader Badly Hurt In Hit-And-Run At Dangerous Intersection: ''This Is Absolutely Devastating'''
+      site: Block Club Chicago
+      date: '2021-08-17T12:50:00+00:00'
+      description: Community advocate May Toya is facing a long recovery after a driver injured her in a hit-and-run over the weekend in the West Loop.
+
 60f425315756448b8fa51296d14f4f7e9fc9e37515e78aa3d9f9a32ac74b76d87558aa003b4f548a8a59af3fba9e4a6c0ffde729a171cdb611531023f9c353bc:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

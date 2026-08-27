@@ -104,3 +104,23 @@ e2c42cfdf3aadd382c6519e6fcb14cd2214f7d28f69de5e2c8e6a7c2c52a803e83366927884b3012
       site: ABC 7 Chicago
       date: '2025-10-27T09:24:00Z'
       description: A 36-year-old woman has died after the vehicle she was driving hit the median and flipped on DuSable Lake Shore Drive in Bronzeville Sunday night, Chicago police said.
+
+73daa06ca78440ebfe97bbcd0b7da799078e7ae86677352aa1b806267f943cd209f31efa217e32de6b29111716ba0f037910c2a70978bb34822d2ad9be45bf1c:
+  private_notes: |
+    basicinfo: CYCLIST PEDALCYCLIST
+    2025-10-28 16:35
+    400 S DAMEN AVE united center
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://abc7chicago.com/post/chicago-doctor-avid-cyclist-ray-lee-coma-hit-run-crash-damen-van-buren-illinois-medical-district-wife/18127018/
+      title: Chicago doctor and avid cyclist in coma after hit-and-run near Illinois Medical District, wife says
+      site: ABC 7 Chicago
+      date: '2025-11-07T23:07:00Z'
+      description: A Chicago doctor who is typically helping others after serious accidents now depends on others after a driver hit him while he was biking and left the scene.
+
+    - url: https://chi.streetsblog.org/2026/05/22/the-night-bike-crash-survivor-dr-ray-lees-family-met-up-with-the-ride-of-silence-cpd-called-to-say-it-was-charging-the-reckless-driver-who-changed-his-life
+      title: The night bike crash survivor Dr. Ray Lee's family met up with the Ride of Silence, CPD called to say it was charging the reckless driver who changed his life
+      site: Chicago Streetsblog
+      date: '2026-05-23T01:12:30+00:00'
+      description: |
+        Almost seven months after the crash, Dr. Lee is at Rehab Without Walls, receiving inpatient care. “He can walk and talk, but after a really serious brain injury, he’s not the way he was,” Fani Lee told Streetsblog. “It’s hard, especially for the kids.” She said he’s unable to work, and was terminated from his job earlier this month after his six months of paid time off ended.

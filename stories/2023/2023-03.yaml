@@ -46,6 +46,20 @@ fded08448202b5d337e3875973c6c89d952c9f399e72e6b5bd92ea1b719a61ba4a7b6dd3f54da64a
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
 
+8153b44ed75998b0917fc9bedb4740c7a42e6b1dbb09e40d55cb86192af565ae2597e56e5ed22cc2bb927da7de551ba5e66266e4e9a2d3bde28458478272caa5:
+  private_notes: |
+    flag:tk:fatality-not-upgraded
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2023-03-19 11:30
+    2400 S WENTWORTH AVE chinatown
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://chi.streetsblog.org/2023/03/28/guo-ning-li-78-killed-in-chinatown-crosswalk-by-van-driver-who-failed-to-yield
+      title: Guo Ning Li, 78, killed in Chinatown crosswalk by van driver who failed to yield
+      site: Chicago Streetsblog
+      date: '2023-03-28T19:37:02+00:00'
+      description: The incident was the second time in a month that a turning van driver fatally struck a senior in a Chicago crosswalk.
+
 59dc9ab7463f899ab63a7534ad1b7825884e70af9153049672c98fa2d594fa9683e69c0558b0afdd030e7855007883aede2e011312ea63cd03e7ca192cfc5ec2:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

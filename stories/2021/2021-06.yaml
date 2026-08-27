@@ -46,6 +46,19 @@ a5e024477f77267c3ec387a3ffcd60f54a903d67611cacdd5d3e18d8fe729482273864c5c60fbac8
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO REDUCE SPEED TO AVOID CRASH
 
+72f368a7a717d769a45cbb75e48cb903b13d24a89056b19b0fe3c9c71fbf4c0c70e16786478836f8eba7445cfd02e6863aa9cc5800be845c57466be5bc609e0c:
+  private_notes: |
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2021-06-13 00:04
+    3721 W BELMONT AVE avondale
+    0 fatalities 0 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2021/06/17/a-hit-and-run-in-avondale-left-a-man-with-steep-hospital-bills-now-his-neighbors-are-stepping-up-to-help/
+      title: A Hit-And-Run In Avondale Left A Man With Steep Hospital Bills. Now, His Neighbors Are Stepping Up To Help
+      site: Block Club Chicago
+      date: '2021-06-17T16:35:00+00:00'
+      description: Oscar Olivares, 27, was leaving Sleeping Village when a driver hit him. His friends are raising money to pay for his medical care.
+
 ff47928de38bd401a90b146f56f73cc19cdfcafb49e83f0a36655624d0867e5719f855dfa79f9364f1123867e786e877c765f03670776ec53f35b91466bd7ccb:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

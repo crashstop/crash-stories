@@ -96,6 +96,19 @@ __GENERAL__:
       date: '2026-07-09T11:11:09Z'
       description: A man was seriously hurt in a hit and run on DuSable Lake Shore Drive Wednesday night, Chicago police said.
 
+49e279f9e1e8cc12ac9f45db9f4acef3ee6da58d8b426f3a10d57c7579a23c6e90078e18ec90dceec1496544b2b0ff0593b2201793eaebd676afa562bedab53c:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE ANGLE
+    2026-07-10 03:30
+    4400 N CUMBERLAND AVE o hare
+    1 fatalities 0 incaps 1 injured
+  stories:
+    - url: https://chicago.suntimes.com/crime/2026/07/10/motorcyclist-33-killed-during-collision-with-car-in-dunning
+      title: Motorcyclist, 33, killed in Dunning crash
+      site: Chicago Sun-Times
+      date: '2026-07-10T12:48:08.630Z'
+      description: The male motorcyclist ran a red light and hit a Toyota Prius in the 4400 block of North Cumberland Avenue early Friday morning. The Prius driver had minor injuries.
+
 9dd096d63507ef487989ffee146cc8e283b0d5c3e7c43bd45d37deb4c32f9f3237c564a9904b0741ffa807a18ea9e242e7019d5e6e329cc8ed4ecee2e8c01583:
   private_notes: |
     basicinfo: VEHICLE-TO-VEHICLE REAR END
@@ -144,6 +157,31 @@ f9a6b2206ee0f1562a52dcbe9f885084eb3fc3937139f91e9bd2f0411056ca23b8ca0eafc92023c8
       date: '2026-08-17T09:34:00Z'
       description: Chicago police have issued an alert about a masked dirt bike rider who was involved in a hit-and-run crash on the Lakefront Trail bike path in the Gold Coast last month.
 
+1fdc3698db081cda9d82eab8daa7a1ad68c11ba0256cac9ac64b8607c0d8a57504605c76ef8b71c68a4f5a0d1a1ec174550d61edda10f9056a50c78d239677bc:
+  private_notes: |
+    flag:tk:erroneous-data:address
+      address seems to belong to another fatal crash record: c4071c1703a7aea40559d439f64dc0a8d33c77ae62c5c9c67550400345f85d34e427bbd5d81a8ea3fa9a494835603030f2215eed3f34641819e6f5f7fbee00b5
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    basicinfo: OTHER FIXED OBJECT
+    2026-07-21 13:53
+    5355 S WESTERN BLVD gage park
+    1 fatalities 0 incaps 0 injured
+
+6c0f0a29a4cb2d189423b22aa85a1a2a3ba92975b4e1e3c91ea10468f225c77730fa8577df024789d0527f3a31c388775ba7c35baadf57bb6ab6ddd0ef5b2165:
+  private_notes: |
+    basicinfo: VEHICLE-TO-VEHICLE REAR END
+    2026-07-24 19:02
+    2252 W 79TH ST ashburn
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://wgntv.com/news/chicagocrime/chicago-man-accused-of-deadly-hit-and-run-crash-in-auburn-gresham-facing-felony-charges/
+      title: |
+        Chicago man accused of deadly hit-and-run crash in Auburn Gresham facing felony charges
+      site: WGN-TV
+      date: 2026-08-27
+      description: |
+        Chicago police say 45-year-old Darryl Short has been charged with one felony count of reckless homicide and one felony count of leaving the scene of an accident causing injury or death, relating to a deadly crash on July 24, 2026, in the 2200 block of West 79th Street in Auburn Gresham.
+
 bb0df05fbedbb24ac65a350806e3d4cd78bf6715a52bf2c82c5fe88df88e2c3650246ad7855d3f17e1a323bebc0d57095c92fdbd54b5a762186ca8cae7843616:
   private_notes: |
     basicinfo: OTHER FIXED OBJECT
@@ -156,6 +194,25 @@ bb0df05fbedbb24ac65a350806e3d4cd78bf6715a52bf2c82c5fe88df88e2c3650246ad7855d3f17
       site: ABC 7 Chicago
       date: '2026-07-26T02:25:00Z'
       description: A motorcyclist was killed in a crash on the city's North Side on Saturday evening, Chicago police said.
+
+c4071c1703a7aea40559d439f64dc0a8d33c77ae62c5c9c67550400345f85d34e427bbd5d81a8ea3fa9a494835603030f2215eed3f34641819e6f5f7fbee00b5:
+  private_notes: |
+    flag:tk:erroneous-data:address
+      News stories say this accident happened in 5300 S Western Blvd Gage Park, which is the
+      address for another fatal crash:
+      1fdc3698db081cda9d82eab8daa7a1ad68c11ba0256cac9ac64b8607c0d8a57504605c76ef8b71c68a4f5a0d1a1ec174550d61edda10f9056a50c78d239677bc
+
+      Google doesn't list news stories about a fatal crash at 1942 N Kilbourn
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2026-07-25 20:47
+    1942 N KILBOURN AVE hermosa
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://abc7chicago.com/post/pedestrian-struck-killed-gage-park-chicago-police-say/19583942/
+      title: Pedestrian struck, killed in Gage Park, Chicago police say
+      site: ABC 7 Chicago
+      date: '2026-07-27T09:40:11Z'
+      description: A man was killed after he was hit by an SUV in the Gage Park neighborhood Sunday night, Chicago police said.
 
 65e1773f9f62b48ef6c4217cbb6bfa290fc568a9e2d7be5d9c4b45b6afbf43aa0c18b18b8ffa7d95315c230beed21818637d234df438f0801dc6bf5b1ffacd5a:
   private_notes: |
@@ -207,6 +264,12 @@ e4c6df2fb91c6c131675c6cb9957a6a868f72fc0106c0d2ecca737fc874d33af19cf9ada69ef6749
     2500 S HAMLIN AVE little village
     0 fatalities 1 incaps 1 injured
   stories:
+    - url: https://abc7chicago.com/post/little-village-chicago-community-council-member-belesda-toledo-killed-hamlin-avenue-25th-street-hit-run-crash/19603553/
+      title: Little Village Community Council member killed in hit-and-run crash coming home from grocery store
+      site: ABC 7 Chicago
+      date: '2026-07-30T22:42:20Z'
+      description: Family members and community leaders are mourning the loss of a Little Village woman who died after a hit-and-run crash.
+
     - url: https://blockclubchicago.org/2026/08/04/little-village-neighbors-want-justice-for-mother-of-4-killed-in-hit-and-run/
       title: Little Village Neighbors Want Justice For Mother Of 4 Killed In Hit-And-Run
       site: Block Club Chicago

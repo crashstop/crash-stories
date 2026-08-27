@@ -48,11 +48,16 @@ fa8d5d8ee82f43e0b073ddf746e3b9456fcb6cc1a6bb549f14728d77d226e703a75e76051cd72203
 
 dc3a1659abeaaa8c7e99450e7720bef742233d303afca984f3540808e7c2efe4fe49493428b81706f583339baddba5c1da4087c91c2d8abd03d31e365679f103:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-06-17 03:00
     3300 W 87TH ST ashburn
-    3 fatalities, 6 injured
+    3 fatalities, 3 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/news/2020/6/17/21293997/robbie-bell-fatal-crash-ashburn-87-kedzie-tree-hydrant
+      title: 3 dead, 2 hurt after vehicle crashes into tree in Ashburn
+      site: Chicago Sun-Times
+      date: '2020-06-17T09:57:22Z'
+      description: Four of the five people were ejected from the vehicle, police said.
 
 4be10a526bbf60c9c2ab3d940e3e10ab5e8a17800334a1c95adad82fc92562fae9b5f7706a4d4bb8a8f19af887cb78892f269d91a66fab6a4c79848311c29782:
   private_notes: |-

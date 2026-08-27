@@ -14,6 +14,39 @@
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
 
+3c33ea1166d5cc4a44466df97b816ab8bda3d7559dfba90d0eec270613dbad17efdf03cbaaa228fe4d77ab53a613d78a965b95030f5fc5f9f8fde500080695ae:
+  private_notes: |
+    flag:tk:datadupe vehicle/people duped
+    flag:tk:footnote victim died 3 years later
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2019-11-13 18:05
+    2010 E 71ST ST south shore
+    0 fatalities 2 incaps 2 injured
+  stories:
+    - url: https://blockclubchicago.org/2021/01/05/chicago-police-ran-over-woman-didnt-move-squad-car-as-it-crushed-victims-leg-for-more-than-8-minutes-video-shows/
+      title: Chicago Police Ran Over Woman, Didn't Move SUV As It Crushed Victim's Leg For More Than 8 Minutes, Video Shows
+      site: Block Club Chicago
+      date: '2021-01-05T18:05:00+00:00'
+      description: More than a year after a Chicago officer hit and severely injured 32-year-old Martina Standley with a police SUV, body cam footage released Tuesday shows Standley laying in the street, bleeding from her head and her leg crushed under the SUV’s tire.
+
+    - url: https://aaraynerandsonsfuneralhome.com/2022/02/martina-a-standley-obituary/
+      title: Martina A Standley Obituary
+      site: AA Rayner and Sons Funeral Homes
+      date: '2022-02-09T15:54:22+00:00'
+      description: null
+
+    - url: https://chicago.suntimes.com/2023/6/23/23772031/lawsuit-doctor-said-injuries-from-collision-with-cpd-cruiser-led-to-death-of-mentally-ill-woman
+      title: 'Lawsuit: Doctor said injuries from collision with CPD cruiser led to death of mentally ill woman'
+      site: Chicago Sun-Times
+      date: '2023-06-23T23:45:23.998Z'
+      description: Martina Standley died a month after she was released from a rehabilitation hospital following crash that caused traumatic brain injury.
+
+    - url: https://news.wttw.com/2024/02/09/pay-325m-family-woman-struck-pinned-police-car-city-lawyers-recommend
+      title: Pay $3.25M to Family of Woman Struck, Pinned by Police Car, City Lawyers Recommend
+      site: news.wttw.com
+      date: 2024-02-09
+      description: The proposed settlement is set to be considered Wednesday by the City Council’s Finance Committee. If approved, a final vote of the City Council could come as soon as Thursday.
+
 a0ed834024bff95814a06e18b011041d2932a0a11a17f52df49341268969e9f91a4a64f77ef7be0cf9612bc807b85956bfd601897bc0df078f590e7781c567c8:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
@@ -71,4 +104,9 @@ a53e645e421506903fffab700e4aec84898100ff00665d82779b7c70cb73e81af03bb8b85238edc7
     PEDESTRIAN: UNABLE TO DETERMINE
 
 004cd14d0303a9163aad69a2d7f341b7da2a8572b2ab3378594bfae8ac53dcb604dd8d414f93c290b55862f9f2517ad32e6209cbc8034c2e26eb3c2bc9724390:
-  private_notes: "This entry is just a stub, pre-filled with basic info from the crash data:\n2019-11-26 08:38\n5 W TERMINAL ST \n1 fatalities, 0 injured\nPEDESTRIAN: UNABLE TO DETERMINE"
+  private_notes: |
+    This entry is just a stub, pre-filled with basic info from the crash data:
+    2019-11-26 08:38
+    5 W TERMINAL ST
+    1 fatalities, 0 injured
+    PEDESTRIAN: UNABLE TO DETERMINE
