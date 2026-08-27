@@ -28,7 +28,7 @@ __GENERAL__:
 
 0a1ec1ff1ed60ac34da4ee2e1e5a1b126cc1caad3553ca5c677f5a0940be51ddfcfcbf452e330ab839ef037809c0293c63728585fb0ebebbb481d15087ce65d9:
   private_notes: |
-    flag:tk:scooter-classified-as-cyclist
+    flag:tk:dataissue scooter-classified-as-cyclist
     basicinfo: CYCLIST PEDALCYCLIST
     2026-08-03 15:37
     4025 N WESTERN AVE north center
@@ -49,6 +49,8 @@ __GENERAL__:
 
 31c541de8af9c0d0af6b7a00b4583a963b2c481c652c0a10005966124afffbf0fc0d1187c1cbe434ecbb1bc5584282fb8775e0a929f71c702587f7f67818a59d:
   private_notes: |
+    could not find on google
+    This entry is just a stub, pre-filled with basic info from the crash data:
     basicinfo: VEHICLE-TO-VEHICLE SIDESWIPE SAME DIRECTION
     2026-08-07 10:20
     7611 S WESTERN AVE ashburn
@@ -86,9 +88,17 @@ __GENERAL__:
     2026-08-11 21:56
     2714 W AUGUSTA BLVD humboldt park
     1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://abc7chicago.com/post/man-dies-allegedly-crashing-parked-school-bus-augusta-boulevard-washtenaw-humboldt-park-chicago-police-say/19667174/
+      title: Driver dies after crashing into parked school bus in Humboldt Park, Chicago police say
+      site: ABC 7 Chicago
+      date: '2026-08-12T10:33:05Z'
+      description: A man died after allegedly crashing into an unoccupied school bus in Humboldt Park, Chicago police said.
 
 828167a9925186e29f0cf7e11493db853002c6781c3dc68615561031f4bf7ed1518b2b17174e2bc0e82c0c59b1652ab67da0f3f887ae68ee8153e1220fb2e3ad:
   private_notes: |
+    can't find on google
+    This entry is just a stub, pre-filled with basic info from the crash data:
     basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
     2026-08-16 02:55
     957 W 95TH ST washington heights
