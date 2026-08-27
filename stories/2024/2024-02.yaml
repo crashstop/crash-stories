@@ -85,8 +85,31 @@ e86d8942b00348767413310f96e5c60f91db8c930aae61191abe089cef7f63b32df7c9b1c48f2a1e
 
 0a99002ffd6dc82bfe6e392961e1aad3b1cf65d4e6e1fa39b82adb185da65c9f599997db93122e3009286b120bd87ea833d77d5611296b50b5e4d7741863e52a:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2024-02-25 08:50
     6155 S ARCHER AVE garfield ridge
     2 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://www.legacy.com/us/obituaries/name/zofia-chruszcz-obituary?id=54474629
+      title: Zofia Chruszcz Obituary (2024) - Chicago, IL - Pietryka Funeral Home - Chicago
+      site: legacy.com
+      date: 2024-02-26
+      description: Zofia understood the value of hard work and never failed to showcase an optimistic and hopeful attitude. Her wits and worldly knowledge were incredulously sharp, her love for her home country unparalleled. A passionate traveler, Zofia would find joy in exploring the world and deepening her faith through religious pilgrimages. She was deeply involved with the Polish American Association and led efforts in spearheading significant legislation concerning the retired community.
+
+    - url: https://www.pietrykafh.com/obituaries/ryszard-stebnicki
+      title: Ryszard Stebnicki Obituary Feb 25, 2024
+      site: pietrykafh.com
+      date: 2024-02-26
+      description: Ryszard Stebnicki, age 75, passed away on February 25, 2024. Dearest son of Bronisław and Janina Stebnicki. Loved brother, father, and grandfather. Beloved husband to Zofia Chruszcz. He was very creative with his antique collections and was an absolute lifelong tinkerer. Curious about how things worked, you could frequently find him taking various items apart and putting them back together again. Avid collector. He will continue to thrive in our memory. May he rest in peace.
+
+    - url: https://abc7chicago.com/post/chicago-crash-garfield-ridge-archer-avenue-ryszard-stebnicki/14480705/
+      title: Family remembers couple killed in Garfield Ridge crash while walking together to church
+      site: ABC 7 Chicago
+      date: '2024-03-01T00:18:00Z'
+      description: Ryszard Stebnicki, 75, and his 73-year-old wife, Zofia Chruszcz, were forever torn from each other and their loved ones, while only blocks away from their Garfield Ridge home.
+
+    - url: https://chi.streetsblog.org/2024/03/11/turning-driver-who-failed-to-yield-killed-married-couple-zofia-chruszcz-72-and-ryszard-stebnicki-74
+      title: Turning driver who failed to yield killed married couple Zofia Chruszcz, 72, and Ryszard Stebnicki, 75
+      site: Chicago Streetsblog
+      date: '2024-03-11T23:08:36+00:00'
+      description: Video shows that the seniors were walking to church when the motorist ran them down in an unmarked crosswalk at Archer/McVicker in Garfield Ridge.
