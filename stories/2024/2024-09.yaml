@@ -24,11 +24,22 @@
 
 716ff9158a3daf1e70749a35308c437b0ef5eb054c20213023b38afc501472eeddd0da951f3e26a191c5fe0076a0240f9086debaefbe04e3853e46f41198cc66:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2024-09-14 02:13
     158 W ROOSEVELT RD the loop
     1 fatalities, 4 injured
     VEHICLE-TO-VEHICLE: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://blockclubchicago.org/2024/09/15/woman-killed-2-critically-injured-in-south-loop-car-crash-police-say/
+      title: Woman Killed, 2 Critically Injured In South Loop Car Crash, Police Say
+      site: Block Club Chicago
+      date: '2024-09-15T18:19:45+00:00'
+      description: Giselle Chavez, 21, was killed after she and two others were ejected from a car during a crash on Roosevelt Road, authorities said.
+
+    - url: https://chicago.suntimes.com/crime/2024/09/16/fatal-south-loop-crash-homicide
+      title: Suspected road rage death of Niles woman in South Loop investigated as homicide
+      site: Chicago Sun-Times
+      date: '2024-09-16T19:14:12.550Z'
+      description: The 2:15 a.m. Saturday crash left 21-year-old Giselle Chavez dead and her 20-year-old sister and a 21-year-old man critically injured, police said.
 
 b7be7917cfd41c4a827cd0fdd34e338a582776032d83d8bb1e2d954efdb40713319ebbe79d844a384e3cc2c8a310a25e0939b0413152fc385699400bffba86e6:
   private_notes: |-

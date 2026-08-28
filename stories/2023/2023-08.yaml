@@ -1,3 +1,60 @@
+6da6af2917a6375fb09af5ecf2bda5ec3f548bc07fa1e887f47a8a887ca1293e12cd3e30f0bb1f55577c840d65458bb5b88785aeaae1e0ee0a69c7af7f613a91:
+  private_notes: |
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2023-08-04 22:25
+    1601 W DIVISION ST east village
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://cwbchicago.com/2023/08/wicker-park-hit-and-run-driver-critically-injured-girl-chicago-police.html
+      title: 'Hit-and-run driver left teen girl critically injured in Wicker Park, but car''s owner refuses to talk with police: CPD report'
+      site: CWBChicago
+      date: '2023-08-06T20:08:08+00:00'
+      description: A hit-and-run driver left a 17-year-old girl critically injured in Wicker Park on Friday, Chicago police said.
+
+    - url: https://blockclubchicago.org/2023/08/08/wicker-park-hit-and-run-leaves-17-year-old-in-coma-as-family-demands-action-from-police/
+      title: Wicker Park Hit-And-Run Leaves 17-Year-Old In Coma As Family Demands Action From Police
+      site: Block Club Chicago
+      date: '2023-08-09T00:40:00+00:00'
+      description: Nakari Campbell was meeting her friends Friday when a driver hit her and dragged her down Division Street, police and family say. Her relatives want to know why the driver hasn’t been arrested.
+
+    - url: https://chi.streetsblog.org/2023/08/17/what-does-the-nakari-campbell-case-tell-us-about-street-design-and-traffic-enforcement
+      title: What does the Nakari Campbell case tell us about street design and traffic enforcement?
+      site: Chicago Streetsblog
+      date: '2023-08-17T19:34:22+00:00'
+      description: Chicago needs street layouts that force motorists to drive safely. And the CPD needs to bring the driver who grievously harmed Nakari to justice.
+
+    - url: https://blockclubchicago.org/2023/08/28/lawsuits-allege-car-in-wicker-park-hit-and-run-crashed-into-another-person-on-same-night/
+      title: Lawsuits Allege Car In Wicker Park Hit-And-Run Crashed Into Another Person On Same Night
+      site: Block Club Chicago
+      date: '2023-08-28T13:05:50+00:00'
+      description: A 17-year-old girl and 26-year-old woman were hit by a car Aug. 4, within blocks and minutes of each other. Lawsuits filed this month allege the same car was involved in both incidents.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-family-of-teen-injured-in-hit-and-run-sues-car-owner-criticizing-chicago-police-inaction/3219826/
+      title: 'Left for Dead: Family of teen injured in hit-and-run sues car owner, criticizing Chicago police ‘inaction'''
+      site: NBC 5 Chicago
+      date: '2023-09-01T15:15:33-05:00'
+      description: The family of a 17-year-old girl severely injured in a hit-and-run crash has filed a lawsuit against the owner of the vehicle that hit her, taking their search for justice to court as they say Chicago police have not done enough to solve her case. Meanwhile, a second lawsuit filed this month alleges that same vehicle was involved in a second hit-and-run that injured another woman minutes later, just a few blocks away.
+
+    - url: https://www.chicagotribune.com/2024/02/25/bike-and-pedestrian-crashes/
+      title: 'Serious crashes with pedestrians and cyclists often fail to lead to tickets or charges: ‘We can’t be OK with this’'
+      site: Chicago Tribune
+      date: '2024-02-25T11:00:08+00:00'
+      description: Serious or fatal traffic crashes with pedestrians or cyclists in Chicago, like the one involving Nakari Campbell, often fail to lead to charges or citations, a Tribune analysis of Chicago police data shows. Of more than 4,000 such crashes between 2018 and mid-November 2023 reviewed by the Tribune, traffic tickets or more serious violations were listed in about 26% of cases.
+      priority: 1
+
+d61877385455d50889615db8ec58779f9c366f74ee66b88d059d1b87015c7aa775ca6422db946bca05837d722b509447eb29b9459a14d1f05923e081a8377cc8:
+  private_notes: |
+    basicinfo: hit-and-run VEHICLE-TO-VEHICLE SIDESWIPE SAME DIRECTION
+    2023-08-04 22:30
+    1427 W AUGUSTA BLVD west town
+    0 fatalities 0 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2023/08/28/lawsuits-allege-car-in-wicker-park-hit-and-run-crashed-into-another-person-on-same-night/
+      title: Lawsuits Allege Car In Wicker Park Hit-And-Run Crashed Into Another Person On Same Night
+      site: Block Club Chicago
+      date: '2023-08-28T13:05:50+00:00'
+      description: The same night Nakari Campbell was hit at Ashland and Division, 26-year-old Chloe Engel was struck in a hit-and-run just a few blocks away in West Town — an incident a lawsuit filed by the victim alleges was caused by someone driving the same car. Engel was taken to Stroger Hospital with multiple broken bones and lacerations, according to the crash report. She has since left the hospital and returned to her out of state home.
+
 07c05ce3437ad8c1d4e207eb48aa71cfb7e3f27cd2cc0d088346b7a81c9541dfb73b47ae755ce0cee4b8ed17142baa9765c6f00c3ab79a5c70064615a0e1405a:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
@@ -16,11 +73,16 @@
 
 ffe1ae2af5a52a29ff02bee98c9d0d4f8b267ba1ac5af649df683e7b7fa9abe7ad3cecda1ff9b43a9be099e9f51a5746fd8c0260c7a4b8ab8dea488cb494e2a9:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-08-20 00:55
     5229 W NORTH AVE austin
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://chi.streetsblog.org/2023/08/21/cpd-knows-owner-of-car-whose-driver-killed-ulysses-coleman-38-sunday-in-austin-but-hasnt-filed-charges
+      title: CPD knows owner of car whose driver killed Ulysses Coleman, 38, Sunday in Austin, but hasn't filed charges
+      site: Chicago Streetsblog
+      date: '2023-08-21T22:11:14+00:00'
+      description: Despite the police reportedly knowing which car was involved in the crash, and who owns it, no charges have been filed. “There is no one in custody and Area Five Detectives are investigating,” a police spokesperson told Streetsblog today.
 
 984665d2d148b70e7ec2a2b64afb384dc682af57f802ecf177d2c0facebc5f427690d0ba4307085536691142e7a97d30f04f910a39709ccfe9ea7bfd424147d1:
   private_notes: |-

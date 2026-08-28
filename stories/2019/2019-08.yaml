@@ -24,11 +24,16 @@ bdc6a0be2cdd90af6c66c8d15f21bbed1b3147c6132d00530da8d52ee9ab186b1275513d7a13cd98
 
 39134fb62de26f7a89cb5b0401a54fea52f190a25d74b425cd719391a9c3fea96b43d4ffc1be25501e49e198f88f6ebb438d3277529952855090b6c1d9253a05:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-08-03 15:10
     9400 S COTTAGE GROVE AVE chatham
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/crime/2019/8/16/20808360/police-release-new-photos-of-driver-vehicle-wanted-in-fatal-burnside-hit-and-run
+      title: Police release new photos of driver, vehicle wanted in fatal Burnside hit-and-run
+      site: Chicago Sun-Times
+      date: '2019-08-16T12:39:23Z'
+      description: Mark Dandridge, 54, was struck while walking in the 9400 block of South Cottage Grove Avenue on Aug. 3, authorities said.
 
 cf826354ea7d0ba6785eb772b9820ca51ef198d4a88cbadb08f269b8dc2f741438f89b328a4e561809dad31bd99e47ad0b9938cb585d46041c20764211778fb8:
   private_notes: |-

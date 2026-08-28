@@ -11,8 +11,9 @@ For every YAML file it checks:
     `stories` (any of them may be empty; the others may be missing entirely),
     and no keys outside that set (catches typos like `private_info`)
   - each story entry has no keys outside `title`, `url`, `date`, `site`,
-    `description`, `archive_url`
+    `description`, `archive_url`, `priority`
   - a story's `archive_url`, when present, is a string
+  - a story's `priority`, when present, is an integer 1 through 5
   - each crash_record_id exists in db.sqlite (crashes_serving)
   - each crash_record_id sits in the file for its crash month, i.e. the crash's
     crash_date year-month matches the file's <year-month>.yaml name
@@ -56,7 +57,16 @@ from common import (
 )
 
 CRASH_KEYS = ("notes", "private_notes", "stories")
-STORY_KEYS = ("title", "url", "date", "site", "description", "archive_url")
+STORY_KEYS = (
+    "title",
+    "url",
+    "date",
+    "site",
+    "description",
+    "archive_url",
+    "priority",
+)
+PRIORITY_RANGE = range(1, 6)
 
 
 def valid_story_date(value):
@@ -135,6 +145,17 @@ def validate_story_list(label, stories, counts, errors, file_month=None):
                 f"{label}: story #{i} `archive_url` must be a string, "
                 f"got {type(archive_url).__name__}: {url}"
             )
+        if "priority" in story:
+            priority = story["priority"]
+            if (
+                isinstance(priority, bool)
+                or not isinstance(priority, int)
+                or priority not in PRIORITY_RANGE
+            ):
+                errors.append(
+                    f"{label}: story #{i} `priority` must be an integer "
+                    f"{PRIORITY_RANGE.start}-{PRIORITY_RANGE.stop - 1}, got {priority!r}: {url}"
+                )
         if not (isinstance(url, str) and url.strip()):
             errors.append(f"{label}: missing url: {url}")
             continue

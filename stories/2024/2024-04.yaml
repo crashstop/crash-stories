@@ -24,11 +24,16 @@ fb7a1fb535512feb5248fd1643a8af2e834d7121bb18a665bf44a14064788d55c3ca18c47de938d2
 
 1c893e18b66c8c5cc9c95a7760b803ae2cc840e9752643db19b84b5fd63e1028bbbb1417890d69dd836caca2713649e21715b729ce637977031d1c1fb4609757:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2024-04-22 02:40
     3033 E 106TH ST south deering
     1 fatalities, 4 injured
     OTHER: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-accident-south-deering-106th-street/14713720/
+      title: Woman killed, 2 children critically injured in South Deering crash, Chicago police say
+      site: ABC 7 Chicago
+      date: '2024-04-22T12:01:00Z'
+      description: A woman was killed and two children were critically injured in a single-car crash in the South Deering neighborhood Monday morning, Chicago police said.
 
 6429e84f15917eaaaf655832065d6ea38b48a60850423834e2c43c88ebcba4b3fac0a967234d8eceb66177a7fcb293de14df918ac36fa44ce4574ed534118f00:
   private_notes: |-

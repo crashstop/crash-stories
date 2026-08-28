@@ -40,11 +40,16 @@ cc7a7df4bed88346dff0cb910e7bf6c39e20c6987fe8024712c31bc61c5b1c325ccd67b1928a99b8
 
 db1b390b8b763bad027f7c64a8b5b0d7257fa491902eadfd2388fbfecfc8c4e8f01f83ce25f5213771d34da013d722141a3b44afb83b2db454877c6a6b98821c:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-05-14 21:02
     959 W GRAND AVE west town
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://blockclubchicago.org/2021/05/18/lincoln-park-high-school-teacher-killed-while-riding-motorcycle-in-fulton-river-district/
+      title: Lincoln Park High School Teacher Killed While Riding Motorcycle In River West
+      site: Block Club Chicago
+      date: '2021-05-18T18:25:00+00:00'
+      description: Alan Nuñez died Friday when a Jeep struck his motorcycle, police said. He taught physical and health education teacher at Lincoln Park High School.
 
 a82451d672713cf629d2283b3c2b044b0567d03653cd26bbafc53c36138987fe7435d5f3876147442d8d0d13c7c70134c272f2fd9656d232eab2978ded1d6fee:
   private_notes: |-
@@ -101,6 +106,24 @@ f160270b6e71820f4c9feaf60189fca1d860fc222531636edf476f0de69e3b2f233b334be673c3ea
     2600 N WESTERN AVE logan square
     1 fatalities, 0 injured
     CYCLIST: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://blockclubchicago.org/2021/05/26/cyclist-32-killed-by-driver-in-logan-square-early-wednesday-police-say/
+      title: Kevin Clark, ‘School Of Rock’ Musician, Killed By Driver While Riding Bike In Logan Square
+      site: Block Club Chicago
+      date: '2021-05-26T16:06:25+00:00'
+      description: Clark, 32, played Freddy "Spazzy McGee" Jones in the 2003 film starring Jack Black. "He was always happiest behind that drum kit," his cousin said.
+
+    - url: https://chi.streetsblog.org/2021/06/02/driver-who-killed-school-of-rock-drummer-kevin-clark-refused-dui-blood-test
+      title: Driver who killed "School of Rock" drummer Kevin Clark refused DUI blood test
+      site: Chicago Streetsblog
+      date: '2021-06-02T22:48:15+00:00'
+      description: The motorist was also ticketed for driving too fast for conditions and without insurance, and ticketed for running a stop sign and driving without insurance the previous month in River Forest.
+
+    - url: https://blockclubchicago.org/2021/06/14/family-friends-honor-school-of-rock-musician-kevin-clark-with-a-loud-farewell-and-a-promise-to-fight-for-bike-safety-on-western-ave/
+      title: Family, Friends Honor 'School Of Rock' Musician Kevin Clark With Loud Farewell — And Promise To Fight For Bike Safety On Western Avenue
+      site: Block Club Chicago
+      date: '2021-06-14T13:54:00+00:00'
+      description: “He wasn’t quiet. He came into a room with a burst of energy, and he was just big and vivacious,” Clark's cousin said.
 
 50755741680cf3636c1eba8ffbc6d973207df0c8fbb400fd9b8043df53e99d7771b48d630405caf5af2c87b8990d27c228fb7f4c25d26bdd034ef1bfbe88d677:
   private_notes: |-

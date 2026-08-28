@@ -1,6 +1,13 @@
+__GENERAL__:
+  - url: https://news.wttw.com/2022/06/29/city-announces-plan-upgrade-all-protected-bike-lanes-concrete-amid-outcry-over-cyclist
+    title: City Announces Plan to Upgrade All Protected Bike Lanes to Concrete Amid Outcry Over Cyclist and Pedestrian Deaths
+    site: WTTW
+    date: 2022-06-29
+    description: The city plans to upgrade 15 miles of existing protected bike lanes and add 10 new miles by the end of this year, and upgrade the remaining existing lanes protected by bollards or other means by the end of next year.
+
 47f8a1921302ed8a7f3cded68c997191268ece2313db6ef221ee04d4c324c67fdfefab463c6cfe4a4adc3bb572fe8ed6366dd60206dba03cff50d3d86b5a921b:
   private_notes: |
-    flag:tk:fatality-not-upgraded
+    flag:tk:fatality-not-yet-upgraded
     basicinfo: PEDESTRIAN PEDESTRIAN
     2022-06-02 17:40
     2206 W EASTWOOD AVE lincoln square
@@ -28,11 +35,34 @@
 
 c1711eaa9078e952b0c1db05732c4dbc4d2b7cf2b03f3965ddc1642ac57ede45227efacf655187109f27a0c0c1fa3471913d26e00781d9b1bc0c3b753a58e189:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2022-06-09 08:18
     1101 W LELAND AVE uptown
     1 fatalities, 1 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://blockclubchicago.org/2022/06/09/girl-3-dies-after-bike-and-semi-truck-crash-in-uptown-police-say/
+      title: Girl, 3, Killed After Bike Crash Involving Semi-Truck, ComEd Truck Blocking Bike Lane In Uptown
+      site: Block Club Chicago
+      date: '2022-06-09T16:03:22+00:00'
+      description: 3-year-old Elizabeth Grace Shambrook was killed when a semi-truck hit her mom's bike Thursday morning in Uptown.
+
+    - url: https://abc7chicago.com/post/chicago-bike-accident-3-year-old-killed-elizabeth-grace-shambrook-lawyer/11947894/
+      title: 'Chicago bike accident: Family of 3-year-old girl killed in Uptown planning lawsuits, lawyer says'
+      site: ABC 7 Chicago
+      date: '2022-06-11T11:39:00Z'
+      description: The girl's father, who was following on his own bike, said his wife was "crowded" between the semi on the street and the ComEd truck parked in the bike lane.
+
+    - url: https://blockclubchicago.org/2023/01/17/parents-of-3-year-old-killed-when-comed-truck-blocked-her-mothers-bike-lane-path-file-lawsuit/
+      title: Parents Of 3-Year-Old Hit By Truck In Uptown Sue City — And Say It Must Crack Down On Bike Lane Blockers
+      site: Block Club Chicago
+      date: '2023-01-18T00:15:00+00:00'
+      description: The parents of a 3-year-old killed while riding on a bicycle with her mother in Uptown last year are suing the city, Commonwealth Edison, Penske and Mondelēz in their daughter’s death.
+
+    - url: https://www.bikelaneuprising.com/post/lily-shambrook-1-year-anniversary
+      title: Lily Shambrook Press Conference
+      site: Bike Lane Uprising
+      date: '2023-06-09T12:15:57.367Z'
+      description: Video from a press conference for Lily Shambrook held on January 17th, 2023, held at Clifford Law Offices.
 
 660f8877faaf133d39ef890d2f5650da4ccbb796433817cd8c80cc7b30a2b1afbb905ba2dceafc34813af595e37c68e7eafb6b7cc6e1bdebb6ad008f1083947e:
   private_notes: |-
@@ -115,3 +145,17 @@ a5b585d35abe257eb2ea8301806bff12c90938e3d86febdeefeda64ff14dfdf1e232ec1185f71d13
     405 W 87TH ST roseland
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+
+cb92e0809b2eba6d4684a8be6ecc73097d92f32adeb8a0e64e73548383290dad466169e5180b79136a1fa9f52c85a4270a4ce2e53b2763171fb8bddc52881ed2:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: CYCLIST PEDALCYCLIST
+    2022-06-24 16:07
+    6246 S AUSTIN AVE clearing
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://chi.streetsblog.org/2022/07/01/a-witness-discusses-how-a-speeding-postal-worker-killed-joshua-avina-15-on-his-bike
+      title: A witness discusses how a negligent postal worker killed Joshua Avina, 15, on his bike
+      site: Chicago Streetsblog
+      date: '2022-07-01T21:48:04+00:00'
+      description: '"This is yet another tragic example of one of Chicago''s children not being able to ride safely in the city''s streets," said an attorney from a local bike-focused firm.'

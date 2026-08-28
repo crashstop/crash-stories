@@ -23,11 +23,29 @@ __GENERAL__:
 
 643c587bbae60800977d9319420ce6d1c3795aba894b6c2f36f90d5d4c7a25b0e653d9ee3c3e8d4564be4eb3e9daead7f86981cf22c67da43ec4a3f222c98ede:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:misclassified-bike-as-vehicle
     2022-09-08 11:44
     710 N MILWAUKEE AVE west town
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://news.wttw.com/2022/09/08/cyclist-struck-vehicle-transported-hospital-after-river-west-crash-witness-says
+      title: Cyclist Struck and Killed By Driver in River West; Fifth Cyclist Death in Chicago This Year
+      site: WTTW
+      date: 2022-09-08
+      description: A witness to the crash told WTTW News the man was a cyclist riding on an e-bike. The Chicago Fire Department confirmed a man in 40s was struck near Milwaukee Avenue and Morgan Street in River West and taken to Northwestern Memorial Hospital in serious to critical condition, though the department described him as a motorcyclist.
+
+    - url: https://blockclubchicago.org/2022/09/30/ghost-bike-installed-in-river-west-for-sam-bell-bicyclist-killed-on-milwaukee-avenue/
+      title: Ghost Bike Installed In River West For Sam Bell, Bicyclist Killed On Milwaukee Avenue
+      site: Block Club Chicago
+      date: '2022-09-30T13:13:00+00:00'
+      description: The family and friends of Sam Bell celebrated his life with a ghost bike and vigil Thursday at the River West intersection where a driver killed him in early September.
+
+    - url: https://news.wttw.com/2023/05/05/city-unveils-honorary-street-sign-sam-bell-cyclist-struck-and-killed-driver
+      title: City Unveils Honorary Street Sign for Sam Bell, Cyclist Struck and Killed by Driver
+      site: WTTW
+      date: 2023-05-05
+      description: Sam Bell, 44, was struck and killed by a driver while biking along Milwaukee Avenue in River West last September. He was remembered as a dedicated mentor and organizer for the Midtown Educational Foundation, which works with low-income, underserved students in Chicago.
 
 13c67befbdf0cfc5304fac14c0ef93415a0bf4e220451a8b35982a8105e49479e0adc3c8e5ac67872c89e99631179f2de89f9218e13b451913ca630636446a7b:
   private_notes: |-

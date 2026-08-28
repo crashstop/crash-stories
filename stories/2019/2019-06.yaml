@@ -22,6 +22,41 @@ fe619fb11b74036e6dd473de80b9b264466e152aad2ce0e1cc4febcafad1c10cdce1a4a1822b80ed
     1 fatalities, 8 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
 
+89f141a46255d077b053b6edb7f9bea0241956bebca0cd6836bff93decb0141484942f6f4e987903edb557e9fe844fda459c71184f43ea53ac49bcacc8a37a00:
+  notes: |
+    Only the injured driver is listed in the city data; the two women who were hit are not in the data.
+  private_notes: |
+    flag:tk:fatality-not-recorded
+    flag:tk:victims-completely-missing-from-data
+    basicinfo: OTHER OTHER NONCOLLISION
+    2019-06-09 02:42
+    1757 W 87TH ST auburn gresham
+    0 fatalities 0 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2019/06/10/off-duty-chicago-police-officer-charged-with-dui-after-crashing-into-building-killing-1-woman/
+      title: Off-Duty Chicago Police Officer Charged With Reckless Homicide After Crashing Into Building, Killing Mother Of 2
+      site: Block Club Chicago
+      date: '2019-06-10T12:04:46+00:00'
+      description: Off-duty officer Terrance Finley was charged with reckless homicide and aggravated DUI after a crash that struck two women. One of the victims, Marquita N. Reed, was pronounced dead at the hospital.
+
+    - url: https://www.cbsnews.com/chicago/news/neighbor-remembers-marquita-reed-who-was-killed-when-an-off-duty-cpd-officer-crashed-into-a-gresham-restaurant/
+      title: Neighbor Remembers Marquita Reed, Who Was Killed When An Off-Duty CPD Officer Crashed Into A Gresham Restaurant
+      site: CBS News
+      date: 2019-06-10T18:51:50-0500
+      description: Those who knew Marquita Reed, who was killed early Sunday when an off-duty Chicago police officer crashed into the building where she was eating, are in disbelief.
+
+    - url: https://abc7chicago.com/post/off-duty-cpd-officer-accused-in-deadly-dui-crash-suspended/5343127/
+      title: Off-duty Officer Terrance Finley, accused in deadly DUI crash, suspended by CPD
+      site: ABC 7 Chicago
+      date: '2019-06-12T16:52:40Z'
+      description: A Chicago police officer accused of driving drunk while off-duty and crashing into a South Side restaurant, killing a woman, has been suspended.
+
+    - url: https://chicago.suntimes.com/crime/2023/12/15/24003366/chicago-police-officer-probation-deadly-dui-crash
+      title: Chicago police officer gets probation after pleading guilty in deadly DUI crash into restaurant while off-duty
+      site: Chicago Sun-Times
+      date: '2023-12-15T22:35:11.797Z'
+      description: Terrance Finley, 29, was sentenced to 30 months probation after pleading guilty to aggravated DUI and reckless homicide in 2019.
+
 5174120bf225b5396ed8c5df58557e868977254057d12357c1a26198f2ad366c321a03d24062cfcf41ae56adc818517260e62798ae3133c468e5b49dfdad449c:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

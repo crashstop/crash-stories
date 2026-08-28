@@ -35,11 +35,22 @@ dfa2efadb2e9f55e9b8fa86784dd57b17e816b4fb876961743b10daa98c1ce984136bfd381bead93
 
 712b11e614a2104a140c4acdd4aea0de04639d6f0b67b861e9ae890e4c4e66c0483b9b5604aaddd049d2c8bd71ed9c3709e3c481fe83cad6ed60ba89b5fccf5c:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2024-10-14 01:00
     3500 S MICHIGAN AVE douglas
     2 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://chicago.suntimes.com/crime/2024/10/14/2-dead-crash-bronzeville-runs-red-light
+      title: 2 killed in Bronzeville car crash outside Chicago police headquarters
+      site: Chicago Sun-Times
+      date: '2024-10-14T20:58:59.907Z'
+      description: A man and woman in a car were killed early Monday morning when an allegedly intoxicated driver of a black Infiniti ran a red light in the 3500 block of South Michigan Avenue and hit them, police said.
+
+    - url: https://www.cbsnews.com/chicago/news/erick-garcia-ambriz-charged-dui-reckless-homicide-crash-bronzeville/
+      title: Man charged with reckless homicide, DUI in 2024 crash that killed 2 people outside CPD headquarters
+      site: CBS News
+      date: 2026-01-13T22:34:53-0600
+      description: Erick Garcia-Ambriz was charged with reckless homicide and driving under the influence in a crash that killed two people outside Chicago Police Headquarters in 2024.
 
 55816d18ba5b45782196121626a80e557a0d00f0d8135f7395bae2ee453e1a3efd9f8363586843322eb364bd246b9ec27e7f4d798fa0a1bfc676fe26ea554c1e:
   private_notes: |-

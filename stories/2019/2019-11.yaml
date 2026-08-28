@@ -1,10 +1,27 @@
 362296540649f61188bd0ddc4bf04a3a51c5275dfb6ebba723f2414a58befad8e4c0f2fd747ac52a3a32d43ef4f2da49ec86234f1a768ba4fa93f85b90c8bc53:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-11-06 06:58
     3800 N MILWAUKEE AVE irving park
     1 fatalities, 0 injured
     CYCLIST: UNABLE TO DETERMINE
+  stories:
+    - url: https://blockclubchicago.org/2019/11/07/after-woman-killed-in-fading-irving-park-bike-lane-200-cyclists-call-for-better-protection/
+      title: '''Please Don''t Kill Us'': After Woman Killed In Fading Irving Park Bike Lane, 200 Cyclists Demand More Protection'
+      site: Block Club Chicago
+      date: '2019-11-07T15:20:19+00:00'
+      description: Years ago, Northwest Siders rejected a plan to install protected bike lanes due to parking concerns. Now, 37-year-old Carla Aiello of Norwood Park is dead after being hit by a truck while in the fading bike lane at the intersection — and the Chicago bicycle community is furious.
+
+    - url: https://www.cumberlandchapels.com/obituaries/carla-aiello
+      title: Carla Aiello Obituary Nov 6, 2019
+      site: cumberlandchapels.com
+      date: 2019-11-08
+      description: Beloved wife of Eric Hillebrand. Loving mother of Hazel and Henry. Cherished daughter of Anthony and Amy (nee Loftus) Aiello. Dear sister of Michelle Aiello Puckett (Scott Puckett). Niece of Joseph (Elizabeth) Aiello, Carlo A. (Jacqueline) Aiello, the late Michael C. (Bernice) Aiello, Edward J. (Connie) Loftus, George Loftus, Kevin C. (Karen) Loftus and the late Nora (the late Anthony) Tomas , the late Daniel G. Loftus.
+
+    - url: https://www.capecodtimes.com/story/news/local/2019/11/09/carla-aiello-cyclist-killed-in/2326062007/
+      title: Carla Aiello, cyclist killed in Chicago, worked at Sturgis
+      site: capecodtimes.com
+      date: 2019-11-09
+      description: A Chicago bicyclist who died after being hit by a dump truck Wednesday morning previously worked for years as a school counselor at Sturgis Charter Public School in Hyannis.
 
 76b114d83a094cb385ec6c40308e76d8c7801c9d56651075a34ef27be23db81c0a445d964a82b362d3c2465424e4210a975b7b304a4fb2f12537b5d7cde31b9a:
   private_notes: |-
@@ -43,7 +60,7 @@
 
     - url: https://news.wttw.com/2024/02/09/pay-325m-family-woman-struck-pinned-police-car-city-lawyers-recommend
       title: Pay $3.25M to Family of Woman Struck, Pinned by Police Car, City Lawyers Recommend
-      site: news.wttw.com
+      site: WTTW
       date: 2024-02-09
       description: The proposed settlement is set to be considered Wednesday by the City Council’s Finance Committee. If approved, a final vote of the City Council could come as soon as Thursday.
 

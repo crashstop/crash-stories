@@ -25,7 +25,7 @@ fcac5affb38f8babef19dad24549b87e37a5198fbbaac3882a4316b01fa276c8f346946b2f331d4a
 71ea43187ed3b1874615bee70e49be58799be043dbed15afff77afee5f45358b14e3b04c4ecbae16e30f402e55cecf7fc568aa8908a82d1d09f2eba85dab7cd4:
   notes: City data still lists victim as severly injured but news reports say she died 2 weeks after her injuries.
   private_notes: |
-    flag:tk:fatality-not-upgraded
+    flag:tk:fatality-not-yet-upgraded
     basicinfo: PEDESTRIAN PEDESTRIAN
     2026-05-11 19:56
     3198 W FRANKLIN BLVD humboldt park

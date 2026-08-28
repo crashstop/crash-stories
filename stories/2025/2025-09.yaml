@@ -43,7 +43,7 @@ d53b1af0e780aef45e047a48e7e97ac0d1aa9b2403ba2c6fa4b2c72183fc21a611339636d57de93e
   notes: |
     The police record appears to incorrectly report the 68-year-old driver as being killed in the crash.
   private_notes: |-
-    flag:tk: appears to have classified injury as a fatality
+    flag:tk:injury-wrongly-classified-as-fatality
     2025-09-16 20:33
     4600 N LAKE SHORE DR SB uptown
     2 fatalities, 0 injured

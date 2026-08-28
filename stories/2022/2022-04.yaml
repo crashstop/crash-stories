@@ -38,6 +38,38 @@ da7c579cb37ca9d256fe3ba9198f87a36d501883dd749eb52e88842572de754fc4c94ea09cec9b4a
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
 
+3393aa52624d5b0da7b2690f02e6956fc026f50f7038c400c4f47ced2058dcf7e7ca1f4c3419080516f3483c15e3cdd1937c24750feedb12773af813334c535c:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: hit-and-run CYCLIST PEDALCYCLIST
+    2022-04-16 22:10
+    900 W MADISON ST west loop
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://blockclubchicago.org/2022/04/21/bicyclist-dies-days-after-driver-hit-him-in-west-loop-dragged-his-bike-under-car-officials-say/
+      title: Bicyclist Dies Days After Driver Hit Him In West Loop, Dragged His Bike Under Car, Officials Say
+      site: Block Club Chicago
+      date: '2022-04-21T17:23:09+00:00'
+      description: Bicyclist Paresh Dinesh Chhatrala had been hospitalized after the crash. The driver tried to take off but was stopped by witnesses, police said.
+
+    - url: https://www.dupagecremations.com/obituaries/Paresh-D-Chhatrala?obId=24670409
+      title: Obituary information for Paresh D. Chhatrala
+      site: dupagecremations.com
+      date: 2022-04-27
+      description: April 29, 1979  -  April 20, 2022
+
+    - url: https://blockclubchicago.org/2022/06/07/driver-accused-of-killing-west-loop-cyclist-before-fleeing-charged-with-reckless-homicide/
+      title: West Loop Workers Chased And Held Hit-And-Run Driver Who Killed A Cyclist, Prosecutors Say
+      site: Block Club Chicago
+      date: '2022-06-07T15:45:55+00:00'
+      description: Courtney Bertucci was arrested Monday and charged with reckless homicide, failure to report an accident resulting in death and drug possession in connection with the April 16 crash in West Loop.
+
+    - url: https://cwbchicago.com/2023/05/woman-six-years-crash-killed-bicyclist-west-loop-chicago.html
+      title: Driver who killed bicyclist in West Loop crash gets six years
+      site: CWBChicago
+      date: '2023-05-15T14:02:22+00:00'
+      description: A Joliet woman who killed a bicyclist when she swerved into his path in the West Loop last spring has been sentenced to six years, according to state records.
+
 ff16907e68eb8e5ab003e77e80ce8e5603540f7840766fea51b39aeefd89c69e9df7bc064186bc505f0d2508d5e3d8b895ccc964dede8f8048ef9cb6d8cf7f02:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

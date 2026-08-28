@@ -32,7 +32,7 @@
 
 6a82e0ef10b056b96add8d5c10c341cd7e754a4d00a7ada1798d89ab4735f8a73648b1dc2bc8edb818137ea8c00bc7d092766370e8377417d5611df3ce91995f:
   private_notes: |
-    flag:tk:fatality-not-upgraded
+    flag:tk:fatality-not-yet-upgraded
     basicinfo: PEDESTRIAN PEDESTRIAN
     2022-08-10 21:05
     6317 N CICERO AVE sauganash forest glen
@@ -104,11 +104,28 @@ af7ce17246a9844be7d60640f088923460f85110a31d3ab0892a0108dad738458a0c0b02cf5b6a25
 
 282a5bd3c9d31d997a00d2822d68367b4d695422632bfba07b2a755206ce4e9c6cb09b8cb3a3ba34ff69d03144a8bd148ba14f74ce08028fd73adc37628d8238:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2022-08-28 01:35
     6459 S CICERO AVE clearing
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: IMPROPER OVERTAKING/PASSING
+  stories:
+    - url: https://blockclubchicago.org/2022/08/29/drag-racer-killed-woman-crossing-street-during-chaotic-weekend-of-street-takeovers-police-say/
+      title: Drag Racer Killed Woman Crossing Street During Chaotic Weekend Of Street Takeovers, Police Say
+      site: Block Club Chicago
+      date: '2022-08-29T14:05:00+00:00'
+      description: A driver in a South Side drag race hit and killed a 40-year-old woman, identified as Shawman Meireis, early Sunday, capping a weekend that saw street takeovers — including car stunts and racing — draw large crowds and occupy intersections across the city, including Downtown.
+
+    - url: https://www.bibberfuneral.com/memorials/shawman-meireis/5012373/
+      title: Shawman Meireis Obituary - Visitation & Funeral Information
+      site: bibberfuneral.com
+      date: 2022-08-30
+      description: Shawman was brilliant, beautiful and athletic; she loved life and was always on the go. She enjoyed travel, music, camping, the outdoors and crafting. Shawman was the queen of color, fun and candy. She was the ultimate gift giver, memory keeper, cheerleader, daughter, sister, aunt, partner and friend. Her radiant smile and fun-loving ways will not be forgotten. Her heart was open, generous and had the ability to connect to many.
+
+    - url: https://abc7chicago.com/post/chicago-crash-aaron-guerrero-noe-garcia-sentenced-probation/15068793/
+      title: 2 sentenced to probation in 2022 Clearing street racing crash that killed pedestrian
+      site: ABC 7 Chicago
+      date: '2024-07-18T19:35:51Z'
+      description: Two men accused of street racing before a pedestrian was struck and killed in Chicago's Clearing neighborhood 2022 were sentenced to probation earlier this week, court records show.
 
 1a2671f4b7d6b0004a28bd267b25106adccad31f6f2ce3ba0fa4c2c2ecd62b670d100688cb5081b8cf30ac0215f379e23bda7264d80a60956fd3c1b61fbb4a1f:
   private_notes: |-

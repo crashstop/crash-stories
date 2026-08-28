@@ -54,11 +54,29 @@ a03e07a09f2cb2ea7756cc81a866358d4652f9b1867dcc1b891231885c7e7fcf5044a5bdbbf11011
 
 4b24a9896860c47c767f0de7896937c40501bf91e543fd3732de8f5e54a7ef4561a21dcb04c4f03d394db4e548ab741baa258cc66c1351ef9ff504340d6e60dc:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:construction-worker
     2023-04-21 22:50
     3415 N LAKE SHORE DR NB lake view
     1 fatalities, 0 injured
     PEDESTRIAN: IMPROPER LANE USAGE
+  stories:
+    - url: https://abc7chicago.com/post/hit-and-run-fatal-crash-worker-killed-chicago/13168927/
+      title: 'Road worker killed in Lakeview hit-and-run crash on DuSable Lake Shore Drive ID''d: officials'
+      site: ABC 7 Chicago
+      date: '2023-04-22T10:46:00Z'
+      description: Man was standing in a closed lane next to a construction street sweeper when the driver of a black sedan struck him and kept going, police said.
+
+    - url: https://abc7chicago.com/post/chicago-crash-bahiyyah-bost-charged-2023-dusable-lake-shore-drive-hit-run-killed-road-worker-kenny-hernandez-police/15249750/
+      title: Woman charged in 2023 hit-and-run crash that killed road worker on DuSable Lake Shore Drive
+      site: ABC 7 Chicago
+      date: '2024-08-31T00:58:00Z'
+      description: A road worker died in April 2023 after he was standing in a closed lane next to a construction street sweeper and a driver, who is now facing charges, struck him and kept driving, Chicago police said.
+
+    - url: https://cwbchicago.com/2026/02/8-years-for-hit-and-run-driver-who-killed-road-construction-worker-near-belmont-harbor.html
+      title: 8 years for hit-and-run driver who killed road construction worker near Belmont Harbor
+      site: CWBChicago
+      date: '2026-02-22T22:51:43+00:00'
+      description: A Chicago woman has pleaded guilty to killing a construction worker in a hit-and-run crash on Lake Shore Drive near Belmont Harbor nearly three years ago.
 
 7f19e27f103f8cfadb2c7cb4c4ccfbe7a30a963a9df567e0173ece0c68ca899613fc64947f61acd5cbb0f58ecbf4afc3fbc958e0ee85196549da74e829151a72:
   private_notes: |-

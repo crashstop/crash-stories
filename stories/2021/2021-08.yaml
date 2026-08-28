@@ -172,11 +172,35 @@ e24326aa8f976c7f1378d400105c92f8b1d3d4bd71b77ec947d77ccd324b888bbf864333168fb102
 
 a853f5879e1cf4bda7e674428352d1a01541da217cc570a652f33fb05adc0473dcd3495c2dab057334464eb2aefe6144d0e37987ea79631a4c9ad9cff3fb24f2:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-08-26 15:50
     300 N CENTRAL PARK AVE garfield park
     1 fatalities, 0 injured
     PEDESTRIAN: DISREGARDING OTHER TRAFFIC SIGNS
+  stories:
+    - url: https://chicago.suntimes.com/2021/9/3/22648624/evidence-fails-to-produce-arrest-hit-and-run-death-of-prominent-entertainment-lawyer-linda-mensch
+      title: Evidence from witnesses and police camera fails to produce an arrest in hit-and-run death of prominent entertainment lawyer
+      site: Chicago Sun-Times
+      date: '2021-09-03T19:48:41.879Z'
+      description: At least three witnesses said they saw the driver as he briefly got out of his van. Police have the license plate number and the name of the owner. A surveillance camera caught the hit-and run.
+
+    - url: https://chi.streetsblog.org/2021/09/07/why-havent-police-arrested-the-driver-who-killed-linda-mensch
+      title: Why haven't police arrested the driver who killed Linda Mensch?
+      site: Chicago Streetsblog
+      date: '2021-09-07T19:57:09+00:00'
+      description: Despite testimony at least three witnesses, police camera footage, a license plate number, and the name of the vehicle owner, no one is in custody.
+
+    - url: https://www.nbcchicago.com/investigations/friends-of-hit-and-run-victim-say-officials-wont-respond-to-their-pleas-for-justice/2926752/
+      title: Friends of Hit-and-Run Victim Say Officials Won't Respond to Their Pleas for Justice
+      site: NBC 5 Chicago
+      date: '2022-08-29T20:19:29-05:00'
+      description: One year after the hit-and-run that killed Linda Mensch, her loved ones continue to fight for justice in her case – even as they say police won’t respond to them.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-nbc-5-suing-over-public-records-in-hit-and-run-crashes/3000110/
+      title: 'Left for Dead: NBC 5 Suing Over Public Records in Hit-and-Run Crashes'
+      site: NBC 5 Chicago
+      date: '2022-11-17T19:38:45-06:00'
+      description: Linda Mensch was killed in a hit-and-run crash while leaving the Garfield Park Conservatory in August 2021. Investigators quickly released a photo of the van that hit her as well as its license plate. But for reasons Chicago police refuse to explain - they would not even question the vehicle's registered owner.
+      priority: 2
 
 2af40a5b24ca0395f45dceaa8f9535b23f0854ab3e36cf26947b0f13d98aa90284c691edc5e53985e05054b16de2abe10629ad4a97fd32667f3d82cab7a59027:
   private_notes: |-

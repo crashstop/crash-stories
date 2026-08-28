@@ -1,10 +1,15 @@
 70f83e196964c5da594edaf33d1f4909e45d82d058d0c08746207507498c02157346d83888f4bd54ae384102483a1d384bead0355465b8a586abde3b0045d8cf:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-10-01 02:20
     3959 W FULLERTON AVE logan square
     1 fatalities, 0 injured
     PEDESTRIAN: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://blockclubchicago.org/2023/10/11/after-hermosa-father-killed-in-hit-and-run-his-devastated-family-seeks-justice/
+      title: After Hermosa Father Killed In Hit-And-Run, His Devastated Family Seeks Justice
+      site: Block Club Chicago
+      date: '2023-10-11T20:36:05+00:00'
+      description: Leonardo Franco-Salgado was heading to his friend’s house when a driver killed him and fled. His sister launched a fundraiser to help the family with therapy for the couple’s two young children.
 
 388893d7f1a7b102916873d93aab969b2db7bfdf07b39a8b64c269641da6921840bac6fabb588eaf6e3e5b9ec825a7750cb64fb0f66a5b3a6fe4ffb17bbc4353:
   private_notes: |-
@@ -32,7 +37,7 @@
 
 683077f98c219cfdce3f09fdb5da9ed34891223a79f870d95980463823a0f91df6ca8798135037c41a4aff97190707dac5531c3ba1fae212c9629e04ef8d39e4:
   private_notes: |
-    flag:tk:fatality-not-upgraded
+    flag:tk:fatality-not-yet-upgraded
     basicinfo: CYCLIST PEDALCYCLIST
     2023-10-04 19:30
     5357 W WAVELAND AVE portage park
@@ -109,11 +114,35 @@ a623241ec43b66156dbd0b7d96f59b52e867feccd943bd9a2225f1d4be27dd806985a0d3d377b645
 
 8060171a59c6cd7a7506c65f3535c70f5e57f481ec265543f7a28f63cd0d7c5cfe578eb4d42555dd720eb40522ca6a3064fc3a9e3d233d7fa60ea0f4417e1c66:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-10-23 19:54
     5115 N DAMEN AVE lincoln square
     1 fatalities, 0 injured
     CYCLIST: UNDER THE INFLUENCE OF ALCOHOL/DRUGS (USE WHEN ARREST IS EFFECTED)
+  stories:
+    - url: https://chicago.suntimes.com/crime/2023/10/24/23930035/bicyclist-killed-drunken-driver-lincoln-square-cops
+      title: 'Cyclist’s death in Lincoln Square bike lane crash is being investigated as DUI: ‘He was a joy to know’'
+      site: Chicago Sun-Times
+      date: '2023-10-25T00:08:11.608Z'
+      description: The stretch of Damen where Donald Heggemann was killed is plagued by crashes and close calls, said Christina Whitehouse, founder of the group Bike Lane Uprising.
+
+    - url: https://www.neiu.edu/news/remembering-donald-heggemann
+      title: Remembering Donald Heggemann | NEIU
+      site: Northeastern Illinois University
+      date: 2023-11-15
+      description: |
+        Don studied Ceramics at Northeastern and began working for the University as a Student Aide in the Accessibility Center (now known as Student Disability Services) in 2011. In September 2022 he was hired as extra help in the Department of Art + Design before becoming their full-time office administrator. His passing is a great loss for Northeastern and those who knew and worked with him.
+
+    - url: https://blockclubchicago.org/2023/12/04/woman-charged-with-aggravated-dui-after-killing-bicyclist-in-lincoln-square/
+      title: Woman Charged With Aggravated DUI After Killing Bicyclist In Lincoln Square
+      site: Block Club Chicago
+      date: '2023-12-04T17:19:54+00:00'
+      description: Kali Rynearson, 30, was charged with one felony count of aggravated driving under the influence in the late October crash that resulted in the death of 59-year-old artist Don Heggemann, police said.
+
+    - url: https://abc7chicago.com/post/kali-rynearson-pleads-guilty-hit-run-dui-crash-killed-biker-donald-heggemann-ravenswood-court-records-show/16586716/
+      title: Chicago woman pleads guilty in killing NEIU faculty member in DUI crash, records show
+      site: ABC 7 Chicago
+      date: '2025-05-29T13:18:00Z'
+      description: Kali Rynearson pleaded guilty in a hit-and-run crash that killed a Northeastern Illinois University faculty member.
 
 1e565d5f8077d073e2190dc754511eb4a08c4e9285c64d44aa3409206cf8bc34fe32da776c47441875e9f78e9d82eec79a4c0b8cb3bdf92e71975efb04cc7514:
   private_notes: |-

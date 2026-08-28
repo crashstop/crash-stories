@@ -49,6 +49,32 @@ a919081dea2113ec6681e71cb58d29b6ad21779da8a162718fef37c1802af91581173ff3007bb6c3
       date: '2018-09-24T13:28:09+00:00'
       description: A 67-year-old man was killed when he was hit by car while standing on the corner of an intersection Sunday evening. At about 5:20 p.m.
 
+c5ade8af862bbaf2402100a354602d2ba2030f356c4e11e63bdbc946ae00cdca6e7cd093b6bdfb0ca249d04c7333a6c18df4d3dc9ab22febd202f0f2e707d15b:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: PEDESTRIAN PEDESTRIAN
+    2018-09-24 11:18
+    5535 N SHERIDAN RD edgewater
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://chi.streetsblog.org/2018/09/26/bmw-driver-fatally-struck-lorraine-campion-91-as-she-crossed-street-in-edgewater
+      title: BMW Driver Fatally Struck Lorraine Campion, 91, as She Crossed Street in Edgewater
+      site: Chicago Streetsblog
+      date: '2018-09-26T17:19:38+00:00'
+      description: Campion was the 30th pedestrian to be struck and killed in Chicago this year.
+
+    - url: https://chicago.suntimes.com/2018/10/18/18455322/man-charged-with-fatally-hitting-93-year-old-woman-with-his-suv-in-edgewater
+      title: Man charged with fatally hitting 93-year-old woman with his SUV in Edgewater
+      site: Chicago Sun-Times
+      date: '2018-10-19T01:38:00Z'
+      description: Rayon Allen was charged with reckless homicide in the Sept. 24 crash that killed Lorraine Campion, Allen's bail was set at $10,000.
+
+    - url: https://cwbchicago.com/2021/05/30-months-probation-for-driver-who-struck-and-killed-93-year-old-edgewater-woman.html
+      title: 30 months probation for driver who struck and killed 93-year-old Edgewater woman
+      site: CWBChicago
+      date: '2021-05-25T11:47:05+00:00'
+      description: A driver who struck and killed a 93-year-old woman in Edgewater has pleaded guilty to reckless homicide with a motor vehicle in exchange for a sentence of 30-months probation, court records show.
+
 ac68658a1894e2e37e5f7e5445b798d3767aa3e8035713d036b590e3216221135cd81f2ba1fc437496c76e09b1f9c7dcf6a0e0bc0e76da0363d2f9d514869356:
   private_notes: |
     flag:tk:homicide/death after the crash

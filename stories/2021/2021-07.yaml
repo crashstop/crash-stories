@@ -105,6 +105,26 @@ f85ff423aeb9b19020546192d7f541b083559fd18a6a7bc25c8a17c518bec8d2c083b58800c91099
     1 fatalities, 0 injured
     OTHER: IMPROPER LANE USAGE
 
+b28bbe1ca8d7ae194da89b7af64949e4205333d3f1e44e13b5400f449759397fa2288d164e62e08a047a6b3765fda5f9ce4c71fd214cb9c964c16ac14826b17a:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: CYCLIST PEDALCYCLIST
+    2021-07-24 16:00
+    5316 N MILWAUKEE AVE jefferson park
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://www.chicagolandcremationoptions.com/obituary/thomas-tommy-travers-1
+      title: Thomas "Tommy" Malachy Travers Obituary Jul 26, 2021
+      site: chicagolandcremationoptions.com
+      date: 2021-07-26
+      description: Thomas “Tommy” Malachy Travers, age 59, died suddenly on July 26, 2021. Cherished son of Marge, nee Callow, and the late Charlie Travers; proud brother to the late Patrick, Tim (Tricia), Mike (Sarah), Bernadette (Michael) Colletti, Cassie (Denis) O’Connor, Margie (Dave) Needleman, Terry, Mary, Norah (Eamonn) O’Connor, Rita (Noel) Skelton, Barbara, Rosie (Conal) Gillespie, Aidan (Denise) and Sheila
+
+    - url: https://blockclubchicago.org/2021/07/29/after-jefferson-park-cyclist-killed-on-milwaukee-avenue-advocates-push-city-to-fix-the-bike-highway-before-someone-else-dies/
+      title: After Jefferson Park Cyclist Killed On Milwaukee Avenue, Advocates Push City To Fix The 'Bike Highway' — Before Someone Else Dies
+      site: Block Club Chicago
+      date: '2021-07-29T18:30:00+00:00'
+      description: “We need protected routes on major ways or intermediary routes to bike safely — and we needed it years ago,” said a Northwest Side cycling advocate.
+
 1153b9c5aa2c3d7b23f32ae974a795da4966c66ea9c7fca5ba8cf5bf0cba7b4d270ce179d23334ff26bdfd33328bb0ff10bc455ede2fd4e85af607f1d141a59e:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

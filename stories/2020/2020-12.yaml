@@ -88,11 +88,22 @@ ba382fc9ddab8bb6e4b03d30594ec7ca4813e46b36fb9e560c05af91b5d2b912c75912a8368245f3
 
 006bc36d54096844ab35a088201e0ccae4aca6fedff36526088c1cf8274476aa14211f536b47a46fbe94f5f19caef82eafab7a88bae0cef1e07a566197af7ca5:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-12-23 20:07
     3130 W 55TH ST gage park
     2 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://blockclubchicago.org/2020/12/30/family-behind-churro-waffle-need-help-finding-hit-and-run-driver/
+      title: Tragedy Strikes Churro Waffle Family Again After 12-Year-Old Boy, His Aunt Killed In Gage Park Hit-And-Run Before Christmas
+      site: Block Club Chicago
+      date: '2020-12-30T13:22:00+00:00'
+      description: Giovanny Bucio and his aunt, Araceli Gutierrez-Banuelos, were killed Dec. 23 when a hit-and-run driver struck them near a South Side Walgreens. They are related to the family who runs the Irving Park restaurant.
+
+    - url: https://www.nbcchicago.com/investigations/left-for-dead-family-of-hit-and-run-victim-says-chicago-police-have-kept-them-in-the-dark/2936132/
+      title: 'Left for Dead: Family of Hit-and-Run Victim Says Chicago Police Have Kept Them in the Dark'
+      site: NBC 5 Chicago
+      date: '2022-09-09T18:58:09-05:00'
+      description: Nearly two years after a deadly hit-and-run crash that remains unsolved, the parents of one victim say Chicago police have kept them in the dark, leaving them with no idea how much evidence investigators have collected – until NBC 5 Investigates showed them.
 
 34f100afc25baa1d20eedd84bd5cee1426c8ae432e527b04ab570cfcb6a51973adbf23e0993af6fb43ef49a5d828b8e3edac437b1a91adff7384f1595fb35636:
   private_notes: |-
