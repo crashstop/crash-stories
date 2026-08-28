@@ -64,8 +64,14 @@ ea421596c38eb793f5a48e2fe0e75af3b5bf6c57d12583f038621fe4e05036283c22a59f43c770dc
 
 020bd209fc7e8d07a48078263edac53f989dca0916115aa11d0d61119560a33d1fa5d18b06479fd4ed13a7d1d905d1564b02fc2591b473f93be8106614cc511d:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    Could not find any identifying info in news stories
     2024-11-27 18:46
     1306 S CENTRAL PARK AVE north lawndale
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://abc7chicago.com/post/chicago-pedestrian-killed-man-fatally-struck-vehicle-hit-run-crash-south-central-park-avenue-lawndale-police-say/15597162/
+      title: Man killed in hit-and-run crash in Lawndale, Chicago police say
+      site: ABC 7 Chicago
+      date: '2024-11-28T04:06:36Z'
+      description: A man was hit and killed by an SUV while crossing a street Wednesday evening on the city's West Side. The driver fled the scene of the crash, police said.

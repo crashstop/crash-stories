@@ -24,11 +24,24 @@ ba000b84322dcd53fce270cb1d9fbb0c36ac2c9e6ac6e3d4341c24bac162bc88bb37eac5e9b3e884
 
 26cd80eda1d80050a34822da21dddbda9069cd8ef4edf89ac2f991e27b37bbb322a5fc229572fe68f37b92e2068ad639e651f86a26c179d9ebd29e37a6da39d0:
   private_notes: |-
+    flag:tk:category:police-chase
     This entry is just a stub, pre-filled with basic info from the crash data:
     2020-06-03 21:57
     1600 W IRVING PARK RD lake view
     1 fatalities, 10 injured
     VEHICLE-TO-VEHICLE: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://chicago.suntimes.com/crime/2020/6/6/21282337/marcel-oliver-charged-murder-guadalupe-francisco-martinez-lake-view-irving-park-fatal-crash
+      title: Man charged with murder, carjacking in police chase that led to fatal Lake View crash
+      site: Chicago Sun-Times
+      date: '2020-06-06T21:04:49Z'
+      description: Marcel Oliver, 22, is accused of crashing a Jeep wanted in connection with a homicide before stealing a Nissan from an Irving Park gas station and leading police on the chase into Lake View.
+
+    - url: https://abc7chicago.com/post/lakeview-crash-chicago-police-cpd-finance-committee/12240706/
+      title: $15M settlement for mom of 6 killed in Chicago police squad car crash clears city council committee
+      site: ABC 7 Chicago
+      date: '2022-09-19T17:47:00Z'
+      description: The 37-year-old woman died as a result of her injuries and left behind six children, the youngest of whom was only 6 at the time.
 
 837b869ed59da425d5b92a556f040660fbb35acec7417e610a87dfc32793d1a7e57aadc60ae58e0b226cc42c1f9630a5792ce800488debf69bfec33a4d8ed1d9:
   private_notes: |-

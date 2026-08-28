@@ -9,7 +9,8 @@
       title: '''He just started life'': Young father hit, killed by driver who tried to flee in West Englewood'
       site: ABC 7 Chicago
       date: '2023-01-02T23:53:00Z'
-      description: Police said the driver is in custody and charges are pending.
+      description: |
+        Witnesses said that 23-year-old driver then got out of his car and tried to flee, but people who were at that party Lee was at chased him down and helped Lee until police arrived. Police said the driver is in custody and charges are pending.
 
     - url: https://chi.streetsblog.org/2023/01/03/roy-lee-21-struck-by-hit-and-run-driver-in-englewood-was-1st-chicago-ped-fatality-of-2023
       title: Roy Lee, 21, struck by hit-and-run driver in Englewood, was 1st Chicago ped fatality of 2023
@@ -73,11 +74,16 @@ f9897733e295f68784ea13620fbd8af5b6fd56b9c24ef291875e68390d9d6a98320708275e521810
 
 37075297676e646d9166ca1d50b0aa490eca65c41355c924e4e3aeba40d8023e47565219be8c7660677b0a8e6f2b7072338583a1649c26b8628472af0a166208:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-01-10 23:45
     3544 W LAKE ST garfield park
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://chi.streetsblog.org/2023/01/12/man-33-killed-by-hit-and-run-driver-in-east-garfield-is-4th-pedestrian-fatality-of-2011
+      title: Anthony Harvey, 33, killed by hit-and-run driver in East Garfield is 4th pedestrian fatality of 2023
+      site: Chicago Streetsblog
+      date: '2023-01-12T06:12:50+00:00'
+      description: Tragically, less than two weeks into the new year, drivers have already struck and killed four people on foot in Chicago.
 
 690738a3f7682dca139eddf81e77c3333d93ebaaf5cbc1205f8b4be51f9b08dc7c67e0e5df93b551043838923a082fb2aa91e718a58d6efae52bfbfc36c804b7:
   private_notes: |-

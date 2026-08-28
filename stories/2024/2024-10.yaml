@@ -11,6 +11,12 @@
       date: '2024-10-01T18:30:17.671Z'
       description: About 2 a.m. Tuesday, officers began pursuing two gunmen who got into a black Lexus ES that sped north from the 5500 block of South Pulaski Road before running a red light and colliding with an SUV and a building in the 3500 block of South Ashland Avenue, Chicago police said.
 
+    - url: https://blockclubchicago.org/2024/10/02/fatal-police-chase-on-southwest-side-puts-car-pursuit-policy-back-in-spotlight/
+      title: Fatal Police Chase On Southwest Side Puts Car Pursuit Policy Back In Spotlight
+      site: Block Club Chicago
+      date: '2024-10-02T13:07:00+00:00'
+      description: The Police Department's ability to pursue people in car chases was limited under an August 2020 directive that established officers must use a "balancing test" to determine if the chase is worth the safety risk.
+
     - url: https://www.fox32chicago.com/news/chicago-man-charged-2024-crash-killed-18-year-old-police
       title: 'Chicago man charged in 2024 crash that killed 18-year-old: police'
       site: FOX 32 Chicago
@@ -59,6 +65,20 @@ dfa2efadb2e9f55e9b8fa86784dd57b17e816b4fb876961743b10daa98c1ce984136bfd381bead93
     5729 N CENTRAL AVE jefferson park
     1 fatalities, 0 injured
     OTHER: NOT APPLICABLE
+
+372c40074949a6cbef6b75dcd349e973ae5ccd7e833d38f0a314b9a04fa87f31190020ea2cb82591e73482263bcba12fcd22717ee790e12223f24e8b3b6ac794:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2024-10-18 15:13
+    1647 W CHICAGO AVE west town
+    0 fatalities 1 incaps 1 injured
+  stories:
+    - url: https://cwbchicago.com/2025/01/cops-hunt-driver-who-struck-killed-69-year-old-man-in-west-town.html
+      title: Cops hunt driver who struck, killed 69-year-old man in West Town
+      site: CWBChicago
+      date: '2025-01-15T22:47:49+00:00'
+      description: Chicago police need help as they try to identify a driver who killed a pedestrian in West Town last fall. The victim was initially listed in serious condition, and he was able to speak with police and confirm details of the crash, the report said. However, the man died two days later from blunt force injuries to his head and neck that he suffered in the crash, according to the Cook County Medical Examiner’s Office.
 
 3fe358e221e2de4fc63625bd5230ffdfd602475e8868a5d3ce54d34e34c2dc697a5a9fc9da9742c44076c808bd40e60f4526c4f6df7c459af0a7d6efbfff1a0a:
   private_notes: |-

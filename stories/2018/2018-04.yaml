@@ -16,11 +16,22 @@ fc27ded3185b0bed186219a419a834262ce113f9546916706616af05e767680b43e746187b34bb3d
 
 8a94c9400d6eaec1c1278cb73ebf78844166e4dff38bd07094c47450b6a375caf7744cef7cbd3b1572074c58cb61e1225fa409596ea635d790998422882974e2:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2018-04-03 12:31
     2901 W ADDISON ST avondale
     1 fatalities, 2 injured
     OTHER: OPERATING VEHICLE IN ERRATIC, RECKLESS, CARELESS, NEGLIGENT OR AGGRESSIVE MANNER
+  stories:
+    - url: https://www.chicagotribune.com/obituaries/dolores-m-sobczak-chicago-il/
+      title: Dolores Sobczak Obituary - Chicago, IL
+      site: Chicago Tribune
+      date: '2018-04-06T05:05:00+00:00'
+      description: Dolores M. Sobczak nee Kazak; age 76; beloved daughter of Johanna and the late Stanley; loving mother of John, Mary Sobczak (Jose Ortiz), Karen Sobczak; devoted grandmother of Joyce, Victoria, and Michelle.
+
+    - url: https://abc7chicago.com/post/man-cited-in-avondale-parking-lot-crash-that-killed-1/3310950/
+      title: Man cited in Avondale parking lot crash that killed 1
+      site: ABC 7 Chicago
+      date: '2018-04-07T02:29:31Z'
+      description: A man has been cited for reckless driving in a crash in an Avondale parking lot that killed one woman and seriously injured her mother.
 
 c2080f19ba8fb8bf5ab2e75fb2548fae6497954028f466b0fd49ee2d5260ba773928051def47d10f02097c075d3b04e5951f3c67a63bb4a59267d1e122899177:
   private_notes: |-

@@ -37,6 +37,25 @@ dbb6436e1fece1cbf385c63b3a7252521d8eb5262683993f5ba6c7d8be503e1ebbc40aa17312a1ce
     727 W MADISON ST greektown
     1 fatalities, 0 injured
     CYCLIST: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://chi.streetsblog.org/2018/08/09/right-turning-dump-truck-driver-fatally-struck-female-cyclist-39-in-greektown
+      title: Right-Turning Dump Truck Driver Fatally Struck Angela Park, 39, in Greektown
+      site: Chicago Streetsblog
+      date: '2018-08-09T16:02:06+00:00'
+      description: |
+        Park was transported to Northwestern Hospital where she was pronounced dead at 7:33 a.m., according to the Cook County medical examiner’s office. The Sun-Times reported that a bike helmet and a broken pair of sunglasses were visible below the truck, which is owned by Lakeshore Recycling Systems. The driver was cited for striking a pedestrian in the roadway.
+
+    - url: https://blockclubchicago.org/2018/08/10/athletic-club-instructor-mother-identified-as-woman-in-fatal-west-loop-bike-accident/
+      title: Athletic Club Spin Instructor, Mother Identified As Woman In Fatal West Loop Bike Crash
+      site: Block Club Chicago
+      date: '2018-08-10T14:22:26+00:00'
+      description: A 39-year-old woman who died after being hit by a dump truck while riding her bicycle in West Loop has been identified as a mother of two who worked as an athletic trainer.
+
+    - url: https://www.michalikfuneralhome.com/obituaries/angela-park
+      title: Angela Kristine Park Obituary Aug 9, 2018
+      site: michalikfuneralhome.com
+      date: 2018-08-11
+      description: While attending Northwestern, Angela began dabbling in the sport of triathlon. She has since completed upwards of 100 triathlons. She built her company, Spark Multisport, with the belief that adopting a healthy, active lifestyle starts with small changes and motivation. She helped all find his/her inner-athlete. When she was not running, biking, and swimming, she loved to travel and spend time with her husband and daughters.
 
 aa6cc47eb9732808b0848fe7360f8a85e1d57196e7e73177171df25457242ddb8438360fa66e943ac8569515bab2eb4b8c57a04e9ea1d686e1831d28abee4332:
   private_notes: |-
@@ -56,11 +75,22 @@ aa6cc47eb9732808b0848fe7360f8a85e1d57196e7e73177171df25457242ddb8438360fa66e943a
 
 4943b55a57b3e44b30919d23201f955bd8ed5050c4c7ae56a0f054e4dc84ea8019374eaa9ebb3becff2dfaaf9d7213bf66231c09457a63baf0b562f38e85485e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2018-08-23 02:17
     4497 W DIVISION ST humboldt park
     1 fatalities, 0 injured
     CYCLIST: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/man-fatally-struck-in-west-humboldt-park/4038974/
+      title: Man fatally struck in West Humboldt Park; police investigating as deadly hit-and-run
+      site: ABC 7 Chicago
+      date: '2018-08-24T13:59:00Z'
+      description: Police are searching for a driver who struck and killed a man early Thursday morning at West Division Street and North Cicero Avenue in Chicago's West Humboldt Park neighborhood.
+
+    - url: https://blockclubchicago.org/2018/09/07/police-searching-for-driver-who-hit-and-killed-bicyclist-in-west-humboldt-park/
+      title: Police Searching For Driver Who Hit And Killed Bicyclist In West Humboldt Park
+      site: Block Club Chicago
+      date: '2018-09-07T16:18:21+00:00'
+      description: Chicago Police are searching for a driver who hit and killed 42-year-old bicyclist Jimmy Lispier in West Humboldt Park last month.
 
 31aa9b5955937ca3397eb89447374814f375ac7d07ffbeb7273f3f2ddd454ae83cd2e9194d89cfdaa38dee9952ec5eba263a9bdff5f329d45e0c5750e4a969ac:
   private_notes: |-
