@@ -78,11 +78,32 @@ fded08448202b5d337e3875973c6c89d952c9f399e72e6b5bd92ea1b719a61ba4a7b6dd3f54da64a
 
 7ddaf56bf4adcf6b499c5f97c8402b342e3e2b7e78ac66fedf96cc02063cebded0abc50091628f1586cd023b8c16d7772d0ae1511bcfd26e70e6fcc391f15939:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2023-03-25 01:06
-    817 W WASHINGTON BLVD west loop
-    1 fatalities, 0 injured
-    PEDESTRIAN: DISREGARDING STOP SIGN
+    817 W WASHINGTON BLVD, west-loop
+    hit-and-run PEDESTRIAN
+    fatalities: 1 injured: 0
+    - 26 M FATAL
+  stories:
+    - url: https://abc7chicago.com/post/hit-and-run-chicago-news-james-thompson-pedestrian-killed/13027528/
+      title: '''He was always dancing'': Victim''s family, friends want justice after fatal West Loop hit-and-run'
+      site: ABC 7 Chicago
+      date: '2023-03-27T16:46:00Z'
+      description: |
+        Friends and family of James Richard Thompson are determined to track down the driver who killed him.
+
+    - url: https://www.friedrichjones.com/obituaries/James-Richard-Thompson?obId=27581231
+      title: Obituary information for James Richard Thompson
+      site: friedrichjones.com
+      date: 2023-03-28
+      description: |
+        James was a 2015 graduate of Plainfield North High School. He graduated from University of Missouri, Robert J. Trulaske College of Business in 2019. He worked for Ecolab and DocuSign as an account executive. James loved travelling, golfing, playing soccer, snowboarding, biking, fishing and everything outdoors. James will be deeply missed by his family and friends.
+
+    - url: https://chi.streetsblog.org/2023/03/30/driver-who-ran-stop-sign-fatally-struck-james-r-thompson-26-in-west-loop-fled
+      title: Driver who ran stop sign fatally struck James R. Thompson, 26, in West Loop, fled
+      site: Chicago Streetsblog
+      date: '2023-03-31T01:23:44+00:00'
+      description: |
+        Witnesses told responding officers that the eastbound driver of a black Mercedes disregarded their stop sign and struck the pedestrian with his passenger-side rear-view mirror, then fled east on Washington.
 
 86cb68b64af024d34dfa82ee2bba5703cc0e62608bc68d5e4c85c708b97a3c998049b068946d2b44e8911859d096f3397d302818ad6fa28464ef73a4dd8549be:
   private_notes: |-

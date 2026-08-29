@@ -192,7 +192,9 @@ def add_arguments(parser):
         "stories",
         help="add an archive_url to every story in one yaml file that lacks one",
     )
-    p_stories.add_argument("path", help="path to a stories/<year>/<year-month>.yaml file")
+    p_stories.add_argument(
+        "path", help="path to a stories/<year>/<year-month>.yaml file"
+    )
     p_stories.set_defaults(_run=archive_stories)
 
     return parser

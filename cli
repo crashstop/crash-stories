@@ -5,7 +5,8 @@
   ./cli format    [--all] [--dry]
   ./cli reconcile [--all] [--dry] [--no-force-domain-lookup]
   ./cli wrangle   [--dry]
-  ./cli clip      <url> [--indent N]
+  ./cli clip      [<url>] [--indent N]   (no url: reads urls from stdin)
+  ./cli info      <crash_record_id>
   ./cli archive   story <url> | stories <path>
   ./cli make      [--all] [--dry]
 
@@ -30,11 +31,12 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import archive  # noqa: E402
 import clip  # noqa: E402
 import format  # noqa: E402
+import info  # noqa: E402
 import lint  # noqa: E402
 import reconcile  # noqa: E402
 import wrangle  # noqa: E402
 
-SUBCOMMANDS = (lint, format, reconcile, wrangle, clip)
+SUBCOMMANDS = (lint, format, reconcile, wrangle, clip, info)
 
 # What `make` runs, in order, with the flags each step's main() actually accepts
 # — lint takes no --dry, wrangle no --all — so `./cli make --dry` hands --dry
