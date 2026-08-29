@@ -115,11 +115,12 @@ ffe1ae2af5a52a29ff02bee98c9d0d4f8b267ba1ac5af649df683e7b7fa9abe7ad3cecda1ff9b43a
     1 fatalities, 1 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
   stories:
-    - url: https://www.cbsnews.com/chicago/news/mother-killed-at-pilsen-intersection/
-      title: After mother of 3 hit and killed, neighbors want changes at Pilsen intersection
-      site: CBS News
-      date: 2023-08-24T16:45:22-0500
-      description: An alderman said he's asked for a traffic study at the intersection since May, because he said the stop signs aren't enough.
+    - url: https://chi.streetsblog.org/2023/08/24/turning-suv-driver-failed-to-yield-to-woman-48-in-pilsen-crosswalk-killing-her-in-front-of-25th-ward-office
+      title: Turning SUV driver failed to yield to woman, 48, in Pilsen crosswalk, killing her in front of 25th Ward office
+      site: Chicago Streetsblog
+      date: '2023-08-25T00:11:51+00:00'
+      description: |
+        The victim, 48-year-old Irene Celestino Devillada, lived about two blocks from the crash site. After the driver was medically cleared, he was taken to the 12th District police headquarters for processing, the report stated. He was cited for failure to yield to a pedestrian in a crosswalk, driving on a suspended license, and operating an uninsured vehicle.
 
     - url: https://blockclubchicago.org/2023/08/28/pilsen-driver-on-suspended-license-killed-mom-of-3-police-say/
       title: Pilsen Driver On Suspended License Killed Mom Of 3, Police Say

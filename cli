@@ -5,14 +5,15 @@
   ./cli format    [--all] [--dry]
   ./cli reconcile [--all] [--dry] [--no-force-domain-lookup]
   ./cli wrangle   [--dry]
+  ./cli clip      <url> [--indent N]
   ./cli archive   story <url> | stories <path>
-  ./cli all       [--all] [--dry]
+  ./cli make      [--all] [--dry]
 
 `./cli lint --all` is exactly `python3 scripts/lint.py --all` — the scripts stay
 runnable on their own, and each subcommand's flags come from the script itself
 (its add_arguments), so there is nothing here to keep in sync when one changes.
 
-`./cli all` runs lint, format, reconcile, wrangle in that order and stops at the
+`./cli make` runs lint, format, reconcile, wrangle in that order and stops at the
 first one that exits nonzero. `./cli <subcommand> --help` prints what a
 subcommand does, in full, plus every flag it takes.
 """
@@ -27,15 +28,16 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import archive  # noqa: E402
+import clip  # noqa: E402
 import format  # noqa: E402
 import lint  # noqa: E402
 import reconcile  # noqa: E402
 import wrangle  # noqa: E402
 
-SUBCOMMANDS = (lint, format, reconcile, wrangle)
+SUBCOMMANDS = (lint, format, reconcile, wrangle, clip)
 
-# What `all` runs, in order, with the flags each step's main() actually accepts
-# — lint takes no --dry, wrangle no --all — so `./cli all --dry` hands --dry
+# What `make` runs, in order, with the flags each step's main() actually accepts
+# — lint takes no --dry, wrangle no --all — so `./cli make --dry` hands --dry
 # only to the steps that have one. The order is load-bearing twice over: lint
 # gates the steps that rewrite files, and wrangle rewrites stories.csv, whose
 # mtime is the cutoff every changed-only scan measures against, so it stays last.
@@ -47,7 +49,7 @@ PIPELINE = (
 )
 
 
-def run_all(changed_only=True, dry=False):
+def run_pipeline(changed_only=True, dry=False):
     """Run the whole pipeline, stopping at the first nonzero exit code."""
     supplied = {"changed_only": changed_only, "dry": dry}
     for name, main, accepts in PIPELINE:
@@ -90,7 +92,7 @@ def build_parser():
     # own _run — no set_defaults here, or the nested one would have to override it.
     archive.add_arguments(add("archive", archive.__doc__))
 
-    child = add("all", "Run lint, format, reconcile, and wrangle, in that order.")
+    child = add("make", "Run lint, format, reconcile, and wrangle, in that order.")
     child.add_argument(
         "--all",
         dest="changed_only",
@@ -102,7 +104,7 @@ def build_parser():
         action="store_true",
         help="pass --dry to every step that takes it (format, reconcile, wrangle)",
     )
-    child.set_defaults(_run=run_all)
+    child.set_defaults(_run=run_pipeline)
 
     return parser
 

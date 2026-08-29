@@ -6,6 +6,21 @@ ef6cdc3b119a9bcf0d142cb03015dff793329adc9b4df2481e4b727abf350ee8e3cdcff8f97aa292
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
 
+5c45ab4e25f3c116141af395575912a54df2b9ff9a731fc67026413b186ba8f008b180e6a885836504d5d00ce6fa7c04e252b474f6dfd179618eda289afef717:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2023-04-08 21:48
+    5199 W JACKSON BLVD austin
+    0 fatalities 0 incaps 1 injured
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/family-man-killed-west-side-hit-run/
+      title: Family of man killed in West Side hit-and-run calls on driver to surrender
+      site: CBS News
+      date: 2023-04-11T05:35:00-0500
+      description: |
+        55-year-old Tracy Burton was killed two blocks from his home. The victim's grieving wife and daughter spoke out to CBS 2's Jermont Terry.
+
 fa092fbc3b4b5d75c91e5ac94beda1be0f3a130ace10ba7535240e68f397c8376ddb4e5a970de2c5902658b1655fb2ae2b4e0238f6565ea4cda1482383e60e6a:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

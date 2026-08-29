@@ -43,9 +43,10 @@ Many crash records don't have easily findable stories, so `private_notes` is a n
 Everything runs through [`./cli`](cli), the repo's task runner. `./cli --help` lists the subcommands; `./cli <subcommand> --help` explains one in full and lists its flags.
 
 ```sh
+./cli clip URL              # turn a story url into a pasteable YAML entry
 ./cli lint                  # check the story files
 ./cli lint --all            # ...every one of them, not just the recently changed
-./cli all                   # lint, format, reconcile, wrangle — stops on the first failure
+./cli make                  # lint, format, reconcile, wrangle — stops on the first failure
 ```
 
 To type `cli` instead of `./cli`, add this to your `~/.zshrc` — it runs the `cli` of whatever repo you're standing in:
@@ -60,13 +61,14 @@ The scripts expect a `db.sqlite` symlink to the crashstop database, which should
 
 Each subcommand is a script under `scripts/`, still runnable on its own (`python3 scripts/lint.py --all` is what `./cli lint --all` does):
 
+- `./cli clip <url>` ([scripts/clip.py](scripts/clip.py)) — fetch a story url and print it as a story entry, ready to paste. Add `--indent 4` to line it up under a crash's `stories:` key, or pipe it: `./cli clip <url> --indent 4 | pbcopy`. Needs [qlip](https://github.com/dannguyen/qlip) installed for the same interpreter (`pip install -e /path/to/qlip`) — it does the fetching and metadata extraction; the YAML rendering is `format.py`'s, so the entry comes out already formatted the way this repo wants it. `site` arrives as the bare domain and `./cli reconcile` swaps in the display name from `reference/domain-lookup.csv`.
 - `./cli lint` ([scripts/lint.py](scripts/lint.py)) — ensure format correctness.
 - `./cli format` ([scripts/format.py](scripts/format.py)) — format the `stories/**/*.yaml` files into a predictable style and arrangement (self-contained formatting only; no db needed).
 - `./cli reconcile` ([scripts/reconcile.py](scripts/reconcile.py)) — apply rewrites that depend on external data: reordering crash records chronologically by their `crash_date` in db.sqlite, and deriving missing `site` values from story urls.
 - `./cli wrangle` ([scripts/wrangle.py](scripts/wrangle.py)) — compile all the `stories/**/*.yaml` files into two CSV files: [stories.csv](stories.csv) (one row per story) and [notes.csv](notes.csv) (one row per crash-level `notes` entry: `crash_record_id`, `crash_yearmonth`, `content`).
 - `./cli archive story <url>` / `./cli archive stories <path>` ([scripts/archive.py](scripts/archive.py)) — get Wayback Machine links, for one url or for every story in a month file that lacks an `archive_url`.
 
-`lint`, `format`, and `reconcile` only look at files modified since `stories.csv` was last written; pass `--all` to cover every file. `format`, `reconcile`, and `wrangle` take `--dry` to report what they'd rewrite without touching anything. `./cli all [--all] [--dry]` passes each flag to the steps that accept it.
+`lint`, `format`, and `reconcile` only look at files modified since `stories.csv` was last written; pass `--all` to cover every file. `format`, `reconcile`, and `wrangle` take `--dry` to report what they'd rewrite without touching anything. `./cli make [--all] [--dry]` passes each flag to the steps that accept it.
 
 The `Makefile` still works (`make lint` and friends) but is now just a wrapper around `./cli`.
 

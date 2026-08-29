@@ -4,7 +4,7 @@
 .PHONY: all format lint reconcile wrangle
 
 all:
-	./cli all
+	./cli make
 
 format:
 	./cli format
