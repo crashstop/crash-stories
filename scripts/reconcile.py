@@ -157,8 +157,12 @@ def main(changed_only=True, dry=False, force_domain_lookup=True):
     return 0
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+def add_arguments(parser):
+    """Register this script's flags on parser.
+
+    The single definition of reconcile's command line: both the __main__ block
+    below and the repo-root ./cli dispatcher call this, so the two can't drift.
+    """
     parser.add_argument(
         "--all",
         dest="changed_only",
@@ -177,4 +181,10 @@ if __name__ == "__main__":
         help="skip re-running the domain lookup on entries whose existing "
         "`site` still looks like a raw domain (matches r'\\.\\w{2,3}$')",
     )
+    return parser
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    add_arguments(parser)
     sys.exit(main(**vars(parser.parse_args())))

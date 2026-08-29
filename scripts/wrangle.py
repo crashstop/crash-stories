@@ -162,11 +162,21 @@ def main(dry=False):
     return 0
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+def add_arguments(parser):
+    """Register this script's flags on parser.
+
+    The single definition of wrangle's command line: both the __main__ block
+    below and the repo-root ./cli dispatcher call this, so the two can't drift.
+    """
     parser.add_argument(
         "--dry",
         action="store_true",
         help="report what would be written without touching either CSV",
     )
+    return parser
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    add_arguments(parser)
     sys.exit(main(**vars(parser.parse_args())))

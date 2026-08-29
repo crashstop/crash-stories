@@ -167,28 +167,45 @@ def archive_stories(path):
     return 1 if failed else 0
 
 
-def main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    sub = parser.add_subparsers(dest="command", required=True)
+def add_arguments(parser):
+    """Register archive's `story`/`stories` subcommands on parser.
+
+    The single definition of archive's command line: both the main() below and
+    the repo-root ./cli dispatcher call this, so the two can't drift. Each
+    subcommand carries the function that runs it as the `_run` default; the
+    underscore keeps it out of the kwargs both dispatchers build from the
+    parsed namespace.
+    """
+    # Not required: bare `archive` prints this parser's help (see _help below)
+    # rather than erroring out with a bare usage line.
+    parser.set_defaults(_help=parser.print_help)
+    sub = parser.add_subparsers(dest="_archive_command", metavar="<subcommand>")
 
     p_story = sub.add_parser(
         "story",
         help="submit one url to the Wayback Machine and print its archive link",
     )
     p_story.add_argument("url", help="the story url to archive")
+    p_story.set_defaults(_run=archive_story)
 
     p_stories = sub.add_parser(
         "stories",
         help="add an archive_url to every story in one yaml file that lacks one",
     )
     p_stories.add_argument("path", help="path to a stories/<year>/<year-month>.yaml file")
+    p_stories.set_defaults(_run=archive_stories)
 
+    return parser
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    add_arguments(parser)
     args = parser.parse_args(argv)
-    if args.command == "story":
-        return archive_story(args.url)
-    if args.command == "stories":
-        return archive_stories(args.path)
-    parser.error(f"unknown command {args.command!r}")
+    if not hasattr(args, "_run"):  # no subcommand given
+        args._help()
+        return 0
+    return args._run(**{k: v for k, v in vars(args).items() if not k.startswith("_")})
 
 
 if __name__ == "__main__":

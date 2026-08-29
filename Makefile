@@ -1,16 +1,19 @@
-.PHONY: all format lint wrangle
+# Thin wrapper around ./cli, kept for muscle memory. `./cli --help` is the real
+# interface: it takes flags these targets can't (--all, --dry) and has an
+# `archive` subcommand with no target here.
+.PHONY: all format lint reconcile wrangle
 
-all: lint format reconcile wrangle
+all:
+	./cli all
 
 format:
-	python3 scripts/format.py
+	./cli format
 
 lint:
-	python3 scripts/lint.py
-
-wrangle:
-	python3 scripts/wrangle.py
-
+	./cli lint
 
 reconcile:
-	python3 scripts/reconcile.py
+	./cli reconcile
+
+wrangle:
+	./cli wrangle

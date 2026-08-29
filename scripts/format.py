@@ -238,8 +238,12 @@ def main(changed_only=True, dry=False):
     return 0
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+def add_arguments(parser):
+    """Register this script's flags on parser.
+
+    The single definition of format's command line: both the __main__ block
+    below and the repo-root ./cli dispatcher call this, so the two can't drift.
+    """
     parser.add_argument(
         "--all",
         dest="changed_only",
@@ -251,4 +255,10 @@ if __name__ == "__main__":
         action="store_true",
         help="report what would be reformatted without writing any file",
     )
+    return parser
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    add_arguments(parser)
     sys.exit(main(**vars(parser.parse_args())))

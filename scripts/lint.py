@@ -310,12 +310,22 @@ def main(changed_only=True):
     return 1 if total_errors else 0
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+def add_arguments(parser):
+    """Register this script's flags on parser.
+
+    The single definition of lint's command line: both the __main__ block below
+    and the repo-root ./cli dispatcher call this, so the two can't drift.
+    """
     parser.add_argument(
         "--all",
         dest="changed_only",
         action="store_false",
         help="check every story file, not just those modified since stories.csv",
     )
+    return parser
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    add_arguments(parser)
     sys.exit(main(**vars(parser.parse_args())))
