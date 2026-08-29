@@ -30,6 +30,8 @@ For example, to add stories to crash whose id is [de9b2a79a715688f...](https://c
     ```
 
 
+Once the crash has an entry, you don't have to write that last step out by hand — `./cli clip URL --id CRASH_ID` fetches the url and adds the story entry to it for you, in the right file and the right place in the list.
+
 Crash record entries can optionally have key/value pairs for `notes:STRING` and `private_notes:STRING`
 Every entry must have at least one of these keys: `notes`, `private_notes`, `stories`
 
@@ -45,6 +47,7 @@ Everything runs through [`./cli`](cli), the repo's task runner. `./cli --help` l
 ```sh
 ./cli clip URL              # turn a story url into a pasteable YAML entry
 pbpaste | ./cli clip | pbcopy   # ...or take the url straight off the clipboard
+./cli clip URL --id CRASH_ID    # ...or skip the paste: write it into the crash's entry
 ./cli info CRASH_ID         # summarize a crash: when, where, who was hurt
 ./cli lint                  # check the story files
 ./cli lint --all            # ...every one of them, not just the recently changed
@@ -63,7 +66,18 @@ The scripts expect a `db.sqlite` symlink to the crashstop database, which should
 
 Each subcommand is a script under `scripts/`, still runnable on its own (`python3 scripts/lint.py --all` is what `./cli lint --all` does):
 
-- `./cli clip [<url>]` ([scripts/clip.py](scripts/clip.py)) — fetch a story url and print it as a story entry, ready to paste. Add `--indent 4` to line it up under a crash's `stories:` key. With no url argument (or `-`) it reads urls from stdin, one per line, so a url in the clipboard round-trips in one go: `pbpaste | ./cli clip --indent 4 | pbcopy`. Several urls give several entries, oldest first — the order `format` would put them in anyway. A url that won't fetch is reported on stderr and skipped; the rest still print and the exit code is 1. Needs [qlip](https://github.com/dannguyen/qlip) installed for the same interpreter (`pip install -e /path/to/qlip`) — it does the fetching and metadata extraction; the YAML rendering is `format.py`'s, so the entry comes out already formatted the way this repo wants it. `site` arrives as the bare domain and `./cli reconcile` swaps in the display name from `reference/domain-lookup.csv`.
+- `./cli clip [<url>] [--id CRASH_RECORD_ID]` ([scripts/clip.py](scripts/clip.py)) — fetch a story url and print it as a story entry, ready to paste. Add `--indent 4` to line it up under a crash's `stories:` key. With no url argument (or `-`) it reads urls from stdin, one per line, so a url in the clipboard round-trips in one go: `pbpaste | ./cli clip --indent 4 | pbcopy`. Several urls give several entries, oldest first — the order `format` would put them in anyway. A url that won't fetch is reported on stderr and skipped; the rest still print and the exit code is 1. Needs [qlip](https://github.com/dannguyen/qlip) installed for the same interpreter (`pip install -e /path/to/qlip`) — it does the fetching and metadata extraction; the YAML rendering is `format.py`'s, so the entry comes out already formatted the way this repo wants it. `site` arrives as the bare domain and `./cli reconcile` swaps in the display name from `reference/domain-lookup.csv`.
+
+    Give it an `--id` and there is nothing to paste — the entry goes straight into that crash's `stories` list:
+
+    ```sh
+    ./cli clip URL --id CRASH_ID          # one story into one crash
+    pbpaste | ./cli clip --id CRASH_ID    # ...taking the url off the clipboard
+    ```
+
+    Whatever went in is echoed to stderr so you can see it without opening the file (stdout keeps the usual `clipped <file>` status line).
+
+    The file it writes is the one the crash's `crash_date` puts it in (`stories/<year>/<year-month>.yaml`), which is where `lint` requires the entry to live — so it's one db lookup, not a scan. The crash must already have an entry there: whether a new one wants `notes` or `private_notes` alongside its stories is a research judgement, so `clip` errors rather than inventing one. A url already in that crash's stories is an error too (the same url under a *different* crash is fine, and `lint` agrees). The url still comes from wherever it usually does, stdin included; `--indent` does nothing here. The file is rewritten through `format.py`'s renderer, so it comes out formatted and the new entry lands in its chronological place rather than at the end of the list — which also means the diff can cover more of the file than the one entry, the same way `./cli archive stories` does.
 - `./cli info <crash_record_id>` ([scripts/info.py](scripts/info.py)) — summarize one crash from db.sqlite: date, address and neighborhood, category (prefixed `hit-and-run` when it was one), the fatal/incap/injured counts, and a line per hurt person giving age, sex, and injury. Note the counts aren't additive — `incap` is a subset of `injured`, and `injured` excludes the people who died — while the person list below them covers everyone hurt, fatalities included, most severe first.
 
     ```
@@ -89,12 +103,12 @@ The `Makefile` still works (`make lint` and friends) but is now just a wrapper a
 
 Runs are colour-coded so a wall of them stays skimmable: the `<name> DONE` sign-off is **bold green**, and anything that means *this run wrote something* is magenta — the stat line, the per-file "formatted …"/"reconciled …" lines, and a `wrote stories.csv` line whose row count moved. A run that scanned files and changed nothing leaves its stats uncoloured, so the one run that did something stands out. Files nothing happened to are dimmed, errors are red, warnings yellow.
 
-Colour is only emitted when the destination is a terminal, so pipes and redirects stay clean (`./cli clip <url> | pbcopy`, `./cli wrangle > log.txt`). `clip` and `info` never colour stdout at all — that output is a payload to paste, not a status report. Set `NO_COLOR` to turn it off everywhere, `FORCE_COLOR` to keep it through a pipe.
+Colour is only emitted when the destination is a terminal, so pipes and redirects stay clean (`./cli clip <url> | pbcopy`, `./cli wrangle > log.txt`). `info`, and `clip` when it's printing an entry, never colour stdout at all — that output is a payload to paste, not a status report. (`clip <url> --id <crash_record_id>` has no payload to print, so its stdout is the ordinary "clipped …" status line, coloured like every other one.) Set `NO_COLOR` to turn it off everywhere, `FORCE_COLOR` to keep it through a pipe.
 
 ### Tests
 
 ```sh
-python3 -m pytest        # 314 tests as of 2026-08-28, well under a second
+python3 -m pytest        # 340 tests as of 2026-08-29, well under a second
 ```
 
 They live in [tests/](tests), one module per script plus `test_cli.py` for the dispatcher. Nothing in the suite touches the network, the real `db.sqlite`, or the story files: the `sandbox` fixture in [tests/conftest.py](tests/conftest.py) points every path constant the scripts resolve at import time at a temp directory, and `fake_qlip` / `wayback` stand in for the two things that would otherwise make HTTP requests. `test_fixtures.py` guards that isolation — if a script grows a new module-level path and it isn't added to `REDIRECTS`, that test fails rather than letting the suite write into the repo.

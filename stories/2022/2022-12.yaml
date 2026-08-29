@@ -133,3 +133,15 @@ a9a04f90f4b1fa879a4edd344a0fcc576f0508a28c52dd223230209fddc246985148cd0a3e7ea512
     9459 S ASHLAND AVE washington heights
     1 fatalities, 2 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://chi.streetsblog.org/2023/01/01/hit-and-run-driver-dragged-and-killed-man-63-injured-wheelchair-user-56-in-brainerd
+      title: Hit-and-run driver dragged and killed man, 63, injured male wheelchair user, 56, in Brainerd
+      site: Chicago Streetsblog
+      date: '2023-01-02T05:22:32+00:00'
+      description: The victim appears to be the 31st and final Chicago pedestrian fatality of 2022.
+
+    - url: https://abc7chicago.com/post/chicago-hit-and-run-wheelchair-car-picture-crime/12661499/
+      title: Chicago police release picture of car wanted in deadly South Side hit-and-run
+      site: ABC 7 Chicago
+      date: '2023-01-06T04:46:36Z'
+      description: Chicago police have released a picture of a car wanted in a hit-and-run that injured a man in a wheelchair and killed the man pushing him.

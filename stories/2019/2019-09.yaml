@@ -40,11 +40,17 @@ b431a9eb9ad45c1ba031850357eb941b8409ec192d64e89bc96300f5e5bc15b59268bfa0b899bc58
 
 004af03c8bc02883b1b9e608969a3e7d5df7de8d145da8b7f510a3121fb282d49210751e54d3d26646cac6162a032f9515263d869667040249e127384953869a:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-09-16 01:56
     19 E OHIO ST river north
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/photos-of-car-fatal-hit-and-run/
+      title: Police Release Surveillance Photo Of Car Wanted In River North Fatal Hit-And-Run
+      site: CBS News
+      date: 2019-09-16T17:10:56-0500
+      description: |
+        A 43-year-old man was killed in a hit-and-run crash in the River North neighborhood. He was identified Tuesday as Ismael Montez Maldonado.
 
 5fbe369bac89f2fbe5e79d55be706d5ddfe0560e6547e776abcaf4fd6da48e905138474feb10fb8d46ee9d3edfe0fc6d9f04b74633d357733b37d6dff8455bcf:
   private_notes: |-
@@ -64,6 +70,39 @@ f4e1f0e49f5235e4d309257a1e506aed15ea89c1df66caeadc63e42e0719b244dac179fed7611cd9
     530 N LA SALLE DR river north
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/woman-hit-and-killed-by-flatbed-truck-in-river-north/
+      title: Woman Hit, Killed By Flatbed Truck In River North; Friends Say She Was Pregnant
+      site: CBS News
+      date: 2019-09-17T22:37:11-0500
+      description: |
+        The truck driver was heading west on Grand Avenue and turning left when the truck hit 29-year-old Elizabeth Boshardy. A witness said the woman was in the crosswalk and had the right of way.
+
+    - url: https://chicago.suntimes.com/2019/9/22/20878160/hanna-elizabeth-boshardy-baby-delivered-mother-killed-by-semi-dies
+      title: 'Baby delivered after mother killed by semi dies: medical examiner'
+      site: Chicago Sun-Times
+      date: '2019-09-22T13:56:37Z'
+      description: |
+        Hannah Elizabeth Boshardy died about 9 a.m. Saturday, four days after she was born, according to the Cook County medical examiner’s office. An autopsy Sunday said she died of complications of prematurity and maternal death, and her death was ruled an accident.
+
+    - url: https://www.chicagotribune.com/2019/09/23/editorial-liz-boshardy-pregnant-and-killed-by-a-truck-at-29-lived-her-poignant-lesson-try-to-experience-as-much-of-life-as-possible/
+      title: 'Editorial: Liz Boshardy, pregnant and killed by a truck at 29, lived her poignant lesson: ‘Try to experience as much of life as possible’'
+      site: Chicago Tribune
+      date: '2019-09-23T15:30:01+00:00'
+      description: |
+        Liz Boshardy packed a lot of life into her 29 years. She was a ballet dancer, then a data scientist. She married her high school sweetheart. She visited Nepal and the Galapagos Islands. She went dog-sledding in Norway and whale-watching in Hawaii.
+
+    - url: https://chicago.suntimes.com/2019/10/16/20918340/elizabeth-hannah-boshardy-wrongful-death-lawsuit-river-north-truck-edward-metz-rauch-clay-sales
+      title: Family of pregnant woman hit by truck in River North files wrongful death suit
+      site: Chicago Sun-Times
+      date: '2019-10-17T04:22:37Z'
+      description: Michael Boshardy filed the four-count suit in Cook County Circuit Court, accusing Edward J. Metz and Rauch Clay Sales Corporation of wrongful death for the Sept. 17 crash that killed Elizabeth and Hannah Elizabeth Boshardy
+
+    - url: https://www.fox32chicago.com/news/husband-honors-wife-killed-2019-river-north-crash-donation-lurie-childrens-hospital
+      title: Husband honors wife killed in 2019 River North crash with donation to Lurie Children's Hospital
+      site: FOX 32 Chicago
+      date: 2025-03-21
+      description: The husband of a pregnant woman who was hit and killed by a flatbed truck in 2019 has made a generous donation to Lurie Children's Hospital.
 
 69747417473fb11aeb45f0de44fb377d0d2a86889093288e9898b6937e2ae7d6c73b15bd313c2066bc143c2c58bd1d042c1510ab37a030dc0672a6825a2e1c87:
   private_notes: |-

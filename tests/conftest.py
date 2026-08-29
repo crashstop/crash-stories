@@ -2,8 +2,9 @@
 
 The scripts are meant to be run from the repo root, so they resolve their paths
 once at import time into module-level constants — `common.ROOT/STORIES/DB/
-STORIES_CSV`, plus the copies `lint`, `reconcile`, `wrangle`, and `info` bind
-into their own namespaces with `from common import ...`. The `sandbox` fixture
+STORIES_CSV`, plus the copies `lint`, `reconcile`, `wrangle`, `clip`, and
+`info` bind into their own namespaces with `from common import ...`. The
+`sandbox` fixture
 redirects every one of those at a throwaway directory, so no test can read or
 write the real stories/ tree, db.sqlite, stories.csv, or notes.csv.
 
@@ -119,6 +120,7 @@ REDIRECTS = {
     "lint": ("ROOT", "DB"),
     "reconcile": ("ROOT", "DB", "LOOKUP_CSV"),
     "wrangle": ("ROOT", "STORIES_CSV", "OUT", "NOTES_OUT"),
+    "clip": ("ROOT", "STORIES", "DB"),
     "info": ("DB",),
 }
 

@@ -5,7 +5,8 @@
   ./cli format    [--all] [--dry]
   ./cli reconcile [--all] [--dry] [--no-force-domain-lookup]
   ./cli wrangle   [--dry]
-  ./cli clip      [<url>] [--indent N]   (no url: reads urls from stdin)
+  ./cli clip      [<url>] [--id CRASH_RECORD_ID] [--indent N]
+                                        (no url: reads urls from stdin)
   ./cli info      <crash_record_id>
   ./cli archive   story <url> | stories <path>
   ./cli make      [--all] [--dry]
