@@ -48,6 +48,21 @@ de9b2a79a715688fa212ea74fda5c0c96044924cfc9987adab7c5edddd5df1eba5414796a7e4bdde
       description: |
         A Chicago Sun-Times op-ed by Andrew Mack in the aftermath of Riley O'Neil's death arguing that "we don’t need to wait for blood in the streets to act."
 
+ae5d6bffbda7bb05c57648dc88d369638d86d822e5e44fadd267ace6a1e9a466d3d7942811e675635d753de4b20ac1e566c2d28d6f3891341110c22e58522ab7:
+  private_notes: |
+    found via: https://api.chicago.gov/filenet5/servlets/getDocumentContent?applicationId=CompleteStreets&documentId=%7B601CB99F-0000-C917-A80A-59C827820B0F%7D
+    basicinfo: hit-and-run PEDESTRIAN PEDESTRIAN
+    2026-06-06 00:45
+    7900 S ASHLAND AVE auburn gresham
+    1 fatalities 0 incaps 0 injured
+  stories:
+    - url: https://api.chicago.gov/filenet5/servlets/getDocumentContent?applicationId=CompleteStreets&documentId=%7B601CB99F-0000-C917-A80A-59C827820B0F%7D
+      title: 'Traffic Fatalities in the City of Chicago: June 2026 Update'
+      site: api.chicago.gov
+      date: 2026-07-28
+      description: |
+        CPD report summary: Driver disregarded red light and struck pedestrian in the crosswalk at a high rate of speed.
+
 7fd752f6fe521d06d26eb62962aaf8ffe7d6093fd2ad14b068196129fda19d7b10196813d7dab05131f64670e3ce2e55ca2ab32c8fc851ddefbacb63ab8ef025:
   stories:
     - url: https://www.cbsnews.com/chicago/news/woman-dies-motorcycle-crash-near-ohare-airport/
@@ -64,7 +79,7 @@ c2e1fe6187ce921e49290073406836745455e1be6d746aa8294c91f0c21a0b48be7ce973a29f5598
 
 7ec18498c773d5467940ef209974b1fcb804a319aa9af42c28ea10a45299e65af609a28b2a840179f830561e7492ecf21942778ed0478fef48b8899fd0717a1a:
   private_notes: |-
-    Google brings up nothing
+    can't find on google
 
     This entry is just a stub, pre-filled with basic info from the crash data:
     2026-06-13 21:50
