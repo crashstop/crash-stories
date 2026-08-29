@@ -27,6 +27,37 @@ e618dcc21cb132b6a2dfc6b4f085269220bde59e52f79e43af834feb14ab4775c2feae043ccfaf5b
       date: '2019-10-14T19:41:36+00:00'
       description: HERMOSA — A driver of a dump truck on Pulaski Road in the Hermosa neighborhood blew a stop sign and struck and killed a man crossing at a crosswalk Monday
 
+8a9d0e891f4a95e1b7a342bd22d8c16cd0a65153863def4547524904ad6695e075408bca32f302956b2a79317f036c7903053fe77572e1220d6ac8478430bcc6:
+  private_notes: |
+    flag:tk:fatality-not-yet-upgraded
+    flagk:tk:dupe-records
+    2019-10-20 02:18
+    3402 W IRVING PARK RD, irving-park
+    hit-and-run CYCLIST
+    injured: 2
+    - 26 M NONINCAPACITATING INJURY
+  stories:
+    - url: https://www.cooneyfuneralhome.com/obituaries/vincent-tran
+      title: Vincent H. Tran Obituary
+      site: cooneyfuneralhome.com
+      date: 2019-10-28
+      description: |
+        Mr. Vincent H. Tran, age 26. Tragically while biking and struck by a hit and run driver.
+
+    - url: https://chi.streetsblog.org/2019/10/30/police-suspend-search-for-driver-who-fatally-struck-man-on-bike-26-in-irving-park
+      title: Police suspend search for driver who killed Vincent Tran, 26, on bike in Irving Park
+      site: Chicago Streetsblog
+      date: '2019-10-30T18:14:14+00:00'
+      description: |
+        Tran, who was conscious after the crash, told investigators that the driver was in a black vehicle and fled westbound. Tran was the second Chicago bike fatality of 2019.
+
+    - url: https://chicago.suntimes.com/crime/2019/11/7/20954070/irving-park-hit-run-vincent-tran-bicycle-kimball
+      title: Cops release photo of car wanted in Irving Park hit-and-run that killed bicyclist in October
+      site: Chicago Sun-Times
+      date: '2019-11-07T22:22:58Z'
+      description: |
+        At the time of his death, police said detectives had suspended their investigation due to a lack of leads. A police spokesperson on Thursday was unable to say when the investigation was reopened.
+
 14981c0f15f9d6faa5cca2a0599ac6073396ce9329d956e611fbdf000ce8bb9de7ca100794c732afe98c04c6d13548edebe65cb83260434c5db410d42b602e03:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

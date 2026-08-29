@@ -2,7 +2,7 @@
 """ANSI styling for the scripts' terminal output.
 
 Colour is applied only when the destination stream is a terminal, so anything
-piped or redirected stays plain text: `./cli clip <url> | pbcopy`, `./cli info
+piped or redirected stays plain text: `./q clip <url> | pbcopy`, `./q info
 <id> >> notes.md`, and the test suite's captured output all come out with no
 escape codes in them. `NO_COLOR` (any value, https://no-color.org) turns it off
 even on a terminal; `FORCE_COLOR` turns it on even off one.
@@ -80,7 +80,7 @@ def path(text):
 
 
 def heading(text):
-    """A section header, e.g. `./cli make`'s per-step banner."""
+    """A section header, e.g. `./q make`'s per-step banner."""
     return paint(text, "bold", "cyan")
 
 

@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """Task runner for the related-stories repo — one entry point for scripts/.
 
-  ./cli lint      [--all]
-  ./cli format    [--all] [--dry]
-  ./cli reconcile [--all] [--dry] [--no-force-domain-lookup]
-  ./cli wrangle   [--dry]
-  ./cli clip      [<url>] [--id CRASH_RECORD_ID] [--indent N]
+  ./q lint      [--all]
+  ./q format    [--all] [--dry]
+  ./q reconcile [--all] [--dry] [--no-force-domain-lookup]
+  ./q wrangle   [--dry]
+  ./q clip      [<url>] [--id CRASH_RECORD_ID] [--indent N]
                                         (no url: reads urls from stdin)
-  ./cli info      <crash_record_id>
-  ./cli archive   story <url> | stories <path>
-  ./cli make      [--all] [--dry]
+  ./q info      <crash_record_id>
+  ./q archive   story <url> | stories <path>
+  ./q make      [--all] [--dry]
 
-`./cli lint --all` is exactly `python3 scripts/lint.py --all` — the scripts stay
+`./q lint --all` is exactly `python3 scripts/lint.py --all` — the scripts stay
 runnable on their own, and each subcommand's flags come from the script itself
 (its add_arguments), so there is nothing here to keep in sync when one changes.
 
-`./cli make` runs lint, format, reconcile, wrangle in that order and stops at the
-first one that exits nonzero. `./cli <subcommand> --help` prints what a
+`./q make` runs lint, format, reconcile, wrangle in that order and stops at the
+first one that exits nonzero. `./q <subcommand> --help` prints what a
 subcommand does, in full, plus every flag it takes.
 """
 
@@ -41,7 +41,7 @@ import wrangle  # noqa: E402
 SUBCOMMANDS = (lint, format, reconcile, wrangle, clip, info)
 
 # What `make` runs, in order, with the flags each step's main() actually accepts
-# — lint takes no --dry, wrangle no --all — so `./cli make --dry` hands --dry
+# — lint takes no --dry, wrangle no --all — so `./q make --dry` hands --dry
 # only to the steps that have one. The order is load-bearing twice over: lint
 # gates the steps that rewrite files, and wrangle rewrites stories.csv, whose
 # mtime is the cutoff every changed-only scan measures against, so it stays last.
@@ -73,9 +73,9 @@ def build_parser():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    # Not required: a bare `./cli` prints this help instead of a usage error.
+    # Not required: a bare `./q` prints this help instead of a usage error.
     # Each subparser that can itself be left dangling (archive) overrides _help
-    # with its own, so `./cli archive` lands on archive's help, not this one.
+    # with its own, so `./q archive` lands on archive's help, not this one.
     parser.set_defaults(_help=parser.print_help)
     sub = parser.add_subparsers(dest="_command", metavar="<subcommand>")
 

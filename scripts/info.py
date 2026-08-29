@@ -135,7 +135,7 @@ def add_arguments(parser):
     """Register this script's arguments on parser.
 
     The single definition of info's command line: both the __main__ block below
-    and the repo-root ./cli dispatcher call this, so the two can't drift.
+    and the repo-root ./q dispatcher call this, so the two can't drift.
     """
     parser.add_argument("crash_record_id", help="the crash to summarize")
     return parser

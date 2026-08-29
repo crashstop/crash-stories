@@ -4,9 +4,9 @@ The scripts are meant to be run from the repo root, so they resolve their paths
 once at import time into module-level constants — `common.ROOT/STORIES/DB/
 STORIES_CSV`, plus the copies `lint`, `reconcile`, `wrangle`, `clip`, and
 `info` bind into their own namespaces with `from common import ...`. The
-`sandbox` fixture
-redirects every one of those at a throwaway directory, so no test can read or
-write the real stories/ tree, db.sqlite, stories.csv, or notes.csv.
+`sandbox` fixture redirects every one of those at a throwaway directory, so no
+test can read or write the real stories/ tree, db.sqlite, stories.csv, or
+notes.csv.
 
 `pythonpath = scripts` in pytest.ini makes `import lint` work here the same way
 running `python3 scripts/lint.py` does.
@@ -150,9 +150,9 @@ def sandbox(tmp_path, monkeypatch):
 
 
 @pytest.fixture
-def cli_module():
-    """The repo-root `cli` dispatcher, imported despite having no .py suffix."""
-    loader = SourceFileLoader("cli_under_test", str(REPO_ROOT / "cli"))
+def q_module():
+    """The repo-root `q` dispatcher, imported despite having no .py suffix."""
+    loader = SourceFileLoader("q_under_test", str(REPO_ROOT / "q"))
     spec = importlib.util.spec_from_loader(loader.name, loader)
     module = importlib.util.module_from_spec(spec)
     loader.exec_module(module)

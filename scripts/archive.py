@@ -174,7 +174,7 @@ def add_arguments(parser):
     """Register archive's `story`/`stories` subcommands on parser.
 
     The single definition of archive's command line: both the main() below and
-    the repo-root ./cli dispatcher call this, so the two can't drift. Each
+    the repo-root ./q dispatcher call this, so the two can't drift. Each
     subcommand carries the function that runs it as the `_run` default; the
     underscore keeps it out of the kwargs both dispatchers build from the
     parsed namespace.

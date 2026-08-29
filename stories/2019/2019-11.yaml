@@ -11,6 +11,12 @@
       date: '2019-11-07T15:20:19+00:00'
       description: Years ago, Northwest Siders rejected a plan to install protected bike lanes due to parking concerns. Now, 37-year-old Carla Aiello of Norwood Park is dead after being hit by a truck while in the fading bike lane at the intersection — and the Chicago bicycle community is furious.
 
+    - url: https://www.cbsnews.com/chicago/news/milwaukee-avenue-cyclist-struck-carla-aiello-truck-driver-negligent-driving/
+      title: Truck Driver Who Ran Over Cyclist Carla Aiello Cited For Improper Right Turn, Negligent Driving
+      site: CBS News
+      date: 2019-11-07T16:03:44-0600
+      description: Carla Aiello was riding in the bike lane on Milwaukee Avenue, alongside a dump truck, when the driver made a right turn and ran her over.
+
     - url: https://www.cumberlandchapels.com/obituaries/carla-aiello
       title: Carla Aiello Obituary Nov 6, 2019
       site: cumberlandchapels.com
@@ -22,6 +28,12 @@
       site: capecodtimes.com
       date: 2019-11-09
       description: A Chicago bicyclist who died after being hit by a dump truck Wednesday morning previously worked for years as a school counselor at Sturgis Charter Public School in Hyannis.
+
+    - url: https://chi.streetsblog.org/2019/11/12/why-the-victim-blaming-responses-to-fallen-cyclist-carla-aiellos-death-are-wrong
+      title: Why the victim-blaming responses to fallen cyclist Carla Aiello's death are wrong
+      site: Chicago Streetsblog
+      date: '2019-11-12T21:42:20+00:00'
+      description: When the person operating a 10,000-pound-plus vehicle fails to make sure they won't kill somebody when they make a turn, the fault lies squarely with them, not their victim.
 
 76b114d83a094cb385ec6c40308e76d8c7801c9d56651075a34ef27be23db81c0a445d964a82b362d3c2465424e4210a975b7b304a4fb2f12537b5d7cde31b9a:
   private_notes: |-
@@ -74,11 +86,24 @@ a0ed834024bff95814a06e18b011041d2932a0a11a17f52df49341268969e9f91a4a64f77ef7be0c
 
 da80008497aed875c402dc832f0f1a86ec72d4e5bdaaa67ce32b75526e58d5de1fb9a576c10bde82592fe0b12fca7408ec09839b0269726698765f906e1140e7:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-11-17 01:00
     6709 S STONY ISLAND AVE south shore
     1 fatalities, 0 injured
     CYCLIST: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://blockclubchicago.org/2019/11/19/a-lack-of-hope-permeates-chicagos-cyclist-community-after-another-fatal-bike-crash-on-stony-island/
+      title: A 'Lack Of Hope' Permeates Chicago's Cyclist Community After Another Fatal Bike Crash On Stony Island
+      site: Block Club Chicago
+      date: '2019-11-19T13:35:13+00:00'
+      description: |
+        Lee Luellen, 40, became the second cyclist killed this on a stretch of road where aldermen rejected bike lanes in the past. Sabrinia Williams, 42, faces two misdemeanor counts of driving on a suspended license and operating a vehicle while uninsured causing bodily harm. She was also cited for failure to reduce speed.
+
+    - url: https://chi.streetsblog.org/2019/11/19/driver-who-killed-cyclist-lee-luellen-40-charged-cdp-retracts-victim-blaming-statement
+      title: Driver who killed cyclist Lee Luellen charged, CDP retracts victim-blaming statement
+      site: Chicago Streetsblog
+      date: '2019-11-19T19:13:58+00:00'
+      description: |
+        Police initially implied that Luellen might have been responsible for his own death, stating that he “may have been in the middle of the street when he was hit.” The Chicago Police Department has since walked back that statement, acknowledging that the cyclist’s lane position had nothing to do with the motorist killing him.
 
 2fd4fbeceb316c529fdf1f483cf1ed1ad361102b0e58e0368150c0678435af76082e4d4a8af0c09ba5a40109c9c1401aeeb425155690986365014260ec7c57c7:
   private_notes: |-

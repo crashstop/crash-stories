@@ -1,10 +1,16 @@
 d9392ee6581314dd85cb0ae78441fd39cbdd06f43bd41b74d649d7659a49c82eec8e19996d6e69e8150b892079859ee9422ffb3a6c48229576633a8adf0cd761:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-09-01 03:00
     4550 W LAKE ST garfield park
     1 fatalities, 0 injured
     CYCLIST: UNABLE TO DETERMINE
+  stories:
+    - url: https://blockclubchicago.org/2019/09/03/police-looking-for-driver-who-crashed-into-bicyclist-killing-him-in-garfield-park/
+      title: Police Looking For Driver Who Crashed Into Bicyclist, Killing Him, In Garfield Park
+      site: Block Club Chicago
+      date: '2019-09-03T15:29:09+00:00'
+      description: |
+        The bicyclist was identified as 56-year-old Richard Williams, of the 6800 block of North Main Avenue, in Cook County Medical Examiner’s Office records. Williams was pronounced dead at 3:29 a.m.
 
 083962029b4cf9ef037f8c945d5892a875658a8f6007e747031995b470a7af82ad3fa978e9e98df7885bbd1bde20c536956b6c0192fd4d33b1592c4f5e04a4db:
   private_notes: |-
@@ -65,7 +71,6 @@ f4e1f0e49f5235e4d309257a1e506aed15ea89c1df66caeadc63e42e0719b244dac179fed7611cd9
 
 660b51e25d76aa5ffe03e86b1460938e832ff37a41cf9fdcef3bba3ab118bd71624ffc5c55bf17224f520d52f9fe1d5bcc94023d90907f12fc8b83ca633f2a18:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2019-09-17 11:30
     530 N LA SALLE DR river north
     1 fatalities, 0 injured

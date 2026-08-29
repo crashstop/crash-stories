@@ -176,7 +176,7 @@ def add_arguments(parser):
     """Register this script's flags on parser.
 
     The single definition of wrangle's command line: both the __main__ block
-    below and the repo-root ./cli dispatcher call this, so the two can't drift.
+    below and the repo-root ./q dispatcher call this, so the two can't drift.
     """
     parser.add_argument(
         "--dry",

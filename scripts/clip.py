@@ -267,7 +267,7 @@ def add_arguments(parser):
     """Register this script's arguments on parser.
 
     The single definition of clip's command line: both the __main__ block below
-    and the repo-root ./cli dispatcher call this, so the two can't drift.
+    and the repo-root ./q dispatcher call this, so the two can't drift.
     """
     parser.add_argument(
         "url",

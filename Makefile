@@ -1,19 +1,19 @@
-# Thin wrapper around ./cli, kept for muscle memory. `./cli --help` is the real
+# Thin wrapper around ./q, kept for muscle memory. `./q --help` is the real
 # interface: it takes flags these targets can't (--all, --dry) and has an
 # `archive` subcommand with no target here.
 .PHONY: all format lint reconcile wrangle
 
 all:
-	./cli make
+	./q make
 
 format:
-	./cli format
+	./q format
 
 lint:
-	./cli lint
+	./q lint
 
 reconcile:
-	./cli reconcile
+	./q reconcile
 
 wrangle:
-	./cli wrangle
+	./q wrangle
