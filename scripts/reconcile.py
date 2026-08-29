@@ -31,6 +31,7 @@ import sqlite3
 import sys
 from urllib.parse import urlparse
 
+import colors
 from common import (
     COMMENTS_KEY,
     DB,
@@ -71,8 +72,10 @@ def load_lookup():
     """
     if not LOOKUP_CSV.exists():
         print(
-            f"warning: no lookup table at {LOOKUP_CSV.relative_to(ROOT)}; "
-            "using raw domains for `site`",
+            colors.warning(
+                f"warning: no lookup table at {LOOKUP_CSV.relative_to(ROOT)}; "
+                "using raw domains for `site`"
+            ),
             file=sys.stderr,
         )
         return {}
@@ -133,7 +136,7 @@ def reorder_crashes(data, con, cache):
 def main(changed_only=True, dry=False, force_domain_lookup=True):
     tag = "(dry) " if dry else ""
     if not DB.exists():
-        print(f"error: database not found at {DB}", file=sys.stderr)
+        print(colors.error(f"error: database not found at {DB}"), file=sys.stderr)
         return 2
 
     paths = story_paths(changed_only, tag=tag)
@@ -153,7 +156,14 @@ def main(changed_only=True, dry=False, force_domain_lookup=True):
     finally:
         con.close()
 
-    print(f"{tag}reconcile DONE: {len(paths)} file(s) scanned, {changed} reconciled")
+    print(
+        tag
+        + colors.done(
+            "reconcile",
+            f"{len(paths)} file(s) scanned, {changed} reconciled",
+            changed=bool(changed),
+        )
+    )
     return 0
 
 

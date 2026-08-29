@@ -1,10 +1,4 @@
 __GENERAL__:
-  - url: https://abc7chicago.com/post/chicago-crash-man-driving-atv-dies-south-pulaski-road-ashburn-southwest-side-police-say/19754765/
-    title: Man driving ATV dies after crash on Southwest Side, Chicago police say
-    site: abc7chicago.com
-    date: '2026-08-29T02:23:00Z'
-    description: A man driving an ATV died after a crash Friday afternoon on the city's Southwest Side, Chicago police said.
-
   - url: https://abc7chicago.com/post/west-town-chicago-car-crash-vehicle-remains-lodged-townhome-collision-mallory-john-baquero-say/19622147/
     title: '''A car is in our house'': Vehicle remains lodged in couple''s West Town townhome after crash'
     site: ABC 7 Chicago
@@ -17,6 +11,12 @@ __GENERAL__:
     date: 2026-08-25
     description: |
       This alert gives notice of a hit & run traffic crash with serious personal injury in the West Garfield Park neighborhood, 3800 block of W. Van Buren St. on August 20, 2026 at 11:53 p.m. A pedestrian was struck by an unknown vehicle that was traveling the wrong way on W. Van Buren St. from S. Hamlin Blvd. (City data does not appear to list this crash in its records)
+
+  - url: https://abc7chicago.com/post/chicago-crash-man-driving-atv-dies-south-pulaski-road-ashburn-southwest-side-police-say/19754765/
+    title: Man driving ATV dies after crash on Southwest Side, Chicago police say
+    site: ABC 7 Chicago
+    date: '2026-08-29T02:23:00Z'
+    description: A man driving an ATV died after a crash Friday afternoon on the city's Southwest Side, Chicago police said.
 
 41f44cf73e0dda26a633055a35afa1eaca5b96ec4648a85aa248dffc54f8e8ff4f09cb96ad5e80ba10be151ef85f2ac9a820ce5761c232169726bb42c8f5f89d:
   private_notes: |

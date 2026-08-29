@@ -35,6 +35,7 @@ Usage: python3 clip.py [<url>] [--indent N]
 import argparse
 import sys
 
+import colors
 from format import render_story, story_sort_key
 
 # The fields qlip always returns; a missing one comes back None and is worth a
@@ -69,12 +70,15 @@ def fetch_story(qlip, url):
     except Exception as exc:  # noqa: BLE001 -- qlip raises curl_cffi's tree, which
         # we can't name without importing curl_cffi ourselves; a url that won't
         # fetch is a normal outcome here, not something to traceback over.
-        print(f"error: {url}: {exc}", file=sys.stderr)
+        print(colors.error(f"error: {url}: {exc}"), file=sys.stderr)
         return None
 
     blank = [field for field in REQUIRED if not story.get(field)]
     if blank:
-        print(f"note: {url}: no {', '.join(blank)} found on the page", file=sys.stderr)
+        print(
+            colors.warning(f"note: {url}: no {', '.join(blank)} found on the page"),
+            file=sys.stderr,
+        )
     return story
 
 
@@ -82,16 +86,21 @@ def main(url=None, indent=0):
     """Print a story entry per url. Returns a process exit code."""
     urls = urls_to_clip(url)
     if urls is None:
-        print("error: no url given, and nothing piped in", file=sys.stderr)
+        print(
+            colors.error("error: no url given, and nothing piped in"), file=sys.stderr
+        )
         return 2
     if not urls:
-        print("error: no urls on stdin", file=sys.stderr)
+        print(colors.error("error: no urls on stdin"), file=sys.stderr)
         return 2
 
     try:
         import qlip
     except ImportError:
-        print(QLIP_MISSING.format(executable=sys.executable), file=sys.stderr)
+        print(
+            colors.error(QLIP_MISSING.format(executable=sys.executable)),
+            file=sys.stderr,
+        )
         return 2
 
     fetched = [fetch_story(qlip, u) for u in urls]

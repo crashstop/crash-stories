@@ -30,6 +30,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urljoin
 from urllib.request import Request, urlopen
 
+import colors
 from common import iter_stories, load_story_file, rewrite_file
 from format import render_file
 
@@ -48,7 +49,9 @@ AVAILABLE_TIMEOUT = 30
 
 
 def status(msg):
-    print(msg, file=sys.stderr)
+    """Progress chatter. Always stderr, so stdout carries only the archive link."""
+    style = colors.error if msg.startswith("error:") or "failed" in msg else colors.note
+    print(style(msg), file=sys.stderr)
 
 
 def fetch(url, timeout):

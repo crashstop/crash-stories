@@ -43,6 +43,7 @@ from datetime import date, datetime, timezone
 
 import yaml
 
+import colors
 from common import (
     COMMENTS_KEY,
     GENERAL_KEY,
@@ -234,7 +235,14 @@ def main(changed_only=True, dry=False):
             continue
         changed += rewrite_file(path, render_file(data), "formatted", dry, tag)
 
-    print(f"{tag}format DONE: {len(paths)} file(s) scanned, {changed} reformatted")
+    print(
+        tag
+        + colors.done(
+            "format",
+            f"{len(paths)} file(s) scanned, {changed} reformatted",
+            changed=bool(changed),
+        )
+    )
     return 0
 
 

@@ -13,6 +13,8 @@ from pathlib import Path
 
 import yaml
 
+import colors
+
 ROOT = Path(__file__).resolve().parent.parent  # repo root (this file lives in scripts/)
 STORIES = ROOT / "stories"
 DB = ROOT / "db.sqlite"
@@ -73,7 +75,8 @@ def story_paths(changed_only=True, verb="scan", verbing="scanning", tag=""):
     paths = sorted(STORIES.rglob("*.yaml"))
     if not paths:
         print(
-            f"no story files found under {STORIES.relative_to(ROOT)}/", file=sys.stderr
+            colors.error(f"no story files found under {STORIES.relative_to(ROOT)}/"),
+            file=sys.stderr,
         )
         raise SystemExit(1)
     if changed_only:
@@ -81,8 +84,10 @@ def story_paths(changed_only=True, verb="scan", verbing="scanning", tag=""):
         paths = modified_since_csv(paths)
         if len(paths) < all_count:
             print(
-                f"{tag}{verbing} {len(paths)} of {all_count} story files modified since "
-                f"{STORIES_CSV.name} (pass --all to {verb} every file)"
+                colors.quiet(
+                    f"{tag}{verbing} {len(paths)} of {all_count} story files modified "
+                    f"since {STORIES_CSV.name} (pass --all to {verb} every file)"
+                )
             )
     return paths
 
@@ -124,10 +129,13 @@ def load_story_file(path):
     try:
         data = yaml_load(path.read_text())
     except yaml.YAMLError as exc:
-        print(f"skip {rel}: invalid YAML ({exc.__class__.__name__})", file=sys.stderr)
+        print(
+            colors.error(f"skip {rel}: invalid YAML ({exc.__class__.__name__})"),
+            file=sys.stderr,
+        )
         return None
     if not valid_structure(data):
-        print(f"skip {rel}: unexpected structure", file=sys.stderr)
+        print(colors.error(f"skip {rel}: unexpected structure"), file=sys.stderr)
         return None
     return data
 
@@ -142,9 +150,9 @@ def rewrite_file(path, new_text, verb, dry=False, tag=""):
     if new_text != path.read_text():
         if not dry:
             path.write_text(new_text)
-        print(f"{tag}{verb} {rel}")
+        print(colors.changed(f"{tag}{verb} {rel}"))
         return 1
-    print(f"{tag}unchanged {rel}")
+    print(colors.quiet(f"{tag}unchanged {rel}"))
     return 0
 
 

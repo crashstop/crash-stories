@@ -32,6 +32,7 @@ import argparse
 import sqlite3
 import sys
 
+import colors
 from common import DB
 
 CRASH_SQL = """
@@ -97,7 +98,7 @@ def summarize(crash, people):
 
 def main(crash_record_id):
     if not DB.exists():
-        print(f"error: database not found at {DB}", file=sys.stderr)
+        print(colors.error(f"error: database not found at {DB}"), file=sys.stderr)
         return 2
 
     con = sqlite3.connect(DB)
@@ -105,7 +106,10 @@ def main(crash_record_id):
     try:
         crash = con.execute(CRASH_SQL, (crash_record_id,)).fetchone()
         if crash is None:
-            print(f"error: no crash {crash_record_id} in {DB.name}", file=sys.stderr)
+            print(
+                colors.error(f"error: no crash {crash_record_id} in {DB.name}"),
+                file=sys.stderr,
+            )
             return 1
         people = con.execute(PEOPLE_SQL, (crash_record_id,)).fetchall()
     finally:
@@ -118,8 +122,10 @@ def main(crash_record_id):
     hurt = crash["fatal_tally"] + crash["injured_tally"]
     if len(people) < hurt:
         print(
-            f"note: only {len(people)} of {hurt} hurt people have person "
-            "records; the tallies and clean_people disagree",
+            colors.warning(
+                f"note: only {len(people)} of {hurt} hurt people have person "
+                "records; the tallies and clean_people disagree"
+            ),
             file=sys.stderr,
         )
     return 0

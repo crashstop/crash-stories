@@ -32,6 +32,7 @@ import csv
 import sys
 from datetime import date, datetime
 
+import colors
 from common import (
     COMMENTS_KEY,
     GENERAL_KEY,
@@ -125,7 +126,10 @@ def main(dry=False):
         pair = (row["crash_record_id"], url)
         pair_counts[pair] = pair_counts.get(pair, 0) + 1
     for crash_id, url in sorted(p for p, n in pair_counts.items() if n > 1):
-        print(f"WARNING: Duplicate crash id + url: {crash_id}: {url}", file=sys.stderr)
+        print(
+            colors.warning(f"WARNING: Duplicate crash id + url: {crash_id}: {url}"),
+            file=sys.stderr,
+        )
 
     prior_stories = count_records(OUT)
     prior_notes = count_records(NOTES_OUT)
@@ -149,16 +153,22 @@ def main(dry=False):
         row["crash_record_id"] for row in rows if row["crash_record_id"]
     }
     general_count = sum(1 for row in rows if not row["crash_record_id"])
-    print(
+    wrote_stories = (
         f"{tag}wrote {OUT.relative_to(ROOT)}: {len(rows)} stories ({general_count} general) "
         f"across {len(crashes_with_stories)} crash records from {len(paths)} files "
         f"({change_note(prior_stories, len(rows))})"
     )
-    print(
+    wrote_notes = (
         f"{tag}wrote {NOTES_OUT.relative_to(ROOT)}: {len(notes_rows)} notes from {len(paths)} files "
         f"({change_note(prior_notes, len(notes_rows))})"
     )
-    print("wrangle DONE")
+    # A row count that moved is the reason to look at this run; one that held
+    # steady is not, so only the former goes magenta.
+    stories_moved = prior_stories != len(rows)
+    notes_moved = prior_notes != len(notes_rows)
+    print(colors.changed(wrote_stories) if stories_moved else wrote_stories)
+    print(colors.changed(wrote_notes) if notes_moved else wrote_notes)
+    print(colors.done("wrangle"))
     return 0
 
 

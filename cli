@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import archive  # noqa: E402
+import colors  # noqa: E402
 import clip  # noqa: E402
 import format  # noqa: E402
 import info  # noqa: E402
@@ -55,10 +56,12 @@ def run_pipeline(changed_only=True, dry=False):
     """Run the whole pipeline, stopping at the first nonzero exit code."""
     supplied = {"changed_only": changed_only, "dry": dry}
     for name, main, accepts in PIPELINE:
-        print(f"\n==> {name}")
+        print("\n" + colors.heading(f"==> {name}"))
         code = main(**{flag: supplied[flag] for flag in accepts})
         if code:
-            print(f"\n{name} exited {code}; stopping", file=sys.stderr)
+            print(
+                colors.error(f"\n{name} exited {code}; stopping"), file=sys.stderr
+            )
             return code
     return 0
 

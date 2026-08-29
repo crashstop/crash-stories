@@ -46,6 +46,7 @@ from datetime import date, datetime
 
 import yaml
 
+import colors
 from common import (
     COMMENTS_KEY,
     DB,
@@ -264,12 +265,12 @@ def validate_file(path, con, cache):
 
 def main(changed_only=True):
     if not DB.exists():
-        print(f"error: database not found at {DB}", file=sys.stderr)
+        print(colors.error(f"error: database not found at {DB}"), file=sys.stderr)
         return 2
 
     paths = story_paths(changed_only, verb="check", verbing="checking")
     if not paths:
-        print("lint DONE")
+        print(colors.done("lint"))
         return 0
 
     con = sqlite3.connect(DB)
@@ -280,14 +281,11 @@ def main(changed_only=True):
     try:
         for path in paths:
             counts, errors = validate_file(path, con, cache)
+            name = colors.path(f"{path.relative_to(ROOT)}:")
             if counts is None:
-                line = f"{path.relative_to(ROOT)}:  crashes: ?    stories: ?"
+                line = f"{name}  crashes: ?    stories: ?"
             else:
-                line = (
-                    f"{path.relative_to(ROOT)}:"
-                    f"  crashes: {counts['crashes']}"
-                    f"    stories: {counts['stories']}"
-                )
+                line = f"{name}  crashes: {counts['crashes']}    stories: {counts['stories']}"
                 for key in ("notes", "private_notes"):  # only shown when present
                     if counts[key]:
                         line += f"    {key}: {counts[key]}"
@@ -296,17 +294,20 @@ def main(changed_only=True):
             print(line)
             if errors:
                 for err in errors:
-                    print(f"- error: {err}")
+                    print(colors.paint(f"- error: {err}", "red"))
 
             total_errors += len(errors)
     finally:
         con.close()
 
-    print(
+    summary = (
         f"summary: {len(paths)} files, {totals['crashes']} crashes, {totals['stories']} stories, "
         f"{totals['notes']} notes, {totals['private_notes']} private_notes, {total_errors} errors"
     )
-    print("lint DONE")
+    # lint writes nothing, so there's no "changed" state to flag magenta here —
+    # the thing worth spotting in a wall of clean runs is a nonzero error count.
+    print(colors.paint(summary, "red") if total_errors else summary)
+    print(colors.done("lint"))
     return 1 if total_errors else 0
 
 

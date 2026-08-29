@@ -85,10 +85,16 @@ Each subcommand is a script under `scripts/`, still runnable on its own (`python
 
 The `Makefile` still works (`make lint` and friends) but is now just a wrapper around `./cli`.
 
+### Output colour
+
+Runs are colour-coded so a wall of them stays skimmable: the `<name> DONE` sign-off is **bold green**, and anything that means *this run wrote something* is magenta — the stat line, the per-file "formatted …"/"reconciled …" lines, and a `wrote stories.csv` line whose row count moved. A run that scanned files and changed nothing leaves its stats uncoloured, so the one run that did something stands out. Files nothing happened to are dimmed, errors are red, warnings yellow.
+
+Colour is only emitted when the destination is a terminal, so pipes and redirects stay clean (`./cli clip <url> | pbcopy`, `./cli wrangle > log.txt`). `clip` and `info` never colour stdout at all — that output is a payload to paste, not a status report. Set `NO_COLOR` to turn it off everywhere, `FORCE_COLOR` to keep it through a pipe.
+
 ### Tests
 
 ```sh
-python3 -m pytest        # 284 tests as of 2026-08-28, well under a second
+python3 -m pytest        # 314 tests as of 2026-08-28, well under a second
 ```
 
 They live in [tests/](tests), one module per script plus `test_cli.py` for the dispatcher. Nothing in the suite touches the network, the real `db.sqlite`, or the story files: the `sandbox` fixture in [tests/conftest.py](tests/conftest.py) points every path constant the scripts resolve at import time at a temp directory, and `fake_qlip` / `wayback` stand in for the two things that would otherwise make HTTP requests. `test_fixtures.py` guards that isolation — if a script grows a new module-level path and it isn't added to `REDIRECTS`, that test fails rather than letting the suite write into the repo.
