@@ -49,11 +49,22 @@ __GENERAL__:
 
 13c67befbdf0cfc5304fac14c0ef93415a0bf4e220451a8b35982a8105e49479e0adc3c8e5ac67872c89e99631179f2de89f9218e13b451913ca630636446a7b:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2022-09-11 02:29
     2000 N LAKE SHORE DR NB lincoln park
     2 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: DRIVING ON WRONG SIDE/WRONG WAY
+  stories:
+    - url: https://www.cbsnews.com/chicago/news/2-men-killed-in-fiery-wrong-way-crash-on-dusable-lake-shore-drive/
+      title: 2 men killed in fiery wrong-way crash on DuSable Lake Shore Drive
+      site: CBS News
+      date: 2022-09-11T11:25:00-0500
+      description: The crash happened around 2:30 a.m. by 18th drive near the museum campus.
+
+    - url: https://www.cbsnews.com/chicago/news/sometimes-deadly-wrong-way-crashes-are-growing-more-frequent-in-chicago-statewide/
+      title: Sometimes-deadly wrong-way crashes are growing more frequent in Chicago, statewide
+      site: CBS News
+      date: 2022-09-13T18:35:00-0500
+      description: In particular, DuSable Lake Shore Drive has seen its fair share.
 
 8932fe8d347da5d68403404cdc48f4d548cb0fd519a13a105883a450a7de6d709adefec0f2cd5a4b94b69e6569265a44de90d09322edacb5935a936dd5114753:
   private_notes: |-
@@ -84,6 +95,7 @@ de904c76433281f499a86113dc1c4b7a62ec2248c508b5348ab336536563d51a5c84715ea36cbb63
 
 71ecc776a610983d0b9633550b1fd7e448994605800d611fa1f6cbf2b0dd5944826a98fab0d171eec4b5bf360674d5f95d8080e9b9d48bad8d5a0126e2395881:
   private_notes: |-
+    Only reference found so far: https://www.youtube.com/watch?v=tS72-wIVPBc
     This entry is just a stub, pre-filled with basic info from the crash data:
     2022-09-16 19:45
     4131 S OAKENWALD AVE oakland
@@ -97,6 +109,13 @@ de904c76433281f499a86113dc1c4b7a62ec2248c508b5348ab336536563d51a5c84715ea36cbb63
     5100 S STATE ST washington park
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://chicago.suntimes.com/2022/9/17/23357737/fatal-crash-5100-state-washington-park-sept-17
+      title: Woman killed, another critically hurt in Washington Park crash
+      site: Chicago Sun-Times
+      date: '2022-09-17T15:28:35.646Z'
+      description: |
+        Sherrae Bolling-Brownlow, 44, was in a white SUV with another woman, 46, in the 5100 block of South State Street when an 18-year-old man in a pickup hit their car about 2 a.m. after blowing a red light, according to Chicago police and the Cook County medical examiner’s office. Bolling-Brownlow was taken to the University of Chicago Medical Center, where she was pronounced dead, police said.
 
 5078b8b7c02ef018f8f51ca02d6f7c43bd1f36b99f56608c4ae979132c517e05fc6e7b3651a088fdce62daf53cd9d7bce7b0fcc5ce01be2b8afb3485a4e345a2:
   private_notes: |-
@@ -105,6 +124,13 @@ de904c76433281f499a86113dc1c4b7a62ec2248c508b5348ab336536563d51a5c84715ea36cbb63
     5327 S LAKE SHORE DR NB hyde park
     1 fatalities, 4 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/lake-shore-drive-car-crash-traffic-chicago-police/12259347/
+      title: South Holland woman ID'd after killed in DuSable Lake Shore Drive crash; 4 others injured
+      site: ABC 7 Chicago
+      date: '2022-09-24T10:28:00Z'
+      description: |
+        The woman has been identified as 32-year-old Whitley McMiller, of South Holland, according to the Cook County Medical Examiner's Office.
 
 da6cf3937ba7909f261c6b13e25154ec130ce24a8803ab3aac524661efb4ca0b1ddc9bb448976906f8e0a874e6fa4d6bef7b1be4007d826081b90676242fec54:
   private_notes: |-
@@ -121,6 +147,26 @@ da6cf3937ba7909f261c6b13e25154ec130ce24a8803ab3aac524661efb4ca0b1ddc9bb448976906
     4355 S ARCHER AVE brighton park
     2 fatalities, 0 injured
     OTHER: NOT APPLICABLE
+  stories:
+    - url: https://chicago.suntimes.com/news/2022/9/26/23372434/2-killed-in-crash-in-brighton-park
+      title: 2 killed in crash in Brighton Park
+      site: Chicago Sun-Times
+      date: '2022-09-26T11:15:19.373Z'
+      description: Two teens were traveling south in the 4300 block of South Archer Avenue when the driver lost control of the car and crashed into a building, police said. Rene Salto, 18, was identified as the driver; Jacqueline Franco, 17, was the passenger.
+
+    - url: https://www.legacy.com/us/obituaries/name/jacqueline-franco-obituary?id=36631467
+      title: Jacqueline Franco Obituary (2022) - Chicago, IL - Central Chapel Funeral & Cremation Southwest
+      site: legacy.com
+      date: 2022-09-28
+      description: |
+        Jacqueline was a Senior attending Juares High School. She had plan to go on to college. She was an enthusiast, even working a part time job while in school. She loved dancing, music and would light up a room as she entered. She had lots of energy and a never ending sweet personality. Jacqueline was an animal lover, especially a love for her cats.
+
+    - url: https://www.legacy.com/us/obituaries/name/rene-salto-obituary?id=36646751
+      title: Rene Salto Obituary (2022) - Chicago, IL - Szykowny Funeral Home
+      site: legacy.com
+      date: 2022-09-28
+      description: |
+        Rene Salto's passing on Monday, September 26, 2022 has been publicly announced by Szykowny Funeral Home in Chicago, IL.
 
 82f2518e32b4c5033a915e255a1dfba143938bc8300377864f109e6ee5bce0e8845ad572a660403c77d1c8d4ef4a1bab93dae2ccb37fe5451e8a913ab10b0785:
   private_notes: |-
@@ -132,11 +178,29 @@ da6cf3937ba7909f261c6b13e25154ec130ce24a8803ab3aac524661efb4ca0b1ddc9bb448976906
 
 147fbd61c8279fac31ee6b8a7dd65f11214240ed035d4f8ebbdc7d28280a3d3699f86a9d6dae77aa764c58fcd3771d8f972882da085562f023b3df9b722abe57:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:police-chase
     2022-09-28 20:53
-    3175 W 31ST ST little village
-    1 fatalities, 4 injured
-    VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+    3175 W 31ST ST, little-village
+    VEHICLE-TO-VEHICLE
+    fatalities: 1 injured: 4
+    - 55 F FATAL
+    - 17 M NONINCAPACITATING INJURY
+    - 22 M NONINCAPACITATING INJURY
+    - 16 M NONINCAPACITATING INJURY
+    - 17 M NONINCAPACITATING INJURY
+  stories:
+    - url: https://www.wolniakfuneralhome.com/obituaries/dominga-gomez
+      title: Dominga Flores Gomez Obituary Sep 28, 2022
+      site: wolniakfuneralhome.com
+      date: 2022-09-29
+      description: |
+        Loving mother of Vismar Oropeza, Zulema Oropeza, Anna Rogel, Marylyn (fiancé, Daniel Edwards) Rogel and Adrian Rogel.
+
+    - url: https://www.cbsnews.com/chicago/news/finance-committee-rejects-settlement-dominga-flores-gomez-crash-police-chase-stolen-car/
+      title: City Council panel rejects $8.25 million settlement in innocent woman's death during crash in high-speed chase of stolen car
+      site: CBS News
+      date: 2026-02-11T15:45:35-0600
+      description: The City Council Finance Committee voted down a recommendation from city attorneys to pay a $8.25 million settlement in a high-speed police chase that led to the death of an innocent woman in a car crash in the Little Village neighborhood.
 
 __COMMENTS__:
   - |
