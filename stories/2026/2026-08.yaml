@@ -18,6 +18,12 @@ __GENERAL__:
     date: '2026-08-29T02:23:00Z'
     description: A man driving an ATV died after a crash Friday afternoon on the city's Southwest Side, Chicago police said.
 
+  - url: https://abc7chicago.com/post/chicago-crash-man-riding-motorcycle-dies-south-archer-avenue-heights-police-say/19760613/
+    title: Man riding motorcycle dies after crash in Archer Heights, Chicago police say
+    site: ABC 7 Chicago
+    date: '2026-08-29T23:30:33Z'
+    description: A man riding a motorcycle died after being hit by a vehicle Saturday afternoon on the city's Southwest Side, Chicago police said.
+
 41f44cf73e0dda26a633055a35afa1eaca5b96ec4648a85aa248dffc54f8e8ff4f09cb96ad5e80ba10be151ef85f2ac9a820ce5761c232169726bb42c8f5f89d:
   private_notes: |
     flag:tk:police-involved
