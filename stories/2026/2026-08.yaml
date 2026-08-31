@@ -12,18 +12,6 @@ __GENERAL__:
     description: |
       This alert gives notice of a hit & run traffic crash with serious personal injury in the West Garfield Park neighborhood, 3800 block of W. Van Buren St. on August 20, 2026 at 11:53 p.m. A pedestrian was struck by an unknown vehicle that was traveling the wrong way on W. Van Buren St. from S. Hamlin Blvd.
 
-  - url: https://abc7chicago.com/post/chicago-crash-man-driving-atv-dies-south-pulaski-road-ashburn-southwest-side-police-say/19754765/
-    title: Man driving ATV dies after crash on Southwest Side, Chicago police say
-    site: ABC 7 Chicago
-    date: '2026-08-29T02:23:00Z'
-    description: A man driving an ATV died after a crash Friday afternoon on the city's Southwest Side, Chicago police said.
-
-  - url: https://abc7chicago.com/post/chicago-crash-man-riding-motorcycle-dies-south-archer-avenue-heights-police-say/19760613/
-    title: Man riding motorcycle dies after crash in Archer Heights, Chicago police say
-    site: ABC 7 Chicago
-    date: '2026-08-29T23:30:33Z'
-    description: A man riding a motorcycle died after being hit by a vehicle Saturday afternoon on the city's Southwest Side, Chicago police said.
-
 41f44cf73e0dda26a633055a35afa1eaca5b96ec4648a85aa248dffc54f8e8ff4f09cb96ad5e80ba10be151ef85f2ac9a820ce5761c232169726bb42c8f5f89d:
   private_notes: |
     flag:tk:police-involved
@@ -173,3 +161,18 @@ bdaf62178e5a7c862e91487a7e21eb40112dd5630d23021cf99b998648606656be17211cda7ba44b
       site: FOX 32 Chicago
       date: 2026-08-26
       description: A Chicago man is looking for answers after he says a driver hit him while he was riding his e-bike and left the scene.
+
+cc3b32a58a2d4b58d061581c126f975b44449e431ec430f8478f5f968da434215c8396e1a6c035343caa3e136be1a78ebb0b301a440f4f1407ca158dd9384bd5:
+  private_notes: |
+    2026-08-29 13:48
+    4840 S ARCHER AVE, archer-heights
+    VEHICLE-TO-VEHICLE
+    fatalities: 1 injured: 1
+    - 34 M FATAL
+    - 35 F REPORTED, NOT EVIDENT
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crash-man-riding-motorcycle-dies-south-archer-avenue-heights-police-say/19760613/
+      title: Man riding motorcycle dies after crash in Archer Heights, Chicago police say
+      site: ABC 7 Chicago
+      date: '2026-08-29T23:30:33Z'
+      description: A man riding a motorcycle died after being hit by a vehicle Saturday afternoon on the city's Southwest Side, Chicago police said.
