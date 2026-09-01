@@ -54,6 +54,21 @@ d13af63d1050df54e76b6fc359ab99e3aae816067372bc3b36403b197da8497d2126697e18ecdf41
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
 
+49c4a3e147876869eebb0352d0aa38e388202ec9be8553318ede1e00629e6676154172a738b8a2c1eeb7b49b07b70e63b8c51a94084eedf81e3f992a60819c14:
+  private_notes: |
+    2022-05-10 15:16
+    4599 N LINCOLN AVE, lincoln-square
+    CYCLIST
+    injured: 1
+    - 62 M NONINCAPACITATING INJURY
+  stories:
+    - url: https://blockclubchicago.org/2022/05/12/bicyclist-hospitalized-after-driver-hits-him-in-lincoln-square-intersection/
+      title: Bicyclist Hospitalized After Driver Hits Him In Lincoln Square Intersection
+      site: Block Club Chicago
+      date: '2022-05-12T22:45:00+00:00'
+      description: |
+        A 62-year-old bicyclist was hurt this week after a driver hit him at a Lincoln Square intersection, according to witnesses and police, and the local alderperson said the crash occurred in an area where he has pushed for infrastructure fixes to slow down cars.
+
 7f2ce9c729950c40771fde3046a8d19d00844496df095035c14b86f2e5e5a50dce0be16ccf991148a9a9523c561a5f4d8669b84826eea8671731d4ea442d2897:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

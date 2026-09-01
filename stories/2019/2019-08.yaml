@@ -59,6 +59,21 @@ d7911f9e5de7581e5a60a0ba1cb80c7a04cbfc8f994d34390452ff5c8a836e6bdd0a5a1e2a13ea47
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
 
+80dc930ca34bd6cd881d73704373f51c13dc4d17e2b807543cd5d7b2e6df7698a162f20c6204a9704fab3a71d5573d33cd52a97975143dc414819ada5ece730c:
+  private_notes: |
+    2019-08-16 02:20
+    999 N MICHIGAN AVE, magnificent-mile
+    CYCLIST
+    incap: 1 injured: 1
+    - ? M INCAPACITATING INJURY
+  stories:
+    - url: https://blockclubchicago.org/2019/08/16/driver-hits-bicyclist-who-went-through-red-light-in-gold-coast-police-say/
+      title: Driver Hits Bicyclist Who Went Through Red Light In Gold Coast, Police Say
+      site: Block Club Chicago
+      date: '2019-08-16T12:44:30+00:00'
+      description: |
+        At 2:20 a.m., a 22-year-old man was riding his bike in the 1000 block of North Michigan Avenue when he went through a red light and an SUV driver hit him, police said.
+
 3b25beee79ec53d48e44b3bd6450e804868c8cad46aec636276d7e8bdc4a4e42e059a53a0d46ad75890a4a598092b3bae09d17653ce61a581cb7bd3749125250:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

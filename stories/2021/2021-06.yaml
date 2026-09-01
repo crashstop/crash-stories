@@ -38,6 +38,22 @@ a5e024477f77267c3ec387a3ffcd60f54a903d67611cacdd5d3e18d8fe729482273864c5c60fbac8
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
 
+1058029886fece557d81d8463a8f7e9e99ac1c20eebb58ed9c1b37cc9e23f283cabdf96bd9157b7c4e3823e83c897897c5c51b5ffddc39477e737465b2c23814:
+  private_notes: |
+    2021-06-07 22:48
+    5498 N CENTRAL AVE, jefferson-park
+    CYCLIST
+    incap: 1 injured: 1
+    - 21 M INCAPACITATING INJURY
+    Victim was on an electric scooter, recorded as a pedalcyclist.
+  stories:
+    - url: https://blockclubchicago.org/2021/06/09/after-another-crash-leaves-man-critically-injured-jefferson-park-neighbors-plead-for-safety-upgrades-at-dangerous-intersection/
+      title: After Another Crash Leaves Man Critically Injured, Jefferson Park Neighbors Plead For Safety Upgrades At Dangerous Intersection
+      site: Block Club Chicago
+      date: '2021-06-09T13:30:00+00:00'
+      description: |
+        Northwest Side neighbors and an alderman are urging the city to install speed bumps or a stop sign to prevent repeated crashes at a residential intersection, including one this week that sent a man to the hospital. The driver then hit two parked cars, police said. He was cited for driving with an expired license.
+
 6777bb5ef0358885d92345548aa5810a10db8e9dde9b720116f12b1a0ab674e488611b68c330610e4792f91ec7fac11113ed1c46563bfb24dffa0624f921e404:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

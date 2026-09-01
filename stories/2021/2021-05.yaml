@@ -38,6 +38,21 @@ cc7a7df4bed88346dff0cb910e7bf6c39e20c6987fe8024712c31bc61c5b1c325ccd67b1928a99b8
     1 fatalities, 0 injured
     OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
 
+1e8f4256dea6ae26707204c44b34b6829a2137b3a39c9e39c6a763a4e518b6fa72e3fa16fa09bab367787b59aeefbaf701b9cb09e134c3b8019a75bc99d5858e:
+  private_notes: |
+    flag:tk:dooring-not-set
+      2021-05-11 17:23
+      2951 N MILWAUKEE AVE, avondale
+      CYCLIST
+      incap: 1 injured: 1
+      - ? M INCAPACITATING INJURY
+  stories:
+    - url: https://blockclubchicago.org/2022/11/29/life-and-death-in-chicagos-most-dangerous-bike-lane/
+      title: Life And Death In Chicago’s Most Dangerous Bike Lane
+      site: Block Club Chicago
+      date: '2022-11-29T11:00:00+00:00'
+      description: Angel Amado was doored by the driver of a Lexus on May 11, 2021, in the 2900 block of North Milwaukee. "Cars should be towed for parking in the bike lane," he said.
+
 db1b390b8b763bad027f7c64a8b5b0d7257fa491902eadfd2388fbfecfc8c4e8f01f83ce25f5213771d34da013d722141a3b44afb83b2db454877c6a6b98821c:
   private_notes: |-
     2021-05-14 21:02

@@ -50,6 +50,25 @@ ded2510694642a9a3c82fb8e735e2552b84b97be8acb5913612414b7402d2b7c25961ca14fb28911
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
 
+6feb959c02aa99bb7845e870b4fb0ab8e591c4d7c2cb6c082df14d4551e3afb9b6bc9825a75e358b291e54590972caa985fa5ab1b779b3318e5bf6a1a495ee89:
+  private_notes: |
+    flag:tk:hit-and-run-not-flagged
+    Pedicab driver Sarah Yopp is the injured cyclist; the party bus driver fled but hit_and_run_i is not set.
+
+    2023-06-11 00:16
+    3606 N CLARK ST, wrigleyville
+    VEHICLE-TO-VEHICLE
+    injured: 2
+    - 43 F NONINCAPACITATING INJURY
+    - 21 M REPORTED, NOT EVIDENT
+  stories:
+    - url: https://blockclubchicago.org/2023/06/12/pedicab-driver-struck-by-party-bus-driver-after-dead-co-concert-at-wrigley-field-i-dont-know-if-ill-ever-work-in-wrigley-again/
+      title: 'Horrifying Video Shows Party Bus Run Into Pedicab Driver Outside Wrigley Field: ''I Could Have Been Killed'''
+      site: Block Club Chicago
+      date: '2023-06-12T20:13:14+00:00'
+      description: |
+        Sarah Yopp was driving her pedicab when a man driving a party bus accelerated into her, knocking her off her bike and causing a concussion. Bryan Rollins, a 40-year-old California man, was driving the party bus when he hit two parked cars and a pedicab driver before leaving the scene, police said.
+
 99af4edfdedc0c0a9f9992a25f344ec6be5cdbebb13fb111c9ccdd597e91996d7bd657c20d75984bd34fc0a52f0f34d64843a69b1706ef868cb0d5997512f32e:
   private_notes: |-
     flag:tk:police crash but vehicles aren't recorded as being police
@@ -109,6 +128,13 @@ a736767eac48b46f7ff9eea9f13c0f244a6a10b2d28bc125b11578ee8bbe0b0f94d25a7cad15c693
       site: ABC 7 Chicago
       date: '2023-06-21T09:50:00Z'
       description: A man is charged after four pedestrians were injured in a terrifying hit-and-run outside Guaranteed Rate Field before a White Sox game Tuesday night.
+
+    - url: https://blockclubchicago.org/2023/06/22/white-sox-hit-and-run-driver-ignored-warnings-of-people-in-the-street-sped-up-before-slamming-into-victims-prosecutors-say/
+      title: Sox Park Hit-And-Run Driver Ignored Warnings Of People In The Street, Sped Up Before Slamming Into Victims, Prosecutors Say
+      site: Block Club Chicago
+      date: '2023-06-22T20:30:00+00:00'
+      description: |
+        Condelarious Garcia, 20, was charged with four felony counts of aggravated reckless driving and a misdemeanor count of driving on a suspended license in the hit-and-run crash that injured four people Tuesday evening. One of the victims, a 64-year-old man, was “propelled into the air, face first, into the sun roof” after being hit, prosecutors said.
 
     - url: https://abc7chicago.com/post/chicago-white-sox-news-condelarious-garcia-sentenced-hit/14984343/
       title: Man sentenced in hit-and-run that injured 4 before White Sox game last year

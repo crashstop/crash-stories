@@ -153,6 +153,22 @@ d63d81bca36db34daecdfd5278c5c512d95fef91a2bef1e15b4c19fe902858819ab5f8c148daa7d9
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
 
+412cbf5c950c26a4f95e8bc4e8089031c2b41f56606a41f943ba44ca66c4e854b504cd24e85774b1703627a83da76385934240acd9b8fbd6ef1b6817605f86e1:
+  private_notes: |
+    Only July 2020 dooring in the 4400 block of N Milwaukee; category is OTHER rather than CYCLIST.
+    2020-07-28 15:47
+    4455 N MILWAUKEE AVE, portage-park
+    OTHER
+    injured: 1
+    - 27 M NONINCAPACITATING INJURY
+  stories:
+    - url: https://blockclubchicago.org/2022/11/29/life-and-death-in-chicagos-most-dangerous-bike-lane/
+      title: Life And Death In Chicago’s Most Dangerous Bike Lane
+      site: Block Club Chicago
+      date: '2022-11-29T11:00:00+00:00'
+      description: |
+        Cameron Lasater danced professionally in a Chicago troupe before he was doored on his bike in July 2020, throwing him into traffic where the driver of another car crushed his leg. Now, with a metal plate in his ankle, he’ll likely never dance in a company again.
+
 7e520fd36e9272d267c398ca90d8a2616f9902f10952ba7526cfbe5f8ec2f81ff709b50acd6f3b672108eb0114ce85d28016926664dd01396a699c2c7eb0c347:
   private_notes: |
     just a stub:

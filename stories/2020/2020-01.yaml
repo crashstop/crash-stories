@@ -5,62 +5,110 @@ fd513d10e664f2def020f1cacfc56e902758d2e0bd744632f5af5a3ab191d6fe6533fb01fce230e5
     3 fatalities, 2 injured
     VEHICLE-TO-VEHICLE: IMPROPER OVERTAKING/PASSING
   stories:
-    - url: https://chicago.suntimes.com/2020/1/2/21046248/ruby-cassandra-carrie-johnson-dead-4-critically-injured-toddler-morgan-park-vehicle-crash
-      title: 'Morgan Park crash: 3 dead, 4 injured including toddler on West 112th Place'
-      site: Chicago Sun-Times
-      date: '2020-01-02T07:08:12Z'
-      description: A toddler that was in a car seat was taken to Comer Children’s Hospital, where she was stabilized, police said.
-
-    - url: https://www.nbcchicago.com/news/local/3-dead-at-least-4-injured-in-morgan-park-crash-police/2195393/
-      title: '3 Dead, at Least 4 Injured in Morgan Park Crash: Police'
-      site: NBC 5 Chicago
-      date: '2020-01-02T06:22:10-06:00'
-      description: Three people were killed and four others injured, including a 3-year-old girl, in a vehicle crash Wednesday in Morgan Park on the South Side.
+    - url: https://abc7chicago.com/post/3-women-from-same-family-killed-in-morgan-park-crash/5807188/
+      title: 3 women from same family killed in Morgan Park crash, 4 others injured
+      site: ABC 7 Chicago
+      date: '2020-01-03T00:31:15Z'
+      description: |
+        Ruby Johnson, 28, her 56-year-old aunt Carrie Johnson and Carrie's 30-year-old daughter Cassandra Johnson were all killed.
 
 5b852d3ef2f080636e5cad61a45d8c1ef14c1b3a6ae74f06bc4067d971d22c0cbb5a6842b0740bedbb074d85bfbc45ab0a7f526078c8e97bef3b7567813657a7:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-01-14 19:52
     6120 W DEVON AVE norwood park
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://chi.streetsblog.org/2020/01/15/2nd-pedestrian-in-less-than-four-years-killed-on-stretch-of-devon-that-lacks-sidewalks
+      title: 2nd pedestrian in less than four years killed on stretch of Devon that lacks sidewalks
+      site: Chicago Streetsblog
+      date: '2020-01-15T18:46:29+00:00'
+      description: |
+        Maximo R. Portuondo, 51, struck and killed by a driver while walking in the roadway on Devon Street by the Caldwell Woods forest preserve, was the first pedestrian killed in Chicago this year.
 
-ade7f1b1ef610f6f21628093b3f8a47c342fa164f9b5901919b26ce43b1eaac82ef4939a93521c27ee22b5ae2a05887f7598d959f01519af26155934fe1d67a8:
-  private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
-    2020-01-22 13:33
-    225 S KILPATRICK AVE austin
-    1 fatalities, 0 injured
-    OTHER: UNABLE TO DETERMINE
+    - url: https://www.legacy.com/funeral-homes/obituaries/name/maximo-portuondo-obituary?pid=195123706&v=batesville&view=guestbook
+      title: View Maximo Portuondo's Obituary and express your condolences
+      site: legacy.com
+      date: '2020-01-21T17:01:25.040Z'
+      description: Maximo Portuondo passed away on January 14, 2020 at the age of 53 in Chicago, Illinois. Funeral Home Services for Maximo are being provided by Andersen Morgan Funeral Home - Chicago.
 
 913cbaa3ea278364fb8ef595d87f0d5cc4b323eaeff306cef254cfc37b37b4c56d4a718a2dd00519af08b55325886a51ad73aeb6d062719d623c2e97b677325d:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-01-22 21:34
-    2700 W 82ND ST ashburn
-    1 fatalities, 4 injured
-    OTHER: UNDER THE INFLUENCE OF ALCOHOL/DRUGS (USE WHEN ARREST IS EFFECTED)
+    2700 W 82ND ST, ashburn
+    OTHER
+    fatalities: 1 incap: 2 injured: 2
+    - ? M FATAL
+    - 22 M INCAPACITATING INJURY
+    - 15 M INCAPACITATING INJURY
+  stories:
+    - url: https://chicago.suntimes.com/2020/1/23/21078274/jameel-brown-wrightwood-crash-man-killed-teen-critical-82nd-street
+      title: 1 dead, 2 hurt after tire blows, sending it crashing into tree in Wrightwood
+      site: Chicago Sun-Times
+      date: '2020-01-23T08:34:46Z'
+      description: |
+        The Dodge struck a light pole before slamming into a tree, police said. Jameel Brown was identified as the passenger who died.
 
 d8f3567dfe15703d5439bef2769cc5349b84b24aa653f309c0df80d614b03d1a0f6d11891605783f2c6780f4c288997815b4bddea237cac447b515e4106eff10:
   private_notes: |-
+    could not find on google
     This entry is just a stub, pre-filled with basic info from the crash data:
     2020-01-23 23:40
     800 W 87TH ST auburn gresham
     1 fatalities, 0 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
 
+ef90eff2563c8ba3d5d14c9468d89f4bb8e251065eea230ce370a5198a6a03673fe0045a69663283b7ce9a71416f1462997f7f7ee926bfcc893d2f79b0edc822:
+  private_notes: |
+    2020-01-29 09:20
+    7400 S DR MARTIN LUTHER KING JR DR, grand-crossing
+    hit-and-run PEDESTRIAN
+    injured: 2
+    - 58 F NONINCAPACITATING INJURY
+    - ? X REPORTED, NOT EVIDENT
+  stories:
+    - url: https://www.nbcchicago.com/news/local/4000-reward-offered-in-hit-and-run-of-chicago-community-activists-sister/2211663/
+      title: $4,000 Reward Offered in Hit-and-Run of Chicago Community Activist's Sister
+      site: NBC 5 Chicago
+      date: '2020-02-01T16:19:30-06:00'
+      description: |
+        Cassandra Holmes, 58, was walking across the street about 9:20 a.m. Wednesday in the 7400 block of South King Drive in the Park Manor neighborhood when a pick-up truck hit her, according to Chicago police.
+
+    - url: https://www.fox32chicago.com/news/andrew-holmes-announces-arrest-of-alleged-hit-and-run-driver-charged-with-injuring-his-sister
+      title: Andrew Holmes announces arrest of alleged hit-and-run driver charged with injuring his sister
+      site: FOX 32 Chicago
+      date: 2020-02-13
+      description: Community activist Andrew Holmes says a tip from the street and his own investigative work led police to arrest a suspected hit-and-run driver who injured his sister last month in Park Manor.
+
 cad3678ccc4ecdb8b51de3ec4cc1b45038ba928310df2325a548b8de0fa9b617e7a8e5f0a452248118be5d884b94a546302365ebeee0241a553505ce9b021c93:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-01-30 14:25
     3200 N LAKE SHORE DR SB lake view
     1 fatalities, 0 injured
     OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://www.wenbanfh.com/obituaries/W-Kurt-Kuker?obId=10828839
+      title: W. Kurt Kuker Obituary
+      site: Wenban Funeral Home
+      date: 2020-01-31
+      description: |
+        Husband of Patricia. Father of Donna, Robert (Leah), Debbie (Ken) Schoening and Paul. Grandfather of Jason, Colin, Sarah, Emily and preceded in death by Brendan. Brother of Toni (Joe) Ward.
+
+    - url: https://chicago.suntimes.com/news/2020/1/30/21115845/man-dead-lake-shore-drive-crash-belmont-hollywood-lanes-closed
+      title: Driver’s fatal medical emergency causes solo crash on Lake Shore Drive
+      site: Chicago Sun-Times
+      date: '2020-01-31T12:58:10Z'
+      description: William Kurt Kuker, 80, suffered a medical emergency and crashed into a guardrail, police said.
 
 58c3006cbbe12063bc8e7a12fc0aaaaa6eed37ec3a80d9bb00834fe0cdfe65587d4068ecc3c027bb6617912fac9e2c4e84ffafaab6e1a4f6571da82991b74a3e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-01-31 15:12
     6800 S KANST DR chicago lawn
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/2020/2/1/21118413/person-killed-marquette-park-vehicle-crash
+      title: Man killed after crashing into tree in Marquette Park
+      site: Chicago Sun-Times
+      date: '2020-02-01T21:12:02Z'
+      description: Jorge Luis Reza Gallardo, 26, was driving a 1998 Toyota Camry in the 6800 block of South Kanst Drive when he crashed into a tree, Chicago police said.

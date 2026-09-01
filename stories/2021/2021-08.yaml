@@ -202,6 +202,24 @@ a853f5879e1cf4bda7e674428352d1a01541da217cc570a652f33fb05adc0473dcd3495c2dab0573
       description: Linda Mensch was killed in a hit-and-run crash while leaving the Garfield Park Conservatory in August 2021. Investigators quickly released a photo of the van that hit her as well as its license plate. But for reasons Chicago police refuse to explain - they would not even question the vehicle's registered owner.
       priority: 1
 
+73a74dc8a9197798ccd4d9782886d81ece20208502401ab8670d291dc9c7213382edf80cfb06cfb0b7d22b12795a11c7be5e12ed4b20176f06fb6e179affbd25:
+  private_notes: |
+    2021-08-29 00:49
+    3954 N BROADWAY, lake-view
+    PEDESTRIAN
+    incap: 2 injured: 4
+    - 39 ? INCAPACITATING INJURY
+    - 55 M INCAPACITATING INJURY
+    - 32 M NONINCAPACITATING INJURY
+    - 39 M NONINCAPACITATING INJURY
+  stories:
+    - url: https://cwbchicago.com/2023/06/chicago-man-sentenced-crash-on-probation-reckless-homicide.html
+      title: 8 years for driver who struck 3 people while on probation for killing woman with the same car
+      site: CWBChicago
+      date: '2023-06-13T09:52:00-05:00'
+      description: |
+        A Lakeview man who struck three pedestrians with his car while on probation for killing a 93-year-old woman with the same vehicle has now been sentenced to prison for both crimes. Rayon Allen, 33, received five years for aggravated DUI and eight years for reckless homicide, the case for which he originally received probation. Judge James Obbish handled both cases and ordered the sentences to be served concurrently.
+
 2af40a5b24ca0395f45dceaa8f9535b23f0854ab3e36cf26947b0f13d98aa90284c691edc5e53985e05054b16de2abe10629ad4a97fd32667f3d82cab7a59027:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:

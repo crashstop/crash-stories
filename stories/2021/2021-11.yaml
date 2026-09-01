@@ -99,6 +99,21 @@ d74084fdfb6f2921e647704b4338b8d68e5cefa78bf0186e291efaf08a6f82928290b2cc52640791
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: FAILING TO REDUCE SPEED TO AVOID CRASH
 
+ae5fe4f2408cb4ff7ed606b437da88a66c374a95f71d52a4cfdab0b913a35f524bc30ecb6c707a5ac2e3f2d26c5ee4bdd46be70b7975a5d83349a14ab603bc83:
+  private_notes: |
+    2021-11-21 05:18
+    1133 W LAWRENCE AVE, uptown
+    hit-and-run PEDESTRIAN
+    incap: 1 injured: 1
+    - 39 M INCAPACITATING INJURY
+    Streetsblog's url slug says "killed" but the article was corrected: Aning survived.
+  stories:
+    - url: https://chi.streetsblog.org/2021/11/26/hit-and-run-driver-killed-uptown-fixture-paul-aning-39-who-was-reportedly-homeless
+      title: GoFundMe launched for Uptown hit-and-run survivor Paul Aning
+      site: Chicago Streetsblog
+      date: '2021-11-26T23:27:00-06:00'
+      description: Paul Aning, 39, was crossing the street when the driver of a silver Camaro struck him and fled in an unknown direction. Aning was taken to Illinois Masonic Hospital in critical condition.
+
 caedcf6dd713acdaa3e4f29ed0691a9efa867f65f7727915e0f619053ee8185e6d8fd3ac8811b6ecf18bb5eafcfdcfc2c39aed9c1f9ff456469739b38ffc3050:
   private_notes: |-
     This entry is just a stub, pre-filled with basic info from the crash data:
