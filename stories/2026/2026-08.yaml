@@ -162,6 +162,22 @@ bdaf62178e5a7c862e91487a7e21eb40112dd5630d23021cf99b998648606656be17211cda7ba44b
       date: 2026-08-26
       description: A Chicago man is looking for answers after he says a driver hit him while he was riding his e-bike and left the scene.
 
+c6d35ae61905089720658f4d7ca0d48fc205b816553969ad5a678d3340a0d8c5e902368ba3da4226932654a58bc2cec5eccb00f508391473b4b1a87c5ad4d4c2:
+  private_notes: |
+    2026-08-28 14:08
+    8300 S PULASKI RD, ashburn
+    VEHICLE-TO-VEHICLE
+    fatalities: 1 injured: 2
+    - 42 M FATAL
+    - 45 M REPORTED, NOT EVIDENT
+    - 15 M REPORTED, NOT EVIDENT
+  stories:
+    - url: https://www.nbcchicago.com/news/local/42-year-old-man-dies-after-crash-between-atv-suv-on-southwest-side/3982239/
+      title: 42-year-old man dies after crash between ATV, SUV on Southwest Side
+      site: NBC 5 Chicago
+      date: '2026-08-29T16:47:27-05:00'
+      description: The man was riding an ATV on South Pulaski when he was involved in a collision with the driver of a Nissan SUV.
+
 cc3b32a58a2d4b58d061581c126f975b44449e431ec430f8478f5f968da434215c8396e1a6c035343caa3e136be1a78ebb0b301a440f4f1407ca158dd9384bd5:
   private_notes: |
     2026-08-29 13:48
