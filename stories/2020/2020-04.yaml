@@ -1,53 +1,97 @@
 e6e8dd195233780c9796376b0af0d513470a5ab6216b7cf29e059f18173848fb3b2704b128227eb169889a5b3030955bfd2712eb680905153f3313f2bdba5bf5:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-01 04:50
     6900 S ASHLAND AVE englewood
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://chicago.suntimes.com/news/2020/4/1/21202615/david-williams-person-killed-in-crash-ashland-6900-englewood
+      title: Driver dies in crash with CTA bus in Englewood
+      site: Chicago Sun-Times
+      date: '2020-04-01T10:54:52Z'
+      description: |
+        The driver of a vehicle, 38-year-old David Williams, was pronounced dead at the scene, police and the Cook County medical examiner’s office said, after crashing into a CTA bus.
 
 98cdc82a3f8893975906079f57deaa8db02a319b9f63ebc459912a15e0a1e77b50f18b4ec0300fd15c1f1f888d29b0b91d0ce238341ec02ecda8d703ce3da83a:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-04 21:50
     4222 W MADISON ST garfield park
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/crime/2020/4/5/21209202/tysheaka-roark-killed-west-garfield-park-hit-and-run-madison
+      title: Woman killed in West Garfield Park hit-and-run
+      site: Chicago Sun-Times
+      date: '2020-04-06T02:45:39Z'
+      description: The male driver fled the scene, while Tysheaka Roark was taken to Norwegian American Hospital and pronounced dead, officials said.
 
 57c7c4aa43ce3896b73b7dd8fbecb69960144d91ae08e945379a6630d9a34b937e9c10b77d102b06cc79489ce9dbcf22c475f189457db7e53b1b829afc306028:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-05 02:11
     1725 E 67TH ST south shore
     1 fatalities, 0 injured
     PEDESTRIAN: NOT APPLICABLE
+  stories:
+    - url: https://chicago.suntimes.com/crime/2020/4/9/21214702/police-seek-car-wanted-fatal-hit-and-run-67-street-woodlawn
+      title: Police seek car wanted in fatal hit-and-run in Woodlawn
+      site: Chicago Sun-Times
+      date: '2020-04-09T10:25:50Z'
+      description: A 34-year-old man was struck and killed in the crash.
 
 338435fade3c359b947b959fddc5c2121f4264c745e64985cb5a9b37fb994a6531ab49f8baebf95a4bee05b2626f51c7628a774c1aa0cc47bb6a4609d77aa741:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:fatality-incorrectly-recorded
+    Driver does not have age recorded, and is wrongly listed as "FATAL"
     2020-04-14 19:22
     2701 E 100TH ST south deering
     2 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.chicagotribune.com/2020/07/12/50000-bond-for-driver-in-accident-that-killed-36-year-old-man/
+      title: $50,000 bond for driver in accident that killed 36-year-old man
+      site: Chicago Tribune
+      date: '2020-07-12T21:59:37+00:00'
+      description: Daniel Mares, 31, is being held on $50,000 bond after a passenger in his vehicle, 36-year-old, Damon Pallanti, was killed in a crash April 14, prosecutors said. After the crash, Mares was taken to the University of Chicago Medical Center for treatment, and tests showed his blood alcohol content at 0.197, according to prosecutors. After being taken into custody on July 11, Mares told investigators he didn’t remember being involved in an accident
 
 d9df8b501653ec2cb0be60c284bc2f6cf2f9c7dae13da8b0c83a2fd6e3f51907be822a16c465e67f72443ae9ea24ff6abb7ad735599833fb0f38f429aaaf434d:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-15 19:15
     5150 S ARCHER AVE archer heights
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: NOT APPLICABLE
+  stories:
+    - url: https://chicago.suntimes.com/2020/4/16/21223473/driver-dies-archer-heights-crash-kolin-avenue
+      title: Speeding driver dies after crashing into pole in Archer Heights, police say
+      site: Chicago Sun-Times
+      date: '2020-04-16T15:14:54Z'
+      description: 39-year-old Juan Valadez-Espinoza of Berwyn was speeding on Archer Avenue when he swerved and struck an oncoming BMW turning left onto Kolin Avenue, police say.
+
+    - url: https://www.linhartfuneralhome.com/obituaries/Juan-J-Valadez?obId=12713285
+      title: Obituary of Juan J. Valadez
+      site: Linhart Funeral Home
+      date: 2020-04-17
+      description: |
+        Juan J. Valadez, cherished father of Maya Valadez; loving son of Lucia Espinoza; dear brother of Daniel Alanis, Lucia Valadez, Viridiana Valadez and Liliana Valadez (Kevin Chavez).
 
 16a9f6445f2dee21d735f2b082153c8fb573fe551c02139fad6690385464ba8dcbb94cbec1871a06447dcfb5c6eee667ad3224daf05eb7d5e904e0bfd6d01c2b:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-16 22:40
-    6900 S STATE ST grand crossing
-    2 fatalities, 2 injured
-    VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+    6900 S STATE ST, grand-crossing
+    VEHICLE-TO-VEHICLE
+    fatalities: 2 incap: 1 injured: 1
+    - 56 M FATAL
+    - 14 F FATAL
+    - 41 F INCAPACITATING INJURY
+  stories:
+    - url: https://abc7chicago.com/post/2-killed-including-14-year-old-girl-in-park-manor-crash-idd-/6110079/
+      title: 2 killed, including 14-year-old girl, in Park Manor crash after SUV runs red light ID'd,  Chicago police say
+      site: ABC 7 Chicago
+      date: '2020-04-17T10:07:00Z'
+      description: 14-year-old Abigail Rogel and 56-year-old Kenneth Gunn were killed when, according to police, Gunn ran a red light and struck the sedan Rogel was riding in. The 41-year-old driver of the sedan was transported to the hospital in critical condition, police said.
 
 082c2f0b4173ebe238237839265c1dca4eb9c9c4e94eb8e47d6891552210c442907ac26f18ac9eb4a81388a75a61d505150bc15f6d3302b5ac5e9ed8e1be2e2c:
   private_notes: |-
+    couldn't find on google
     This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-18 04:31
     5959 W WARWICK AVE portage park
@@ -56,14 +100,21 @@ d9df8b501653ec2cb0be60c284bc2f6cf2f9c7dae13da8b0c83a2fd6e3f51907be822a16c465e67f
 
 30563445ba77cbcd43d01fe234a178cc1874f51099ab25a338c0ed33a87261c72cbca0bafa1880a770cf771bc2dcb4175a916872ab509c276e1bb6136ff470a8:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-04-19 15:30
-    8501 S CICERO AVE ashburn
-    1 fatalities, 0 injured
-    VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+    8501 S CICERO AVE, ashburn
+    VEHICLE-TO-VEHICLE
+    fatalities: 1 injured: 0
+    - 45 M FATAL DRIVER    VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://chicago.suntimes.com/2020/4/20/21228685/daniel-butler-motorcyclist-killed-scottsdale-crash-cicero
+      title: Motorcyclist killed in Scottsdale crash
+      site: Chicago Sun-Times
+      date: '2020-04-20T20:57:55Z'
+      description: 45-year-old Daniel Butler was riding a motorcycle when he was hit by a Ford making a left turn; police said they cited the 56-year-old driver for failure to yield right of way to left.
 
 156c7876ed4bc4a5885189778b871d0d304477d379a81587388e24ef83d6ca0ffb688c47e4ceadfc632ca27cc78e910869bd088cac5d80f58d2f61cc332f606b:
   private_notes: |-
+    no other info other than same blurb via: https://www.nbcchicago.com/news/local/man-killed-in-little-village-hit-and-run-police/2262003/
     2020-04-25 20:34
     4125 W 31ST ST little village
     1 fatalities, 0 injured

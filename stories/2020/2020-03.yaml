@@ -1,23 +1,47 @@
 08d8b1747ca790951f856dcd6bf1e45aebf16cc6a0b5d1bfacce987741d43efc85dfbe479f3f683ce7d84d8ce40d9306e3290042fce6ffb8bdd2c2463caf7a73:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:note:police-chase
     2020-03-02 02:07
     700 N LA SALLE DR river north
     1 fatalities, 1 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/2020/3/2/21161006/damond-smith-river-north-chicago-police-chase-crash-fatal-pole-fire-hydrant-huron-lasalle
+      title: Man dead, Chicago cop among 2 hurt after River North police chase, crash
+      site: Chicago Sun-Times
+      date: '2020-03-02T10:58:48Z'
+      description: Police called off the chase before the Lexus crashed into the pole and hydrant in the 700 block of North LaSalle Boulevard, authorities said. The driver was killed.
+
+    - url: https://nyc21.nytimes-institute.com/damond-smith-ae08c987c74d
+      title: When Damond Smith died after a police chase, his family lost a son, and its legacy.
+      site: nyc21.nytimes-institute.com
+      date: '2021-06-26T08:59:56.987Z'
+      description: |
+        The Smith family planned to file a civil suit against the Police Department, hoping to get some clarity on the details of the crash. After the family’s lawyer decided not to represent the case, Otis Smith said he felt like he was out of options, so the family turned inward to find some sort of peace, leaning on their faith and congregation more than ever.
 
 86a0dc8136e233c91bd65c94296763c743e2f51221ae758b2c1b017654c009c60c8da8a312bdcb8ec1f35a41211ad9849fc4dca53e1ad8c1a60a1a290fbf1698:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-03-11 13:10
     4508 W 63RD ST west lawn
     1 fatalities, 1 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://abc7chicago.com/post/man-killed-in-west-lawn-hit-and-run/6008207/
+      title: Police identify man killed in West Lawn hit-and-run
+      site: ABC 7 Chicago
+      date: '2020-03-13T01:03:00Z'
+      description: Chicago police said 59-year-old Steve Smith was killed in a hit-and-run crash in the city's West Lawn neighborhood. A tow truck ran several red lights and struck Smith's car, police said, and the truck driver fled the scene on foot.
 
 8d9a394e03f62c8e66008d9d6ed81f27398871242dff8cd5db5717f47f45c97747802981ff3025776f99198aa7069ca38c8891c63c8275467d83066be6287a36:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-03-28 18:47
     1305 N LARAMIE AVE austin
     1 fatalities, 1 injured
     OTHER: FAILING TO REDUCE SPEED TO AVOID CRASH
+  stories:
+    - url: https://chicago.suntimes.com/crime/2020/11/13/21563234/woman-charged-with-dui-march-crash-that-killed-1-in-austin
+      title: Woman charged with DUI in March crash that killed man in Austin
+      site: Chicago Sun-Times
+      date: '2020-11-13T08:24:29Z'
+      description: |
+        Lisa Torres-Binder, charged with aggravated DUI causing death, allegedly had heroin, codeine, fentanyl, morphine, norfentanyl and sertraline in her system, prosecutors said. Jose Felix Sanchez Leon, 44, had been delivering food and was changing a flat tire when he was struck; Torres-Binder continued driving and struck five more vehicles before coming to a stop, prosecutors said.

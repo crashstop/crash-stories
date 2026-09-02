@@ -56,7 +56,8 @@ CREATE TABLE clean_people (
     crash_record_id       TEXT,
     age                   INTEGER,
     sex                   TEXT,
-    injury_classification TEXT
+    injury_classification TEXT,
+    person_type           TEXT
 );
 """
 
@@ -96,14 +97,22 @@ class Sandbox:
                 tuple(columns.values()),
             )
 
-    def add_person(self, crash_id, age, sex, injury, person_id=None):
+    def add_person(
+        self, crash_id, age, sex, injury, person_id=None, person_type="DRIVER"
+    ):
         self._people += 1
         with self.connect() as con:
             con.execute(
-                "INSERT INTO clean_people "
-                "(person_id, crash_record_id, age, sex, injury_classification) "
-                "VALUES (?, ?, ?, ?, ?)",
-                (person_id or f"P{self._people:04d}", crash_id, age, sex, injury),
+                "INSERT INTO clean_people (person_id, crash_record_id, age, sex, "
+                "injury_classification, person_type) VALUES (?, ?, ?, ?, ?, ?)",
+                (
+                    person_id or f"P{self._people:04d}",
+                    crash_id,
+                    age,
+                    sex,
+                    injury,
+                    person_type,
+                ),
             )
 
     def write_lookup(self, rows):

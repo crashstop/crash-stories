@@ -1,29 +1,57 @@
 58c65166f91556dbab1199f06973d88b352c126182fd54c1ed9eca157d797e6ea37cdd350f5ec8b0b5e12a52da34230ee1306aa104d45cd120cacabc9142dca3:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-02-01 19:45
     1401 S LAKE SHORE DR E museum campus
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://abc7chicago.com/post/pedestrian-dies-after-being-hit-by-car-on-lake-shore-drive-officials/5898585/
+      title: 'Pedestrian hit by vehicle on Lake Shore Drive dies overnight: officials'
+      site: ABC 7 Chicago
+      date: '2020-02-02T16:26:20Z'
+      description: A pedestrian who was hit by a vehicle Saturday night on Lake Shore Drive has died overnight, officials said.
+
+    - url: https://chi.streetsblog.org/2020/02/04/male-fatally-struck-at-intersection-by-museum-campus-where-pedestrian-traffic-is-banned
+      title: Mohamed Salah Ali, 29, killed at Museum Campus intersection where ped access is banned
+      site: Chicago Streetsblog
+      date: '2020-02-04T22:53:05+00:00'
+      description: The victim was the second pedestrian killed on Chicago streets this year.
 
 d6cb45fc7bce2fdd78d94095c977d25438fd455ce8c7828ccef2685cb1bfcd2543e0af6032e42b5c550a3309c1677663592c1b10d3321a76bf01046708a84048:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    flag:tk:extra-fatality-counted
     2020-02-05 11:53
-    3800 W LAKE ST garfield park
-    2 fatalities, 3 injured
+    3800 W LAKE ST, garfield-park
+    VEHICLE-TO-VEHICLE
+    fatalities: 2 incap: 1 injured: 2
+    - 44 M FATAL
+    - ? ? FATAL
+    - 54 F INCAPACITATING INJURY
+    - 31 M NONINCAPACITATING INJURY
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/news/2020/2/5/21125112/fatal-crash-west-garfield-park-lake-hamlin
+      title: 1 dead, 3 hurt in West Garfield Park pin-in crash
+      site: Chicago Sun-Times
+      date: '2020-02-05T23:33:52Z'
+      description: Crews responded about 11:55 a.m. to a crash in the 3800 block of West Lake Street, according to Chicago police.
 
-0b40ee5652d6efefed27b1af3eee96c126cda22d87e76c8bb8b96ef17fef64a40671c46b184faa4005c2b0abfb38b294208b19b8f0cdfcbc840f175bf09e2653:
-  private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
-    2020-02-06 19:05
-    8500 S PARNELL AVE auburn gresham
-    1 fatalities, 0 injured
-    OTHER: PHYSICAL CONDITION OF DRIVER
+    - url: https://www.chicagotribune.com/2020/04/23/prosecutors-man-fleeing-police-caused-violent-crash-in-west-garfield-park-that-killed-passenger/
+      title: 'Prosecutors: Man fleeing police caused violent crash in West Garfield Park that killed passenger'
+      site: Chicago Tribune
+      date: '2020-04-23T20:21:38+00:00'
+      description: Mackelin Moore, 49, of Pill Hill sped away from Chicago police in February, leading to a violent high-speed crash that killed one of his passengers and injured three others, including himself, prosecutors said Thursday. He was charged with class 3 reckless homicide.
+
+    - url: https://news.wttw.com/2025/03/06/city-poised-pay-another-25m-families-chicagoans-killed-driver-being-chased-police
+      title: City Poised to Pay Another $2.5M to Families of Chicagoans Killed by Driver Being Chased by Police
+      site: WTTW
+      date: 2025-03-06
+      description: |
+        The family of Ezell Ricky Island, 54, would get $1.5 million to resolve the wrongful death lawsuit they filed after he was killed on Feb. 5, 2020, according to the proposed settlement. Island, the father of nine children, was riding in the back seat of a blue 2009 Ford Focus, driven by Mackelin Moore, of Pill Hill, when Moore cut off an unmarked police SUV near Garfield Park, court records show, and a CTA railroad pillar and a Dodge Journey. Island, riding in the back seat, suffered a neck injury described as “internal decapitation,” in the police report.
 
 98a312da5101b9935556af35fc2380b82d2c803a8049b841a44e4a27e2e09e26ffc97304a8319614ae0f6e76337982fdf181eda7b759156f99a18b74fc771151:
   private_notes: |-
+    can't find on google
     This entry is just a stub, pre-filled with basic info from the crash data:
     2020-02-08 09:30
     2432 N KIMBALL AVE logan square
@@ -37,17 +65,49 @@ d6cb45fc7bce2fdd78d94095c977d25438fd455ce8c7828ccef2685cb1bfcd2543e0af6032e42b5c
     3200 W JACKSON BLVD garfield park
     1 fatalities, 6 injured
     VEHICLE-TO-VEHICLE: DISREGARDING TRAFFIC SIGNALS
+  stories:
+    - url: https://www.nbcchicago.com/news/local/2-charged-after-woman-killed-4-injured-in-west-side-crash/2216666/
+      title: 2 Charged After Woman Killed, 4 Injured in West Side Crash
+      site: NBC 5 Chicago
+      date: '2020-02-10T15:09:48-06:00'
+      description: A woman was killed and four others were injured after a car hit two other vehicles while fleeing a traffic stop Saturday in Fifth City on Chicago’s West Side, officials said. CPD confirmed Monday that 22-year-old Patrick Frazier is being charged with one misdemeanor count, while 20-year-old Maxwell Paxton is charged with three misdemeanor counts and two traffic citations.
+
+    - url: https://www.nbcchicago.com/news/local/family-friends-remember-salon-owner-killed-in-west-side-crash/2216963/
+      title: Family, Friends Remember Salon Owner Killed in West Side Crash
+      site: NBC 5 Chicago
+      date: '2020-02-10T21:08:49-06:00'
+      description: Family and friends gathered outside a nail salon Monday night on Chicago’s West Side to remember its owner – a woman who made a difference in the North Lawndale neighborhood. Mignonne Robinson, 40, died Saturday night when a vehicle fleeing police crashed into her car and another vehicle in the 3200 block of West Jackson Boulevard.
+
+    - url: https://news.wttw.com/2025/03/06/city-poised-pay-another-25m-families-chicagoans-killed-driver-being-chased-police
+      title: City Poised to Pay Another $2.5M to Families of Chicagoans Killed by Driver Being Chased by Police
+      site: WTTW
+      date: 2025-03-06
+      description: |
+        The family of Mignonne Robinson would get $1 million to resolve the wrongful death lawsuit they filed after she was killed after being struck by a car fleeing police on Feb. 8, 2020, just three days after the crash that killed Island.
 
 1076400ab02d5e09ba20d8656e30121adf1f7f1303a406b54cff094b2af7faa53e6486a97ca540195dca23a3120feb4e5f283a9a40e112bf3c2fd1ca6f677898:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2020-02-16 03:36
     25 N CICERO AVE austin
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.dlpsrmemchapel.com/obituary/Darius-Westbrooks
+      title: Obituary for Darius D Westbrooks
+      site: D.L. Perkins, SR. Memorial Chapel
+      date: 2020-02-17
+      description: |
+        Darius loved his family and he loved to laugh. Darius had a smile that would light up a room and he loved hanging with all his cousins, the “4 Ds.” Darius later rekindled his relationship with his grade school girlfriend, Shartia, and out of their relationship, Bella Marie Westbrooks was born.
+
+    - url: https://chicago.suntimes.com/news/2020/2/17/21141411/darius-westbrooks-27-killed-crash-light-pole-west-garfield-park-cicero
+      title: Man, 27, dies after crashing into light pole in West Garfield Park
+      site: Chicago Sun-Times
+      date: '2020-02-17T22:29:33Z'
+      description: Darius Westbrooks lost control of his Cadillac and slammed into a pole on Cicero Avenue, authorities said.
 
 a44f02a3e1666e819310f7ca52a351ba07a6ffaa77419d07e00dfdc45f38e2c456b5ba71fd736f637da2bcaf6c406efab3cd719bfcc7dbcbf6f74e654f78b174:
   private_notes: |-
+    can't find on google
     This entry is just a stub, pre-filled with basic info from the crash data:
     2020-02-17 15:05
     8359 S ELIZABETH ST auburn gresham
@@ -61,11 +121,25 @@ cf73f33e3b0f3f82d81259b3bf36e778a0250a8d2c416dc1ad4d64942fbbeb98725f576bf9d29e55
     1020 E 95TH ST burnside
     1 fatalities, 1 injured
     OTHER: DRIVING SKILLS/KNOWLEDGE/EXPERIENCE
+  stories:
+    - url: https://chicago.suntimes.com/news/2020/2/26/21155155/miracle-sanchez-killed-burnside-crash-95th
+      title: Woman killed in Burnside crash
+      site: Chicago Sun-Times
+      date: '2020-02-26T23:13:16Z'
+      description: Miracle Sanchez was in a car that struck a light pole after the driver lost control, authorities said.
 
 fdc5d4d1299102e75fd8c7997ea5c343a0b5e62a4f7bde7d2b6e5a02cd0d1c68711cc086eac0fabcbb7060de7b587328ca5dd9c56e8c8052c2595113fe818adf:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    As of may 2020, there was still no identification
+    https://chi.streetsblog.org/2020/05/22/this-year-the-chicago-ride-of-silence-honored-fallen-riders-with-an-online-memorial-ceremony
+    Chicago Ride of Silence organizer Elizabeth Adamczyk began by noting that the city has seen one fatal bike crash this year, the hit-and-run collision that killed a 61-year-old man riding his bike on February 29 on the 3700 block of West Lake Street in East Garfield Park. The crash was the third bike or pedestrian fatality on a mile-long stretch of Lake Street within about six months.
     2020-02-29 00:35
     3730 W LAKE ST garfield park
     1 fatalities, 0 injured
     CYCLIST: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.nbcchicago.com/news/local/man-hit-and-killed-while-riding-bike-in-eats-garfield-park/2229053/
+      title: Man Hit and Killed While Riding Bike in East Garfield Park
+      site: NBC 5 Chicago
+      date: '2020-03-01T15:41:40-06:00'
+      description: A 61-year-old man was riding a bicycle across the street at 12:35 a.m. when he was hit by a westbound white 2014 Chrysler 300 in the 3700 block of West Lake Street; he was taken to Stroger Hospital, where he was pronounced dead, according to police.

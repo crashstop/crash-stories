@@ -5,8 +5,8 @@
   ./q format    [--all] [--dry]
   ./q reconcile [--all] [--dry] [--no-force-domain-lookup]
   ./q wrangle   [--dry]
-  ./q clip      [<url>] [--id CRASH_RECORD_ID] [--indent N]
-                                        (no url: reads urls from stdin)
+  ./q clip      [<url> ...] [--id CRASH_RECORD_ID] [--indent N]
+                                        (no urls: reads them from stdin)
   ./q info      <crash_record_id>
   ./q archive   story <url> | stories <path>
   ./q make      [--all] [--dry]

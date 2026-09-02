@@ -28,8 +28,13 @@ def crash_row(**overrides):
     return row
 
 
-def person(age, sex, injury):
-    return {"age": age, "sex": sex, "injury_classification": injury}
+def person(age, sex, injury, person_type="DRIVER"):
+    return {
+        "age": age,
+        "sex": sex,
+        "injury_classification": injury,
+        "person_type": person_type,
+    }
 
 
 class TestCell:
@@ -57,15 +62,15 @@ class TestSummarize:
     def test_the_whole_block(self):
         out = info.summarize(
             crash_row(incap_tally=2, injured_tally=6),
-            [person(41, "M", INCAP), person(3, "F", INCAP)],
+            [person(41, "M", INCAP), person(3, "F", INCAP, "PASSENGER")],
         )
         assert out == (
             "2026-08-02 21:33\n"
             "159 E 63RD ST, grand-crossing\n"
             "VEHICLE-TO-VEHICLE\n"
             "incap: 2 injured: 6\n"
-            "- 41 M INCAPACITATING INJURY\n"
-            "- 3 F INCAPACITATING INJURY"
+            "- 41 M INCAPACITATING INJURY DRIVER\n"
+            "- 3 F INCAPACITATING INJURY PASSENGER"
         )
 
     def test_hit_and_run_prefixes_the_category(self):
@@ -106,7 +111,14 @@ class TestSummarize:
 
     def test_unknown_age_and_sex_render_as_question_marks(self):
         out = info.summarize(crash_row(injured_tally=1), [person(None, "", NONINCAP)])
-        assert out.splitlines()[-1] == "- ? ? NONINCAPACITATING INJURY"
+        assert out.splitlines()[-1] == "- ? ? NONINCAPACITATING INJURY DRIVER"
+
+    @pytest.mark.parametrize("person_type", [None, ""])
+    def test_unknown_person_type_renders_as_a_question_mark(self, person_type):
+        out = info.summarize(
+            crash_row(injured_tally=1), [person(30, "M", NONINCAP, person_type)]
+        )
+        assert out.splitlines()[-1] == "- 30 M NONINCAPACITATING INJURY ?"
 
 
 class TestMain:
@@ -125,7 +137,7 @@ class TestMain:
             incap_tally=1,
             injured_tally=1,
         )
-        sandbox.add_person(CRASH_ID, None, "M", FATAL)
+        sandbox.add_person(CRASH_ID, None, "M", FATAL, person_type="PEDESTRIAN")
         sandbox.add_person(CRASH_ID, 22, "F", INCAP)
         assert info.main(CRASH_ID) == 0
         assert capsys.readouterr().out == (
@@ -133,8 +145,8 @@ class TestMain:
             "6300 S KEDZIE AVE, chicago-lawn\n"
             "hit-and-run VEHICLE-TO-VEHICLE\n"
             "fatalities: 1 incap: 1 injured: 1\n"
-            "- ? M FATAL\n"
-            "- 22 F INCAPACITATING INJURY\n"
+            "- ? M FATAL PEDESTRIAN\n"
+            "- 22 F INCAPACITATING INJURY DRIVER\n"
         )
 
     def test_people_come_out_most_severe_first(self, sandbox, capsys):
@@ -149,10 +161,10 @@ class TestMain:
         info.main(CRASH_ID)
         listed = [l for l in capsys.readouterr().out.splitlines() if l.startswith("- ")]
         assert listed == [
-            "- 40 M FATAL",
-            "- 30 M INCAPACITATING INJURY",
-            "- 20 M NONINCAPACITATING INJURY",
-            "- 10 M REPORTED, NOT EVIDENT",
+            "- 40 M FATAL DRIVER",
+            "- 30 M INCAPACITATING INJURY DRIVER",
+            "- 20 M NONINCAPACITATING INJURY DRIVER",
+            "- 10 M REPORTED, NOT EVIDENT DRIVER",
         ]
 
     def test_uninjured_people_are_left_out(self, sandbox, capsys):
@@ -161,7 +173,7 @@ class TestMain:
         sandbox.add_person(CRASH_ID, 60, "F", NONINCAP)
         info.main(CRASH_ID)
         out = capsys.readouterr().out
-        assert "- 60 F NONINCAPACITATING INJURY" in out
+        assert "- 60 F NONINCAPACITATING INJURY DRIVER" in out
         assert "50" not in out
 
     def test_people_with_a_blank_classification_are_left_out(self, sandbox, capsys):
@@ -183,7 +195,7 @@ class TestMain:
         sandbox.add_crash(CRASH_ID, "2026-01-01 00:00", injured_tally=1)
         sandbox.add_person(CRASH_ID, 0, "F", NONINCAP)
         info.main(CRASH_ID)
-        assert "- 0 F NONINCAPACITATING INJURY" in capsys.readouterr().out
+        assert "- 0 F NONINCAPACITATING INJURY DRIVER" in capsys.readouterr().out
 
     def test_unknown_crash_id(self, sandbox, capsys):
         assert info.main("nope") == 1

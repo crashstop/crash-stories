@@ -49,22 +49,26 @@ class TestSubcommandRouting:
             (
                 ["clip", "https://ex.com/a"],
                 "clip",
-                {"url": "https://ex.com/a", "crash_record_id": None, "indent": 0},
+                {"urls": ["https://ex.com/a"], "crash_record_id": None, "indent": 0},
             ),
             (
-                ["clip", "https://ex.com/a", "--id", "abc123"],
+                ["clip", "https://ex.com/a", "https://ex.com/b", "--id", "abc123"],
                 "clip",
-                {"url": "https://ex.com/a", "crash_record_id": "abc123", "indent": 0},
+                {
+                    "urls": ["https://ex.com/a", "https://ex.com/b"],
+                    "crash_record_id": "abc123",
+                    "indent": 0,
+                },
             ),
             (
-                ["clip", "--id", "abc123"],  # url comes from stdin
+                ["clip", "--id", "abc123"],  # urls come from stdin
                 "clip",
-                {"url": None, "crash_record_id": "abc123", "indent": 0},
+                {"urls": [], "crash_record_id": "abc123", "indent": 0},
             ),
             (
                 ["clip", "--indent", "4"],
                 "clip",
-                {"url": None, "crash_record_id": None, "indent": 4},
+                {"urls": [], "crash_record_id": None, "indent": 4},
             ),
             (["info", "abc123"], "info", {"crash_record_id": "abc123"}),
         ],
@@ -74,12 +78,13 @@ class TestSubcommandRouting:
     ):
         assert route(q_module, monkeypatch, module_name, argv) == expected
 
-    def test_a_second_positional_is_a_usage_error(self, q_module, capsys):
-        """The crash id is --id, not a bare second argument."""
-        with pytest.raises(SystemExit) as exc:
-            q_module.main(["clip", "https://ex.com/a", "abc123"])
-        assert exc.value.code == 2
-        assert "unrecognized arguments: abc123" in capsys.readouterr().err
+    def test_a_second_positional_is_another_url_not_a_crash_id(
+        self, q_module, monkeypatch
+    ):
+        """The crash id is --id; every bare argument is a url."""
+        seen = route(q_module, monkeypatch, "clip", ["clip", "https://ex.com/a", "abc123"])
+        assert seen["urls"] == ["https://ex.com/a", "abc123"]
+        assert seen["crash_record_id"] is None
 
     def test_archive_story(self, q_module, monkeypatch):
         seen = route(

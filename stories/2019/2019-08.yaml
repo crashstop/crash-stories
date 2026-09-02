@@ -37,11 +37,17 @@ bdc6a0be2cdd90af6c66c8d15f21bbed1b3147c6132d00530da8d52ee9ab186b1275513d7a13cd98
 
 cf826354ea7d0ba6785eb772b9820ca51ef198d4a88cbadb08f269b8dc2f741438f89b328a4e561809dad31bd99e47ad0b9938cb585d46041c20764211778fb8:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
+    victim died 10 days later
     2019-08-07 17:00
     4300 S CALIFORNIA AVE brighton park
     1 fatalities, 1 injured
     PEDESTRIAN: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://www.nbcchicago.com/news/local/man-struck-by-vehicle-in-brighton-park-dies-of-complications/127501/
+      title: Man Struck by Vehicle in Brighton Park Dies of Complications
+      site: NBC 5 Chicago
+      date: '2019-08-19T21:34:23-05:00'
+      description: Jose Sanchez, 43, died ten days after being struck by a vehicle in Brighton Park on the Southwest Side. Chicago police said the driver of the striking vehicle stopped at the scene and was issued traffic citations. An investigation was ongoing, police said.
 
 935bd0771c16e2580b8fb60f9d79528556868c699698bff25698de2d2b8195274e5cd38e08544d7af3aec03e189af21d958f84dfe214c0cbfe5477dc32ed7341:
   private_notes: |-

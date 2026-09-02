@@ -55,30 +55,54 @@ def urls_under(sandbox, stem, crash_id):
 
 
 class TestUrlsToClip:
-    def test_the_argument_wins(self, monkeypatch):
+    def test_the_arguments_win(self, monkeypatch):
         feed(monkeypatch, "https://from-stdin.example/\n")
-        assert clip.urls_to_clip(URL_A) == [URL_A]
+        assert clip.urls_to_clip([URL_A]) == [URL_A]
 
-    def test_no_argument_reads_stdin(self, monkeypatch):
+    def test_several_arguments_keep_their_order(self, monkeypatch):
+        feed(monkeypatch, "https://from-stdin.example/\n")
+        assert clip.urls_to_clip([URL_B, URL_A]) == [URL_B, URL_A]
+
+    def test_no_arguments_reads_stdin(self, monkeypatch):
         feed(monkeypatch, f"{URL_A}\n{URL_B}\n")
-        assert clip.urls_to_clip(None) == [URL_A, URL_B]
+        assert clip.urls_to_clip([]) == [URL_A, URL_B]
 
     def test_dash_reads_stdin(self, monkeypatch):
         feed(monkeypatch, f"{URL_A}\n")
-        assert clip.urls_to_clip("-") == [URL_A]
+        assert clip.urls_to_clip(["-"]) == [URL_A]
+
+    def test_dash_splices_stdin_in_among_the_arguments(self, monkeypatch):
+        feed(monkeypatch, "https://piped.example/\n")
+        assert clip.urls_to_clip([URL_A, "-", URL_B]) == [
+            URL_A,
+            "https://piped.example/",
+            URL_B,
+        ]
+
+    def test_a_repeated_dash_reads_stdin_once(self, monkeypatch):
+        feed(monkeypatch, "https://piped.example/\n")
+        assert clip.urls_to_clip(["-", "-"]) == ["https://piped.example/"]
 
     def test_strips_whitespace_and_drops_blank_lines(self, monkeypatch):
         feed(monkeypatch, f"\n  {URL_A}  \n\n\t\n{URL_B}\n\n")
-        assert clip.urls_to_clip(None) == [URL_A, URL_B]
+        assert clip.urls_to_clip([]) == [URL_A, URL_B]
 
     def test_none_when_nothing_is_piped_in(self, monkeypatch):
         """A terminal has nothing to read; blocking on it would look like a hang."""
         monkeypatch.setattr(sys.stdin, "isatty", lambda: True)
-        assert clip.urls_to_clip(None) is None
+        assert clip.urls_to_clip([]) is None
+
+    def test_none_when_dash_asks_for_a_terminal_stdin(self, monkeypatch):
+        monkeypatch.setattr(sys.stdin, "isatty", lambda: True)
+        assert clip.urls_to_clip([URL_A, "-"]) is None
+
+    def test_stdin_is_not_touched_when_no_argument_asks_for_it(self, monkeypatch):
+        monkeypatch.setattr(sys.stdin, "isatty", lambda: True)
+        assert clip.urls_to_clip([URL_A]) == [URL_A]
 
     def test_empty_stdin_is_an_empty_list(self, monkeypatch):
         feed(monkeypatch, "")
-        assert clip.urls_to_clip(None) == []
+        assert clip.urls_to_clip([]) == []
 
 
 class TestFetchStory:
@@ -103,7 +127,7 @@ class TestFetchStory:
 
 class TestMain:
     def test_renders_one_entry_from_an_argument(self, pages, capsys):
-        assert clip.main(URL_A) == 0
+        assert clip.main([URL_A]) == 0
         out = capsys.readouterr().out
         assert out.startswith(f"- url: {URL_A}\n")
         assert "  title: A story\n" in out
@@ -114,7 +138,7 @@ class TestMain:
         assert URL_A in capsys.readouterr().out
 
     def test_indent_shifts_the_whole_entry(self, pages, capsys):
-        clip.main(URL_A, indent=4)
+        clip.main([URL_A], indent=4)
         assert capsys.readouterr().out.startswith(f"    - url: {URL_A}\n")
 
     def test_multiple_urls_come_out_oldest_first(self, pages, monkeypatch, capsys):
@@ -122,6 +146,12 @@ class TestMain:
         assert clip.main() == 0
         out = capsys.readouterr().out
         assert out.index(URL_A) < out.index(URL_B)
+
+    def test_multiple_url_arguments_render_one_entry_each(self, pages, capsys):
+        assert clip.main([URL_B, URL_A]) == 0
+        out = capsys.readouterr().out
+        assert out.count("- url: ") == 2
+        assert out.index(URL_A) < out.index(URL_B)  # oldest first, as from stdin
 
     def test_multiple_entries_are_blank_line_separated(
         self, pages, monkeypatch, capsys
@@ -151,7 +181,7 @@ class TestMain:
         assert "no urls on stdin" in capsys.readouterr().err
 
     def test_returns_two_when_qlip_is_not_installed(self, no_qlip, capsys):
-        assert clip.main(URL_A) == 2
+        assert clip.main([URL_A]) == 2
         err = capsys.readouterr().err
         assert "needs qlip" in err
         assert sys.executable in err  # names the interpreter to install it for
@@ -169,16 +199,16 @@ class TestInsertMode:
     """`clip <url> --id <crash_record_id>`: write the entry into the crash's file."""
 
     def test_a_stub_with_no_stories_key_gets_one(self, pages, crashfile):
-        assert clip.main(URL_A, CRASH_ID) == 0
+        assert clip.main([URL_A], CRASH_ID) == 0
         assert urls_under(crashfile, "2026-06", CRASH_ID) == [URL_A]
 
     def test_the_stubs_other_keys_survive(self, pages, crashfile):
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         entry = common.yaml_load(crashfile.read("2026-06"))[CRASH_ID]
         assert entry["private_notes"] == "a stub"
 
     def test_the_fetched_metadata_is_written_out(self, pages, crashfile):
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         story = common.yaml_load(crashfile.read("2026-06"))[CRASH_ID]["stories"][0]
         assert story["title"] == "A story"
         assert story["description"] == "One line of description."
@@ -189,7 +219,7 @@ class TestInsertMode:
             f"{CRASH_ID}:\n  stories:\n    - url: {URL_B}\n      title: B story\n"
             "      date: '2026-06-09T12:07:19+00:00'\n",
         )
-        assert clip.main(URL_A, CRASH_ID) == 0
+        assert clip.main([URL_A], CRASH_ID) == 0
         # A (2025-11) is older than B, so format's chronological order puts it first
         assert urls_under(crashfile, "2026-06", CRASH_ID) == [URL_A, URL_B]
 
@@ -200,9 +230,13 @@ class TestInsertMode:
             "      date: '2025-11-07T23:07:00Z'\n",
         )
         before = crashfile.read("2026-06")
-        assert clip.main(URL_A, CRASH_ID) == 1
+        assert clip.main([URL_A], CRASH_ID) == 1
         assert crashfile.read("2026-06") == before
         assert URL_A in capsys.readouterr().err
+
+    def test_several_url_arguments_all_go_in(self, pages, crashfile):
+        assert clip.main([URL_B, URL_A], CRASH_ID) == 0
+        assert urls_under(crashfile, "2026-06", CRASH_ID) == [URL_A, URL_B]
 
     def test_a_duplicate_does_not_stop_the_other_urls(
         self, pages, crashfile, monkeypatch
@@ -226,14 +260,14 @@ class TestInsertMode:
     def test_stdout_carries_the_status_line_not_the_entry(
         self, pages, crashfile, capsys
     ):
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         out = capsys.readouterr().out
         assert "2026-06.yaml" in out
         assert "- url:" not in out
 
     def test_the_entry_is_echoed_to_stderr(self, pages, crashfile, capsys):
         """Insert mode writes the entry out of sight, so show what went in."""
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         err = capsys.readouterr().err
         assert f"    - url: {URL_A}" in err  # indented as it sits in the file
         assert "      title: A story" in err
@@ -258,11 +292,11 @@ class TestInsertMode:
 
     def test_indent_is_ignored(self, pages, crashfile):
         """render_crash sets the indentation; --indent only shapes stdout output."""
-        clip.main(URL_A, CRASH_ID, indent=8)
+        clip.main([URL_A], CRASH_ID, indent=8)
         assert f"    - url: {URL_A}" in crashfile.read("2026-06")
 
     def test_the_file_comes_out_formatted(self, pages, crashfile):
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         text = crashfile.read("2026-06")
         assert fmt.render_file(common.yaml_load(text)) == text
 
@@ -273,48 +307,48 @@ class TestInsertMode:
             "2026-06",
             f"{CRASH_ID}:\n  private_notes: a stub\n\n{other}:\n  notes: untouched\n",
         )
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         data = common.yaml_load(crashfile.read("2026-06"))
         assert data[other] == {"notes": "untouched"}
 
     def test_a_story_missing_a_required_field_still_goes_in(self, pages, crashfile):
         """Same as pasting one by hand: it lands, and lint is what catches it."""
         pages.page("https://bare.example/", title=None, date="2026-06-08")
-        assert clip.main("https://bare.example/", CRASH_ID) == 0
+        assert clip.main(["https://bare.example/"], CRASH_ID) == 0
         assert urls_under(crashfile, "2026-06", CRASH_ID) == ["https://bare.example/"]
 
     def test_a_story_missing_a_required_field_says_lint_will_flag_the_file(
         self, pages, crashfile, capsys
     ):
         pages.page("https://bare.example/", title=None, date="2026-06-08")
-        clip.main("https://bare.example/", CRASH_ID)
+        clip.main(["https://bare.example/"], CRASH_ID)
         err = capsys.readouterr().err
         assert "title" in err and "2026-06.yaml" in err and "lint" in err
 
     def test_no_lint_warning_when_everything_came_back(self, pages, crashfile, capsys):
-        clip.main(URL_A, CRASH_ID)
+        clip.main([URL_A], CRASH_ID)
         assert "lint" not in capsys.readouterr().err
 
     def test_an_unknown_crash_id_is_an_error(self, pages, crashfile, capsys):
-        assert clip.main(URL_A, "nosuchcrash") == 1
+        assert clip.main([URL_A], "nosuchcrash") == 1
         assert "no crash nosuchcrash" in capsys.readouterr().err
 
     def test_a_crash_with_no_entry_in_its_month_file_is_an_error(
         self, pages, crashfile, capsys
     ):
         crashfile.write("2026-06", "e" * 8 + ":\n  notes: someone else\n")
-        assert clip.main(URL_A, CRASH_ID) == 1
+        assert clip.main([URL_A], CRASH_ID) == 1
         err = capsys.readouterr().err
         assert "no entry" in err and CRASH_ID in err
 
     def test_a_missing_month_file_is_an_error(self, pages, sandbox, capsys):
         sandbox.add_crash(CRASH_ID, CRASH_DATE)
-        assert clip.main(URL_A, CRASH_ID) == 1
+        assert clip.main([URL_A], CRASH_ID) == 1
         assert "2026-06.yaml" in capsys.readouterr().err
 
     def test_a_missing_database_is_an_environment_error(self, pages, sandbox, capsys):
         sandbox.db.unlink()
-        assert clip.main(URL_A, CRASH_ID) == 2
+        assert clip.main([URL_A], CRASH_ID) == 2
         assert "database not found" in capsys.readouterr().err
 
     def test_nothing_is_fetched_when_the_crash_has_no_entry(
@@ -322,7 +356,7 @@ class TestInsertMode:
     ):
         """The entry check comes first, so a bad id costs no network round-trips."""
         crashfile.write("2026-06", "e" * 8 + ":\n  notes: someone else\n")
-        assert clip.main("https://unreachable.example/", CRASH_ID) == 1
+        assert clip.main(["https://unreachable.example/"], CRASH_ID) == 1
         err = capsys.readouterr().err
         assert "no entry" in err
         assert "unreachable.example" not in err  # never got as far as fetching
@@ -331,7 +365,7 @@ class TestInsertMode:
         self, crashfile, monkeypatch, capsys
     ):
         monkeypatch.setattr(sys.stdin, "isatty", lambda: True)
-        assert clip.main(None, CRASH_ID) == 2
+        assert clip.main([], CRASH_ID) == 2
         assert "no url given" in capsys.readouterr().err
 
 
@@ -344,7 +378,7 @@ class TestFormatStability:
         return f"{self.CRASH_ID}:\n  stories:\n{entries}\n"
 
     def test_one_entry_survives_format_untouched(self, pages, capsys):
-        clip.main(URL_A, indent=4)
+        clip.main([URL_A], indent=4)
         pasted = self.paste_under_stories(capsys.readouterr().out.rstrip("\n"))
         assert fmt.render_file(common.yaml_load(pasted)) == pasted
 
@@ -356,7 +390,7 @@ class TestFormatStability:
 
     def test_a_one_line_description_is_a_plain_scalar_not_a_block(self, pages, capsys):
         """qlip's own renderer forces `|-` here, which format would rewrite."""
-        clip.main(URL_A)
+        clip.main([URL_A])
         out = capsys.readouterr().out
         assert "description: One line of description." in out
         assert "|-" not in out
@@ -368,5 +402,5 @@ class TestFormatStability:
             date="2026-01-01",
             description="first\nsecond\n",
         )
-        clip.main("https://multi.example/")
+        clip.main(["https://multi.example/"])
         assert "description: |" in capsys.readouterr().out

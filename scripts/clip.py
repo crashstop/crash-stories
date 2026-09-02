@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Fetch story urls and print them as ready-to-paste story entries.
 
-With no url argument (or `-`), urls are read from stdin, one per line, so a url
-sitting in the clipboard round-trips in one go:
+With no url arguments (or `-`), urls are read from stdin, one per line, so a
+url sitting in the clipboard round-trips in one go:
 
     pbpaste | clip.py | pbcopy
 
+Any number of urls can be given as arguments instead, and a `-` among them
+splices stdin's urls in at that spot, so the two sources can be combined.
 Multiple urls give multiple entries, oldest first and blank-line separated —
 the order and spacing format.py would put them in anyway, so a paste of several
 doesn't get reshuffled on the next format run. A url that won't fetch is
@@ -48,11 +50,11 @@ A page that gives up no title or date is still inserted — the same entry a
 paste would have produced — with a note naming the file, since lint.py treats
 both as mandatory and nothing reviews the entry on its way in.
 
-The url still comes from wherever it usually does, so the clipboard round-trip
+The urls still come from wherever they usually do, so the clipboard round-trip
 works here too: `pbpaste | clip.py --id <crash_record_id>`. `--indent` only
 shapes the printed entry and does nothing when inserting.
 
-Usage: python3 clip.py [<url>] [--id CRASH_RECORD_ID] [--indent N]
+Usage: python3 clip.py [<url> ...] [--id CRASH_RECORD_ID] [--indent N]
        pbpaste | python3 clip.py
 """
 
@@ -76,17 +78,28 @@ qlip must be installed for the same interpreter that runs this script
 ({executable})."""
 
 
-def urls_to_clip(url):
-    """The urls to fetch: the argument, or stdin's lines when there isn't one.
+def urls_to_clip(urls):
+    """The urls to fetch: the arguments, or stdin's lines when there are none.
 
-    Returns None when no url was given and stdin is a terminal — there is
-    nothing to read there, and blocking on it would just look like a hang.
+    A `-` among the arguments stands for stdin's lines, spliced in at that
+    position, so piped urls and named ones can be combined. Returns None when
+    stdin is wanted but is a terminal — there is nothing to read there, and
+    blocking on it would just look like a hang.
     """
-    if url and url != "-":
-        return [url]
+    urls = list(urls or []) or ["-"]
+    if "-" not in urls:
+        return urls
     if sys.stdin.isatty():
         return None
-    return [line.strip() for line in sys.stdin if line.strip()]
+    piped = [line.strip() for line in sys.stdin if line.strip()]
+    result = []
+    for url in urls:
+        if url == "-":
+            result += piped
+            piped = []  # a repeated `-` doesn't read stdin twice
+        else:
+            result.append(url)
+    return result
 
 
 def fetch_story(qlip, url):
@@ -191,12 +204,12 @@ def insert_stories(crash, crash_record_id, stories):
     return fresh
 
 
-def main(url=None, crash_record_id=None, indent=0):
+def main(urls=(), crash_record_id=None, indent=0):
     """Print a story entry per url, or insert them into one crash's stories.
 
     Returns a process exit code.
     """
-    urls = urls_to_clip(url)
+    urls = urls_to_clip(urls)
     if urls is None:
         print(
             colors.error("error: no url given, and nothing piped in"), file=sys.stderr
@@ -270,9 +283,10 @@ def add_arguments(parser):
     and the repo-root ./q dispatcher call this, so the two can't drift.
     """
     parser.add_argument(
-        "url",
-        nargs="?",
-        help="the story url to fetch; omit it (or pass -) to read urls from "
+        "urls",
+        nargs="*",
+        metavar="url",
+        help="the story urls to fetch; give none (or pass -) to read urls from "
         "stdin, one per line",
     )
     parser.add_argument(

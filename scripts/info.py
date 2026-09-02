@@ -7,10 +7,10 @@ Output is five kinds of line:
     <address>[, <neighborhood_id>]
     [hit-and-run ]<category>
     [fatalities: N ][incap: N ]injured: N
-    - <age> <sex> <injury_classification>     (one per hurt person)
+    - <age> <sex> <injury_classification> <person_type>   (one per hurt person)
 
 A count is omitted when it's zero, except `injured:`, which always shows.
-Unknown ages and sexes print as `?`.
+Unknown ages, sexes, and person types print as `?`.
 
 On the tallies, which are not additive and don't sum to the list below them:
 `incap_tally` is a *subset* of `injured_tally`, and `injured_tally` excludes
@@ -46,7 +46,7 @@ WHERE crash_record_id = ?
 # out through the NOT IN, matching how crash_meta counts (verified: the three
 # tallies reproduce exactly from these rows across every 2026 crash).
 PEOPLE_SQL = """
-SELECT age, sex, injury_classification
+SELECT age, sex, injury_classification, person_type
 FROM clean_people
 WHERE crash_record_id = ?
   AND injury_classification NOT IN ('NO INDICATION OF INJURY', '')
@@ -90,7 +90,8 @@ def summarize(crash, people):
         " ".join(counts),
     ]
     lines += [
-        f"- {cell(p['age'])} {cell(p['sex'])} {p['injury_classification']}"
+        f"- {cell(p['age'])} {cell(p['sex'])} {p['injury_classification']} "
+        f"{cell(p['person_type'])}"
         for p in people
     ]
     return "\n".join(lines)
