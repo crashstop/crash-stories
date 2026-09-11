@@ -1,0 +1,45 @@
+1900e3a01ff9c6467d424cddc67afbb9951c5487ae4939888737c477bd5c5106f9bf4121efcdaea6d87d2063a9f3fa9a0625bf3dd1ac736e9940882139946850:
+  private_notes: |
+    2026-09-04 20:43
+    1750 N MILWAUKEE AVE, wicker-park
+    VEHICLE-TO-VEHICLE
+    fatalities: 1 injured: 1
+    - 62 M FATAL DRIVER
+    - 38 M NONINCAPACITATING INJURY DRIVER
+  stories:
+    - url: https://www.nbcchicago.com/news/local/man-dies-in-two-vehicle-crash-in-wicker-park-driver-cited/3985284/
+      title: Man dies in two-vehicle crash in Wicker Park, driver cited
+      site: NBC 5 Chicago
+      date: '2026-09-05T10:21:09-05:00'
+      description: A crash involving an SUV and a sedan in Chicago's Wicker Park neighborhood left one man dead and a second in critical condition on Friday night, police said. The surviving driver was and issued a citation by law enforcement.
+
+548abd4bd3fa5b71eca48c5f54ff7c07f89474ef8d6e5fa02fd0c2139630ee071c588cd1621ad69eb9d4fcd79a96c86c35ca8626a7e2bdc49bc4bd0d00fdbdf3:
+  private_notes: |
+    flag:tk:fatality-not-recorded
+      5 adults in vehicle, 24 M passenger died at hospital, 26 F body was found later
+    2026-09-08 02:31
+    13000 S INDIANA AVE, riverdale
+    OTHER
+    fatalities: 1 incap: 1 injured: 2
+    - 24 M FATAL PASSENGER
+    - 26 F INCAPACITATING INJURY PASSENGER
+    - 24 M REPORTED, NOT EVIDENT DRIVER
+  stories:
+    - url: https://abc7chicago.com/post/1-injured-missing-vehicle-goes-little-calumet-river-far-south-side-chicago-police-say/19805226/
+      title: Man killed, woman missing after SUV crashes into river on Far South Side, Chicago police say
+      site: ABC 7 Chicago
+      date: '2026-09-08T09:31:00Z'
+      description: An SUV lost control and drove into the Little Calumet River in West Pullman Tuesday morning; one man was killed and a woman is missing, Chicago police said. The driver was later cited for failure to reduce speed.
+
+    - url: https://www.fox32chicago.com/news/man-killed-little-calumet-river-crash-identified-woman-missing
+      title: Man killed in Little Calumet River crash identified; missing woman's body located, activist says
+      site: FOX 32 Chicago
+      date: 2026-09-09
+      description: The Cook County medical examiner identified Trumayne Sanders, the man killed Tuesday when the vehicle he was riding in crashed into the Little Calumet River on Chicago’s South Side. Meanwhile, a community activist said the body of Ralphelle Howard, who was missing after the crash, has been located.
+
+    - url: https://www.fox32chicago.com/news/family-demands-answers-after-finding-missing-woman-little-calumet-river-themselves
+      title: Family demands answers after finding missing woman in Little Calumet River themselves
+      site: FOX 32 Chicago
+      date: 2026-09-10
+      description: |
+        The family of 26-year-old Ralphelle Howard is demanding answers after she went missing following an SUV crash into the Little Calumet River and three people who grew up with her later found her body themselves in less than a minute.
