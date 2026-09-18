@@ -11,9 +11,11 @@ For every YAML file it checks:
     `stories` (any of them may be empty; the others may be missing entirely),
     and no keys outside that set (catches typos like `private_info`)
   - each story entry has no keys outside `title`, `url`, `date`, `site`,
-    `description`, `archive_url`, `priority`
+    `description`, `archive_url`, `priority`, `autosearched`, `search_status`
   - a story's `archive_url`, when present, is a string
   - a story's `priority`, when present, is an integer 1 through 5
+  - a story's `autosearched`, when present, is a boolean
+  - a story's `search_status`, when present, is a string
   - each crash_record_id exists in db.sqlite (crashes_serving)
   - each crash_record_id sits in the file for its crash month, i.e. the crash's
     crash_date year-month matches the file's <year-month>.yaml name
@@ -66,6 +68,8 @@ STORY_KEYS = (
     "description",
     "archive_url",
     "priority",
+    "autosearched",
+    "search_status",
 )
 PRIORITY_RANGE = range(1, 6)
 
@@ -157,6 +161,16 @@ def validate_story_list(label, stories, counts, errors, file_month=None):
                     f"{label}: story #{i} `priority` must be an integer "
                     f"{PRIORITY_RANGE.start}-{PRIORITY_RANGE.stop - 1}, got {priority!r}: {url}"
                 )
+        if "autosearched" in story and not isinstance(story["autosearched"], bool):
+            errors.append(
+                f"{label}: story #{i} `autosearched` must be a boolean, "
+                f"got {story['autosearched']!r}: {url}"
+            )
+        if "search_status" in story and not isinstance(story["search_status"], str):
+            errors.append(
+                f"{label}: story #{i} `search_status` must be a string, "
+                f"got {story['search_status']!r}: {url}"
+            )
         if not (isinstance(url, str) and url.strip()):
             errors.append(f"{label}: missing url: {url}")
             continue

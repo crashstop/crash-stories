@@ -196,10 +196,11 @@ f9a6b2206ee0f1562a52dcbe9f885084eb3fc3937139f91e9bd2f0411056ca23b8ca0eafc92023c8
 
 bb0df05fbedbb24ac65a350806e3d4cd78bf6715a52bf2c82c5fe88df88e2c3650246ad7855d3f17e1a323bebc0d57095c92fdbd54b5a762186ca8cae7843616:
   private_notes: |
-    basicinfo: OTHER FIXED OBJECT
     2026-07-25 19:11
-    2155 N LAKE SHORE DR NB lincoln park
-    1 fatalities 0 incaps 0 injured
+    2155 N LAKE SHORE DR NB, lincoln-park
+    OTHER
+    fatalities: 1 injured: 0
+    - 20 M FATAL DRIVER
   stories:
     - url: https://abc7chicago.com/post/lake-shore-drive-crash-today-1-killed-motorcycle-2200-block-north-dusable-gold-coast-chicago/19577216/
       title: Motorcyclist killed in Lincoln Park crash, police say

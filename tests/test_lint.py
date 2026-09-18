@@ -133,6 +133,25 @@ class TestStoryRules:
         _, errors = linted(crash_file(story(priority=value)))
         assert any("`priority` must be an integer" in e for e in errors)
 
+    @pytest.mark.parametrize("value", ["true", "false"])
+    def test_autosearched_accepts_booleans(self, linted, value):
+        _, errors = linted(crash_file(story(autosearched=value)))
+        assert errors == []
+
+    @pytest.mark.parametrize("value", ["'true'", "1", "0", "null", "[]"])
+    def test_autosearched_rejects_non_booleans(self, linted, value):
+        _, errors = linted(crash_file(story(autosearched=value)))
+        assert any("`autosearched` must be a boolean" in e for e in errors)
+
+    def test_search_status_accepts_a_string(self, linted):
+        _, errors = linted(crash_file(story(search_status="checked")))
+        assert errors == []
+
+    @pytest.mark.parametrize("value", ["1", "true", "null", "[]"])
+    def test_search_status_rejects_non_strings(self, linted, value):
+        _, errors = linted(crash_file(story(search_status=value)))
+        assert any("`search_status` must be a string" in e for e in errors)
+
     def test_duplicate_url_within_one_crash(self, linted):
         text = (
             f"{CRASH_ID}:\n  stories:\n"
