@@ -9,7 +9,11 @@ For every YAML file it checks:
     crash_record_id would otherwise silently drop all but the last entry)
   - each crash entry has at least one of the keys `notes`, `private_notes`,
     `stories` (any of them may be empty; the others may be missing entirely),
-    and no keys outside that set (catches typos like `private_info`)
+    and no keys outside that set plus the optional `search_status` (catches
+    typos like `private_info`)
+  - a crash entry's `search_status`, when present, is a string (it marks a
+    crash that was searched for stories, e.g. "autosearched-empty", so it
+    does not by itself satisfy the notes/private_notes/stories requirement)
   - each story entry has no keys outside `title`, `url`, `date`, `site`,
     `description`, `archive_url`, `priority`, `autosearched`, `search_status`
   - a story's `archive_url`, when present, is a string
@@ -60,6 +64,7 @@ from common import (
 )
 
 CRASH_KEYS = ("notes", "private_notes", "stories")
+CRASH_OPTIONAL_KEYS = ("search_status",)
 STORY_KEYS = (
     "title",
     "url",
@@ -247,11 +252,19 @@ def validate_file(path, con, cache):
                 f"{crash_id}: must have a `notes`, `private_notes`, or `stories` key"
             )
 
-        unexpected = [k for k in crash if k not in CRASH_KEYS]
+        unexpected = [
+            k for k in crash if k not in CRASH_KEYS and k not in CRASH_OPTIONAL_KEYS
+        ]
         if unexpected:
             errors.append(
                 f"{crash_id}: unexpected key(s) {', '.join(map(repr, unexpected))} "
-                f"(expected only: {', '.join(CRASH_KEYS)})"
+                f"(expected only: {', '.join(CRASH_KEYS + CRASH_OPTIONAL_KEYS)})"
+            )
+
+        if "search_status" in crash and not isinstance(crash["search_status"], str):
+            errors.append(
+                f"{crash_id}: `search_status` must be a string, "
+                f"got {crash['search_status']!r}"
             )
 
         for key in ("notes", "private_notes"):

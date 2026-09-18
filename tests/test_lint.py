@@ -199,6 +199,23 @@ class TestCrashRules:
         _, errors = linted(f"{CRASH_ID}:\n  private_info: typo\n")
         assert any("unexpected key(s) 'private_info'" in e for e in errors)
 
+    def test_crash_search_status_accepts_a_string(self, linted):
+        _, errors = linted(
+            f"{CRASH_ID}:\n  private_notes: x\n  search_status: autosearched-empty\n"
+        )
+        assert errors == []
+
+    def test_crash_search_status_rejects_non_strings(self, linted):
+        _, errors = linted(f"{CRASH_ID}:\n  private_notes: x\n  search_status: 1\n")
+        assert any("`search_status` must be a string" in e for e in errors)
+
+    def test_crash_search_status_alone_is_not_enough(self, linted):
+        _, errors = linted(f"{CRASH_ID}:\n  search_status: autosearched-empty\n")
+        assert any(
+            "must have a `notes`, `private_notes`, or `stories` key" in e
+            for e in errors
+        )
+
     def test_crash_value_must_be_a_mapping(self, linted):
         _, errors = linted(f"{CRASH_ID}: just a string\n")
         assert any("value must be a mapping" in e for e in errors)

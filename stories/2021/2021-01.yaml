@@ -1,58 +1,157 @@
 4d58c462fb6df34c7c26df899905768e55169932d6c52d26eb4b9afd8b910e45cbade5c180ce88751f7c67cc9a959da95a564d3de1aedcc1a22d529e351398be:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-04 16:50
     3952 W FULLERTON AVE logan square
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.fox32chicago.com/news/woman-fatally-struck-by-vehicle-in-logan-square-charges-pending-police
+      title: Driver arrested after woman, 62, fatally hit in Logan Square
+      site: fox32chicago.com
+      date: '2021-01-05'
+      description: A driver was arrested after a 62-year-old woman was fatally struck by a minivan Monday afternoon near a crosswalk in Logan Square on the Northwest Side.
+      autosearched: true
+
+    - url: https://chicago.suntimes.com/crime/2021/1/5/22214774/woman-fatally-struck-vehicle-logan-square-crosswalk-police
+      title: Driver arrested after woman, 62, fatally hit in Logan Square
+      site: chicago.suntimes.com
+      date: '2021-01-05T20:25:31Z'
+      description: A woman driving a white Dodge Caravan struck a 62-year-old woman Monday near a crosswalk in the 3900 block of West Fullerton Avenue, Chicago police said.
+      autosearched: true
 
 0b0995ab0016ef6251c800b5874cb5495d659f6c1d7824cf4749c2afa310d1c73142058318f979b7eac1057ab2c7d40a44d79119990ef7e89fa742545ca9d52c:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-06 23:20
     8623 S VINCENNES AVE auburn gresham
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  stories:
+    - url: https://chicago.suntimes.com/news/2021/1/7/22218385/person-killed-crash-vincennes-gresham-police
+      title: 'Man dies after vehicle crash in Gresham: police'
+      site: chicago.suntimes.com
+      date: '2021-01-07T09:48:04Z'
+      description: About 11:25 p.m., he was the passenger of a 2007 black SUV that crashed into a tree in the 8600 block of South Vincennes Avenue.
+      autosearched: true
 
 d7172d4a700cc99c0931edf36e157535ce5bb7f93fe4486a8a0b39d2c2e91815150b2b823608466dce489668d009449ad118777b5d9d63e5343c0e7ba30281fa:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-07 18:44
     7900 S LAFAYETTE AVE chatham
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: FAILING TO YIELD RIGHT-OF-WAY
+  stories:
+    - url: https://chicago.suntimes.com/2021/1/7/22220081/linda-washington-pedestrian-struck-killed-vehicle-chatham-police
+      title: Woman struck, killed in rollover crash in Chatham
+      site: chicago.suntimes.com
+      date: '2021-01-08T05:12:59Z'
+      description: The 50-year-old woman was hit on a sidewalk on the South Side, police say.
+      autosearched: true
+
+    - url: https://chi.streetsblog.org/2021/01/08/linda-washington-50-killed-while-walking-at-79th-lafayette-a-deadly-intersection
+      title: Linda Washington, 50, killed while walking at 79th/Lafayette, a deadly intersection
+      site: chi.streetsblog.org
+      date: '2021-01-08T22:11:35+00:00'
+      description: There are several factors that may explain why there have been so many pedestrian deaths at this location.
+      autosearched: true
+
 
 a9639a9ca165f33173b51fb99b947fc38432616587b74b41708f6552aa7d262ed244c7f2bf990bd372a53d308184e1e00af7af7f0da1469f56155bf97f33c597:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-11 13:05
     1100 N LARAMIE AVE austin
     1 fatalities, 0 injured
     OTHER: DRIVING ON WRONG SIDE/WRONG WAY
+  stories:
+    - url: https://abc7chicago.com/post/chicago-crime-family-andrew-wells-continues-search-answers-4-years-after-75-year-old-man-killed-austin-hit-run/15753940/
+      title: Family continues search for answers 4 years after 75-year-old man killed in Austin hit-and-run
+      site: abc7chicago.com
+      date: '2025-01-04T23:19:00Z'
+      description: There was a renewed effort Saturday to find the person responsible for a hit-and-run crash that left 75-year-old Andrew Wells dead four years ago on the West Side.
+      autosearched: true
+
+    - url: https://www.cbsnews.com/chicago/video/crime-stoppers-still-trying-to-solve-fatal-hit-and-run-from-2021/
+      title: Crime Stoppers still trying to solve fatal hit-and-run from 2021
+      site: cbsnews.com
+      date: '2025-01-04T22:35:00-06:00'
+      description: Four years since a hit-and-run driver killed a 75-year-old man in the Austin neighborhood, his daughter hasn't given up on the case. Neither have Cook County Crimestoppers, who went door-to-door on Saturday near the site of the crash, searching for answers.
+      autosearched: true
+
+    - url: https://wgntv.com/news/chicagocrime/cash-reward-offered-in-2021-hit-and-run-crash-that-claimed-life-of-75-year-old-man/
+      site: wgntv.com
 
 64fb2d40c91d45551f786cfa004ea22fe301795adf86fdbd4f8f1e2b6859703bd2000d9359b2ebe63dc0f9f06ea8be3908ae8dbf98d72cf7c2df708f89c1c547:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-13 00:30
     3300 E 100TH ST south deering
     1 fatalities, 0 injured
     VEHICLE-TO-VEHICLE: HAD BEEN DRINKING (USE WHEN ARREST IS NOT MADE)
+  stories:
+    - url: https://www.fox32chicago.com/news/1-killed-3-injured-in-south-deering-crash-police
+      title: '1 killed, 3 injured in South Deering crash: police'
+      site: fox32chicago.com
+      date: '2021-01-13'
+      description: One person was killed and three others injured in a vehicle crash early Wednesday in South Deering on the Far South Side, police said.
+      autosearched: true
+
+    - url: https://wgntv.com/news/chicago-news/one-dead-three-hurt-in-crash/
+      site: wgntv.com
 
 7e27d1f3dc3156575857ce8195e72829179ad7cf165746eb1a9ffc168048ca704d6d24448edabc4177c2e4270aa418ea409dfb174dba028fc06c63cf37f7909e:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-17 11:40
     200 W 98TH PL roseland
     1 fatalities, 0 injured
     OTHER: UNABLE TO DETERMINE
+  search_status: autosearched-empty
 
 8855feb0721cd4ab852c89803d1d1550104b75a22725f52ace17c2e1e5c15cb90c812a194ead33ccdd76fd20df1e268ba3f4c5554bd1f9443678b0c0b03d0b9b:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-20 21:35
     4928 S CICERO AVE garfield ridge
     1 fatalities, 6 injured
     VEHICLE-TO-VEHICLE: DRIVING ON WRONG SIDE/WRONG WAY
+  stories:
+    - url: https://www.fox32chicago.com/news/5-injured-in-garfield-ridge-crash
+      title: Girl, 12, dies in Garfield Ridge crash that injured 4 others; person arrested
+      site: fox32chicago.com
+      date: '2021-01-21'
+      description: A 12-year-old girl died and four others hurt after a driver veered into oncoming traffic and crashed Wednesday in Garfield Ridge on the Southwest Side.
+      autosearched: true
+
+    - url: https://abc7chicago.com/post/car-crash-garfield-ridge-caught-on-camera-dash-cam/9866852/
+      title: Teen killed after driver veers into oncoming traffic in Garfield Ridge; 4 others injured
+      site: abc7chicago.com
+      date: '2021-01-21T10:29:00Z'
+      description: An innocent teen is dead and at least four others have been injured after a head-on crash in Garfield Ridge Wednesday night.
+      autosearched: true
+
+    - url: https://chicago.suntimes.com/news/2021/1/21/22242008/garfield-ridge-crash-cicero
+      title: Girl, 12, dies in Garfield Ridge crash that injured 4 others; person arrested
+      site: chicago.suntimes.com
+      date: '2021-01-21T20:09:07Z'
+      description: She was identified as Cire Robinson of Oak Lawn by the Cook County medical examiner’s office.
+      autosearched: true
+
+    - url: https://abc7chicago.com/car-crash-garfield-ridge-caught-on-camera-dash-cam/9937747/
+      title: Oak Lawn family mourns loss of 12-year-old aspiring artist killed in Garfield Ridge crash
+      site: abc7chicago.com
+      date: '2021-01-23T16:05:00Z'
+      description: A 27-year-old man is now facing charges in the fatal crash Wednesday in the Garfield Ridge neighborhood on the Southwest Side that killed the young girl and injured several others.
+      autosearched: true
+
+    - url: https://chicago.suntimes.com/news/2021/1/23/22245766/daniel-regalado-charged-reckless-homicide-garfield-ridge-crash-that-killed-12-year-old-girl
+      title: $500K bail for man charged in Garfield Ridge crash that killed 12-year-old Oak Lawn girl
+      site: chicago.suntimes.com
+      date: '2021-01-23T19:24:22Z'
+      description: Daniel Regalado allegedly veered into oncoming traffic in the 4900 block of South Cicero Avenue and hit a Cadillac Escalade head-on.
+      autosearched: true
+
+    - url: https://www.nbcchicago.com/news/local/500k-bail-for-man-charged-in-garfield-ridge-crash-that-killed-12-year-old-oak-lawn-girl/2421203/
+      title: $500K Bail For Man Charged in Garfield Ridge Crash That Killed 12-Year-Old Oak Lawn Girl
+      site: nbcchicago.com
+      date: '2021-01-23T14:30:53-06:00'
+      description: A man has been charged with reckless homicide in a traffic crash that killed a 12-year-old girl and injured several other people Wednesday in the Garfield Ridge neighborhood on the Southwest Side.
+      autosearched: true
 
 69ba2bfdf2e3dd04f79e6d2b2b090536043060018fcacccdb2e49ccef482f1eee8cac4eba709f8d8ea174aba2a2780a0892073dbe54d300de7e01bb1c6a7aee7:
   private_notes: |-
@@ -61,11 +160,25 @@ a9639a9ca165f33173b51fb99b947fc38432616587b74b41708f6552aa7d262ed244c7f2bf990bd3
     6105 S ST LAWRENCE AVE woodlawn
     1 fatalities, 1 injured
     OTHER: PHYSICAL CONDITION OF DRIVER
+  search_status: autosearched-empty
 
 95450d0fd111b1d7f94577230e44f27fb44d922341f19958e77a5e72fd7efe86c4ae90a42b0a52f814a578c20ba316e6c18fea2668a390238864f05b7e04f549:
   private_notes: |-
-    This entry is just a stub, pre-filled with basic info from the crash data:
     2021-01-23 23:30
     8299 S STONY ISLAND AVE avalon park
     1 fatalities, 4 injured
     VEHICLE-TO-VEHICLE: UNABLE TO DETERMINE
+  stories:
+    - url: https://www.fox32chicago.com/news/woman-killed-in-avalon-park-crash-police
+      title: 'Woman killed in Avalon Park crash: police'
+      site: fox32chicago.com
+      date: '2021-01-24'
+      description: The 27-year old was a passenger in a blue Honda that was making a turn when it crashed into an Acura. The driver of the Acura continued driving and stopped when the car caught on fire. The occupants abandoned the car and left the scene on foot.
+      autosearched: true
+
+    - url: https://chicago.suntimes.com/news/2021/1/24/22246885/woman-killed-avalon-park-crash-police
+      title: 'Woman killed in Avalon Park crash: police'
+      site: chicago.suntimes.com
+      date: '2021-01-24T07:19:16Z'
+      description: The 27-year-old was a passenger in a blue Honda that struck another vehicle Friday in the 8300 block of South Stony Island Avenue, police said.
+      autosearched: true
