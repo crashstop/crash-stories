@@ -5,17 +5,17 @@
     1 fatalities, 0 injured
     PEDESTRIAN: UNABLE TO DETERMINE
   stories:
-    - url: https://chi.streetsblog.org/2021/01/06/patsy-ely-62-killed-by-minivan-driver-in-logan-was-first-chicago-pedestrian-fatality-of-2021
-      title: Patsy Ely, 62, killed in Logan DUI crash, was first Chicago pedestrian fatality of 2021
-      site: chi.streetsblog.org
-      date: '2021-01-06T22:16:52+00:00'
-      description: Drivers have killed at least two other pedestrians on Fullerton, a wide five-lane road, within two miles of this crash site in recent years.
-
     - url: https://www.fox32chicago.com/news/woman-charged-with-aggravated-dui-in-fatal-logan-square-crash
       title: 'Driver was drunk when striking and killing 62-year-old woman in Logan Square: prosecutor'
-      site: fox32chicago.com
+      site: FOX 32 Chicago
       date: 2021-01-06
       description: Patsy Ely was struck by Jennifer Martinez’s Dodge Caravan Monday as she walked across Fullerton Avenue, roughly 100 feet west of the intersection at Pulaski Road, prosecutors said.
+
+    - url: https://chi.streetsblog.org/2021/01/06/patsy-ely-62-killed-by-minivan-driver-in-logan-was-first-chicago-pedestrian-fatality-of-2021
+      title: Patsy Ely, 62, killed in Logan DUI crash, was first Chicago pedestrian fatality of 2021
+      site: Chicago Streetsblog
+      date: '2021-01-06T22:16:52+00:00'
+      description: Drivers have killed at least two other pedestrians on Fullerton, a wide five-lane road, within two miles of this crash site in recent years.
 
 0b0995ab0016ef6251c800b5874cb5495d659f6c1d7824cf4749c2afa310d1c73142058318f979b7eac1057ab2c7d40a44d79119990ef7e89fa742545ca9d52c:
   private_notes: |-
@@ -26,7 +26,7 @@
   stories:
     - url: https://chicago.suntimes.com/news/2021/1/7/22218385/person-killed-crash-vincennes-gresham-police
       title: 'Man dies after vehicle crash in Gresham: police'
-      site: chicago.suntimes.com
+      site: Chicago Sun-Times
       date: '2021-01-07T09:48:04Z'
       description: 26-year-old Willie Jacobs of Marquette Park was killed while riding in a SUV that struck a tree, police said.
 
@@ -39,13 +39,13 @@ d7172d4a700cc99c0931edf36e157535ce5bb7f93fe4486a8a0b39d2c2e91815150b2b823608466d
   stories:
     - url: https://chicago.suntimes.com/2021/1/7/22220081/linda-washington-pedestrian-struck-killed-vehicle-chatham-police
       title: Woman struck, killed in rollover crash in Chatham
-      site: chicago.suntimes.com
+      site: Chicago Sun-Times
       date: '2021-01-08T05:12:59Z'
       description: 50-year-old Linda Washington was hit on a sidewalk on the South Side and killed, police say. The 32-year-old driver was cited for driving on a suspended license, driving without insurance and disobeying a red light, police said.
 
     - url: https://chi.streetsblog.org/2021/01/08/linda-washington-50-killed-while-walking-at-79th-lafayette-a-deadly-intersection
       title: Linda Washington, 50, killed while walking at 79th/Lafayette, a deadly intersection
-      site: chi.streetsblog.org
+      site: Chicago Streetsblog
       date: '2021-01-08T22:11:35+00:00'
       description: There are several factors that may explain why there have been so many pedestrian deaths at this location.
 
@@ -58,13 +58,13 @@ a9639a9ca165f33173b51fb99b947fc38432616587b74b41708f6552aa7d262ed244c7f2bf990bd3
   stories:
     - url: https://chicago.suntimes.com/2021/4/20/22393378/police-seeking-vehicle-wanted-fatal-hit-and-run-austin
       title: Police release photo of car in hit-and-run that killed elderly man in Austin
-      site: chicago.suntimes.com
+      site: Chicago Sun-Times
       date: '2021-04-20T06:34:55.965Z'
       description: Police believe the driver was a woman between 20 and 25 years old.
 
     - url: https://abc7chicago.com/post/chicago-crime-family-andrew-wells-continues-search-answers-4-years-after-75-year-old-man-killed-austin-hit-run/15753940/
       title: Family continues search for answers 4 years after 75-year-old man killed in Austin hit-and-run
-      site: abc7chicago.com
+      site: ABC 7 Chicago
       date: '2025-01-04T23:19:00Z'
       description: There was a renewed effort Saturday to find the person responsible for a hit-and-run crash that left 75-year-old Andrew Wells dead four years ago on the West Side.
 
@@ -77,7 +77,7 @@ a9639a9ca165f33173b51fb99b947fc38432616587b74b41708f6552aa7d262ed244c7f2bf990bd3
   stories:
     - url: https://www.fox32chicago.com/news/1-killed-3-injured-in-south-deering-crash-police
       title: '1 killed, 3 injured in South Deering crash: police'
-      site: fox32chicago.com
+      site: FOX 32 Chicago
       date: '2021-01-13'
       description: One person was killed and three others injured in a vehicle crash early Wednesday in South Deering on the Far South Side, police said.
 
@@ -98,25 +98,25 @@ a9639a9ca165f33173b51fb99b947fc38432616587b74b41708f6552aa7d262ed244c7f2bf990bd3
   stories:
     - url: https://www.fox32chicago.com/news/5-injured-in-garfield-ridge-crash
       title: Girl, 12, dies in Garfield Ridge crash that injured 4 others; person arrested
-      site: fox32chicago.com
+      site: FOX 32 Chicago
       date: '2021-01-21'
       description: A 12-year-old girl died and four others hurt after a driver veered into oncoming traffic and crashed Wednesday in Garfield Ridge on the Southwest Side. The 12-year-old was identified as Cire Robinson of Oak Lawn; police said someone was arrested in connection to the crash, but hadn't announced charges.
 
     - url: https://abc7chicago.com/car-crash-garfield-ridge-caught-on-camera-dash-cam/9937747/
       title: Oak Lawn family mourns loss of 12-year-old aspiring artist killed in Garfield Ridge crash
-      site: abc7chicago.com
+      site: ABC 7 Chicago
       date: '2021-01-23T16:05:00Z'
       description: The family of a 12-year-old Cire Robinson who died after a crash involving a suspected drunk driver is speaking out for the first time. Daniel Regalado, 27, has been charged with reckless homicide, aggravated DUI and other charges.
 
     - url: https://www.chicagotribune.com/2021/02/05/motorist-who-prosecutors-mistakenly-said-was-excessively-drunk-in-wreck-that-killed-12-year-old-oak-lawn-girl-apologizes-but-claims-case-isnt-fair/
       title: Motorist who prosecutors mistakenly said was excessively drunk in wreck that killed 12-year-old Oak Lawn girl apologizes, but claims case ‘isn’t fair’
-      site: chicagotribune.com
+      site: Chicago Tribune
       date: '2021-02-05T16:54:06+00:00'
       description: Bail was reduced Friday from $500,000 to $300,000 for a motorist who prosecutors mistakenly said last month was nearly six times over the legal limit for blood alcohol content at the time of a Vittum Park car crash that killed 12-year-old Cire Robinson.
 
     - url: https://cwbchicago.com/2023/08/fanged-chicago-man-10-years-fatal-trafic-crash-cire-robinson.html
       title: '''Fanged'' man gets 10 years for killing 12-year-old in traffic crash while on bail for 3 felony cases'
-      site: cwbchicago.com
+      site: CWBChicago
       date: '2023-08-24T00:51:31+00:00'
       description: Daniel Regalado has been sentenced to 10 years for killing a 12-year-old Cire Robinson while speeding near Chicago's Midway Airport in 2021.
 
@@ -138,6 +138,33 @@ a9639a9ca165f33173b51fb99b947fc38432616587b74b41708f6552aa7d262ed244c7f2bf990bd3
   stories:
     - url: https://www.fox32chicago.com/news/woman-killed-in-avalon-park-crash-police
       title: 'Woman killed in Avalon Park crash: police'
-      site: fox32chicago.com
+      site: FOX 32 Chicago
       date: '2021-01-24'
       description: The 27-year old was a passenger in a blue Honda that was making a turn when it crashed into an Acura. The driver of the Acura continued driving and stopped when the car caught on fire. The occupants abandoned the car and left the scene on foot.
+
+e293da16bbe6013ecf8bff36546a7b7da7806a5bdf8b6d104395ed8cd934bb5fca44c0dd49d69bcf807e3b76795c886eaa90b2232f7cecb23d886e6cb4ed35ab:
+  private_notes: |
+    flag:tk:fatality-not-recorded
+    2021-01-30 03:19
+    3000 N LAKE SHORE DR SB, lake-view
+    OTHER
+    incap: 5 injured: 5
+    - 23 M INCAPACITATING INJURY DRIVER
+    - 24 F INCAPACITATING INJURY PASSENGER
+    - 18 M INCAPACITATING INJURY PASSENGER
+    - 41 M INCAPACITATING INJURY PASSENGER
+    - 24 F INCAPACITATING INJURY PASSENGER
+  stories:
+    - url: https://chicago.suntimes.com/news/2021/2/1/22261087/woman-dies-lake-shore-drive-crash-man-charged-dui
+      title: Man, 23, facing DUI charges in deadly Lake Shore Drive crash
+      site: Chicago Sun-Times
+      date: '2021-02-01T23:10:42.956Z'
+      description: |
+        Emily Garcia, 24, was alert at the scene of Saturday’s crash near 3000 North Lake Shore Drive after the vehicle she was riding in slammed into a concrete barrier, but she later died at the hospital from her internal injuries, Assistant State’s Attorney James Murphy said. The driver, 23-year-old Manuel Perez, was ordered held on $100,000 bail for aggravated driving under the influence causing death.
+
+    - url: https://cwbchicago.com/2023/06/man-sentenced-for-lakeview-dui-crash-chicago.html
+      title: Man gets 4½ years for fatal DUI crash in Lakeview
+      site: CWBChicago
+      date: '2023-06-21T11:45:12+00:00'
+      description: |
+        Manuel Perez, 25, pleaded guilty to a single count of aggravated DUI causing death, according to court records. Prosecutors dropped 19 additional felony counts of DUI in the deal.
